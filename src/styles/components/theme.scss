@@ -1,0 +1,43 @@
+.themeBtn {
+    position: fixed;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 10;
+    transform: translate(0, 5em);
+
+    &::before {
+        @include pseudo;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        transition: box-shadow $quick;
+    }
+
+    &.dark {
+        margin: 0;
+        padding: 0;
+        background-color: $black;
+        
+        &::before {
+            box-shadow: -3px 2px 0 1px $white;
+            transform: translate(-14%, -66%);
+        }
+    }
+
+    &.light {
+        background-color: $tertiary;
+        box-shadow: 1px 4px 8px rgba($dark, 0.4);
+
+        &::before {
+            box-shadow: inset 17px -20px 0 0px $sun;
+            transform: translate(-50%, -50%);
+        }  
+    }
+}

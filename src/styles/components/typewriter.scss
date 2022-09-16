@@ -1,0 +1,65 @@
+.typewriter-container {
+    margin-left: 5%;
+
+    .typewriter {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+
+        &.active {
+            position: relative;
+            opacity: 1;
+        }
+    }
+
+    .type-wrapper {
+        display: grid;
+        grid-template-columns: .175fr 1fr;
+        color: $black;
+
+        @media screen and (max-width: $xxsDown) {
+            grid-template-columns: 1fr;
+        }
+
+        .theme-dark & {
+            color: $white;
+        }
+    }
+
+    .i-am-a {
+        justify-self: flex-end;
+        white-space: nowrap;
+
+        @media screen and (max-width: $xxsDown) {
+            justify-self: flex-start;
+        }
+    }
+
+    .type {
+        position: relative;
+        padding-left: 0.275em;
+
+        @media screen and (max-width: $xxsDown) {
+            padding-left: 0;
+        }
+
+        &::after {
+            @include pseudo;
+            top: auto;
+            left: 0.25em;
+            height: 0.25em;
+            width: 100%;
+            background-color: $darkBrown;
+            transform: translateY(0.35em);
+
+            .theme-dark & {
+                background-color: $darkGrey;
+            }
+
+            @media screen and (max-width: $xxsDown) {
+                left: 0;
+            }
+        }
+    }
+}

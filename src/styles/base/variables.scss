@@ -1,0 +1,172 @@
+// ***********************************************//
+// colors
+// ***********************************************//
+
+$primary: #343585;
+$secondary: #415A77;
+$tertiary:  #69b9ed;
+$lightGrey: #F6F6F6;
+$medGrey: #A9A9A9;
+$darkGrey: #525155;
+$taupe: #D0C3B1;
+$redBrown: #a52a2a;
+$lightBrown: #B9A59B;
+$darkBrown: #AA9E95;
+$nude: #E4DDD3;
+$sun: #f1f16e;
+$white: #ffffff;
+$softWhite: #DAD6D6;
+$black: #000000;
+$dark: #1e1e1e;
+
+$darkMode1: #2A2438;
+$darkMode2: #352F44;
+$darkMode3: #5C5470;
+$darkMode4: #DBD8E3;
+
+// ***********************************************//
+// fonts and fonts weights
+// ***********************************************//
+
+$martel: 'Martel Sans', sans-serif;
+$spartan: "Spartan", sans-serif;
+$menlo: 'Menlo', sans-serif;
+$sourceCode: 'Source Code Pro', monospace;
+$didot: 'Didot', serif;
+$commissioner: 'Commissioner', sans-serif;
+$fontAwesome: 'FontAwesome';
+
+$ultralight: 100;
+$extralight: 200;
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+
+// ***********************************************//
+// transitions
+// ***********************************************//
+
+$quick: 300ms ease-in-out;
+$slow: 500ms ease-in-out;
+
+
+// ***********************************************//
+// svg icons
+// ***********************************************//
+
+$sandbox: url('../../assets/images/codeSandbox.svg');
+$linkedin: url('../../assets/images/linkedin.svg');
+$codePen: url('../../assets/images/codepen.svg');
+$github: url('../../assets/images/github.svg');
+$instagram: url('../../assets/images/instagram.svg');
+
+.icon {
+  position: relative;
+
+  &::before {
+    position:absolute;
+    left:0;
+    top: 0;
+    transition: color $quick;
+  }
+
+  &.sandbox::before {content: $sandbox;}
+  &.linkedin::before {content: $linkedin;}
+  &.codepen::before {content: $codePen;}
+  &.linkedin::before {content: $linkedin;}
+  &.github::before {content: $github;}
+  &.instagram::after {content: $instagram;}
+}
+
+// ***********************************************//
+// button & links
+// ***********************************************//
+
+@mixin button($background-color, $color, $radius, $border, $background-hover, $color-hover, $border-hover) {
+  position: relative;
+  display: inline-block;
+  -webkit-appearance: none!important;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.75em 2.75em 0.875em;
+  // font-family: $martelSans;
+  font-size: 1.25em;
+  font-weight: $regular;
+  background-color: $background-color;
+  color: $color;
+  border-radius: $radius;
+  border: $border;
+  transition: all 300ms ease;
+  
+  @media screen and (max-width: 767px) {
+    font-size: 1.125em;
+  }
+
+  &:hover,
+  &:focus {
+      outline: none;
+      box-shadow: none;
+      background-color: $background-hover;
+      color: $color-hover;
+      border: $border-hover;
+  }
+}
+
+.btn {
+  @include button($darkBrown, $white, 15px, 3px solid $darkBrown, transparent, $darkBrown, 3px solid $darkBrown);
+} 
+
+// ***********************************************//
+// mixins
+// ***********************************************//
+
+@mixin cascadeTransition {
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      transition-delay: #{$i * 200ms};
+    }
+  }
+}
+
+@mixin pseudo($content: '', $pos: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0) {
+  content: $content;
+  position: $pos;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
+
+@mixin aspectRatioContainer($x, $y) {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: $y / $x * 100%;
+}
+
+@mixin aspectRatioImage() {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// ***********************************************//
+// media queries / breakpoints
+// ***********************************************//
+
+$xxsDown: 500px;        // max-width: 500px
+$xxsUp: 501px;          // min-width: 501px
+$xsDown: 567px;         // max-width: 567px
+$xsUp: 568px;           // min-width: 567px
+$smDown: 767px;         // max-width: 767px
+$smUp: 768px;           // min-width: 768px
+$medDown: 991px;        // max-width: 991px
+$medUp: 992px;          // min-width: 992px
+$large: 1000px;         // max or min -width: 1100px
+$xlarge: 1200px;        // max or min -width: 1300px
+$xxlarge: 1440px;       // max or min -width: 1440px

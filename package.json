@@ -1,0 +1,51 @@
+{
+	"name": "portfolio2021",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.15.4",
+		"@testing-library/jest-dom": "^5.16.1",
+		"@testing-library/react": "^11.2.7",
+		"@testing-library/user-event": "^12.8.3",
+		"axios": "^0.24.0",
+		"focus-trap-react": "^8.9.1",
+		"node-sass": "^6.0.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-helmet-async": "^1.2.2",
+		"react-image-webp": "^0.8.0",
+		"react-rellax": "^1.0.3",
+		"react-router-dom": "^6.0.2",
+		"react-scripts": "^5.0.0",
+		"rellax": "^1.12.1",
+		"sass": "^1.50.1",
+		"usehooks-ts": "^2.1.1",
+		"web-vitals": "^1.1.2"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"start-micro": "micro -p 8080"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@axe-core/react": "^4.3.2",
+		"@welldone-software/why-did-you-render": "^6.2.3"
+	}
+}

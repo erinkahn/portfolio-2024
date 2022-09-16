@@ -1,0 +1,65 @@
+.insta-post {
+    .img-link {
+        @include aspectRatioContainer(288px, 288px);
+        display: flex;
+
+        &::before,
+        &::after {
+            @include pseudo;
+        }
+
+        &::before {
+            opacity: 0;
+            background-color: rgba($black, 0.3);
+            z-index: 1;
+            transition: opacity $quick;
+
+            .theme-dark & {
+                opacity: 1;
+                background-color: rgba($black, 0.1);
+            }
+        }
+
+        &::after {
+            content: $instagram;
+            left: 50%;
+            top: 50%;
+            bottom: auto;
+            right: auto;
+            opacity: 0;
+            width: 3em;
+            height: 3em;
+            z-index: 2;
+            transform: translate(-50%, -50%) scale(.8);
+            transition: transform $quick, opacity $quick, drop-shadow $quick;
+        }
+
+        &:hover,
+        &:focus {
+            &::before {
+                opacity: 0.8;
+            }
+            
+            &::after {
+                opacity: 1;
+                filter: drop-shadow(9px 12px 13px $black);
+                transition-delay: 150ms;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            .img-post {
+                filter: saturate(1);
+            }
+        }
+    }
+
+    .img-post {
+        @include aspectRatioImage;
+        filter: saturate(0.7);
+        transition: filter $quick;
+
+        .theme-dark & {
+            filter: grayscale(1);
+        }
+    }
+}

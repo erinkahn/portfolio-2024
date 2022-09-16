@@ -1,0 +1,143 @@
+.work-container {
+    margin: 0 auto;
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: $medDown) {
+        width: 73%;
+    }
+
+    @media screen and (max-width: $smDown) {
+        width: 85%;
+    }
+    
+    .filter-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2.5em;
+        align-items: baseline;
+        width: 100%;
+        padding-bottom: 3em;
+
+        @media screen and (max-width: $medDown) {
+            grid-template-columns: 1fr;
+        }
+    
+        
+        .tabs-wrapper {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 1em;
+            justify-items: flex-start;
+
+            @media screen and (max-width: $medDown) {
+                grid-template-columns: repeat(4, 1fr);
+                margin: auto;
+            }
+
+            @media screen and (max-width: $xsDown) {
+                grid-gap: 0;
+            }
+        }
+
+        .tab {
+            padding: 0.5em 1.5em;
+            border: none;
+            font-family: $sourceCode;
+            font-weight: $regular;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: $black;
+
+            @media screen and (max-width: $medDown) {
+                padding: 0.5em 1em;
+                font-size: 0.875em;
+            }
+
+            @media screen and (max-width: $xsDown) {
+                font-size: 0.75em;
+            }
+            
+            @media screen and (max-width: $xxsDown) {
+                font-size: 0.675em;
+            }
+
+            &.active {
+                background-color: $lightBrown;
+                color: $white;
+            }
+
+            .theme-dark & {
+                color: $white;
+            }
+        }
+    }
+
+    .section-title {
+        justify-self: flex-end;
+
+        @media screen and (max-width: $medDown) {
+            grid-row: 1;
+        }
+    
+    }
+
+    .project-grid {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        text-align: center;
+
+        @media screen and (max-width: $medDown) {
+            // gap: 3.99%;
+        }
+
+        // &.show_all {
+
+        // }
+
+        // &.show_websites {
+
+        // }
+
+        // &.show_designs {
+
+        // }
+
+        // &.show_art {
+
+        // }
+    }
+
+    .project-wrapper {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 30%;
+        margin-bottom: 3%;
+        border: 1px solid black;
+
+        &:nth-of-type(2) {
+            background-position: top;
+        }
+
+        &:nth-of-type(odd){
+            width: 27%;
+        }
+
+        &:nth-of-type(4) {
+            width: 38.59%;
+        }
+
+        &:nth-of-type(2),
+        &:nth-of-type(6){
+            width: 69%;
+        }
+    }
+}

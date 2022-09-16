@@ -1,0 +1,24 @@
+.weather-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .degrees {
+        position: absolute;
+        left: 0.3em;
+        font-family: $sourceCode;
+        font-size: 0.875em;
+
+        .theme-dark & {
+            color: $white;
+        }
+    }
+
+    .weather-icon {
+        width: 3em;
+        filter: drop-shadow(3px 4px 4px rgba($dark, 0.5));
+    }
+}

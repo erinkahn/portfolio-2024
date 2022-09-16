@@ -1,0 +1,32 @@
+.page-wrapper {
+    position: relative;
+
+    &.theme-dark {
+        background-color: $dark;
+        color: $softWhite;
+    }
+}
+
+.section-wrapper {
+    position: relative;
+    margin: 2em auto;
+    padding: 3em 0;
+}
+
+.section-title {
+    font-size: 3em;
+    font-family: $didot;
+    color: $black;
+
+    @media screen and (max-width: $medDown) {
+        font-size: 2.5em;
+    }
+
+    @media screen and (max-width: $xsDown) {
+        font-size: 2em;
+    }
+
+    .theme-dark & {
+        color: $white;
+    }
+}

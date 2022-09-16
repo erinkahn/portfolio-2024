@@ -1,0 +1,6 @@
+{
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.settings.useSplitJSON": true,
+    "files.autoSave": "onFocusChange",
+    "workbench.settings.editor": "json"
+}
