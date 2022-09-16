@@ -7,9 +7,9 @@ import Weather from "../Weather";
 export default function Header(props) {
 	return (
 		<header ref={props.forwardedRef}>
-			<Link to="/">
+			<Link className="logo-wrapper" to="/">
 				<img
-					src="/images/logos/logo2.svg"
+					src="/images/header/logo.svg"
 					style={{ width: "3em", height: "3em" }}
 					alt="erin smith home"
 					className="logo"

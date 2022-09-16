@@ -1,22 +1,20 @@
 .scroll-tracker {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     overflow: auto;
-    max-width: 0.35em;
-    height: 100%;
-    max-height: 100vh;
-    padding: .35em;
+    height: 50vh;
+    padding: 0.1em;
     background: transparent;
-    background-size: 100vw .5em;
     z-index: 9;
+    transform: translate(2em, 25vh);
     transition: background $slow;
 
     &.scrolled {
-        background: linear-gradient(to bottom, rgba($lightBrown, 0.75), calc(var(--scroll, 0) * 100%), transparent 0);
+        background: linear-gradient(to bottom, rgba($tertiaryLight, 0.75), calc(var(--scroll, 0) * 100%), transparent 0);
 
         .theme-dark &{
-            background: linear-gradient(to bottom, rgba($darkGrey, 0.95), calc(var(--scroll, 0) * 100%), transparent 0);
+            background: linear-gradient(to bottom, rgba($tertiaryDark, 0.95), calc(var(--scroll, 0) * 100%), transparent 0);
         }
     }
 }

@@ -1,17 +1,17 @@
 import React from "react";
 import Prallax from "react-rellax";
-import { isWebpSupported } from "react-image-webp/dist/utils";
+// import { isWebpSupported } from "react-image-webp/dist/utils";
 
 export default function Hero(props) {
 	return (
 		<div
 			role="banner"
 			className="hero-container"
-			style={
-				isWebpSupported()
-					? { backgroundImage: `url(${props.image})` }
-					: { backgroundImage: `url(${props.fallback})` }
-			}
+			// style={
+			// 	isWebpSupported()
+			// 		? { backgroundImage: `url(${props.image})` }
+			// 		: { backgroundImage: `url(${props.fallback})` }
+			// }
 		>
 			<Prallax speed={6} className="text-box-container">
 				<div className="text-wrapper">

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { navData } from "../constants/data";
 import useLockBodyScroll from "../hooks/useLockBodyScroll";
 
-const Navigation = () => {
+const Navigation = (props) => {
 	const today = new Date().getFullYear();
 	const [hidden, setHidden] = useState(true);
 	const [locked, setLocked] = useLockBodyScroll();
@@ -28,7 +28,7 @@ const Navigation = () => {
 	};
 
 	return (
-		<>
+		<div className="side-nav-wrap">
 			<button
 				className={`menuBtn ${hidden ? "" : "open"}`}
 				aria-label={`${
@@ -38,7 +38,7 @@ const Navigation = () => {
 				ref={btnRef}
 				tabIndex="0"
 			>
-				{hidden ? "Menu" : "Close"}
+				<span className="sr-only">{hidden ? "Menu" : "Close"}</span>
 			</button>
 
 			<div
@@ -97,7 +97,7 @@ const Navigation = () => {
 					</nav>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

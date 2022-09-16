@@ -1,21 +1,19 @@
 .themeBtn {
     position: fixed;
     right: 0;
+    top: 0;
     width: 2em;
     height: 2em;
     border: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 0 0 1em 1em;
     z-index: 10;
-    transform: translate(0, 5em);
+    transform: translate(-8vw, 0);
 
     &::before {
         @include pseudo;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        height: 15px;
-        width: 15px;
+        top: 0;
+        left: 0;
         border-radius: 50%;
         transition: box-shadow $quick;
     }
@@ -26,8 +24,10 @@
         background-color: $black;
         
         &::before {
+            height: 15px;
+            width: 15px;
             box-shadow: -3px 2px 0 1px $white;
-            transform: translate(-14%, -66%);
+            transform: translate(67%, 13%);
         }
     }
 
@@ -36,8 +36,10 @@
         box-shadow: 1px 4px 8px rgba($dark, 0.4);
 
         &::before {
+            width: 18px;
+            height: 18px;
             box-shadow: inset 17px -20px 0 0px $sun;
-            transform: translate(-50%, -50%);
+            transform: translate(26%, 15%);
         }  
     }
 }

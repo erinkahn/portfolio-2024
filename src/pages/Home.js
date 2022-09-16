@@ -1,7 +1,7 @@
 import PageWrapper from "../components/Global/PageWrapper";
 import Header from "../components/Global/Header";
 import Hero from "../components/Global/Hero";
-import { heroData } from "../constants/data";
+import { headerData, heroData } from "../constants/data";
 import Typewriter from "../components/Typewriter";
 import Stats from "../components/Stats/Stats";
 import Services from "../components/Services";
@@ -14,7 +14,7 @@ import Footer from "../components/Global/Footer";
 export default function Home() {
 	return (
 		<PageWrapper>
-			<Header />
+			<Header/> 
 			<Hero
 				title={heroData.home.title}
 				subtitle={heroData.home.subtitle}
