@@ -24,17 +24,24 @@ header {
         right: 0;
         top: 0;
         height: 100vh;
-        width: 8%;
+        width: 10vw;
         background-color: $secondaryLight;
 
         &::before {
             @include pseudo;
-            /* need before image is not gonna work. need to actually code out the shapes manually with css */
-
+            background-image: url('../../assets/images/wavesLight.svg');
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+            transform: translate(-2.5vw, 0px);
         }
 
         .theme-dark & {
-            background-color: $secondaryDark;
+            background-color: $quaternaryDark;
+
+            &::before {
+                background-image: url('../../assets/images/wavesDark.svg');
+            }
         }
     }
 
@@ -60,7 +67,7 @@ header {
             height: 0.2em;
             background-color: $white;
             border-radius: 1em;
-            transform: translate(-1.1em, 0) rotate(0deg);
+            transform: translate(-2vw, 0) rotate(0deg);
             transition: transform $quick;
             transform-origin: left;
 
@@ -80,11 +87,11 @@ header {
         &:hover,
         &.open {   
             &::before {
-                transform: translate(-1em, 50%) rotate(26deg);
+                transform: translate(-2vw, 50%) rotate(35deg);
             }
 
             &::after {
-                transform: translate(-1em, 50%) rotate(-30deg);
+                transform: translate(-2vw, 50%) rotate(-35deg);
             }
         }
 
@@ -94,7 +101,7 @@ header {
                 background-color: $primaryLight;
 
                 .theme-dark & {
-                    background-color: $secondaryDark;
+                    background-color: $primaryDark;
                 }
             }
         }
