@@ -47,7 +47,7 @@ export const navData = {
 
 export const heroData = {
     home: {
-        title: 'hello world.',
+        title: 'hello world',
         subtitle: 'I bring design to life',
         image: './images/heros/home-office-desk.webp',
         fallback: './images/heros/home-office-desk.png',
