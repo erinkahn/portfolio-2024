@@ -72,6 +72,7 @@ $linkedin: url('../../assets/images/linkedin.svg');
 $codePen: url('../../assets/images/codepen.svg');
 $github: url('../../assets/images/github.svg');
 $instagram: url('../../assets/images/instagram.svg');
+$spotify: url('../../assets/images/spotify.svg');
 
 .icon {
   position: relative;
@@ -89,6 +90,7 @@ $instagram: url('../../assets/images/instagram.svg');
   &.linkedin::before {content: $linkedin;}
   &.github::before {content: $github;}
   &.instagram::after {content: $instagram;}
+  &.spotify::before {content: $spotify;}
 }
 
 // ***********************************************//

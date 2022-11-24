@@ -21,27 +21,31 @@ export const navData = {
             id: 3
         }
     ],
-    socialIcons: [
+    socialIcons: [{
+        url: 'https://github.com/erinkahn',
+            siteName: 'github',
+            id: 2
+        },
+        {
+            url: 'https://open.spotify.com/user/121609086?si=e4fbfc938a8b4d12',
+            siteName: 'spotify',
+            id: 1
+        },
         {
             url: 'https://www.linkedin.com/in/erinnkahn/',
             siteName: 'linkedin',
             id: 0
         },
-        {
-            url: 'https://codesandbox.io/u/erinkahn',
-            siteName: 'sandbox',
-            id: 1
-        },
-        {
-            url: 'https://github.com/erinkahn',
-            siteName: 'github',
-            id: 2
-        },
-        {
-            url: 'https://codepen.io/erinkahn/',
-            siteName: 'codepen',
-            id: 3
-        }
+        // {
+        //     url: 'https://codepen.io/erinkahn/',
+        //     siteName: 'codepen',
+        //     id: 3
+        // },
+        // {
+        //     url: 'https://codesandbox.io/u/erinkahn',
+        //     siteName: 'sandbox',
+        //     id: 4
+        // },
     ]
 }
 

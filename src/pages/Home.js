@@ -14,13 +14,13 @@ import Footer from "../components/Global/Footer";
 export default function Home() {
 	return (
 		<PageWrapper>
-			<Header /> 
 			<Hero
 				title={heroData.home.title}
 				subtitle={heroData.home.subtitle}
 				image={heroData.home.image}
 				alt={heroData.home.alt}
 			/>
+			<Header /> 
 			<main id="maincontent" role="main">
 				<div className="inner-wrapper">
 					<Typewriter />

@@ -6,17 +6,16 @@ header {
         @include pseudo;
         left: auto;
         background-image: url('../../assets/images/wavesLight.svg');
-        background-size: auto;
+        background-size: cover;
+        width: 12em;
         background-position: center;
         background-repeat: no-repeat;
-        width: 90px;
         height: 100vh;
         z-index: 1;
-        transform: translate(0%, 0%);
+        transform: translate(18%, 0%);
 
         @media screen and (min-width: $smUp) {
-            background-size: cover;
-            width: 9em;
+            transform: translate(14%, 0%);
         }
         
         .theme-dark & {
