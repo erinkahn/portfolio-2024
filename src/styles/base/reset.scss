@@ -7,6 +7,7 @@
 }
 html {
 	font-size: 16px;
+	overflow-x: hidden;
 }
 html,
 body,
@@ -171,8 +172,4 @@ button {
 }
 a {
 	text-decoration: none;
-}
-#maincontent {
-	max-width: 1200px;
-	margin: 0 auto;
 }

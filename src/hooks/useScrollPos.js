@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState } from "react";
 
-export const useScrollPos = () => {
+export default function useScrollPos() {
 	const [scrollPos, setScrollPos] = useState({
 		x: 0,
 		y: 0,
@@ -9,8 +9,9 @@ export const useScrollPos = () => {
 	useLayoutEffect(() => {
 		const getScrollPos = () =>
 			setScrollPos({
-				x: window.pageXOffset,
-				y: window.pageYOffset,
+				x: window.pageXOffset || document.documentElement.scrollLeft,
+				y: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop,
+				
 			});
 
 		window.addEventListener("scroll", getScrollPos);
@@ -19,7 +20,7 @@ export const useScrollPos = () => {
 	}, []);
 
 	return [scrollPos.x, scrollPos.y];
-};
+}
 
 // use this in another component:
 

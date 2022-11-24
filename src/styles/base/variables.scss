@@ -27,6 +27,7 @@ $primaryDark: #363957;
 $secondaryDark: #A1D6B7;
 $tertiaryDark: #F2FDF5;
 $quaternaryDark: #7CC994;
+$fiveDark: #80DE9D;
 
 $darkMode1: #2A2438;
 $darkMode2: #352F44;
@@ -94,40 +95,41 @@ $instagram: url('../../assets/images/instagram.svg');
 // button & links
 // ***********************************************//
 
-@mixin button($background-color, $color, $radius, $border, $background-hover, $color-hover, $border-hover) {
-  position: relative;
-  display: inline-block;
-  -webkit-appearance: none!important;
-  text-decoration: none;
-  cursor: pointer;
-  text-align: center;
-  padding: 0.75em 2.75em 0.875em;
-  // font-family: $martelSans;
-  font-size: 1.25em;
-  font-weight: $regular;
-  background-color: $background-color;
-  color: $color;
-  border-radius: $radius;
-  border: $border;
-  transition: all 300ms ease;
+// @mixin button($background-color, $color, $radius, $border, $background-hover, $color-hover, $border-hover) {
+//   position: relative;
+//   display: inline-block;
+//   -webkit-appearance: none!important;
+//   text-decoration: none;
+//   cursor: pointer;
+//   text-align: center;
+//   padding: 0.75em 2.75em 0.875em;
+//   // font-family: $martelSans;
+//   font-size: 1.25em;
+//   font-weight: $regular;
+//   background-color: $background-color;
+//   color: $color;
+//   border-radius: $radius;
+//   border: $border;
+//   cursor: pointer;
+//   transition: all 300ms ease;
   
-  @media screen and (max-width: 767px) {
-    font-size: 1.125em;
-  }
+//   @media screen and (max-width: 767px) {
+//     font-size: 1.125em;
+//   }
 
-  &:hover,
-  &:focus {
-      outline: none;
-      box-shadow: none;
-      background-color: $background-hover;
-      color: $color-hover;
-      border: $border-hover;
-  }
-}
+//   &:hover,
+//   &:focus {
+//       outline: none;
+//       box-shadow: none;
+//       background-color: $background-hover;
+//       color: $color-hover;
+//       border: $border-hover;
+//   }
+// }
 
-.btn {
-  @include button($darkBrown, $white, 15px, 3px solid $darkBrown, transparent, $darkBrown, 3px solid $darkBrown);
-} 
+// .btn {
+//   @include button($darkBrown, $white, 15px, 3px solid $darkBrown, transparent, $darkBrown, 3px solid $darkBrown);
+// } 
 
 // ***********************************************//
 // mixins

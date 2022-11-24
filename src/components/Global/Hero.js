@@ -1,17 +1,23 @@
-import React from "react";
+import React, {useRef} from "react";
+import useScrollPos from '../../hooks/useScrollPos';
 import Prallax from "react-rellax";
-// import { isWebpSupported } from "react-image-webp/dist/utils";
 
 export default function Hero(props) {
+	const scrollPos = useScrollPos();
+	const heroRef = useRef();
+
+	const scrollToSection = () => {
+		const heroHeight = heroRef.current.getBoundingClientRect().height;
+		if(scrollPos[1] < heroHeight) {
+			window.scrollBy(0, heroHeight)
+		};
+	}
+
 	return (
 		<div
 			role="banner"
+			ref={heroRef}
 			className="hero-container"
-			// style={
-			// 	isWebpSupported()
-			// 		? { backgroundImage: `url(${props.image})` }
-			// 		: { backgroundImage: `url(${props.fallback})` }
-			// }
 		>
 			<Prallax speed={6} className="text-box-container">
 				<div className="text-wrapper">
@@ -19,6 +25,10 @@ export default function Hero(props) {
 					<p className="hero-subtitle">{props.subtitle}</p>
 				</div>
 			</Prallax>
+
+			<button className="btn-scroll" onClick={scrollToSection}>
+				<span className="sr-only">scroll to next section</span>
+			</button>
 		</div>
 	);
 }

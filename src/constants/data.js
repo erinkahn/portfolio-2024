@@ -78,8 +78,8 @@ export const heroData = {
 
 export const typewriterData = {
     typewriter: [
-        'front-end web developer.',
-        'freelance graphic designer.',
+        'front-end developer.',
+        'freelance designer.',
         'creative technologist.'
     ]
 }

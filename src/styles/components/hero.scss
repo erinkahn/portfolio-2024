@@ -4,24 +4,16 @@
     height: 100vh;
     overflow: hidden;
     background-color: $primaryLight;
-    z-index: 0;
-
+    
     .theme-dark & {
         background-color: $primaryDark;
     }
 
     .text-box-container {
-        position: relative;
-        top: 42vh;
+        display: flex;
+        align-items: center;
+        height: 100vh;
         transition: width $quick;
-
-        @media screen and (max-width: $medDown) {
-            top: 43vh;
-        }
-
-        @media screen and (max-width: $xsDown) {
-            top: 46vh;
-        }
     }
 
     .text-wrapper {
@@ -48,6 +40,7 @@
             content: '.';
             color: $secondaryLight;
             font-size: 1.875em;
+            line-height: 0;
 
             .theme-dark & {
                 color: $secondaryDark;
@@ -63,6 +56,30 @@
 
         @media screen and (max-width: $xsDown) {
             font-size: 1em;
+        }
+    }
+
+    .btn-scroll {
+        background-image: url('../../assets/images/chevron.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2em;
+        width: 2em;
+        color: $white;
+        border: 1px solid $white;
+        border-radius: 90px;
+        transform: translate(22vw, -5vw);
+        font-family: $sourceCode;
+        font-size: 1em;
+        z-index: 1;
+
+        &::after {
+            content: 'scroll';
+            display: block;
+            transform: translate(0em, -3em) rotate(-90deg);
         }
     }
 }

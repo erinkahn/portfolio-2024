@@ -16,9 +16,9 @@ export default function Weather() {
         function getLocation() {
             if(navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(success);
-                console.log('you are here: ' + lat, long);
+                // console.log('you are here: ' + lat, long);
             } else {
-                console.log('i cant find your location')
+                // console.log('i cant find your location')
             }
         }
         getLocation();

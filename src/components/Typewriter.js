@@ -45,13 +45,13 @@ export default function Typewriter(props) {
         }, 300);
 
         return () => clearTimeout(timeout2);
-    }, [blink]);
+    }, []);
 
     return (
         <SectionWrapper>
             <div className="typewriter-container">
+                <h2 className="i-am section-title">I am a</h2>
                 <h2 className="type-wrapper">
-                    <span className="i-am-a section-title">I am a </span> 
                     <span className="type section-title">{`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}</span>
                 </h2>
             </div>

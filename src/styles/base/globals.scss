@@ -1,3 +1,30 @@
+#maincontent {
+	position: relative;
+	
+    &::before {
+        @include pseudo;
+        bottom: auto;
+        background-image: url('../../assets/images/hero-waves-light.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 0;
+        padding-top: 40%;
+        z-index: 0;
+        transform: translate(0, -50%);
+
+        .theme-dark & {
+            background-image: url('../../assets/images/hero-waves-dark.svg');
+        }
+    }
+
+    .inner-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2em;
+    }
+}
+
 .page-wrapper {
     position: relative;
     background-color: $white;
@@ -5,8 +32,8 @@
 
 .section-wrapper {
     position: relative;
-    margin: 2em auto;
-    padding: 3em 0;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 .section-title {
