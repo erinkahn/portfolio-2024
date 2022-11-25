@@ -16,6 +16,29 @@
         z-index: 1;
         transform: translate(4vw, 0);
     }
+
+    &:after {
+        content: '';
+        background-image: url('../../assets/images/hero-pattern-light.svg');
+        background-size: cover;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 48%;
+        height: 0;
+        padding-bottom: 86%;
+        z-index: 1;
+
+        @media screen and (min-width: $medUp) {
+            width: 30%;
+            padding-bottom: 50%;
+        }
+
+        .theme-dark & {
+            background-image: url('../../assets/images/hero-pattern-dark.svg');
+        }
+    }
     
     .theme-dark & {
         background-color: $primaryDark;
@@ -87,20 +110,12 @@
         font-family: $sourceCode;
         font-size: 1em;
         z-index: 1;
+        transition: 1s box-shadow;
 
         &::after {
             content: 'scroll';
             display: block;
             transform: translate(0em, -3em) rotate(-90deg);
-        }
-        
-        &:hover {
-            animation: fadeInChars;
-            @for $i from 1 through 5 {
-                &:nth-letter(#{$i}) {
-                  transition-delay: #{$i * 200ms};
-                }
-              }
         }
     }
 }
