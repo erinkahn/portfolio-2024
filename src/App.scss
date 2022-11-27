@@ -6,8 +6,6 @@
 @import './styles/base/variables';
 @import './styles/base/globals';
 @import './styles/base/imports';
-@import './styles/base/keyframes';
-
 
 // ***********************************************//
 // COMPONENTS STYLES
@@ -15,17 +13,15 @@
 
 @import './styles/components/header';
 @import './styles/components/footer';
-@import './styles/components/instafeed';
+// @import './styles/components/instafeed';
 @import './styles/components/navigation';
 @import './styles/components/theme';
 @import './styles/components/weather';
 @import './styles/components/progressBar';
 @import './styles/components/hero';
 @import './styles/components/typewriter';
-@import './styles/components/stats';
+// @import './styles/components/stats';
 @import './styles/components/services';
-@import './styles/components/skills';
 @import './styles/components/work';
-// @import './styles/components/clients';
-// @import './styles/components/testimonials';
-@import './styles/components/instaPost';
+@import './styles/components/testimonials';
+// @import './styles/components/instaPost';

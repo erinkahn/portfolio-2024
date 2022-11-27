@@ -11,7 +11,7 @@ export default function Stats() {
                 <Suspense fallback={<div>Loading images...</div>}>
                     <StatImage statProp={statsData} />
                 </Suspense>
-                <ul  className="stat-list">
+                <ul className="stat-list">
                     <StatNum statsProp={statsData}/>
                 </ul>                
             </div>

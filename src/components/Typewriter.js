@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import {typewriterData} from '../constants/data';
-import SectionWrapper from './Global/SectionWrapper';
+
 const words = typewriterData.typewriter;
 
-export default function Typewriter(props) {
+export default function Typewriter() {
     const [index, setIndex] = useState(0);
     const [subIndex, setSubIndex] = useState(0);
     const [blink, setBlink] = useState(true);
@@ -48,13 +48,11 @@ export default function Typewriter(props) {
     }, []);
 
     return (
-        <SectionWrapper>
-            <div className="typewriter-container">
-                <h2 className="i-am section-title">I am a</h2>
-                <h2 className="type-wrapper">
-                    <span className="type section-title">{`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}</span>
-                </h2>
-            </div>
-        </SectionWrapper>
+        <div className="typewriter-container">
+            <h2 className="i-am section-title">I am a</h2>
+            <h2 className="type-wrapper">
+                <span className="type section-title">{`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}</span>
+            </h2>
+        </div>
     )
 }

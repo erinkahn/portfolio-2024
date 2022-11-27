@@ -93,6 +93,9 @@ $spotify: url('../../assets/images/spotify.svg');
   &.spotify::before {content: $spotify;}
 }
 
+svg #test {
+  border: 2px solid red;
+}
 // ***********************************************//
 // button & links
 // ***********************************************//

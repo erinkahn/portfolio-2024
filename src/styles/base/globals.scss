@@ -28,25 +28,39 @@
 .page-wrapper {
     position: relative;
     background-color: $white;
+    
+    .inside-wrapper {
+        position: relative;
+        // overflow-y: auto;
+        // overscroll-behavior-y: contain;
+        // scroll-snap-type: y mandatory;
+        // height: 100vh;
+        // width: 100%;
+    }
+}
+
+.hero-container,
+.section-wrapper {
+    height: 100vh;
+    // scroll-snap-align: center;
 }
 
 .section-wrapper {
     position: relative;
     margin: 0 auto;
-    height: 100vh;
 }
 
 .section-title {
-    font-size: 3em;
+    font-size: 1.875em;
     font-family: $montserrat;
     color: $black;
 
-    @media screen and (max-width: $medDown) {
-        font-size: 2.5em;
+    @media screen and (min-width: $smUp) {
+        font-size: 2.125em;
     }
 
-    @media screen and (max-width: $xsDown) {
-        font-size: 2em;
+    @media screen and (min-width: $xlarge) {
+        font-size: 2.5em;
     }
 
     .theme-dark & {

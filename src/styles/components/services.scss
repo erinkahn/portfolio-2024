@@ -1,3 +1,77 @@
 .services-container {
-    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    margin: 10vh auto;
+    max-width: 1000px;
+    text-align: center;
+
+    @media screen and (min-width: $smUp) {
+        margin: 20vh auto;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .service {
+        padding: 1em 2em;
+
+        @media screen and (min-width: $smUp) {
+            padding: 0 2em;
+        }
+
+        @media screen and (min-width: $medUp) {
+            padding: 0;
+            
+            &:nth-child(2) {
+                padding: 0 2.5em;
+            }
+        }
+        
+    }
+
+    h3 {
+        margin: 1.5em auto 1em auto;
+        font-family: $sourceCode;
+        font-size: 1em;
+
+        @media screen and (min-width: $smUp) {
+            margin: 2em auto 1em auto;
+        }
+
+        @media screen and (min-width: $medUp) {
+            font-size: 1.25em;
+        }
+    }
+
+    p {
+        line-height: 1.8;
+        font-family: $montserrat;
+        font-size: 0.875em;
+        max-width: 288px;
+
+        @media screen and (min-width: $medUp) {
+            font-size: 1em;
+        }
+    }
+
+    .service-img-container {
+        display: flex;
+        justify-content: center;
+        width: 3em;
+        height: 3em;
+        margin: 1em auto;
+        padding: 1.5em;
+        border-radius: 90px;
+        background-color: $tertiaryLight;
+
+        @media screen and (min-width: $medUp) {
+            width: 4em;
+            height: 4em;
+        }
+
+        .theme-dark & {
+            background-color: $fiveDark;
+        }
+    }
 }

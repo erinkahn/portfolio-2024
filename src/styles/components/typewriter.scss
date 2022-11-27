@@ -6,13 +6,18 @@
     text-align: center;
 
     @media screen and (min-width: $smUp) {
-        grid-template-columns: 0.25fr auto 1fr;
+        grid-template-columns: 0.375fr auto 1fr;
     }
 
     @media screen and (min-width: $large) {
         text-align: left;
         grid-template-columns: 0.8fr auto 1fr;
-    }  
+    }
+    
+    @media screen and (min-width: $xlarge) {
+        text-align: left;
+        grid-template-columns: 0.9fr auto 1fr;
+    }
 
     .typewriter {
         position: absolute;
@@ -33,16 +38,7 @@
     }
 
     .section-title {
-        font-size: 2em;
         color: $black;
-
-        @media screen and (min-width: $medUp) {
-            font-size: 2.5em;
-        }
-
-        @media screen and (min-width: $xlarge) {
-            font-size: 3em;
-        }
 
         &.i-am {
             @media screen and (min-width: $smUp) {

@@ -1,22 +1,15 @@
-import React, {useRef} from "react";
-import useScrollPos from '../../hooks/useScrollPos';
 import Prallax from "react-rellax";
 
 export default function Hero(props) {
-	const scrollPos = useScrollPos();
-	const heroRef = useRef();
-
-	const scrollToSection = () => {
-		const heroHeight = heroRef.current.getBoundingClientRect().height;
-		if(scrollPos[1] < heroHeight) {
-			window.scrollBy(0, heroHeight)
-		};
+	const scrollToSection = (props) => {
+		props.current.scrollIntoView({
+			behavior: "smooth"
+		})
 	}
 
 	return (
-		<div
+		<div	
 			role="banner"
-			ref={heroRef}
 			className="hero-container"
 		>
 			<Prallax speed={6} className="text-box-container">

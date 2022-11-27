@@ -102,86 +102,30 @@ export const statsData = {
             lowRes: './images/statImages/home_office_dog_low_res.jpg',
             alt: 'home office with a dog sleeping in a dog bed'
         }
-    ],
-    stat: [
-        {
-            id: 0,
-            statText: 'Years of design experience',
-            statNum: '8',
-            plus: '+',
-            percent: ''
-        },
-        {
-            id: 1,
-            statText: 'Years of coding experience',
-            statNum: '5',
-            plus: '+',
-            percent: ''
-        },
-        {
-            id: 2,
-            statText: 'Satisfied Clients',
-            statNum: '100',
-            plus: '',
-            percent: '%'
-        },
-        {
-            id: 3,
-            statText: 'Completed Projects',
-            statNum: '20',
-            plus: '+',
-            percent: ''
-        }
     ]
 }
 
 export const servicesData = {
-    sectionTitle: '_Services',
+    sectionTitle: '',
     services: [
         {
-            service: 'Branding + Logos',
-            description: 'Lorem ipsum dolor sit amet, consectetur adispicng elit, sed do eidhunmn tempor.',
+            serviceTitle: 'Branding + Logos',
+            description: 'I make logos, branding identity suites, business cards, stickers, fliers, and more.',
             icon: '/images/services/branding.svg',
-            alt: 'icon of a fingerprint'
+            alt: 'fingerprint'
         },
         {
-            service: 'Web Design',
-            description: 'Lorem ipsum dolor sit amet, consectetur adispicng elit, sed do eidhunmn tempor.',
+            serviceTitle: 'Web Design',
+            description: 'I design small to large websites, web pages, and even mobile applications.',
             icon: '/images/services/webDesign.svg',
-            alt: 'icon of an artboard'
+            alt: 'artboard'
         },
         {
-            service: 'Web Development',
-            description: 'Lorem ipsum dolor sit amet, consectetur adispicng elit, sed do eidhunmn tempor.',
+            serviceTitle: 'Web Development',
+            description: 'I build custom websites from scratch with front end technologies.',
             icon: '/images/services/webDevelopment.svg',
-            alt: 'icon of a website'
+            alt: 'webpage'
         }
-    ]
-}
-
-export const skillsData = {
-    sectionTitle: '_skills',
-    skills: [
-        {
-            skill: 'JS',
-            percentage: '80%'
-        },
-        {
-            skill: 'SCSS',
-            percentage: '90%'
-        },
-        {
-            skill: 'ReactJS',
-            percentage: '70%'
-        },
-        {
-            skill: 'PHP',
-            percentage: '70%'
-        },
-        {
-            skill: 'HTML',
-            percentage: '90%'
-        },
     ]
 }
 
@@ -282,33 +226,6 @@ export const workData = {
         }
     ]
 }
-
-export const clientData = [
-    {
-        img: '',
-        alt: ''
-    },
-    {
-        img: '',
-        alt: ''
-    },
-    {
-        img: '',
-        alt: ''
-    },
-    {
-        img: '',
-        alt: ''
-    },
-    {
-        img: '',
-        alt: ''
-    },
-    {
-        img: '',
-        alt: ''
-    }
-]
 
 export const testimonialData = {
     sectionTitle: '_kind words',

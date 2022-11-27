@@ -9,7 +9,9 @@ export default function PageWrapper(props) {
 			<div id="skip">
 				<a href="#maincontent">Skip to main content</a>
 			</div>
-			{props.children}
+			<div className="inside-wrapper">
+				{props.children}
+			</div>
 		</div>
 	);
 }

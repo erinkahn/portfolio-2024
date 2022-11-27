@@ -9,7 +9,7 @@
     opacity: 0;
     visibility: hidden;
     z-index: 2;
-    transition: width $quick, transform $quick;
+    transition: width $quick, transform $quick, visibility $quick, opacity $quick;
 
     &.appear {
         width: 100vw;

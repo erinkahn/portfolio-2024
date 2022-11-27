@@ -16,7 +16,7 @@
 		"react-image-webp": "^0.8.0",
 		"react-rellax": "^1.0.3",
 		"react-router-dom": "^6.0.2",
-		"react-scripts": "^4.0.3",
+		"react-scripts": "^5.0.1",
 		"rellax": "^1.12.1",
 		"sass": "^1.50.1",
 		"usehooks-ts": "^2.1.1",
