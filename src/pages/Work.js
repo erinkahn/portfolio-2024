@@ -5,14 +5,14 @@ import Footer from "../components/Global/Footer";
 import Hero from "../components/Global/Hero";
 import { heroData } from "../constants/data";
 
-export default function Contact() {
+export default function Work() {
 	return (
 		<PageWrapper>
 			<Header />
 			<Hero
-				title={heroData.contact.title}
-				subtitle={heroData.contact.subtitle}
-				image={heroData.contact.image}
+				title={heroData.work.title}
+				subtitle={heroData.work.subtitle}
+				image={heroData.work.image}
 			/>
 			<main id="maincontent" role="main"></main>
 			<Footer />

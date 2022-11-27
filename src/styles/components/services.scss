@@ -4,13 +4,17 @@
     align-items:center;
     justify-content: space-between;
     margin: 10vh auto;
-    max-width: 1000px;
+    max-width: 900px;
     text-align: center;
 
     @media screen and (min-width: $smUp) {
         margin: 20vh auto;
         flex-direction: row;
         align-items: baseline;
+    }
+
+    @media screen and (min-width: $xlarge) {
+        max-width: 1000px;
     }
 
     .service {
@@ -22,7 +26,7 @@
 
         @media screen and (min-width: $medUp) {
             padding: 0;
-            
+
             &:nth-child(2) {
                 padding: 0 2.5em;
             }
@@ -31,12 +35,18 @@
     }
 
     h3 {
+        display: flex;
+        justify-content: center;
         margin: 1.5em auto 1em auto;
-        font-family: $sourceCode;
+        max-width: 120px;
+        font-family: 'Courier New', Courier, monospace;
         font-size: 1em;
+        font-weight: $semibold;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
 
         @media screen and (min-width: $smUp) {
-            margin: 2em auto 1em auto;
+            margin: 1.7em auto 1em auto;
         }
 
         @media screen and (min-width: $medUp) {

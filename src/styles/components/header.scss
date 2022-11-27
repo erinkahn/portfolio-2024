@@ -6,7 +6,7 @@ header {
         left: auto;
         background-image: url('../../assets/images/wavesLight.svg');
         background-size: cover;
-        width: 12em;
+        width: 9em;
         background-position: center;
         background-repeat: no-repeat;
         height: 100vh;
@@ -49,14 +49,6 @@ header {
         max-width: 213px;
         z-index: 1;
 
-        // &::before {
-        //     @include pseudo;
-        //     background-image: url('../../assets/images/wavesLight.svg');
-        //     background-size: cover;
-        //     background-position: right;
-        //     background-repeat: no-repeat;
-        // }
-
         .theme-dark & {
             &::before {
                 background-image: url('../../assets/images/wavesDark.svg');
@@ -73,9 +65,6 @@ header {
         align-items: center;
         width: 5em;
         border: none;
-        text-transform: uppercase;
-        font-family: $martel;
-        color: $dark;
         z-index: 3;
 
         &::before,
@@ -96,7 +85,7 @@ header {
 
             @media screen and (min-width: $smUp) {
                 width: 2.5em;
-                transform: translate(-1.875em, 0) rotate(0deg);
+                transform: translate(-1em, 0) rotate(0deg);
             }
         }
 
@@ -112,10 +101,18 @@ header {
         &.open {   
             &::before {
                 transform: translate(-1.5vw, 50%) rotate(35deg);
+
+                @media screen and (min-width: $smUp) {
+                    transform: translate(-1vw, 50%) rotate(35deg);
+                }
             }
 
             &::after {
                 transform: translate(-1.5vw, 50%) rotate(-35deg);
+
+                @media screen and (min-width: $smUp) {
+                    transform: translate(-1vw, 50%) rotate(-35deg);
+                }
             }
         }
 

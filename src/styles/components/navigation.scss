@@ -27,7 +27,6 @@
     align-items: flex-end;
     padding: 3em 0;
     height: 90vh;
-    font-family: $spartan;
     z-index: 2;
     transition: height $quick, width $quick, grid-template-columns $quick, grid-template-rows $quick;
 
@@ -103,6 +102,7 @@
         grid-row: 3;
         padding-left: 3em;
         max-width: 138px;
+        font-family: $commissioner;
         font-size: 0.75em;
         color: $tertiaryLight;
         letter-spacing: 0.05em;
@@ -185,7 +185,10 @@
     .nav-item {
         padding-bottom: 0.5em;
         opacity: 0;
-        font-weight: $regular;
+        font-family: $montserrat;
+        font-weight: $semibold;
+        text-transform: lowercase;
+        letter-spacing: 0.04em;
         transition: all $slow;
         transition-duration: 1000ms;
         transform: translateY(4vw);

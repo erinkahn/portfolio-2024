@@ -6,19 +6,14 @@ export const navData = {
             id: 0
         },
         {
-            pageTitle: 'About',
-            linkTo: '/About',
+            pageTitle: 'Work',
+            linkTo: '/Work',
             id: 1
         },
         {
             pageTitle: 'Resume',
             linkTo: '/Resume',
             id: 2
-        },
-        {
-            pageTitle: 'Contact',
-            linkTo: '/Contact',
-            id: 3
         }
     ],
     socialIcons: [{
@@ -53,30 +48,23 @@ export const heroData = {
     home: {
         title: 'hello world',
         subtitle: 'I bring design to life',
-        image: './images/heros/home-office-desk.webp',
-        fallback: './images/heros/home-office-desk.png',
-        alt: 'home office'
+        // image: './images/heros/home-office-desk.webp',
+        // fallback: './images/heros/home-office-desk.png',
+        // alt: 'home office'
     },
-    about: {
-        title: 'About page',
-        subtitle: '',
-        image: '',
-        fallback: '',
-        alt: ''
+    work: {
+        title: 'work',
+        subtitle: 'coding + design',
+        // image: '',
+        // fallback: '',
+        // alt: ''
     },
     resume: {
-        title: 'Resume page',
-        subtitle: 'subtitle here',
-        image: '',
-        fallback: '',
-        alt: ''
-    },
-    contact: {
-        title: 'contact page',
-        subtitle: 'subtitle here',
-        image: '',
-        fallback: '',
-        alt: ''
+        title: 'resume',
+        subtitle: 'experience + skills',
+        // image: '',
+        // fallback: '',
+        // alt: ''
     }
 }
 
@@ -115,7 +103,7 @@ export const servicesData = {
             alt: 'fingerprint'
         },
         {
-            serviceTitle: 'Web Design',
+            serviceTitle: 'Web/UX Design',
             description: 'I design small to large websites, web pages, and even mobile applications.',
             icon: '/images/services/webDesign.svg',
             alt: 'artboard'
