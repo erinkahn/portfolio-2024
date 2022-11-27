@@ -118,7 +118,7 @@ export const servicesData = {
 }
 
 export const workData = {
-    sectionTitle: '_work',
+    sectionTitle: 'work',
     tabs: [
         {
             tabTitle: 'All',
@@ -216,18 +216,18 @@ export const workData = {
 }
 
 export const testimonialData = {
-    sectionTitle: '_kind words',
+    sectionTitle: 'kind words',
     testimonials: [
         {
-            text: '',
+            text: "Erin helped me rebrand my online clothing boutique. She met with me and figured out what I was trying to achieve (even when I wasn`t quite sure myself). She turned my vision into a reality, and I couldn't be more pleased with the outcome!",
             id: '0'
         },
         {
-            text: '',
+            text: "This all looks so good. My lord. I’m so grateful to have met you.",
             id: '1'
         },
         {
-            text: '',
+            text: "You can't depend on hardly ANYbody these days to finish things. I love my logo so much. Thank you!",
             id: '2'
         }
     ]
@@ -269,7 +269,7 @@ export const instaData = {
 }
 
 export const timelineData = {
-    sectionTitle: '_Timeline',
+    sectionTitle: 'timeline',
     years: [
         {
             year: '2016',

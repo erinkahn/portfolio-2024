@@ -7,8 +7,12 @@
     padding: 0.1em;
     background: transparent;
     z-index: 9;
-    transform: translate(2em, 25vh);
+    transform: translate(0.5em, 25vh);
     transition: background $slow;
+
+    @media screen and (min-width: $smUp) {
+        transform: translate(2em, 25vh);
+    }
 
     &.scrolled {
         background: linear-gradient(to bottom, rgba($tertiaryLight, 0.75), calc(var(--scroll, 0) * 100%), transparent 0);

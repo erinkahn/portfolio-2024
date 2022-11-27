@@ -5,7 +5,7 @@ import { heroData } from "../constants/data";
 import Services from "../components/Services";
 // import Skills from "../components/Skills";
 // import Work from "../components/Work/Work";
-// import Testimonials from "../components/Testimonials";
+import Testimonials from "../components/Testimonials";
 import Footer from "../components/Global/Footer";
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
 					<Services />
 					{/* <Skills /> */}
 					{/* <Work />  */}
-				    {/* <Testimonials />	 */}
+				    <Testimonials />	
 				</div>
 			</main>
 			<Footer />

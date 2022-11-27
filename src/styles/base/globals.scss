@@ -55,15 +55,29 @@
     font-family: $montserrat;
     color: $black;
 
+    &:not(.i-am) {
+        position: relative;
+        margin-bottom: 2em;
+
+        &::after {
+            @include pseudo;
+            width: 1em;
+            height: 3px;
+            border-radius: 90px;
+            background-color: $primaryLight;
+            transform: translate(0, 1.8em);
+
+            .theme-dark & {
+                background-color: $fiveDark;
+            }
+        }
+    }
+    
     @media screen and (min-width: $smUp) {
         font-size: 2.125em;
     }
 
     @media screen and (min-width: $xlarge) {
         font-size: 2.5em;
-    }
-
-    .theme-dark & {
-        color: $white;
     }
 }
