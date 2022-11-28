@@ -30,17 +30,7 @@ export const navData = {
             url: 'https://www.linkedin.com/in/erinnkahn/',
             siteName: 'linkedin',
             id: 0
-        },
-        // {
-        //     url: 'https://codepen.io/erinkahn/',
-        //     siteName: 'codepen',
-        //     id: 3
-        // },
-        // {
-        //     url: 'https://codesandbox.io/u/erinkahn',
-        //     siteName: 'sandbox',
-        //     id: 4
-        // },
+        }
     ]
 }
 
@@ -219,15 +209,18 @@ export const testimonialData = {
     sectionTitle: 'kind words',
     testimonials: [
         {
-            text: "Erin helped me rebrand my online clothing boutique. She met with me and figured out what I was trying to achieve (even when I wasn`t quite sure myself). She turned my vision into a reality, and I couldn't be more pleased with the outcome!",
+            text: "Erin helped me rebrand my online clothing boutique. She met with me and figured out what I was trying to achieve (even when I wasn't quite sure myself). She turned my vision into a reality, and I couldn't be more pleased with the outcome!",
+            person: "Owner of Clover Hill Boutique",
             id: '0'
         },
         {
-            text: "This all looks so good. My lord. I’m so grateful to have met you.",
+            text: " I appreciate you so much for so many reasons but particularly going the grind of what was the most stressful time ever. This all looks so good. My lord. I’m so grateful to have met you.",
+            person: "President of Vehicle Media",
             id: '1'
         },
         {
             text: "You can't depend on hardly ANYbody these days to finish things. I love my logo so much. Thank you!",
+            person: "Author of The 50th Dimension",
             id: '2'
         }
     ]

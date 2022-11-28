@@ -15,7 +15,9 @@ export default function Testimonials() {
                             aria-hidden={i === 0 ? false : true} 
                             key={`testim-${testimonial.id}`} 
                             className={`testimonial ${i === isActive ? 'show' : ''}`}>
-                            {testimonial.text}
+                            <p>{testimonial.text}</p>
+
+                            <p className="person"><em>{testimonial.person}</em></p>
                         </div>
                     </>))}
 

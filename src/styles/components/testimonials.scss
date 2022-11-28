@@ -49,14 +49,29 @@
             max-width: 380px;
         }
 
+        .person {
+            opacity: 0;
+            margin-top: 2em;
+            text-align: right;
+            transform: translateX(12px);
+            transition: opacity $quick, transform $quick;
+            transition-delay: .3s;
+        }
+
         &.show {
             visibility: visible;
             opacity: 1;
             height: auto;
             min-height: 130px;
             transform: translateX(0);
+
+            .person {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
     }
+
 
     .btns-container {
         margin-top: 2em;

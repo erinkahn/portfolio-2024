@@ -2,17 +2,7 @@
 // colors
 // ***********************************************//
 
-$primary: #343585;
-$secondary: #415A77;
-$tertiary:  #69b9ed;
-$lightGrey: #F6F6F6;
-$medGrey: #A9A9A9;
-$darkGrey: #525155;
-$taupe: #D0C3B1;
-$redBrown: #a52a2a;
-$lightBrown: #B9A59B;
-$darkBrown: #AA9E95;
-$nude: #E4DDD3;
+$lightblue:  #69b9ed;
 $sun: #f1f16e;
 $white: #ffffff;
 $softWhite: #DAD6D6;
@@ -29,11 +19,6 @@ $tertiaryDark: #F2FDF5;
 $quaternaryDark: #7CC994;
 $fiveDark: #80DE9D;
 
-$darkMode1: #2A2438;
-$darkMode2: #352F44;
-$darkMode3: #5C5470;
-$darkMode4: #DBD8E3;
-
 // ***********************************************//
 // fonts and fonts weights
 // ***********************************************//
@@ -44,14 +29,12 @@ $commissioner: 'Commissioner', sans-serif;
 $fontAwesome: 'FontAwesome';
 $didot: 'Didot', sans-serif;
 
-
 $ultralight: 100;
 $extralight: 200;
 $light: 300;
 $regular: 400;
 $semibold: 600;
 $bold: 700;
-
 
 // ***********************************************//
 // transitions
@@ -60,6 +43,21 @@ $bold: 700;
 $quick: 300ms ease-in-out;
 $slow: 500ms ease-in-out;
 
+// ***********************************************//
+// media queries / breakpoints
+// ***********************************************//
+
+$xxsDown: 500px;        // max-width: 500px
+$xxsUp: 501px;          // min-width: 501px
+$xsDown: 567px;         // max-width: 567px
+$xsUp: 568px;           // min-width: 567px
+$smDown: 767px;         // max-width: 767px
+$smUp: 768px;           // min-width: 768px
+$medDown: 991px;        // max-width: 991px
+$medUp: 992px;          // min-width: 992px
+$large: 1000px;         // max or min -width: 1100px
+$xlarge: 1200px;        // max or min -width: 1300px
+$xxlarge: 1440px;       // max or min -width: 1440px
 
 // ***********************************************//
 // svg icons
@@ -72,28 +70,42 @@ $github: url('../../assets/images/github.svg');
 $instagram: url('../../assets/images/instagram.svg');
 $spotify: url('../../assets/images/spotify.svg');
 
-.icon {
-  position: relative;
+// ***********************************************//
+// mixins
+// ***********************************************//
 
-  &::before {
-    position:absolute;
-    left:0;
-    top: 0;
-    transition: color $quick;
+@mixin cascadeTransition {
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      transition-delay: #{$i * 200ms};
+    }
   }
-
-  &.sandbox::before {content: $sandbox;}
-  &.linkedin::before {content: $linkedin;}
-  &.codepen::before {content: $codePen;}
-  &.linkedin::before {content: $linkedin;}
-  &.github::before {content: $github;}
-  &.instagram::after {content: $instagram;}
-  &.spotify::before {content: $spotify;}
 }
 
-svg #test {
-  border: 2px solid red;
+@mixin pseudo($content: '', $pos: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0) {
+  content: $content;
+  position: $pos;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
 }
+
+@mixin aspectRatioContainer($x, $y) {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: $y / $x * 100%;
+}
+
+@mixin aspectRatioImage() {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 // ***********************************************//
 // button & links
 // ***********************************************//
@@ -133,55 +145,3 @@ svg #test {
 // .btn {
 //   @include button($darkBrown, $white, 15px, 3px solid $darkBrown, transparent, $darkBrown, 3px solid $darkBrown);
 // } 
-
-// ***********************************************//
-// mixins
-// ***********************************************//
-
-@mixin cascadeTransition {
-  @for $i from 1 through 5 {
-    &:nth-child(#{$i}) {
-      transition-delay: #{$i * 200ms};
-    }
-  }
-}
-
-@mixin pseudo($content: '', $pos: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0) {
-  content: $content;
-  position: $pos;
-  top: $top;
-  bottom: $bottom;
-  left: $left;
-  right: $right;
-}
-
-@mixin aspectRatioContainer($x, $y) {
-  position: relative;
-  height: 0;
-  width: 100%;
-  padding-top: $y / $x * 100%;
-}
-
-@mixin aspectRatioImage() {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-// ***********************************************//
-// media queries / breakpoints
-// ***********************************************//
-
-$xxsDown: 500px;        // max-width: 500px
-$xxsUp: 501px;          // min-width: 501px
-$xsDown: 567px;         // max-width: 567px
-$xsUp: 568px;           // min-width: 567px
-$smDown: 767px;         // max-width: 767px
-$smUp: 768px;           // min-width: 768px
-$medDown: 991px;        // max-width: 991px
-$medUp: 992px;          // min-width: 992px
-$large: 1000px;         // max or min -width: 1100px
-$xlarge: 1200px;        // max or min -width: 1300px
-$xxlarge: 1440px;       // max or min -width: 1440px

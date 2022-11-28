@@ -27,7 +27,7 @@
             &:after {
                 @include pseudo;
                 right: auto;
-                background-color: $lightBrown;
+                // background-color: $lightBrown;
                 width: 2em;
                 height: 4em;
                 transform: translate(-1em, -1em);
@@ -47,7 +47,7 @@
             &:after {
                 @include pseudo;
                 top: auto;
-                background-color: $lightBrown;
+                // background-color: $lightBrown;
                 width: 4em;
                 height: 1em;
                 transform: translate(-1em, -1em);

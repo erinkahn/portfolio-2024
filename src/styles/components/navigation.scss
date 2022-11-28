@@ -76,27 +76,6 @@
         }
     }
     
-    .icon {
-        &::before {
-            width: 2em;
-            height: 2em;
-            transform: translate(0px, -4px);
-            transition: all $quick;  
-
-            @media screen and (max-width: $smDown) {
-                width: 1.5em;
-                height: 1.5em;
-            }
-        }
-
-        &:hover,
-        &:focus {
-            &::before {
-                opacity: 0.3;
-            }
-        }
-    }
-    
     .copyright {
         grid-column: span 2;
         grid-row: 3;
