@@ -25,6 +25,16 @@
     }
 }
 
+p {
+    font-family: $montserrat;
+    font-size: 0.875em;
+    line-height: 1.65;
+
+    @media screen and (min-width: $medUp) {
+        font-size: 1em;
+    }
+}
+
 .page-wrapper {
     position: relative;
     background-color: $white;
@@ -39,15 +49,23 @@
     }
 }
 
-.hero-container,
-.section-wrapper {
+.hero-container {
     height: 100vh;
-    // scroll-snap-align: center;
 }
 
 .section-wrapper {
     position: relative;
-    margin: 0 auto;
+    margin: 8em auto;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: $medUp) {
+        margin: 0 auto;
+        height: 100vh;
+        // scroll-snap-align: center;
+    }
 }
 
 .section-title {

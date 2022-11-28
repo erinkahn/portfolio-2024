@@ -8,9 +8,12 @@
     text-align: center;
 
     @media screen and (min-width: $smUp) {
-        margin: 20vh auto;
         flex-direction: row;
         align-items: baseline;
+    }
+
+    @media screen and (min-width: $large) {
+        margin: 20vh auto;
     }
 
     @media screen and (min-width: $xlarge) {

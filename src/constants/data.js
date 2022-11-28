@@ -66,23 +66,6 @@ export const typewriterData = {
     ]
 }
 
-export const statsData = {
-    img: [
-        {
-            src: './images/statImages/home_office_flowers.webp',
-            fallback: './images/statImages/home_office_flowers.jpg',
-            lowRes: './images/statImages/home_office_flowers_low_res.jpg',
-            alt: 'home office with flowers and a window'
-        },
-        {
-            src: './images/statImages/home_office_dog.webp',
-            fallback: './images/statImages/home_office_dog.jpg',
-            lowRes: './images/statImages/home_office_dog_low_res.jpg',
-            alt: 'home office with a dog sleeping in a dog bed'
-        }
-    ]
-}
-
 export const servicesData = {
     sectionTitle: '',
     services: [
@@ -295,4 +278,15 @@ export const timelineData = {
             jobTitle: 'Senior Software Engineer',
         }
     ]
+}
+
+export const aboutData = {
+    sectionTitle: "about",
+    content: 'I am a creative front-end developer with a background in graphic design. I switched over to coding full-time in 2017. However, I still do freelance design on the side and apply my design knowledge in my development practice nearly every day. Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology. Being out in nature, hiking, camping, and staying active are things that fill my cup. I enjoy living a minimalist life, reading about psychology, and writing.',
+    img: {
+        src: './images/about/erin.webp',
+        fallback: './images/about/erin.png',
+        lowRes: './images/about/erin_low_res.png',
+        alt: 'portrait shot of erin kahn'
+    }
 }
