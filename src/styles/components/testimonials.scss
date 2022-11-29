@@ -18,13 +18,17 @@
         right: 0;
         left: auto;
         top: 0;
-        transform: translate(-20%, 14em) scale(-1, 1);
+        transform: translate(-20%, -10%) scale(-1, 1);
         
         @media screen and (min-width: $smUp) {
             right: auto;
             left: 0;
             width: 27%;
-            transform: translate(50%, 12em) scale(1, 1);
+            transform: translate(50%, -14%) scale(1, 1);
+        }
+
+        @media screen and (min-width: $large) {
+            transform: translate(50%, 20%) scale(1, 1);
         }
 
         .theme-dark & {
@@ -70,7 +74,6 @@
         }
     }
 
-
     .btns-container {
         margin-top: 2em;
     }
@@ -91,7 +94,8 @@
         }
 
         &.active,
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: $primaryLight;
 
             .theme-dark & {

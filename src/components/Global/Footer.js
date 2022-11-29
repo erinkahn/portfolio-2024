@@ -21,7 +21,7 @@ export default function Footer(props) {
 
 			<div className="inner-footer-wrapper">
 				<div className="row one">
-					<h3>Let's Brainstorm.</h3>
+					<h5>Let's Brainstorm</h5>
 					<ul className="footer-nav-list">
 						{navData.navigation.map((item) => (
 							<li

@@ -1,7 +1,7 @@
 footer {
     position: relative;
-    margin-top: 300px;
-    padding: 2em;
+    margin-top: 200px;
+    padding: 7em 2em 2em;
     background-color: $primaryLight;
 
     &::before {
@@ -12,10 +12,11 @@ footer {
         background-position: bottom;
         width: 100%;
         height: 0;
-        padding-top: 63%;
+        padding-top: 60%;
         bottom: auto;
         right: auto;
-        transform: translate(-11%, -38vw);
+        pointer-events: none;
+        transform: translate(-11%, -38.5vw);
 
         .theme-dark & {
             background-image: url('../../../public/images/footer/footer-dark-shape.svg');
@@ -23,7 +24,16 @@ footer {
     }
 
     @media screen and (min-width: $smUp) {
-        padding: 2em 4em 4em;
+        margin-top: 300px;
+        padding: 8em 4em 4em;
+    }
+
+    @media screen and (min-width: $medUp) {
+        margin-top: 100px;
+    }
+
+    @media screen and (min-width: $large) {
+        margin-top: 200px;
     }
 
     .theme-dark & {
@@ -34,14 +44,46 @@ footer {
         margin: 0 auto;
     }
 
-    h3 {
+    .btn-scroll {
+        top: 0;
+        bottom: auto;
+        transform: translate(38vw, -13vw) rotate(-180deg);
+
+        &::after {
+            content: 'to the top';
+            white-space: nowrap;
+            display: block;
+            transform: translate(0em, -8em) rotate(90deg);
+        }
+
+        @media screen and (min-width: $xsUp) {
+            transform: translate(40vw, -13vw) rotate(-180deg);
+        }
+    }
+
+    h5 {
         max-width: 200px;
         font-family: $sourceCode;
-        font-size: 2em;
+        font-size: 1.5em;
         color: $white;
+
+        @media screen and (min-width: $xxsUp) {
+            font-size: 2em;
+        }
 
         @media screen and (min-width: $smUp) {
             max-width: none;
+        }
+
+        &::after {
+            content: '.';
+            color: $secondaryLight;
+            font-size: 1.5em;
+            line-height: 0;
+
+            .theme-dark & {
+                color: $secondaryDark;
+            }
         }
     }
 
@@ -56,7 +98,10 @@ footer {
 
             @media screen and (min-width: $smUp) {
                 flex-direction: row;
-                justify-content: space-evenly;
+                justify-content: space-between;
+                justify-self: flex-end;
+                width: 100%;
+                max-width: 300px;
             }
 
             .nav-item {
@@ -66,16 +111,25 @@ footer {
             .nav-link {
                 font-family: $montserrat;
                 font-weight: $semibold;
-                font-size: 1em;
+                font-size: 0.875em;
                 letter-spacing: 0.05em;
                 color: $white;
+                transition: opacity $quick;
+
+                @media screen and (min-width: $xxsUp) {
+                    font-size: 1em;
+                }
+
+                &:hover {
+                    opacity: 0.5;
+                }
             }
         }
 
         &.two {
             grid-template-columns: 1fr;
             grid-template-rows: 3fr 1fr;
-            grid-gap: 2em;
+            grid-gap: 2em;           
             align-items: center;
 
             @media screen and (min-width: $xsUp) {
@@ -88,17 +142,35 @@ footer {
 
     .btn-wrapper {
         margin: 1em 0 6em;
+        font-size: 0.875em;
+
+        @media screen and (min-width: $xxsUp) {
+            font-size: 1em;
+        }
 
         @media screen and (min-width: $smUp) {
             margin: 2.5em 0 4em;
         }
 
         a {
-            padding: 0.875em 1.5em;
-            border-radius: 0.5em;
+            padding: 0.875em 1.875em;
+            border-radius: 0.25em;
             background-color: $secondaryLight;
             color: $white;
             font-family: $montserrat;
+            transition: background-color $quick;
+
+            .theme-dark & {
+                background-color: $fiveDark;
+            }
+
+            &:hover {
+                background-color: rgba($secondaryLight, 0.6);
+
+                .theme-dark & {
+                    background-color: rgba($fiveDark, 0.5);
+                }
+            }
         }
     }
 
@@ -110,7 +182,17 @@ footer {
 
         @media screen and (min-width: $xsUp) {
             grid-column: 2;
-            justify-content: space-around;
+            justify-content: space-between;
+            justify-self: flex-end;
+            width: 100%;
+            max-width: 115px;
+        }
+
+        .icon {
+            &::before {
+                width: 1.25em;
+                height: 1.25em;
+            }
         }
     }
 

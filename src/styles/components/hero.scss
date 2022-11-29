@@ -95,23 +95,6 @@
     }
 
     .btn-scroll {
-        background-image: url('../../assets/images/chevron.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2em;
-        width: 2em;
-        color: $white;
-        border: 1px solid $white;
-        border-radius: 90px;
-        transform: translate(22vw, -5vw);
-        font-family: $sourceCode;
-        font-size: 1em;
-        z-index: 1;
-        transition: 1s box-shadow;
-
         &::after {
             content: 'scroll';
             display: block;

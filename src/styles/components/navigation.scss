@@ -35,7 +35,7 @@
     }
 
     @media screen and (max-width: $smDown) {
-        grid-template-columns: 13% 1fr;
+        grid-template-columns: 20% 1fr;
         grid-template-rows: 1fr 0.25fr 0.1fr;
     }
 
@@ -80,7 +80,7 @@
         grid-column: span 2;
         grid-row: 3;
         padding-left: 3em;
-        max-width: 138px;
+        max-width: 123px;
         font-family: $commissioner;
         font-size: 0.75em;
         color: $tertiaryLight;

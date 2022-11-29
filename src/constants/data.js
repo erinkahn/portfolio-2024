@@ -282,7 +282,8 @@ export const timelineData = {
 
 export const aboutData = {
     sectionTitle: "about",
-    content: 'I am a creative front-end developer with a background in graphic design. I switched over to coding full-time in 2017. However, I still do freelance design on the side and apply my design knowledge in my development practice nearly every day. Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology. Being out in nature, hiking, camping, and staying active are things that fill my cup. I enjoy living a minimalist life, reading about psychology, and writing.',
+    content: 'I am a creative front-end developer with a background in graphic design. I switched over to coding full-time in 2017. However, I still do freelance design on the side and apply my design knowledge in my development practice nearly every day. Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology.',
+    content2: 'Being out in nature, hiking, camping, and staying active are things that fill my cup. I enjoy living a minimalist life, reading about psychology, and writing.',
     img: {
         src: './images/about/erin.webp',
         fallback: './images/about/erin.png',

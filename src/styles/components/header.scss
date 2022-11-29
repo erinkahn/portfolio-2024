@@ -22,7 +22,6 @@ header {
         }
     }
 
-
     &.background {
         height: 2em;
         background-color: $white;
@@ -47,7 +46,7 @@ header {
         height: 100vh;
         width: 100%;
         max-width: 213px;
-        z-index: 1;
+        z-index: 3;
 
         .theme-dark & {
             &::before {
@@ -59,13 +58,14 @@ header {
     .menuBtn {
         position: fixed;
         right: 0;
-        top: 0;
+        top: 48%;
         display: flex;
-        height: 100vh;
+        height: 60px;
         align-items: center;
         width: 5em;
         border: none;
         z-index: 3;
+        transform: translate(0, -50%);
 
         &::before,
         &::after {
@@ -90,11 +90,11 @@ header {
         }
 
         &::before {
-            top: 48vh;
+            top: 2vh;
         }
 
         &::after {
-            top: 50vh;
+            top: 4vh;
         }
 
         &:hover,

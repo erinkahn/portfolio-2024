@@ -8,8 +8,9 @@ export default function About() {
         <SectionWrapper>
             <div className="about-container">
                 <div className="col text">
-                    <h2 className="section-title">{aboutData.sectionTitle}</h2>
+                    <h4 className="section-title">{aboutData.sectionTitle}</h4>
                     <p>{aboutData.content}</p>
+                    <p>{aboutData.content2}</p>
                 </div>
                 <div className="col right">
                     <div className="image-container">

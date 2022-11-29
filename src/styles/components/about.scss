@@ -12,6 +12,10 @@
         grid-gap: 7em;
     }
 
+    p:last-of-type {
+        margin-top: 1.5em;
+    }
+
     .col {
         &.text {
             grid-row: 2;
