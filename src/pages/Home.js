@@ -2,7 +2,7 @@ import PageWrapper from "../components/Global/PageWrapper";
 import Header from "../components/Global/Header";
 import Hero from "../components/Global/Hero";
 import Services from "../components/Services";
-import Featured from "../components/Work/Featured";
+import Featured from "../components/Featured/Featured";
 import About from '../components/About/About';
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Global/Footer";

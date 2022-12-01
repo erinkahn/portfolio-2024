@@ -7,7 +7,7 @@ import ProgressBar from "./ProgressBar";
 import Weather from "../Weather";
 
 export default function Header(props) {
-	console.log(props, 'props')
+	// console.log(props, 'props')
 	const themeName = useContext(ThemeContext);
 
 	return (

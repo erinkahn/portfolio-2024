@@ -99,7 +99,9 @@ export const featuredData = {
             tech: 'PHP, WordPress, Git, Sass, JavaScript',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
             role: 'Developer',
-            img: '/images/work/Drew-and-Jonathan-Scott.jpg',
+            src: '/images/work/Drew-and-Jonathan-Scott.webp',
+            fallback: '/images/work/Drew-and-Jonathan-Scott.png',
+            lowRes: '/images/work/Drew-and-Jonathan-Scott-lr.png',
             alt: 'The Scott Brother Twins',
             url: 'https://thescottbrothers.com/'
         },
@@ -109,7 +111,9 @@ export const featuredData = {
             tech: 'PHP, WordPress, Git, Sass, JavaScript, Vue',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
             role: 'Developer',
-            img: '/images/work/The-Waffle-House.png',
+            src: '/images/work/The-Waffle-House.webp',
+            fallback: '/images/work/The-Waffle-House.png',
+            lowRes: '/images/work/The-Waffle-House-lr.png',
             alt: 'Waffle House building',
             url: 'https://www.wafflehouse.com/'
         },
@@ -119,7 +123,9 @@ export const featuredData = {
             tech: '',
             content: '',
             role: '',
-            img: '',
+            src: '',
+            fallback: '',
+            lowRes: '',
             alt: '',
             url: ''
         },{
@@ -128,7 +134,9 @@ export const featuredData = {
             tech: '',
             content: '',
             role: '',
-            img: '',
+            src: '',
+            fallback: '',
+            lowRes: '',
             alt: '',
             url: ''
         }

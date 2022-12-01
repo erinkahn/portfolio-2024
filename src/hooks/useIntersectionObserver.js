@@ -12,7 +12,7 @@ const useIntersectionObserver = (elementRef) => {
 		const options = {
 			threshold: 0,
 			root: null,
-			rootMargin: "400px",
+			rootMargin: "1200px",
 		};
 
 		const node = elementRef?.current;

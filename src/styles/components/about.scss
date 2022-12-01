@@ -1,15 +1,19 @@
 .about-container {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
 
     @media screen and (min-width: $xsUp) {
         grid-template-columns: 1fr 1fr;
         grid-gap: 3em;
         align-items: center;
+        padding: 0;
     }
 
     @media screen and (min-width: $large) {
         grid-gap: 7em;
+        height: 100vh;
     }
 
     @media screen and (min-width: $xlarge) {

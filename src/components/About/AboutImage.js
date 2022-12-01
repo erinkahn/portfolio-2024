@@ -4,7 +4,6 @@ import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import {isWebpSupported} from 'react-image-webp/dist/utils';
 
 export default function AboutImage(props) {
-    console.log(props.aboutProp, 'test')
     const { handleImageOnLoad, imageStyles, lowResStyle, highResStyle } = useImageOnLoad();
     const imageRef = useRef();
     const { isVisible } = useIntersectionObserver(imageRef);

@@ -5,7 +5,7 @@ import { navData } from "../../constants/data";
 
 export default function Footer(props) {
 	const today = new Date().getFullYear();
-	console.log(props)
+	// console.log(props)
 
 	const scrollToTop = (props) => {
 		props.current.scrollIntoView({

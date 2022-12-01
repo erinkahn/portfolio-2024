@@ -10,16 +10,16 @@ export default function Testimonials() {
             <div className="testimonials-container">
                 <div className="inner-wrap">
                     <h5 className="section-title">{testimonialData.sectionTitle}</h5>
-                    {testimonialData.testimonials.map((testimonial, i) => (<>
+                    {testimonialData.testimonials.map((testimonial, t) => (
                         <div 
-                            aria-hidden={i === 0 ? false : true} 
+                            aria-hidden={t === 0 ? false : true} 
                             key={`testim-${testimonial.id}`} 
-                            className={`testimonial ${i === isActive ? 'show' : ''}`}>
+                            className={`testimonial ${t === isActive ? 'show' : ''}`}>
                             <p>{testimonial.text}</p>
 
                             <p className="person"><em>{testimonial.person}</em></p>
                         </div>
-                    </>))}
+                    ))}
 
                     <div className="btns-container">
                         {testimonialData.testimonials.map((testiBtn, s) => (
