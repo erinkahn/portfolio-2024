@@ -12,6 +12,10 @@
         grid-gap: 7em;
     }
 
+    @media screen and (min-width: $xlarge) {
+        height: 100vh;
+    }
+
     p:last-of-type {
         margin-top: 1.5em;
     }

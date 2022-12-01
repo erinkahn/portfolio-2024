@@ -1,4 +1,3 @@
-import React from "react";
 import PageWrapper from "../components/Global/PageWrapper";
 import Header from "../components/Global/Header";
 import Footer from "../components/Global/Footer";

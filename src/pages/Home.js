@@ -2,25 +2,26 @@ import PageWrapper from "../components/Global/PageWrapper";
 import Header from "../components/Global/Header";
 import Hero from "../components/Global/Hero";
 import Services from "../components/Services";
-// import Skills from "../components/Skills";
-// import Work from "../components/Work/Work";
+import Featured from "../components/Work/Featured";
 import About from '../components/About/About';
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Global/Footer";
+import { heroData } from "../constants/data";
 
 export default function Home() {
 	return (
 		<PageWrapper>
-			<Hero />
+			<Hero 
+				title={heroData.home.title}
+				subtitle={heroData.home.subtitle}
+				image={heroData.home.image}
+			/>
 			<Header /> 
 			<main id="maincontent" role="main">
-				<div className="inner-wrapper">
-					<Services />
-					{/* <Skills /> */}
-					{/* <Work />  */}
-					<About/>
-				    <Testimonials />	
-				</div>
+				<Services />
+				<Featured /> 
+				<About/>
+				<Testimonials />	
 			</main>
 			<Footer />
 		</PageWrapper>

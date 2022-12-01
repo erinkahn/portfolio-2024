@@ -1,5 +1,4 @@
 import Prallax from "react-rellax";
-import { heroData } from "../../constants/data";
 
 export default function Hero(props) {
 	const scrollToSection = (props) => {
@@ -15,8 +14,8 @@ export default function Hero(props) {
 		>
 			<Prallax speed={6} className="text-box-container">
 				<div className="text-wrapper">
-					<h1 className="hero-title">{heroData.home.title}</h1>
-					<p className="hero-subtitle">{heroData.home.subtitle}</p>
+					<h1 className="hero-title">{props.title}</h1>
+					<p className="hero-subtitle">{props.subtitle}</p>
 				</div>
 			</Prallax>
 

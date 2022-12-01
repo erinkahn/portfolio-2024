@@ -47,25 +47,36 @@ p {
         // height: 100vh;
         // width: 100%;
     }
+
+    .section-wrapper {
+        position: relative;
+        max-width: 1200px;
+        padding: 0 2em;
+    }
+
+    &.home {
+        .section-wrapper {
+            margin: 8em auto;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
+
+            @media screen and (min-width: $medUp) {
+                // margin: 0 auto;
+                height: 100vh;
+
+                &:nth-of-type(2) {
+                    margin: 0 auto 8em;
+                }
+                // scroll-snap-align: center;
+            }
+        }
+    }
 }
 
 .hero-container {
     height: 100vh;
-}
-
-.section-wrapper {
-    position: relative;
-    margin: 8em auto;
-
-    &:first-of-type {
-        margin-top: 0;
-    }
-
-    @media screen and (min-width: $medUp) {
-        margin: 0 auto;
-        height: 100vh;
-        // scroll-snap-align: center;
-    }
 }
 
 .section-title {

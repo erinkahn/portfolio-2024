@@ -1,0 +1,46 @@
+.featured-container {
+    position: relative;
+    height: 100vh;
+
+    .inner-wrap {
+        position: relative;
+
+        &::before {
+            @include pseudo;
+            content: url('../../../public/images/work/light-shape.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 40%;
+            left: 0;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            z-index: 1;
+            transform: translate(-24%, -27%);
+        }
+    }
+    
+    .col {        
+        &.text {
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 35%;
+            width: 200%;
+            height: 100vh;
+            background-color: rgba($secondaryLight, 0.3);
+            z-index: 0;
+            transform: matrix(1, 0, -0.1, 1, 0, 0);
+        }
+
+        h4 {
+            margin-left: 80%;
+            margin-top: 3em;
+        }
+        
+        &.img {
+
+        }
+    }
+}

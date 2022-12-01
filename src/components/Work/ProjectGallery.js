@@ -41,12 +41,12 @@ const reducer = (state = initialState, action) => {
     }
 }
 
-export default function Work() {
+export default function ProjectGallery() {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     return (
         <SectionWrapper>
-            <div className="work-container">
+            <div className="gallery-container">
                 <div className="filter-bar">
                     <div className="tabs-wrapper" 
                         role="tablist" 

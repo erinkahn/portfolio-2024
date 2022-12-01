@@ -1,4 +1,4 @@
-.work-container {
+.gallery-container {
     margin: 0 auto;
     width: 68%;
     display: flex;
@@ -66,12 +66,12 @@
             }
 
             &.active {
-                // background-color: $lightBrown;
+                background-color: $primaryLight;
                 color: $white;
-            }
 
-            .theme-dark & {
-                color: $white;
+                .theme-dark & {
+                    background-color: $fiveDark;
+                }
             }
         }
     }

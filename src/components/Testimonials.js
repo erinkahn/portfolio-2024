@@ -9,7 +9,7 @@ export default function Testimonials() {
         <SectionWrapper>
             <div className="testimonials-container">
                 <div className="inner-wrap">
-                    <h4 className="section-title">{testimonialData.sectionTitle}</h4>
+                    <h5 className="section-title">{testimonialData.sectionTitle}</h5>
                     {testimonialData.testimonials.map((testimonial, i) => (<>
                         <div 
                             aria-hidden={i === 0 ? false : true} 

@@ -90,6 +90,51 @@ export const servicesData = {
     ]
 }
 
+export const featuredData = {
+    sectionTitle: 'work',
+    featured: [
+        {
+            client: 'Scott Brothers',
+            id: '0',
+            tech: 'PHP, WordPress, Git, Sass, JavaScript',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
+            role: 'Developer',
+            img: '/images/work/Drew-and-Jonathan-Scott.jpg',
+            alt: 'The Scott Brother Twins',
+            url: 'https://thescottbrothers.com/'
+        },
+        {
+            client: 'Waffle House',
+            id: '1',
+            tech: 'PHP, WordPress, Git, Sass, JavaScript, Vue',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
+            role: 'Developer',
+            img: '/images/work/The-Waffle-House.png',
+            alt: 'Waffle House building',
+            url: 'https://www.wafflehouse.com/'
+        },
+        {
+            client: '',
+            id: '2',
+            tech: '',
+            content: '',
+            role: '',
+            img: '',
+            alt: '',
+            url: ''
+        },{
+            client: '',
+            id: '3',
+            tech: '',
+            content: '',
+            role: '',
+            img: '',
+            alt: '',
+            url: ''
+        }
+    ]
+}
+
 export const workData = {
     sectionTitle: 'work',
     tabs: [
