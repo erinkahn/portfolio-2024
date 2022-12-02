@@ -38,23 +38,14 @@ export const heroData = {
     home: {
         title: 'hello world',
         subtitle: 'I bring design to life',
-        // image: './images/heros/home-office-desk.webp',
-        // fallback: './images/heros/home-office-desk.png',
-        // alt: 'home office'
     },
     work: {
         title: 'work',
         subtitle: 'coding + design',
-        // image: '',
-        // fallback: '',
-        // alt: ''
     },
     resume: {
         title: 'resume',
         subtitle: 'experience + skills',
-        // image: '',
-        // fallback: '',
-        // alt: ''
     }
 }
 
@@ -326,17 +317,17 @@ export const timelineData = {
             jobTitle: 'Front-End Developer',
         },
         {
-            year: 'now',
+            year: '2022',
             company: 'Avanade',
-            jobTitle: 'Senior Software Engineer',
+            jobTitle: 'Senior Analyst, Software Engineer',
         }
     ]
 }
 
 export const aboutData = {
     sectionTitle: "about",
-    content: 'I am a creative front-end developer with a background in graphic design. I switched over to coding full-time in 2017. However, I still do freelance design on the side and apply my design knowledge in my development practice nearly every day. Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology.',
-    content2: 'Being out in nature, hiking, camping, and staying active are things that fill my cup. I enjoy living a minimalist life, reading about psychology, and writing.',
+    content: 'I am a creative front-end developer with a background in design. I switched over to coding full-time in 2017. I do freelance design on the side for fun. Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology.',
+    content2: 'Being out in nature, hiking, camping, and staying active are things that fill my cup. I enjoy living a minimalist life, listening to old music, reading about psychology, and writing.',
     img: {
         src: './images/about/erin.webp',
         fallback: './images/about/erin.png',
