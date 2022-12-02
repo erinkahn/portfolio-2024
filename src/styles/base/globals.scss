@@ -71,10 +71,20 @@ p {
             &:nth-of-type(3) {
                 background-color: $white;
                 max-width: none;
+                padding: 8em 2em;
+
+                @media screen and (min-width: $smUp) and (max-width: $smDown){
+                    padding: 10em 2em 8em 2em;
+                }
+
+                @media screen and (min-width: $medUp){
+                    padding: 0 2em;
+                }
             }
 
             @media screen and (min-width: $medUp) {
                 // margin: 0 auto;
+                padding: 0 2em;
                 height: 100vh;
                 // scroll-snap-align: center;
             }

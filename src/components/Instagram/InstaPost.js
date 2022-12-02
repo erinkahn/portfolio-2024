@@ -13,7 +13,7 @@ export default function InstaPost({instaProp}) {
             <li key={`post-${i}`} style={{backgroundImage: image.img}} className="insta-post">
                 <a href={`http://instagram.com/${instaProp.username}`}        
                     target="_blank" 
-                    rel="noreferrer" 
+                    rel="noreferrer"
                     className="img-link icon instagram"
                     style={imageStyles.wrapper} ref={imageRef}>
                         

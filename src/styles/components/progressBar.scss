@@ -6,12 +6,12 @@
     height: 50vh;
     padding: 0.1em;
     background: transparent;
-    z-index: 2;
+    z-index: 3;
     transform: translate(0.5em, 25vh);
     transition: background $slow;
 
     @media screen and (min-width: $smUp) {
-        transform: translate(2em, 25vh);
+        transform: translate(1em, 25vh);
     }
 
     &.scrolled {

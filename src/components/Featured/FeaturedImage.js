@@ -13,7 +13,10 @@ export default function FeaturedImage(props) {
     {/* may need to use srcset here */}
 
         {props.featuredData.featured.map((project, p) => (
-            <Suspense key={`featured-${project.id}`} fallback={<div>Loading images...</div>}>
+            <Suspense 
+                key={`featured-${p}`} 
+                fallback={<div>Loading images...</div>}
+            >
                 <div 
                     className={`img-wrapper ${props.isActive === p  ? 'show' : ''}`}
                     style={imageStyles.wrapper} 

@@ -43,7 +43,7 @@ const Navigation = (props) => {
 
 			<div
 				className={`fullPageMenu ${hidden ? "" : "appear"}`}
-				aria-hidden={`${hidden ? true : false}`}
+				aria-hidden={hidden ? true : false}
 				role="dialog"
 				aria-modal="true"
 				aria-labelledby="full page menu"

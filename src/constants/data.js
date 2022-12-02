@@ -95,7 +95,7 @@ export const featuredData = {
     featured: [
         {
             client: 'Scott Brothers',
-            id: '0',
+            slideNum: '01',
             tech: 'PHP, WordPress, Git, Sass, JavaScript',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
             role: 'Developer',
@@ -107,7 +107,7 @@ export const featuredData = {
         },
         {
             client: 'Waffle House',
-            id: '1',
+            slideNum: '02',
             tech: 'PHP, WordPress, Git, Sass, JavaScript, Vue',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
             role: 'Developer',
@@ -118,27 +118,27 @@ export const featuredData = {
             url: 'https://www.wafflehouse.com/'
         },
         {
-            client: '',
-            id: '2',
-            tech: '',
-            content: '',
-            role: '',
-            src: '',
-            fallback: '',
-            lowRes: '',
-            alt: '',
-            url: ''
+            client: 'The Conlan Company',
+            slideNum: '03',
+            tech: 'PHP, WordPress, Git, Sass, JavaScript',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
+            role: 'Developer',
+            src: '/images/work/Conlan-Company.webp',
+            fallback: '/images/work/Conlan-Company.png',
+            lowRes: '/images/work/Conlan-Company-lr.png',
+            alt: 'The Conlan Company',
+            url: 'https://conlancompany.com/'
         },{
-            client: '',
-            id: '3',
-            tech: '',
-            content: '',
-            role: '',
-            src: '',
-            fallback: '',
-            lowRes: '',
-            alt: '',
-            url: ''
+            client: 'Expo Home Improvement',
+            slideNum: '04',
+            tech: 'PHP, Git, Sass, JavaScript',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
+            role: 'Developer',
+            src: '/images/work/Expo-Home-Improvement.webp',
+            fallback: '/images/work/Expo-Home-Improvement.png',
+            lowRes: '/images/work/Expo-Home-Improvement-lr.png',
+            alt: 'Expo Home Improvement',
+            url: 'https://expohomeimprovement.com/'
         }
     ]
 }

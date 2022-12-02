@@ -1,7 +1,20 @@
 .featured-container {
     position: relative;
-    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     width: 100vw;
+
+    @media screen and (min-width: $xsUp) {
+        grid-template-rows: 1.5fr 1fr;
+    }
+
+    @media screen and (min-width: $smUp) {
+        grid-template-rows: 35vh 33vh 8vh;
+    }  
+    
+    @media screen and (min-width: $medUp) {
+        grid-template-rows: 55vh 33vh 8vh;
+    }  
 
     &::before {
         @include pseudo;
@@ -14,8 +27,12 @@
         top: 0;
         right: auto;
         bottom: auto;
-        z-index: 1;
+        z-index: 2;
         transform: translate(-1%, -35%);
+
+        @media screen and (min-width: $smUp) {
+            width: 20%;
+        }   
 
         .theme-dark & {
             content: url('../../../public/images/work/dark-shape.svg');
@@ -26,7 +43,7 @@
         @include pseudo;
         top: 0;
         left: auto;
-        right: 44%;
+        right: 52%;
         width: 200%;
         height: 87.85vw;
         bottom: auto;
@@ -35,6 +52,7 @@
         transform: matrix(1, 0, -0.1, 1, 0, 0);
 
         @media screen and (min-width: $medUp) {
+            right: 50%;
             height: 100vh;
             bottom: 0;
         }
@@ -46,10 +64,10 @@
 
     .inner-wrap {
         display: grid;
-        grid-template-columns: 0.8fr 0.35fr 1fr;
+        grid-template-columns: 0.5fr 0.35fr 1fr;
 
-        @media screen and (min-width: $smUp) {
-            grid-template-columns: 1fr 0.35fr 1fr;
+        @media screen and (min-width: $medUp) {
+            grid-template-columns: 0.7fr 0.35fr 1fr;
         }
     }
 
@@ -57,7 +75,7 @@
         position: relative;
         padding-top: 1.5em;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         z-index: 1;
     }
 
@@ -65,8 +83,14 @@
         background-color: rgba($fiveLight, 0.5);
         border: none;
         border-radius: 90px;
-        width: 1em;
-        height: 1em;
+        width: 0.5em;
+        height: 0.5em;
+        padding: 0.5em;
+
+        @media screen and (min-width: $medUp) {
+            width: 1em;
+            height: 1em;
+        }
 
         .theme-dark & {
             background-color: rgba($primaryDark, 0.5);
@@ -92,15 +116,44 @@
     }
 
     h4 {
+        position: relative;
+        margin-left: 10vw;
+        margin-top: 5em;
+        max-width: fit-content;
         z-index: 1;
-        margin-left: 50%;
-        margin-top: 3em;
+
+        @media screen and (min-width: $smUp) {
+            margin-left: 20vw;
+        }
+    }
+
+    h5 {
+        padding-bottom: 1.5em;
+    }
+
+    .slide-num {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 3em;
+        opacity: 0;
+        color: $primaryLight;
+        transition: transform $quick, opacity $quick;
+        transform: translate(65%, -30%) scale(0);
+
+        .theme-dark & {
+            color: $primaryDark;
+        }
+        
+        &.active {
+            opacity: 0.1;
+            transform: translate(65%, -30%) scale(1);
+        }
     }
     
     .col {  
-        height: 100vh;
-
-        &.right {
+        @media screen and (min-width: $medUp) {
+            height: 70vh;
         }
     }
 
@@ -124,5 +177,113 @@
 
     .about-img {
         @include aspectRatioImage;
+    }
+
+
+    .content-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        background-color: $white;
+        font-family: $montserrat;
+        z-index: 1;
+
+        @media screen and (min-width: $smUp) {
+            grid-row: 2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60vw;
+
+            @media screen and (min-width: $medUp) {
+                width: 55vw;
+            }
+        }
+    }
+
+    .content {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        transition: height $quick;
+
+        &.active {
+            position: relative;
+            width: 100%;
+            padding: 3em 0 0 2em;
+            height: auto;
+            min-height: 150px;
+            opacity: 1;
+
+            @media screen and (min-width: $smUp) {
+                padding: 3em 0 0 9vw;
+            }
+
+            @media screen and (min-width: $xxlarge) {
+                padding: 3em 0 0 14vw;
+            }
+
+            p {
+                padding-bottom: 1em;
+    
+                &:nth-of-type(2) {
+                    padding-bottom: 3em;
+                    max-width: 95%;
+                }
+    
+                span {
+                    color: $primaryLight;
+    
+                    .theme-dark & {
+                        color: $fiveDark;
+                    }
+                }
+            }
+
+            &:after {
+                @include pseudo;
+                left: auto;
+                width: 5em;
+                height: 100%;
+                background:$white;
+                transform: skew(354deg) translate(25%,0%);
+                z-index: -2;
+            }
+        }
+    }  
+
+    .site-link {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        max-width: 136px;
+        padding: 1em 0.5em;
+        margin-left: auto;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            &::after {
+                opacity: 0.4;
+            }
+        }
+
+        &::after {
+            @include pseudo;
+            content: url('../../../public/images/work/light-btn.svg');
+            top: auto;
+            left: auto;
+            width: 130px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+            transform: translate(-3%, -9%) scale(1.3);
+
+            .theme-dark & {
+                content: url('../../../public/images/work/dark-btn.svg');
+            }
+        }
     }
 }

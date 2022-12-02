@@ -9,7 +9,12 @@ export default function FilteredProject(props) {
                         aria-labelledby={filteredWebsite.type}
                         role="tabpanel" 
                         >
-                            <a tabIndex="0" href={filteredWebsite.url} target="_blank" rel="noreferrer">
+                            <a 
+                                tabIndex="0" 
+                                href={filteredWebsite.url} 
+                                target="_blank" 
+                                rel="noreferrer"
+                            >
                                 {filteredWebsite.title}
                             </a>
                         </li>
