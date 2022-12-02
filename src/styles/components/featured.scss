@@ -188,6 +188,7 @@
         background-color: $white;
         font-family: $montserrat;
         z-index: 1;
+        box-shadow: 0 17px 41px -1px rgb(0 0 0 / 5%);
 
         @media screen and (min-width: $smUp) {
             grid-row: 2;

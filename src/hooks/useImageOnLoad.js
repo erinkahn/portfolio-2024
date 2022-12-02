@@ -27,7 +27,7 @@ const useImageOnLoad = () => {
             position: 'absolute',
             width: '100%',
             height: '100%',
-            objectPosition: 'center center',
+            objectPosition: '0 100%',
             objectFit: 'cover',
         },
     }

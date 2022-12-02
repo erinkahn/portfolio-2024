@@ -91,8 +91,8 @@ export const featuredData = {
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
             role: 'Developer',
             src: '/images/work/Drew-and-Jonathan-Scott.webp',
-            fallback: '/images/work/Drew-and-Jonathan-Scott.png',
-            lowRes: '/images/work/Drew-and-Jonathan-Scott-lr.png',
+            fallback: '/images/work/Drew-and-Jonathan-Scott.jpg',
+            lowRes: '/images/work/Drew-and-Jonathan-Scott-lr.jpg',
             alt: 'The Scott Brother Twins',
             url: 'https://thescottbrothers.com/'
         },
@@ -103,8 +103,8 @@ export const featuredData = {
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
             role: 'Developer',
             src: '/images/work/The-Waffle-House.webp',
-            fallback: '/images/work/The-Waffle-House.png',
-            lowRes: '/images/work/The-Waffle-House-lr.png',
+            fallback: '/images/work/The-Waffle-House.jpg',
+            lowRes: '/images/work/The-Waffle-House-lr.jpg',
             alt: 'Waffle House building',
             url: 'https://www.wafflehouse.com/'
         },
@@ -115,8 +115,8 @@ export const featuredData = {
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
             role: 'Developer',
             src: '/images/work/Conlan-Company.webp',
-            fallback: '/images/work/Conlan-Company.png',
-            lowRes: '/images/work/Conlan-Company-lr.png',
+            fallback: '/images/work/Conlan-Company.jpg',
+            lowRes: '/images/work/Conlan-Company-lr.jpg',
             alt: 'The Conlan Company',
             url: 'https://conlancompany.com/'
         },{
@@ -126,8 +126,8 @@ export const featuredData = {
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
             role: 'Developer',
             src: '/images/work/Expo-Home-Improvement.webp',
-            fallback: '/images/work/Expo-Home-Improvement.png',
-            lowRes: '/images/work/Expo-Home-Improvement-lr.png',
+            fallback: '/images/work/Expo-Home-Improvement.jpg',
+            lowRes: '/images/work/Expo-Home-Improvement-lr.jpg',
             alt: 'Expo Home Improvement',
             url: 'https://expohomeimprovement.com/'
         }
