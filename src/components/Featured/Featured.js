@@ -8,7 +8,7 @@ export default function Featured() {
 
     return (
         <SectionWrapper>
-            <div className="featured-container">
+            <div className="featured-container" id="featured">
                 <div className="inner-wrap">
                     <div className="col text">
                         <h4 className="section-title">
@@ -33,6 +33,7 @@ export default function Featured() {
                                 role="tab"
                                 id={featuredBtn.id}
                                 aria-label={`Navigate to slide ${b}`}
+                                aria-controls={`${featuredBtn.client}-tab`}
                                 aria-selected={b === isActive ? true : false}
                                 className={`featured-btn ${b === isActive ? 'active' : ''}`}>
                             </button>

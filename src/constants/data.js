@@ -34,6 +34,41 @@ export const navData = {
     ]
 }
 
+export const sections = {
+    homepage: [
+        {
+            num: 0,
+            id: "hero",
+            title: 'hero banner'
+        },
+        {
+            num: 1,
+            id: "services",
+            title: 'services'
+        },
+        {
+            num: 2,
+            id: "featured",
+            title: 'featured work'
+        },
+        {
+            num: 3,
+            id: "about",
+            title: 'about'
+        },
+        {
+            num: 4,
+            id: "testimonials",
+            title: 'testimonials'
+        },
+        {
+            num: 5,
+            id: "footer",
+            title: 'footer'
+        }
+    ]
+}
+
 export const heroData = {
     home: {
         title: 'hello world',

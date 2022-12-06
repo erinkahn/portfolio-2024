@@ -6,7 +6,7 @@ const AboutImage = lazy(() => import('./AboutImage'));
 export default function About() {
     return (
         <SectionWrapper>
-            <div className="about-container">
+            <div className="about-container" id="about">
                 <div className="col text">
                     <h5 className="section-title">{aboutData.sectionTitle}</h5>
                     <p>{aboutData.content}</p>

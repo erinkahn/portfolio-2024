@@ -7,7 +7,7 @@ export default function Testimonials() {
 
     return (
         <SectionWrapper>
-            <div className="testimonials-container">
+            <div className="testimonials-container" id="testimonials">
                 <div className="inner-wrap">
                     <h5 className="section-title">{testimonialData.sectionTitle}</h5>
                     {testimonialData.testimonials.map((testimonial, t) => (

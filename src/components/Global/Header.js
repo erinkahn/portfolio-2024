@@ -5,6 +5,7 @@ import ThemeToggler from "../../contexts/Theme/ThemeToggler";
 import Navigation from "./Navigation";
 import ProgressBar from "./ProgressBar";
 import Weather from "../Weather";
+import SectionScrollTabs from "./SectionScrollTabs";
 
 export default function Header(props) {
 	// console.log(props, 'props')
@@ -20,6 +21,8 @@ export default function Header(props) {
 					className="logo"
 				/>
 			</Link>
+
+			<SectionScrollTabs />
 
 			<Navigation />
 

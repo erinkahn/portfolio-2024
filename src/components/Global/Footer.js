@@ -1,21 +1,22 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { navData } from "../../constants/data";
 // import Instafeed from "../../components/Instagram/Instafeed";
 
-export default function Footer(props) {
+export default function Footer() {
 	const today = new Date().getFullYear();
-	// console.log(props)
-
-	const scrollToTop = (props) => {
-		props.current.scrollIntoView({
-			behavior: "smooth"
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
 		})
 	}
 
 	return (
-		<footer role="contentinfo">
-			<button className="btn-scroll" onClick={scrollToTop}>
+		<footer role="contentinfo" id="footer">
+			<button 
+				className="btn-scroll" 
+				onClick={scrollToTop}
+			>
 				<span className="sr-only">scroll to the top of the page</span>
 			</button>
 

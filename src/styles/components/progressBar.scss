@@ -3,22 +3,16 @@
     top: 0;
     left: 0;
     overflow: auto;
-    height: 50vh;
+    width: 100vw;
     padding: 0.1em;
-    background: transparent;
     z-index: 3;
-    transform: translate(0.5em, 25vh);
     transition: background $slow;
 
-    @media screen and (min-width: $smUp) {
-        transform: translate(1em, 25vh);
-    }
-
     &.scrolled {
-        background: linear-gradient(to bottom, rgba($tertiaryLight, 0.75), calc(var(--scroll, 0) * 100%), transparent 0);
+        background: linear-gradient(to right, rgba($tertiaryLight, 0.75), calc(var(--scroll, 0) * 100%), transparent 0);
 
         .theme-dark &{
-            background: linear-gradient(to bottom, rgba($quaternaryDark, 0.75), calc(var(--scroll, 0) * 100%), transparent 0);
+            background: linear-gradient(to right, rgba($quaternaryDark, 0.75), calc(var(--scroll, 0) * 100%), transparent 0);
         }
     }
 }
