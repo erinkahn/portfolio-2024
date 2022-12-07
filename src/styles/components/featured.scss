@@ -128,6 +128,7 @@
     }
 
     h5 {
+        font-size: 1.125em;
         padding-bottom: 1.5em;
     }
 
@@ -231,6 +232,12 @@
                 &:nth-of-type(2) {
                     padding-bottom: 3em;
                     max-width: 95%;
+                }
+                &:nth-of-type(3) {
+                    padding-bottom: 0.5em;
+                }
+                &:last-of-type {
+                    padding-bottom: 0;
                 }
     
                 span {

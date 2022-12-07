@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import PageWrapper from "../components/Global/PageWrapper";
 import Header from "../components/Global/Header";
 import Hero from "../components/Global/Hero";
@@ -7,15 +8,19 @@ import About from '../components/About/About';
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Global/Footer";
 import { heroData } from "../constants/data";
-import useWindowSize from '../hooks/useWindowSize';
+// import useWindowSize from '../hooks/useWindowSize';
+import SectionScrollTabs from "../components/Global/SectionScrollTabs";
+import {sections} from '../constants/data';
 
 export default function Home() {
-	const size = useWindowSize();
+	const [isActive, setIsActive] = useState(0);	
+	// const size = useWindowSize();
+
+	// if (size.width > 991) {
+	// 	console.log('bigger')
+	// }
 	
-	if (size.width > 991) {
-		console.log('biger')
-	}
-	  // on scroll
+	// on scroll
     // if top of vp is === top of 'work' section
     // set position sticky to white box and...
     // on scroll (direction = up) translate 100vh up (change slide)
@@ -23,20 +28,24 @@ export default function Home() {
     // if scroll % is below/before 'work' or if scroll % is greater/after 'work' remove position sticky
     // or if last slide is visible...on scroll (direction down) remove sticky
 
-
 	return (
 		<PageWrapper>
+			<SectionScrollTabs />
+
 			<Hero 
 				title={heroData.home.title}
 				subtitle={heroData.home.subtitle}
 			/>
-			<Header /> 
+
+			<Header/>
+			
 			<main id="maincontent" role="main">
 				<Services />
 				<Featured /> 
 				<About />
 				<Testimonials />	
 			</main>
+
 			<Footer />
 		</PageWrapper>
 	);

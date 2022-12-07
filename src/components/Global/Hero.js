@@ -11,21 +11,23 @@ export default function Hero(props) {
 	// document.addEventListener('click', scrollToSection);
 
 	return (
-		<div	
-			role="banner"
-			className="hero-container"
-			id="hero"
-		>
-			<Prallax speed={6} className="text-box-container">
-				<div className="text-wrapper">
-					<h1 className="hero-title">{props.title}</h1>
-					<p className="hero-subtitle">{props.subtitle}</p>
-				</div>
-			</Prallax>
+		<div className="section">
+			<div	
+				role="banner"
+				className="hero-container"
+				id="hero"
+			>
+				<Prallax speed={6} className="text-box-container">
+					<div className="text-wrapper">
+						<h1 className="hero-title">{props.title}</h1>
+						<p className="hero-subtitle">{props.subtitle}</p>
+					</div>
+				</Prallax>
 
-			<button className="btn-scroll">
-				<span className="sr-only">scroll to next section</span>
-			</button>
+				<button className="btn-scroll">
+					<span className="sr-only">scroll to next section</span>
+				</button>
+			</div>
 		</div>
 	);
 }

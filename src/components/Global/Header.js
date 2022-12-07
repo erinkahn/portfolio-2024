@@ -4,8 +4,7 @@ import { ThemeContext } from "../../contexts/Theme/ThemeContext";
 import ThemeToggler from "../../contexts/Theme/ThemeToggler";
 import Navigation from "./Navigation";
 import ProgressBar from "./ProgressBar";
-import Weather from "../Weather";
-import SectionScrollTabs from "./SectionScrollTabs";
+// import Weather from "../Weather";
 
 export default function Header(props) {
 	// console.log(props, 'props')
@@ -22,13 +21,11 @@ export default function Header(props) {
 				/>
 			</Link>
 
-			<SectionScrollTabs />
-
 			<Navigation />
 
 			<ThemeToggler />
 
-			<Weather />
+			{/* <Weather /> */}
 
 			<ProgressBar />
 		</header>

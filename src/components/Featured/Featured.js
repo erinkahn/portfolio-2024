@@ -58,6 +58,7 @@ export default function Featured() {
                             <p><span>Stack:</span> {content.tech}</p>
                             <p>{content.content}</p>
                             <p><span>My Role:</span> {content.role}</p>
+                            <p><span>Co-Developers:</span> {content.devs}</p>
                             
                             <a 
                                 className="site-link" 

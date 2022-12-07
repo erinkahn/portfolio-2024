@@ -1,7 +1,7 @@
 export default function SectionWrapper(props) {
 	return (
 		<div
-			className={`section-wrapper`}
+			className={`section-wrapper section`}
 			role="region" 
 			// aria-label={props.children._owner.elementType.name}
 		>

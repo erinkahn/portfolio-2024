@@ -1,0 +1,33 @@
+.sectionNavTabs {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    z-index: 3;
+    transform: translate(1em, -50%);
+
+    a {
+        height: 2em;   
+        max-width: 10px;
+        padding: 0.2em;
+        background: rgba($tertiaryLight, 0.5);
+        border-radius: 1em;
+        border: none;
+        transition: background $quick;
+
+        .theme-dark & {
+            background: rgba($quaternaryDark, 0.3);
+        }
+
+        &.active {
+            background: $tertiaryLight;
+
+            .theme-dark & {
+                background: $quaternaryDark;
+            }
+        }
+    }
+}

@@ -1,11 +1,10 @@
-import React, {useRef} from 'react';
 import SectionWrapper from '../Global/SectionWrapper';
 import Typewriter from "./Typewriter";
 import { servicesData } from '../../constants/data';
 
 export default function Services() {
     return (  
-        <SectionWrapper id="services">
+        <SectionWrapper>
             <Typewriter />
             <div className="services-container">
                 {servicesData.services.map((service, i) => (
@@ -20,4 +19,5 @@ export default function Services() {
             </div>
         </SectionWrapper>
     )
-}
+};
+
