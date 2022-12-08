@@ -28,7 +28,7 @@ export default function useScrollPos() {
 
 // const App = () => {
 //   const scrollPos = useScrollPos();
-//   console.log(scrollPos.x, scrollPos.y);
+//   console.log(scrollPos[0], scrollPos[1]);
 
 //   return (
 // <div>
