@@ -1,8 +1,9 @@
-import { NavLink } from "react-router-dom";
-import { navData } from "../../constants/data";
+import { NavLink, useLocation } from "react-router-dom";
+import { navData } from "../constants/data";
 // import Instafeed from "../../components/Instagram/Instafeed";
 
 export default function Footer() {
+	const location = useLocation();
 	const today = new Date().getFullYear();
 	const scrollToTop = () => {
 		window.scrollTo({
@@ -26,7 +27,13 @@ export default function Footer() {
 
 				<div className="inner-footer-wrapper">
 					<div className="row one">
-						<h6>Let's Brainstorm</h6>
+						{
+							location.pathname === '/' ? (
+								<h6>Let's Brainstorm</h6>
+							) : (
+								<h3>Let's Brainstorm</h3>
+							)
+						}
 						<ul className="footer-nav-list">
 							{navData.navigation.map((item) => (
 								<li

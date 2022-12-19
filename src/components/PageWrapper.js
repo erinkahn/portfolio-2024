@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useLocation } from 'react-router-dom';
-import { ThemeContext } from "../../contexts/Theme/ThemeContext";
+import { ThemeContext } from "./../contexts/Theme/ThemeContext";
 
 export default function PageWrapper(props) {
 	let themeName = useContext(ThemeContext);

@@ -1,8 +1,8 @@
-import PageWrapper from "../components/Global/PageWrapper";
-import Header from "../components/Global/Header";
-import Footer from "../components/Global/Footer";
-import Hero from "../components/Global/Hero";
-import { heroData } from "../constants/data";
+import PageWrapper from "../../components/PageWrapper";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Hero from "../../components/Hero";
+import { heroData } from "../../constants/data";
 
 export default function Resume() {
 	return (

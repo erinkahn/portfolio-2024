@@ -61,7 +61,7 @@ footer {
         }
     }
 
-    h6 {
+    h3, h6 {
         max-width: 200px;
         font-family: $sourceCode;
         font-size: 1.5em;
@@ -155,13 +155,15 @@ footer {
         a {
             padding: 0.875em 1.875em;
             border-radius: 0.25em;
-            background-color: $secondaryLight;
-            color: $white;
+            background-color: $accessibleBtnLight;
+            color: $primaryLight;
+            font-weight: $semibold;
             font-family: $montserrat;
             transition: background-color $quick;
 
             .theme-dark & {
                 background-color: $fiveDark;
+                color: $primaryDark;
             }
 
             &:hover {

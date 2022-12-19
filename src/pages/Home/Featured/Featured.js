@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import SectionWrapper from "../Global/SectionWrapper";
-import { featuredData } from '../../constants/data';
+import SectionWrapper from "../../../components/SectionWrapper";
+import { featuredData } from '../../../constants/data';
 import FeaturedImage from './FeaturedImage';
 
 export default function Featured() {
@@ -61,7 +61,7 @@ export default function Featured() {
                             <p><span>Co-Developers:</span> {content.devs}</p>
                             
                             <a 
-                                className="site-link" 
+                                className={`site-link ${c === isActive ? 'active' : ''}`}
                                 href={content.url} 
                                 target="_blank"
                                 rel="noreferrer"

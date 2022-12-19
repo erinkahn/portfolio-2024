@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {typewriterData} from '../../constants/data';
+import {typewriterData} from '../../../constants/data';
 
 const words = typewriterData.typewriter;
 

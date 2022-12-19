@@ -1,6 +1,6 @@
-import SectionWrapper from '../Global/SectionWrapper';
+import SectionWrapper from '../../../components/SectionWrapper';
 import Typewriter from "./Typewriter";
-import { servicesData } from '../../constants/data';
+import { servicesData } from '../../../constants/data';
 
 export default function Services() {
     return (  

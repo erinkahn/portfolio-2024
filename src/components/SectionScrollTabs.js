@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {sections} from '../../constants/data';
+import {sections} from './../constants/data';
 
 export default function SectionScrollTabs() {
     const [isActive, setIsActive] = useState(0);

@@ -164,7 +164,7 @@
         top: 0;
         right: 0;
         width: 69.6%;
-        transform: translate(20%, 0);
+        transform: translate(10%, 0);
     }
 
     .img-wrapper {
@@ -173,11 +173,16 @@
 
         &.show {
             @include aspectRatioContainer(709px, 892px);
+
+            @media screen and (min-width: $medUp) and (max-width: 1350px) {
+                padding-top: 118vh;
+            }
         }
     }
 
     .about-img {
         @include aspectRatioImage;
+        
     }
 
 
@@ -209,6 +214,7 @@
         height: 0;
         opacity: 0;
         transition: height $quick;
+        pointer-events: none;
 
         &.active {
             position: relative;
@@ -217,6 +223,7 @@
             height: auto;
             min-height: 150px;
             opacity: 1;
+            pointer-events: initial;
 
             @media screen and (min-width: $smUp) {
                 padding: 3em 0 0 9vw;
@@ -241,10 +248,11 @@
                 }
     
                 span {
-                    color: $primaryLight;
+                    color: $primaryDark;
+                    font-weight: $semibold;
     
                     .theme-dark & {
-                        color: $fiveDark;
+                        color: $primaryDark;
                     }
                 }
             }
@@ -263,12 +271,18 @@
 
     .site-link {
         position: relative;
-        display: flex;
         justify-content: flex-end;
         max-width: 136px;
         padding: 1em 0.5em;
         margin-left: auto;
+        font-weight: $semibold;
+        letter-spacing: 0.05em;
         color: $white;
+        display: none;
+
+        &.active {
+            display: flex;
+        }
 
         &:hover,
         &:focus {

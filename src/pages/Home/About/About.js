@@ -1,6 +1,6 @@
 import React, {lazy, Suspense} from 'react';
-import SectionWrapper from '../Global/SectionWrapper';
-import { aboutData } from '../../constants/data';
+import SectionWrapper from '../../../components/SectionWrapper';
+import { aboutData } from '../../../constants/data';
 const AboutImage = lazy(() => import('./AboutImage'));
 
 export default function About() {

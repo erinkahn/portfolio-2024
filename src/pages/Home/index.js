@@ -1,16 +1,16 @@
 import {useState} from 'react';
-import PageWrapper from "../components/Global/PageWrapper";
-import Header from "../components/Global/Header";
-import Hero from "../components/Global/Hero";
-import Services from "../components/Services/Services";
-import Featured from "../components/Featured/Featured";
-import About from '../components/About/About';
-import Testimonials from "../components/Testimonials";
-import Footer from "../components/Global/Footer";
-import { heroData } from "../constants/data";
+import PageWrapper from "../../components/PageWrapper";
+import Header from "../../components/Header";
+import Hero from "../../components/Hero";
+import Services from "./Services/Services";
+import Featured from "./Featured/Featured";
+import About from './About/About';
+import Testimonials from "./Testimonials";
+import Footer from "../../components/Footer";
+import { heroData } from "../../constants/data";
 // import useWindowSize from '../hooks/useWindowSize';
-import SectionScrollTabs from "../components/Global/SectionScrollTabs";
-import {sections} from '../constants/data';
+import SectionScrollTabs from "../../components/SectionScrollTabs";
+import {sections} from '../../constants/data';
 
 export default function Home() {
 	const [isActive, setIsActive] = useState(0);	

@@ -1,6 +1,6 @@
 import { useRef, Suspense } from 'react';
-import useImageOnLoad from '../../hooks/useImageOnLoad';
-import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import useImageOnLoad from '../../../hooks/useImageOnLoad';
+import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 import {isWebpSupported} from 'react-image-webp/dist/utils';
 
 export default function FeaturedImage(props) {

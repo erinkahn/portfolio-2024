@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import { Link} from "react-router-dom";
-import { ThemeContext } from "../../contexts/Theme/ThemeContext";
-import ThemeToggler from "../../contexts/Theme/ThemeToggler";
+import { ThemeContext } from "./../contexts/Theme/ThemeContext";
+import ThemeToggler from "./../contexts/Theme/ThemeToggler";
 import Navigation from "./Navigation";
 import ProgressBar from "./ProgressBar";
 // import Weather from "../Weather";

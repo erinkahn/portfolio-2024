@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import SectionWrapper from './Global/SectionWrapper';
-import {testimonialData} from '../constants/data';
+import SectionWrapper from '../../components/SectionWrapper';
+import {testimonialData} from '../../constants/data';
 
 export default function Testimonials() {
     const [isActive, setIsActive] = useState(0);
