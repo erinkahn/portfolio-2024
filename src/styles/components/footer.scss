@@ -1,47 +1,43 @@
 footer {
-    position: relative;
-    margin-top: 200px;
-    padding: 7em 2em 2em;
     background-color: $primaryLight;
 
-    &::before {
-        @include pseudo;
-        background: url('../../../public/images/footer/footer-light-shape.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        width: 100%;
-        height: 0;
-        padding-top: 60%;
-        bottom: auto;
-        right: auto;
-        pointer-events: none;
-        transform: translate(-11%, -38.5vw);
+    .outer-wrapper {
+        position: relative;
 
-        .theme-dark & {
-            background-image: url('../../../public/images/footer/footer-dark-shape.svg');
+        &::before {
+            @include pseudo;
+            background: url('../../../public/images/footer/footer-light-shape.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            width: 100%;
+            height: 0;
+            padding-top: 60%;
+            bottom: auto;
+            right: auto;
+            pointer-events: none;
+            transform: translate(-11%, -38.5vw);
+
+            .theme-dark & {
+                background-image: url('../../../public/images/footer/footer-dark-shape.svg');
+            }
         }
     }
 
-    @media screen and (min-width: $smUp) {
-        margin-top: 300px;
-        padding: 8em 4em 4em;
-    }
 
-    @media screen and (min-width: $medUp) {
-        margin-top: 100px;
-    }
-
-    @media screen and (min-width: $large) {
-        margin-top: 200px;
-    }
-
-    .theme-dark & {
-        background-color: $primaryDark;
-    }
 
     .inner-footer-wrapper {
         margin: 0 auto;
+        padding: 7em 2em 2em;
+        background-color: $primaryLight;
+
+        .theme-dark & {
+            background-color: $primaryDark;
+        }
+
+        @media screen and (min-width: $smUp) {
+            padding: 8em 4em 4em;
+        }
     }
 
     .btn-scroll {

@@ -1,5 +1,14 @@
+body {
+    overflow: hidden;
+}
+
 #maincontent {
 	position: relative;
+    padding-bottom: 40vw;
+
+    @media screen and (min-width: $medUp) {
+        padding-bottom: 15vw;
+    }
 	
     &::before {
         @include pseudo;
@@ -81,6 +90,12 @@ p {
                 @media screen and (min-width: $large){
                     padding: 0 2em;
                 }
+            }
+
+            &:last-of-type {
+                max-width: none;
+                background: $white;
+                padding: 0;
             }
 
             @media screen and (min-width: $medUp) {

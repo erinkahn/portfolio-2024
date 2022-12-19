@@ -4,6 +4,9 @@
     grid-template-columns: 1fr;
     align-items: center;
     height: 100%;
+    max-width: 1200px;
+    padding: 0 2em;
+    margin: 0 auto;
 
     @media screen and (min-width: $smUp) {
         grid-template-columns: 0.9fr 1fr;
