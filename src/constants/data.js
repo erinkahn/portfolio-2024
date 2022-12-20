@@ -39,7 +39,7 @@ export const sections = {
         {
             num: 0,
             id: "hero",
-            title: 'hero banner'
+            title: 'hero'
         },
         {
             num: 1,

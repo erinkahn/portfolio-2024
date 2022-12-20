@@ -12,7 +12,10 @@ export default function Header(props) {
 
 	return (
 		<header ref={props.forwardedRef}>
-			<Link className="logo-wrapper" to="/">
+			<Link 
+				className="logo-wrapper" 
+				to="/"
+			>
 				<img
 					src={"/images/header/logo-" + `${themeName.theme}` + ".svg"}
 					style={{ width: "3em", height: "3em" }}

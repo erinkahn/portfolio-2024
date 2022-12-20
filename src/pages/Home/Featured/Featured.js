@@ -24,27 +24,22 @@ export default function Featured() {
                         </h4>
                     </div>
 
-                    <ul className="btns-container" role="tablist">
+                    <div className="btns-container" role="tablist">
                         {featuredData.featured.map((featuredBtn, b) => (
-                            <li 
+                            <button 
                                 key={`btn-${b}`} 
-                                className="tab" 
+                                className={`featured-btn ${b === isActive ? 'active' : ''}`}
+                                aria-label={`Navigate to slide ${b}`}
                                 aria-controls={`panel${(featuredBtn.client).replaceAll(" ", "")}`}
                                 aria-current={b === isActive ? true : false}
                                 role="tab"
                                 id={featuredBtn.client}
-                            >
-                                <button 
-                                    onClick={(e) => {
-                                        setIsActive(b)
-                                    }} 
-                                    id={featuredBtn.id}
-                                    aria-label={`Navigate to slide ${b}`}
-                                    className={`featured-btn ${b === isActive ? 'active' : ''}`}>
-                                </button>
-                            </li>
+                                onClick={(e) => {
+                                    setIsActive(b)
+                                }}>
+                            </button>
                         ))}
-                    </ul>
+                    </div>
 
                     <div className="col right">
                         <div className="image-container">                          

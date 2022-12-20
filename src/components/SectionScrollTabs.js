@@ -18,16 +18,14 @@ export default function SectionScrollTabs() {
         const str = 'Navigate to section ';
         const strippedAttribute = idAttribute.replace(str, "");
         const sectionId = document.querySelector(`#${strippedAttribute}`);
-        sectionId.scrollIntoView({behavior: "smooth"});
-   
+        sectionId.scrollIntoView({behavior: "smooth"});  
     }
 
     return (
-        <div className="sectionNavTabs">
+        <aside className="sectionScrollTabs">
             {sections.homepage.map((section, s) => (
                 <button 
                     key={`sectionTab-${s}`}
-                    tabIndex={section.num}
                     className={`${isActive === section.num ? 'active' : ''}`}
                     onClick={(e) => {
                         changeActiveTab(e, s)
@@ -38,6 +36,6 @@ export default function SectionScrollTabs() {
                     aria-current={s === isActive ? true : false}
                 ></button>
             ))}
-        </div>
+        </aside>
     )
 }

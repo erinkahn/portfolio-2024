@@ -18,7 +18,7 @@ export default function Footer() {
 			className="section"
 		>
 			<div className="outer-wrapper">
-				<span id="footer">
+				<span id="footer" role="tabpanel">
 					<button 
 						className="btn-scroll" 
 						onClick={scrollToTop}

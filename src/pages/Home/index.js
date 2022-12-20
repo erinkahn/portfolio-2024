@@ -29,16 +29,15 @@ export default function Home() {
     // or if last slide is visible...on scroll (direction down) remove sticky
 
 	return (
-		<PageWrapper>
+		<PageWrapper>	
+			<Header/>
 			<SectionScrollTabs />
-
+			
 			<Hero 
 				title={heroData.home.title}
 				subtitle={heroData.home.subtitle}
 			/>
 
-			<Header/>
-			
 			<main id="maincontent" role="main">
 				<Services />
 				<Featured /> 
