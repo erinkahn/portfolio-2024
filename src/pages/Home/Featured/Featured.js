@@ -9,7 +9,7 @@ export default function Featured() {
     return (
         <SectionWrapper>
             <div className="featured-container" id="featured">
-                <div className="inner-wrap">
+                <div className="inner-wrap" aria-label="carousel">
                     <div className="col text">
                         <h4 className="section-title">
                             {featuredData.sectionTitle}
@@ -17,28 +17,34 @@ export default function Featured() {
                                 <span 
                                     key={`slide-${n}`} 
                                     className={`slide-num ${n === isActive ? 'active' : ''}`}>
+                                    <span className='sr-only'>slide number</span>
                                     {featNum.slideNum}
                                 </span>
                             ))}
                         </h4>
                     </div>
 
-                    <div className="btns-container">
+                    <ul className="btns-container" role="tablist">
                         {featuredData.featured.map((featuredBtn, b) => (
-                            <button 
-                                onClick={(e) => {
-                                    setIsActive(b)
-                                }} 
+                            <li 
                                 key={`btn-${b}`} 
+                                className="tab" 
+                                aria-controls={`panel${(featuredBtn.client).replaceAll(" ", "")}`}
+                                aria-current={b === isActive ? true : false}
                                 role="tab"
-                                id={featuredBtn.id}
-                                aria-label={`Navigate to slide ${b}`}
-                                aria-controls={`${featuredBtn.client}-tab`}
-                                aria-selected={b === isActive ? true : false}
-                                className={`featured-btn ${b === isActive ? 'active' : ''}`}>
-                            </button>
+                                id={featuredBtn.client}
+                            >
+                                <button 
+                                    onClick={(e) => {
+                                        setIsActive(b)
+                                    }} 
+                                    id={featuredBtn.id}
+                                    aria-label={`Navigate to slide ${b}`}
+                                    className={`featured-btn ${b === isActive ? 'active' : ''}`}>
+                                </button>
+                            </li>
                         ))}
-                    </div>
+                    </ul>
 
                     <div className="col right">
                         <div className="image-container">                          
@@ -52,7 +58,12 @@ export default function Featured() {
                         <div 
                             className={`content ${c === isActive ? 'active' : ''}`} 
                             key={`content-${c}`}
+                            aria-current={c === isActive ? true : false}
                             aria-hidden={c === isActive ? false : true}
+                            aria-label={`content ${c+1} of 4`}
+                            aria-labelledby={content.client}
+                            role="tabpanel"
+                            id={`panel${(content.client).replaceAll(" ", "")}`}
                         >
                             <h5>{content.client}</h5>
                             <p><span>Stack:</span> {content.tech}</p>

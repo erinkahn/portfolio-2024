@@ -14,30 +14,30 @@ export default function SectionScrollTabs() {
 
     const scrollToSection = (e) => {         
         e.preventDefault()
-        const idAttribute = e.currentTarget.getAttribute('id');
-        const sectionId = document.querySelectorAll(`#${idAttribute}`)[1];
+        const idAttribute = e.currentTarget.getAttribute('aria-label');
+        const str = 'Navigate to section ';
+        const strippedAttribute = idAttribute.replace(str, "");
+        const sectionId = document.querySelector(`#${strippedAttribute}`);
         sectionId.scrollIntoView({behavior: "smooth"});
    
     }
 
     return (
-        <span className="sectionNavTabs">
+        <div className="sectionNavTabs">
             {sections.homepage.map((section, s) => (
                 <button 
                     key={`sectionTab-${s}`}
-                    role="tab"
-                    slideindex={section.num}
-                    id={`${section.id}`}
+                    tabIndex={section.num}
                     className={`${isActive === section.num ? 'active' : ''}`}
                     onClick={(e) => {
                         changeActiveTab(e, s)
                         scrollToSection(e);
                     }}
                     aria-label={`Navigate to section ${section.id}`}
-                    aria-controls={`${section.title}-tab`}
-                    aria-selected={s === isActive ? true : false}
+                    aria-controls={`${section.title}`}
+                    aria-current={s === isActive ? true : false}
                 ></button>
             ))}
-        </span>
+        </div>
     )
 }

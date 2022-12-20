@@ -13,7 +13,7 @@ export default function Hero(props) {
 	return (
 		<div className="section">
 			<div	
-				role="banner"
+				role="banner tabpanel"
 				className="hero-container"
 				id="hero"
 			>

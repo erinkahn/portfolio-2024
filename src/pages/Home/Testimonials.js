@@ -13,6 +13,9 @@ export default function Testimonials() {
                     {testimonialData.testimonials.map((testimonial, t) => (
                         <div 
                             aria-hidden={t === 0 ? false : true} 
+                            aria-label={`testimonial ${t+1} of 3`}
+                            aria-labelledby={testimonial.id}
+                            id={`testimonial${testimonial.id}`}
                             key={`testim-${testimonial.id}`} 
                             className={`testimonial ${t === isActive ? 'show' : ''}`}>
                             <p>{testimonial.text}</p>
@@ -21,7 +24,7 @@ export default function Testimonials() {
                         </div>
                     ))}
 
-                    <div className="btns-container">
+                    <div className="btns-container" role="tablist">
                         {testimonialData.testimonials.map((testiBtn, s) => (
                             <button 
                                 onClick={(e) => {
@@ -30,6 +33,7 @@ export default function Testimonials() {
                                 key={`btn-${s}`} 
                                 role="tab"
                                 id={testiBtn.id}
+                                aria-controls={`testimonial${testiBtn.id}`}
                                 aria-label={`Navigate to testimonial ${s}`}
                                 aria-selected={s === isActive ? true : false}
                                 className={`testimonial-btn ${s === isActive ? 'active' : ''}`}>

@@ -9,9 +9,6 @@ export default function FeaturedImage(props) {
     const { isVisible } = useIntersectionObserver(imageRef);
 
     return (<>
-
-    {/* may need to use srcset here */}
-
         {props.featuredData.featured.map((project, p) => (
             <Suspense 
                 key={`featured-${p}`} 
@@ -21,6 +18,11 @@ export default function FeaturedImage(props) {
                     className={`img-wrapper ${props.isActive === p  ? 'show' : ''}`}
                     style={imageStyles.wrapper} 
                     ref={imageRef}
+                    aria-current={p === props.isActive ? true : false}
+                    aria-hidden={p === props.isActive ? false : true}
+                    aria-label={`image ${p+1} of 4`}
+                    aria-labelledby={project.client}
+                    role="tabpanel"
                 >
                     <img 
                         loading="lazy"
