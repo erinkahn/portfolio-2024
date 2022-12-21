@@ -1,23 +1,22 @@
 .about-container {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr 1fr .5fr;
+    align-items: center;
+    height: 100vh;
     max-width: 1200px;
+    padding: 0 2em 0 3em;
     margin: 0 auto;
 
-    @media screen and (min-width: $xsUp) {
+    @media screen and (min-width: $xxsUp) {
+        padding: 0 4em;
+    }
+
+    @media screen and (min-width: $smUp) {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 3em;
-        align-items: center;
-        padding: 0;
-    }
-
-    @media screen and (min-width: $large) {
-        grid-gap: 7em;
-        height: 100vh;
-    }
-
-    @media screen and (min-width: $xlarge) {
-        height: 100vh;
+        grid-template-rows: 1fr;
+        grid-gap: 4em;
+        padding: 0 3em;
     }
 
     p:last-of-type {
@@ -26,19 +25,21 @@
 
     .col {
         &.text {
-            grid-row: 2;
-
-            @media screen and (min-width: $xsUp) {
-                grid-row: 1;
-            }
+            grid-row: 3;
 
             @media screen and (min-width: $smUp) {
+                grid-row: 1;
                 padding-left: 4em;
             }
         }
 
         &.right {
             position: relative;
+            grid-row: 2;
+
+            @media screen and (min-width: $smUp) {
+                grid-row: 1;
+            }
 
             &::after {
                 @include pseudo;
@@ -46,19 +47,16 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
-                width: 50%;
+                width: 85%;
+                max-width: 375px;
                 left: auto;
                 bottom: auto;
-                transform: translate(0, -20%);
+                transform: translate(8%, -20%);
 
-                @media screen and (min-width: $xsUp) {
+                @media screen and (min-width: $smUp) {
                     width: 100%;
-                    transform: translate(0, -35%);
-                }
-
-                @media screen and (min-width: $medUp) {
-                    width: 90%;
-                    transform: translate(0, -30%);
+                    max-width: 500px;
+                    transform: translate(-10%, -33%);
                 }
 
                 .theme-dark & {
@@ -70,13 +68,14 @@
 
     .image-container {
         position: relative;
-        width: 30%;
-        margin: 5% 18% 0 auto;
+        width: 45%;
+        max-width: 200px;
+        margin: 13% 20% 0 auto;
         z-index: 1;
 
-        @media screen and (min-width: $xsUp) {
+        @media screen and (min-width: $smUp) {
             width: 50%;
-            margin: 5% 45% 0 auto;
+            margin: 5% 50% 0 auto;
         }
 
         &::after {

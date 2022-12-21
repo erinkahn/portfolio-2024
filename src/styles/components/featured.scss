@@ -1,19 +1,17 @@
 .featured-container {
     position: relative;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    width: 100vw;
-
-    @media screen and (min-width: $xsUp) {
-        grid-template-rows: 1.5fr 1fr;
-    }
+    grid-template-rows: 22% 38% 40%;
+    height: 100vh;
 
     @media screen and (min-width: $smUp) {
-        grid-template-rows: 35vh 33vh 8vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 65% 35%;
     }  
     
     @media screen and (min-width: $medUp) {
-        grid-template-rows: 55vh 33vh 8vh;
+        grid-template-columns: 40% 10% 50%;
+        grid-template-rows: 30% 10% 10% 40% 10%;
     }  
 
     &::before {
@@ -22,7 +20,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        width: 15%;
+        width: 30%;
         left: 0;
         top: 0;
         right: auto;
@@ -32,6 +30,7 @@
 
         @media screen and (min-width: $smUp) {
             width: 20%;
+            max-width: 280px;
         }   
 
         .theme-dark & {
@@ -43,18 +42,18 @@
         @include pseudo;
         top: 0;
         left: auto;
-        right: 52%;
-        width: 200%;
-        height: 87.85vw;
+        width: 100%;
+        height: 26%;
         bottom: auto;
         background-color: $quaternaryLight;
         z-index: 0;
-        transform: matrix(1, 0, -0.1, 1, 0, 0);
+        transform: matrix(3, -.5, 1, 1, 0, -1);
 
-        @media screen and (min-width: $medUp) {
+        @media screen and (min-width: $smUp) {
+            width: 200%;
             right: 50%;
-            height: 100vh;
-            bottom: 0;
+            height: 100%;
+            transform: matrix(1, 0, -0.1, 1, 0, 0);
         }
 
         .theme-dark & {
@@ -62,109 +61,142 @@
         }
     }     
 
-    .inner-wrap {
+    .title-carousel-wrapper {
         display: grid;
-        grid-template-columns: 0.5fr 0.35fr 1fr;
-
-        @media screen and (min-width: $medUp) {
-            grid-template-columns: 0.7fr 0.35fr 1fr;
-        }
-    }
-
-    .btns-container {
-        position: relative;
-        padding-top: 1.5em;
-        display: flex;
-        justify-content: flex-end;
-        z-index: 1;
-    }
-
-    .featured-btn {
-        background-color: rgba($fiveLight, 0.5);
-        border: none;
-        border-radius: 90px;
-        width: 0.5em;
-        height: 0.5em;
-        padding: 0.5em;
-
-        &:nth-of-type(2) {
-            margin: 0 15px;
-        }
-
-        &:nth-of-type(4) {
-            margin-left: 15px;
-        }
-
-        @media screen and (min-width: $medUp) {
-            width: 1em;
-            height: 1em;
-        }
-
-        .theme-dark & {
-            background-color: rgba($primaryDark, 0.5);
-        }
-
-        &.active,
-        &:hover,
-        &:focus {
-            background-color: $fiveLight;
-
-            .theme-dark & {
-                background-color: $primaryDark;
-            }
-        }
-    }
-
-    h4 {
-        position: relative;
-        margin-left: 10vw;
-        margin-top: 5em;
-        max-width: fit-content;
-        z-index: 1;
+        grid-template-columns: 30% 50% 20%;
+        grid-template-rows: 50% 45% 5%;
 
         @media screen and (min-width: $smUp) {
-            margin-left: 20vw;
+            grid-column: 1;
+            width: 48%;
         }
+
+        @media screen and (min-width: $medUp) {
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 20% 65% 15%;
+            grid-row: 2 / span 2;
+            grid-column: 1 / span 2;
+            width: 100%;
+        }
+
+        .slide-title {
+            grid-column: 2;
+            grid-row: 2;
+
+            h4 {
+                position: relative;
+                margin-bottom: 0;
+                max-width: fit-content;
+                z-index: 1;
+            }
+        
+            h5 {
+                font-size: 1.125em;
+                padding-bottom: 1.5em;
+            }
+
+            .slide-num {
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 3em;
+                opacity: 0;
+                color: $primaryLight;
+                transition: transform $quick, opacity $quick;
+                transform: translate(65%, -30%) scale(0);
+        
+                .theme-dark & {
+                    color: $primaryDark;
+                }
+                
+                &.active {
+                    opacity: 0.1;
+                    transform: translate(65%, -30%) scale(1);
+                }
+            }
+        }
+
+        .btns-container {
+            grid-row: 3;
+            grid-column: 3;
+            position: relative;
+            display: flex;
+            z-index: 1;
+            transform: rotate(-8deg);
+            padding-right: 1.5em;
+
+            @media screen and (min-width: $smUp) {
+                transform: rotate(0);
+            }
+
+            @media screen and (min-width: $medUp) {
+                justify-content: end;
+            }
+        }
+
+        .pager-btn {
+            background-color: rgba($fiveLight, 0.5);
+            border: none;
+            border-radius: 90px;
+            width: 0.5em;
+            height: 0.5em;
+            padding: 0.35em;
+    
+            &:nth-of-type(2) {
+                margin: 0 15px;
+            }
+    
+            &:nth-of-type(4) {
+                margin-left: 15px;
+            }
+    
+            @media screen and (min-width: $medUp) {
+                width: 1em;
+                height: 1em;
+            }
+    
+            .theme-dark & {
+                background-color: rgba($primaryDark, 0.5);
+            }
+    
+            &.active,
+            &:hover,
+            &:focus {
+                background-color: $fiveLight;
+    
+                .theme-dark & {
+                    background-color: $primaryDark;
+                }
+            }
+        }    
     }
 
-    h5 {
-        font-size: 1.125em;
-        padding-bottom: 1.5em;
-    }
-
-    .slide-num {
-        position: absolute;
-        right: 0;
-        top: 0;
-        font-size: 3em;
-        opacity: 0;
-        color: $primaryLight;
-        transition: transform $quick, opacity $quick;
-        transform: translate(65%, -30%) scale(0);
+    .slide-images {
+        grid-row: 2;
+        // background-color: $primaryLight;
 
         .theme-dark & {
-            color: $primaryDark;
+            // background-color: $secondaryDark;
         }
-        
-        &.active {
-            opacity: 0.1;
-            transform: translate(65%, -30%) scale(1);
-        }
-    }
-    
-    .col {  
-        @media screen and (min-width: $medUp) {
-            height: 70vh;
-        }
-    }
 
-    .image-container {
-        position: absolute;
-        height: 100vh;
-        top: 0;
-        right: 0;
-        width: 69.6%;
-        transform: translate(10%, 0);
+        @media screen and (min-width: $smUp) {
+            grid-row: 1;
+            grid-column: 2;
+
+            .image-container {
+                position: absolute;
+                height: 100vh;
+                top: 0;
+                right: 0;
+                width: 69.6%;
+                transform: translate(10%, 0);
+            }
+        }
+
+        @media screen and (min-width: $medUp) {
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 3;
+        }
     }
 
     .img-wrapper {
@@ -178,34 +210,27 @@
                 padding-top: 118vh;
             }
         }
-    }
 
-    .about-img {
-        @include aspectRatioImage;
-        
+        .ft-img {
+            @include aspectRatioImage;
+        }
     }
-
 
     .content-container {
         position: relative;
         display: flex;
         align-items: center;
         width: 100vw;
+        height: 100%;
         background-color: $white;
         font-family: $montserrat;
         z-index: 1;
         box-shadow: 0 17px 41px -1px rgb(0 0 0 / 5%);
 
-        @media screen and (min-width: $smUp) {
-            grid-row: 2;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 60vw;
-
-            @media screen and (min-width: $medUp) {
-                width: 55vw;
-            }
+        @media screen and (min-width: $medUp) {
+            width: 55vw;
+            grid-row: 4 / span 1;
+            grid-column: 1 / span 2;
         }
     }
 
@@ -217,63 +242,66 @@
         pointer-events: none;
 
         &.active {
-            position: relative;
-            width: 100%;
-            padding: 3em 0 0 2em;
             height: auto;
-            min-height: 150px;
+            width: 100%;
             opacity: 1;
             pointer-events: initial;
 
-            @media screen and (min-width: $smUp) {
-                padding: 3em 0 0 9vw;
+            & > p,
+            & > h5 {
+                padding: 0 2em;
+
+                @media screen and (min-width: $smUp) {
+                    padding: 0 0 0 18%;
+                }
             }
 
-            @media screen and (min-width: $xxlarge) {
-                padding: 3em 0 0 14vw;
+            p:first-of-type {
+                padding: 1em 2em;
+                @media screen and (min-width: $smUp) {
+                    padding: 1em 0 0 18%;
+                }
             }
+            p:nth-of-type(2) {
+                padding-bottom: 2em;
+                max-width: 95%;
+            }
+            p:nth-of-type(3) {
+                padding-bottom: 0.5em;
+            }
+            
+            span {
+                color: $primaryDark;
+                font-weight: $semibold;
 
-            p {
-                padding-bottom: 1em;
-    
-                &:nth-of-type(2) {
-                    padding-bottom: 3em;
-                    max-width: 95%;
-                }
-                &:nth-of-type(3) {
-                    padding-bottom: 0.5em;
-                }
-                &:last-of-type {
-                    padding-bottom: 0;
-                }
-    
-                span {
+                .theme-dark & {
                     color: $primaryDark;
-                    font-weight: $semibold;
-    
-                    .theme-dark & {
-                        color: $primaryDark;
-                    }
                 }
             }
+            
+            @media screen and (min-width: $smUp) {
+                padding-top: 0;
 
-            &:after {
-                @include pseudo;
-                left: auto;
-                width: 5em;
-                height: 100%;
-                background:$white;
-                transform: skew(354deg) translate(25%,0%);
-                z-index: -2;
+                &:after {
+                    @include pseudo;
+                    left: auto;
+                    width: 5em;
+                    height: 100%;
+                    background:$white;
+                    transform: skew(354deg) translate(25%,0%);
+                    z-index: -2;
+                }
             }
         }
     }  
 
     .site-link {
-        position: relative;
+        position: absolute;
+        bottom: 0;
+        right: 0;
         justify-content: flex-end;
         max-width: 136px;
-        padding: 1em 0.5em;
+        padding: 0 0.5em 0.75em;
         margin-left: auto;
         font-weight: $semibold;
         letter-spacing: 0.05em;
@@ -291,6 +319,10 @@
             }
         }
 
+        @media screen and (min-width: $smUp) {
+            padding: 2em 0.5em 1em;
+        }
+
         &::after {
             @include pseudo;
             content: url('../../../public/images/work/light-btn.svg');
@@ -301,11 +333,16 @@
             background-size: cover;
             background-repeat: no-repeat;
             z-index: -1;
-            transform: translate(-3%, -9%) scale(1.3);
+            transform: translate(0%, -13%) scale(1.4);
+
+            @media screen and (min-width: $smUp) {
+                transform: translate(-2%, -9%) scale(1.3);
+            }
 
             .theme-dark & {
                 content: url('../../../public/images/work/dark-btn.svg');
             }
         }
+        
     }
 }

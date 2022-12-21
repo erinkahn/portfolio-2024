@@ -26,7 +26,7 @@ export default function FeaturedImage(props) {
                 >
                     <img 
                         loading="lazy"
-                        className="about-img" 
+                        className="ft-img" 
                         src={isWebpSupported ? project.src : project.lowRes} 
                         alt={project.alt} 
                         width="609" 
@@ -36,7 +36,7 @@ export default function FeaturedImage(props) {
                     {isVisible && 
                         <img 
                             loading="lazy"
-                            className="about-img" 
+                            className="ft-img" 
                             src={isWebpSupported ? project.src : project.fallback} 
                             alt={project.alt} 
                             width="709" 

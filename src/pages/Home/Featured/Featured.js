@@ -8,9 +8,9 @@ export default function Featured() {
 
     return (
         <SectionWrapper>
-            <div className="featured-container" id="featured">
-                <div className="inner-wrap" aria-label="carousel">
-                    <div className="col text">
+            <div className="featured-container" id="featured" aria-label="carousel">
+                <div className="title-carousel-wrapper">            
+                    <div className="slide-title">
                         <h4 className="section-title">
                             {featuredData.sectionTitle}
                             {featuredData.featured.map((featNum, n) => (
@@ -28,7 +28,7 @@ export default function Featured() {
                         {featuredData.featured.map((featuredBtn, b) => (
                             <button 
                                 key={`btn-${b}`} 
-                                className={`featured-btn ${b === isActive ? 'active' : ''}`}
+                                className={`pager-btn ${b === isActive ? 'active' : ''}`}
                                 aria-label={`Navigate to slide ${b}`}
                                 aria-controls={`panel${(featuredBtn.client).replaceAll(" ", "")}`}
                                 aria-current={b === isActive ? true : false}
@@ -40,11 +40,11 @@ export default function Featured() {
                             </button>
                         ))}
                     </div>
+                </div> 
 
-                    <div className="col right">
-                        <div className="image-container">                          
-                            <FeaturedImage featuredData={featuredData} isActive={isActive} />                          
-                        </div>
+                <div className="slide-images">
+                    <div className="image-container">                          
+                        <FeaturedImage featuredData={featuredData} isActive={isActive} />                          
                     </div>
                 </div>
 
@@ -65,16 +65,17 @@ export default function Featured() {
                             <p>{content.content}</p>
                             <p><span>My Role:</span> {content.role}</p>
                             <p><span>Co-Developers:</span> {content.devs}</p>
-                            
-                            <a 
-                                className={`site-link ${c === isActive ? 'active' : ''}`}
-                                href={content.url} 
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                View Live Site
-                            </a>
                         </div>
+                    ))}
+                    {featuredData.featured.map((content, l) => (
+                        <a 
+                            className={`site-link ${l === isActive ? 'active' : ''}`}
+                            href={content.url} 
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            View Live Site
+                        </a>
                     ))}
                 </div>
             </div>

@@ -1,0 +1,67 @@
+.page-wrapper {
+    position: relative;
+    width: 100vw;
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+    background-color: $white;
+
+    .hero-container, 
+    #maincontent > *,
+    footer {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: center;
+        // scroll-snap-align: center;
+    }
+
+    footer {
+        height: auto;
+    }
+    
+    .inside-wrapper {
+        position: relative;
+    }
+
+    #maincontent {
+        position: relative;
+        padding-bottom: 40vw;
+
+        @media screen and (min-width: $medUp) {
+            padding-bottom: 15vw;
+        }
+        
+        &::before {
+            @include pseudo;
+            bottom: auto;
+            background-image: url('../../assets/images/hero-waves-light.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 0;
+            padding-top: 40%;
+            z-index: 0;
+            transform: translate(0, -50%);
+
+            .theme-dark & {
+                background-image: url('../../assets/images/hero-waves-dark.svg');
+            }
+        } 
+    }
+
+    .section-wrapper {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &.home {
+        .section-wrapper {
+            &:nth-of-type(3) {
+                background-color: $white;
+            }
+            &:last-of-type {
+                background: $white;
+            }
+        }
+    }
+}
