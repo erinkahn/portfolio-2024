@@ -9,15 +9,11 @@
     .hero-container, 
     #maincontent > *,
     footer {
-        width: 100vw;
         height: 100vh;
+        width: 100vw;
         scroll-snap-align: center;
     }
 
-    footer {
-        height: auto;
-    }
-    
     .inside-wrapper {
         position: relative;
     }

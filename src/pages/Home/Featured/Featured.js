@@ -67,12 +67,13 @@ export default function Featured() {
                             <p><span>Co-Developers:</span> {content.devs}</p>
                         </div>
                     ))}
-                    {featuredData.featured.map((content, l) => (
+                    {featuredData.featured.map((content, a) => (
                         <a 
-                            className={`site-link ${l === isActive ? 'active' : ''}`}
+                            className={`site-link ${a === isActive ? 'active' : ''}`}
                             href={content.url} 
                             target="_blank"
                             rel="noreferrer"
+                            key={`link-${a}`}
                         >
                             View Live Site
                         </a>
