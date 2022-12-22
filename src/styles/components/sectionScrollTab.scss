@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 30vh;
-    z-index: 3;
+    z-index: 2;
     transform: translate(1em, -50%);
 
     button {
@@ -30,4 +30,8 @@
             }
         }
     }
+}
+
+header:has(.fullPageMenu.appear) ~ .sectionScrollTabs{
+    z-index: 1;
 }

@@ -12,7 +12,6 @@
         width: 100vw;
         height: 100vh;
         scroll-snap-align: center;
-        // scroll-snap-align: center;
     }
 
     footer {
@@ -34,7 +33,6 @@
         &::before {
             @include pseudo;
             bottom: auto;
-            background-image: url('../../assets/images/hero-waves-light.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -42,16 +40,32 @@
             padding-top: 40%;
             z-index: 0;
             transform: translate(0, -50%);
-
-            .theme-dark & {
-                background-image: url('../../assets/images/hero-waves-dark.svg');
-            }
         } 
+    }
+
+    &.theme-light {
+        main::before {
+            background-image: url('../../assets/images/hero-waves-light.svg');
+        }
+    }
+    &.theme-dark {
+        main::before {
+            background-image: url('../../assets/images/hero-waves-dark.svg');
+        }
     }
 
     .section-wrapper {
         position: relative;
         margin: 0 auto;
+
+        &:nth-of-type(1) {
+            display: grid;
+            grid-template-rows: 20% 70% 10%;
+
+            @media screen and (min-width: $medUp) {
+                grid-template-rows: 35% 65%;
+            }
+        }
     }
 
     &.home {

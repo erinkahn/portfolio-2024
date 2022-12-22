@@ -1,11 +1,7 @@
 header {
+    position: relative;
     width: 100%;
-
-    .work &,
-    .resume & {
-        position: relative;
-        z-index: 2;
-    }
+    z-index: 2;
 
     &::before {
         @include pseudo;

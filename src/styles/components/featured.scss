@@ -4,13 +4,17 @@
     grid-template-rows: 22% 38% 40%;
     height: 100vh;
 
+    @media screen and (min-width: $xxsUp) {
+        grid-template-rows: 22% 45% 33%;
+    }  
+
     @media screen and (min-width: $smUp) {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 65% 35%;
     }  
     
     @media screen and (min-width: $medUp) {
-        grid-template-columns: 40% 10% 50%;
+        grid-template-columns: 40% 10% 8% 42%;
         grid-template-rows: 30% 10% 10% 40% 10%;
     }  
 
@@ -25,7 +29,7 @@
         top: 0;
         right: auto;
         bottom: auto;
-        z-index: 2;
+        z-index: 1;
         transform: translate(-1%, -35%);
 
         @media screen and (min-width: $smUp) {
@@ -62,13 +66,15 @@
     }     
 
     .title-carousel-wrapper {
+        grid-column: 1 / span 4;
         display: grid;
-        grid-template-columns: 30% 50% 20%;
+        grid-template-columns: 35% 40% 25%;
         grid-template-rows: 50% 45% 5%;
+        width: 95%;
 
         @media screen and (min-width: $smUp) {
             grid-column: 1;
-            width: 48%;
+            width: 92%;
         }
 
         @media screen and (min-width: $medUp) {
@@ -76,7 +82,7 @@
             grid-template-rows: 20% 65% 15%;
             grid-row: 2 / span 2;
             grid-column: 1 / span 2;
-            width: 100%;
+            width: 95%;
         }
 
         .slide-title {
@@ -88,11 +94,6 @@
                 margin-bottom: 0;
                 max-width: fit-content;
                 z-index: 1;
-            }
-        
-            h5 {
-                font-size: 1.125em;
-                padding-bottom: 1.5em;
             }
 
             .slide-num {
@@ -121,16 +122,12 @@
             grid-column: 3;
             position: relative;
             display: flex;
+            justify-content: flex-end;
             z-index: 1;
             transform: rotate(-8deg);
-            padding-right: 1.5em;
 
             @media screen and (min-width: $smUp) {
                 transform: rotate(0);
-            }
-
-            @media screen and (min-width: $medUp) {
-                justify-content: end;
             }
         }
 
@@ -138,8 +135,8 @@
             background-color: rgba($fiveLight, 0.5);
             border: none;
             border-radius: 90px;
-            width: 0.5em;
-            height: 0.5em;
+            width: 0.35em;
+            height: 0.35em;
             padding: 0.35em;
     
             &:nth-of-type(2) {
@@ -153,6 +150,7 @@
             @media screen and (min-width: $medUp) {
                 width: 1em;
                 height: 1em;
+                padding: .5em;
             }
     
             .theme-dark & {
@@ -173,11 +171,7 @@
 
     .slide-images {
         grid-row: 2;
-        // background-color: $primaryLight;
-
-        .theme-dark & {
-            // background-color: $secondaryDark;
-        }
+        grid-column: 1 / span 4;
 
         @media screen and (min-width: $smUp) {
             grid-row: 1;
@@ -218,9 +212,9 @@
 
     .content-container {
         position: relative;
+        grid-column: 1 / span 4;
         display: flex;
-        align-items: center;
-        width: 100vw;
+        width: 100%;
         height: 100%;
         background-color: $white;
         font-family: $montserrat;
@@ -228,9 +222,9 @@
         box-shadow: 0 17px 41px -1px rgb(0 0 0 / 5%);
 
         @media screen and (min-width: $medUp) {
-            width: 55vw;
-            grid-row: 4 / span 1;
-            grid-column: 1 / span 2;
+            align-items: center;
+            grid-row: 4/span 1;
+            grid-column: 1/span 3;
         }
     }
 
@@ -244,30 +238,44 @@
         &.active {
             height: auto;
             width: 100%;
+            max-width: 75%;
             opacity: 1;
             pointer-events: initial;
+            padding: 2em 0 5% 1.5em;
 
-            & > p,
-            & > h5 {
-                padding: 0 2em;
+            @media screen and (min-width: $xxsUp) {
+                padding: 3em 0 3% 3em;
+            }
+
+            @media screen and (min-width: $medUp) {
+                padding: 0 11% 3% 16%;
+            }
+
+            h5 {
+                font-size: 1em;
+                font-weight: $semibold;
+                color: $primaryLight;
 
                 @media screen and (min-width: $smUp) {
-                    padding: 0 0 0 18%;
+                    font-size: 1.2em;
+                }
+
+                .theme-dark & {
+                    color: $primaryDark;
                 }
             }
 
-            p:first-of-type {
-                padding: 1em 2em;
-                @media screen and (min-width: $smUp) {
-                    padding: 1em 0 0 18%;
+            p {
+                &:first-of-type {
+                    padding-top: 1.5em;
+                    padding-bottom: 1em;
                 }
-            }
-            p:nth-of-type(2) {
-                padding-bottom: 2em;
-                max-width: 95%;
-            }
-            p:nth-of-type(3) {
-                padding-bottom: 0.5em;
+                &:nth-of-type(2) {
+                    padding-bottom: 2em;
+                }
+                &:nth-of-type(3) {
+                    padding-bottom: 0.5em;
+                }
             }
             
             span {
@@ -280,7 +288,7 @@
             }
             
             @media screen and (min-width: $smUp) {
-                padding-top: 0;
+                max-width: 85%;
 
                 &:after {
                     @include pseudo;

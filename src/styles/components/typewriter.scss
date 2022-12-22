@@ -1,22 +1,15 @@
 .typewriter-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0.25em;
-    padding-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    grid-row: 1;
 
-    @media screen and (min-width: $smUp) {
-        grid-template-columns: 0.375fr auto 1fr;
-    }
-
-    @media screen and (min-width: $large) {
-        text-align: left;
-        grid-template-columns: 0.8fr auto 1fr;
-    }
-    
-    @media screen and (min-width: $xlarge) {
-        text-align: left;
-        grid-template-columns: 0.9fr auto 1fr;
+    @media screen and (min-width: $medUp) {
+        grid-gap: 0.25em;
+        display: grid;
+        grid-template-columns: 40% 50% 10%;
     }
 
     .typewriter {
@@ -31,24 +24,20 @@
         }
     }
 
-    .type-wrapper {
-        @media screen and (min-width: $smUp) {
-            grid-column: 3;
-        }   
-    }
-
     .section-title {
-        color: $black;
-
         &.i-am {
-            @media screen and (min-width: $smUp) {
-                grid-column: 3;
-            }
-
-            @media screen and (min-width: $large) {
+            @media screen and (min-width: $medUp) {
                 grid-column: 2;
+                align-self: flex-end;
             }
         }
+    }
+
+    .type-wrapper {
+        @media screen and (min-width: $medUp) {
+            grid-column: 2;
+            align-self: baseline;
+        }   
     }
 
     .type {
