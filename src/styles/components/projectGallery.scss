@@ -1,39 +1,32 @@
 .gallery-container {
+    display: grid;
+    grid-template-rows: 10% 15% 65% 10%;
     margin: 0 auto;
-    padding: 15vw 0;
-    width: 68%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 100%;
+    width: 85%;
 
-    @media screen and (max-width: $medDown) {
-        width: 73%;
+    @media screen and (min-width: $xsUp) {
+        width: 70%;
     }
 
-    @media screen and (max-width: $smDown) {
-        width: 85%;
+    @media screen and (min-width: $medUp) {
+        grid-template-rows: 12% 15% 70% 3%;
+        max-width: 900px;
     }
-    
+
     .filter-bar {
+        grid-row: 2;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2.5em;
-        align-items: baseline;
-        width: 100%;
-
-        @media screen and (min-width: $smUp) {
-            grid-template-columns: 1fr 1fr;
-        }
+        align-items: center;
+        margin-bottom: 1em;
         
         .tabs-wrapper {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            grid-gap: 1em;
-            margin-bottom: 2em;
             justify-items: flex-start;
 
             @media screen and (min-width: $smUp) {
-                grid-gap: 2em;
+                grid-template-columns: repeat(4, 1fr) 40%;
             }
         }
 
@@ -67,18 +60,13 @@
         grid-row: 1;
         margin-bottom: 0;
         justify-self: flex-end;
-
-        @media screen and (min-width: $smUp) {
-            grid-row: auto;
-            margin-bottom: 2em;
-        }
     }
 
     .project-grid {
+        grid-row: 3;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 3%;
         text-align: center;
 
@@ -108,26 +96,16 @@
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 0;
-        padding-top: 28%;
-        margin-bottom: 3%;
-        // border: 1px solid black;
+        height: 100%;
+        border-radius: 15px;
 
         &:nth-of-type(2) {
             background-position: top;
+            grid-column: 2 / span 2;
         }
 
-        &:nth-of-type(odd){
-            width: 27%;
-        }
-
-        &:nth-of-type(4) {
-            width: 38.59%;
-        }
-
-        &:nth-of-type(2),
         &:nth-of-type(6){
-            width: 69%;
+           grid-column: 1 / span 2;
         }
     }
 }
