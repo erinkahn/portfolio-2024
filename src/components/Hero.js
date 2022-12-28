@@ -1,14 +1,9 @@
 import Prallax from "react-rellax";
 
 export default function Hero(props) {
-	// const scrollToSection = () => {
-	// 	const section = window.
-	// 	console.log(section)
-	// 	section.scrollIntoView({
-	// 		behavior: 'smooth'
-	// 	})
-	// }
-	// document.addEventListener('click', scrollToSection);
+	const scrollToSection = () => {
+		document.querySelector('#services').scrollIntoView({behavior: "smooth"})
+	}
 
 	return (
 		<section	
@@ -23,7 +18,7 @@ export default function Hero(props) {
 				</div>
 			</Prallax>
 
-			<button className="btn-scroll">
+			<button onClick={scrollToSection} className="btn-scroll">
 				<span className="sr-only">scroll to next section</span>
 			</button>
 		</section>

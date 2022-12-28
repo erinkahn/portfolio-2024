@@ -6,10 +6,7 @@ export default function Footer() {
 	const location = useLocation();
 	const today = new Date().getFullYear();
 	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth'
-		})
+		document.querySelector('#skip').scrollIntoView({behavior: "smooth"})
 	}
 
 	return (
