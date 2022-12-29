@@ -80,6 +80,8 @@ $spotify: url('../../assets/images/spotify.svg');
 // mixins
 // ***********************************************//
 
+@use "sass:math";
+
 @mixin cascadeTransition {
   @for $i from 1 through 5 {
     &:nth-child(#{$i}) {

@@ -7,7 +7,7 @@ import About from './About/About';
 import Testimonials from "./Testimonials";
 import Footer from "../../components/Footer";
 import { heroData } from "../../constants/data";
-import SectionScrollTabs from "../../components/SectionScrollTabs";
+import SectionScrollTabs from "./SectionScrollTabs";
 
 export default function Home() {
 	return (

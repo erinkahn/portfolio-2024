@@ -7,7 +7,6 @@ import ProgressBar from "./ProgressBar";
 // import Weather from "../Weather";
 
 export default function Header(props) {
-	// console.log(props, 'props')
 	const themeName = useContext(ThemeContext);
 
 	return (
@@ -17,7 +16,7 @@ export default function Header(props) {
 				to="/"
 			>
 				<img
-					src={"/images/header/logo-" + `${themeName.theme}` + ".svg"}
+					src={`/images/header/logo-${themeName.theme}.svg`}
 					style={{ width: "3em", height: "3em" }}
 					alt="erin kahn home"
 					className="logo"

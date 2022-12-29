@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 export default function ProgressBar() {
     const [ scrolled, setScrolled ] = useState(0);
-
+    
     const handleProgressBar = (e) => {
         const totalScroll = document.documentElement.scrollTop;
         const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;

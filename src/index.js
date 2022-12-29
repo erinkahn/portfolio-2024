@@ -11,10 +11,10 @@ import { HelmetProvider } from "react-helmet-async";
 // getLCP(console.log);
 // getTTFB(console.log);
 
-if (process.env.NODE_ENV !== "production") {
-	const axe = require("@axe-core/react");
-	axe(React, ReactDOM, 1000);
-}
+// if (process.env.NODE_ENV !== "production") {
+// 	const axe = require("@axe-core/react");
+// 	axe(React, ReactDOM, 1000);
+// }
 
 ReactDOM.render(
 	<React.StrictMode>

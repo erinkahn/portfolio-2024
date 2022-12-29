@@ -3,6 +3,8 @@
     width: 100vw;
 	height: 100vh;
 	scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    overflow-x: hidden; // need this to remove white at bottom
 	overflow-y: scroll;
     background-color: $white;
 

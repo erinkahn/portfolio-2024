@@ -1,7 +1,8 @@
-import {useState} from 'react';
-import {sections} from './../constants/data';
+import {useState, useRef} from 'react';
+import {sections} from '../../constants/data';
 
 export default function SectionScrollTabs() {
+    const ref = useRef()
     const [isActive, setIsActive] = useState(0);
 
     const changeActiveTab = (e, s) => {
@@ -19,10 +20,10 @@ export default function SectionScrollTabs() {
         const strippedAttribute = idAttribute.replace(str, "");
         const sectionId = document.querySelector(`#${strippedAttribute}`);
         sectionId.scrollIntoView({behavior: "smooth"});  
-    }
+    }    
 
     return (
-        <aside className="sectionScrollTabs">
+        <aside ref={ref} className="sectionScrollTabs">
             {sections.homepage.map((section, s) => (
                 <button 
                     key={`sectionTab-${s}`}
