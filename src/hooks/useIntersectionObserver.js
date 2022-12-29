@@ -1,20 +1,20 @@
 import { useRef, useEffect, useState } from "react";
 
-const useIntersectionObserver = (elementRef) => {
+const useIntersectionObserver = elementRef => {
 	const observer = useRef();
 	const [entry, setEntry] = useState();
+
+	const options = {
+		root: null,
+		rootMargin: '0%',
+		threshold: 0.1
+	};
 
 	const updateEntry = (entries) => {
 		setEntry(entries[0]);
 	};
 
 	useEffect(() => {
-		const options = {
-			threshold: 0,
-			root: null,
-			rootMargin: "1200px",
-		};
-
 		const node = elementRef?.current;
 		if (!node) return;
 

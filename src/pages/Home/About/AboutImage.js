@@ -16,7 +16,7 @@ export default function AboutImage(props) {
         >
             <img 
                 loading="lazy"
-                className="about-img" 
+                className="ft-img" 
                 src={isWebpSupported ? props.aboutProp.src : props.aboutProp.lowRes} 
                 alt={props.aboutProp.alt} 
                 width="250" 
@@ -26,7 +26,7 @@ export default function AboutImage(props) {
             {isVisible && 
                 <img 
                     loading="lazy"
-                    className="about-img" 
+                    className="ft-img" 
                     src={isWebpSupported ? props.aboutProp.src : props.aboutProp.fallback} 
                     alt={props.aboutProp.alt} 
                     width="350" 

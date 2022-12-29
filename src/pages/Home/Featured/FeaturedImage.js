@@ -33,7 +33,7 @@ export default function FeaturedImage(props) {
                         height="792"
                         style={lowResStyle}
                     />
-                    {isVisible && 
+                    {/* {isVisible &&  */}
                         <img 
                             loading="lazy"
                             className="ft-img" 
@@ -44,7 +44,7 @@ export default function FeaturedImage(props) {
                             style={highResStyle}
                             onLoad={handleImageOnLoad}
                         />
-                    }
+                    {/* } */}
                 </div> 
             </Suspense>
         ))}

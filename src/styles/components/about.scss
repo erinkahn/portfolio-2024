@@ -94,7 +94,7 @@
             @include aspectRatioContainer(350px, 355px);
         }
 
-        .about-img {
+        .ft-img {
             @include aspectRatioImage;
         }
     }
