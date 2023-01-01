@@ -1,9 +1,9 @@
 export default function Project(props) {
     return (
         <>
-            {props.projectProp.projects.map((project) => (
+            {props.projectProp.projects.map((project, p) => (
                 <li 
-                    key={`project-${project.id}`} 
+                    key={`project-${project.id}-${p}`} 
                     aria-labelledby="all"
                     role="tabpanel" 
                     className="project-wrapper" 

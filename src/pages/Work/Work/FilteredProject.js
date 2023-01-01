@@ -3,9 +3,9 @@ export default function FilteredProject(props) {
         <>
             {props.filteredProjectProp.projects.filter(
                 (project) => project.show === props.stateProp.active).map(
-                    (filteredWebsite) => (
+                    (filteredWebsite, f) => (
                         <li 
-                        key={`item-${filteredWebsite.id}`} 
+                        key={`item-${f}`} 
                         aria-labelledby={filteredWebsite.type}
                         role="tabpanel" 
                         >

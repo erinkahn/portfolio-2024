@@ -2,7 +2,7 @@ import Prallax from "react-rellax";
 
 export default function Hero(props) {
 	const scrollToSection = () => {
-		document.querySelector('#services').scrollIntoView({behavior: "smooth"})
+		document.querySelector('#maincontent').scrollIntoView({behavior: "smooth"})
 	}
 
 	return (
