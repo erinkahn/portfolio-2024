@@ -67,6 +67,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         gap: 3%;
         text-align: center;
 
@@ -101,11 +102,8 @@
 
         &:nth-of-type(2) {
             background-position: top;
-            grid-column: 2 / span 2;
-        }
-
-        &:nth-of-type(6){
-           grid-column: 1 / span 2;
+            grid-column: span 2;
+            grid-row: span 3;
         }
     }
 }

@@ -203,17 +203,17 @@ export const workData = {
             img: '/images/work/design/kelly-kahn-art.svg',
             url: '',
             description: 'Logo design for fine artist, Kelly Kahn, who specializes in custom portrait and landscape paintings',
-            id: 2,
+            id: 0,
             showAll: false,
             type: "design",
             show: 'show_designs'
         },
         {
             title: "scott brothers",
-            img: '/images/work/code/d&j/Drew-and-Jonathan-Scott.jpg',
+            img: '/images/work/code/d&j/Drew-and-Jonathan-Scott.webp',
             url: 'https://thescottbrothers.com/',
             description: 'A newly designed Wordpress website built for The Scott Brothers, the famous HGTV fixer-upper brothers',
-            id: 0,
+            id: 1,
             showAll: true,
             type: "website",
             show: 'show_websites'
@@ -223,14 +223,14 @@ export const workData = {
             img: '/images/work/art/dog.jpg',
             url: '',
             description: `Pet portrait of a dear friend's sister's dog`,
-            id: 4,
+            id: 2,
             showAll: true,
             type: "art",
             show: 'show_art'
         },
         {
             title: "the barber bar",
-            img: '/images/work/design/The-Barber-Bar-Birmingham.jpg',
+            img: '/images/work/design/barberBar/The-Barber-Bar.webp',
             url: '',
             description: 'Logo design and brand identity suite for a locally owned barber salon in Birmingham, Alabama',
             id: 3,
@@ -250,7 +250,7 @@ export const workData = {
         },
         {
             title: "powell law firm",
-            img: '/images/work/code/Powell-Law-Firm.jpg',
+            img: '/images/work/code/powell/Powell-Law-Firm.webp',
             url: 'https://www.powell.law/',
             description: 'A custom built site for Powell Law Firm, an injury law firm located in Kentucky',
             id: 5,
@@ -260,7 +260,7 @@ export const workData = {
         },
         {
             title: "sheffield lentine",
-            img: '/images/work/code/sheffield-lentine.jpg',
+            img: '/images/work/code/sheffieldL/Sheffield-Lentine.webp',
             url: 'https://www.sheffieldlentine.com/',
             description: 'A website built for Birmingham law firm, Sheffield & Lentine, which won 3rd place in the 2019 Webby Awards under the law category',
             id: 6,
@@ -270,7 +270,7 @@ export const workData = {
         },
         {
             title: "fireside natural gas",
-            img: '/images/work/code/fireside-natural-gas.jpg',
+            img: '/images/work/code/fireside/Fireside-Natural-Gas.webp',
             url: 'https://firesidenaturalgas.com/',
             description: `A custom built website for FireSide Natural Gas, one of Georgia's top providers of natural gas service for commercial and industrial users`,
             id: 7,
@@ -280,7 +280,7 @@ export const workData = {
         },
         {
             title: "vehicle media",
-            img: '/images/work/code/vehicle-media.jpg',
+            img: '/images/work/code/vm/vehicle-media.webp',
             url: 'https://www.vehiclemedia.com/',
             description: 'Vehicle Media is a digital marketing agency in Atlanta, Georgia that focuses on graphic + web design, social media, web development, photography and communication strategies.',
             id: 8,
@@ -317,7 +317,17 @@ export const workData = {
             showAll: true,
             type: "website",
             show: 'show_websites'
-        }
+        },
+        {
+            title: "conlan company",
+            img: '/images/work/code/conlan/Conlan-Company.webp',
+            url: 'https://conlancompany.com/',
+            description: `A newly designed website for Conlan Company, a large contracting company located in Goergia, Florida and Texas`,
+            id: 12,
+            showAll: true,
+            type: "website",
+            show: 'show_websites' 
+        },
     ]
 }
 
