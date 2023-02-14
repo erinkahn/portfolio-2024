@@ -105,6 +105,10 @@
         position: relative;
         min-height: 187px;
 
+        @media screen and (min-width: $xlarge) {
+            min-height: 250px;
+        }
+
         // &.active-thumb {
         //     background-position: top;
         //     grid-column: 2 / span 2;

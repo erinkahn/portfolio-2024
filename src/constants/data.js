@@ -199,14 +199,14 @@ export const workData = {
     ],
     projects: [
         {
-            title: "kelly kahn art",
-            img: '/images/work/design/kelly-kahn-art.svg',
-            url: '',
-            description: 'Logo design for fine artist, Kelly Kahn, who specializes in custom portrait and landscape paintings',
+            title: "aerangis",
+            img: '/images/work/code/aerangis/Aerangis.webp',
+            url: 'https://aerangis.com/',
+            description: `A newly designed website for Aerangis, a handmade fragrance line based out of New York City with a small but impressive inventory of scents presented in custom clay pots`,
             id: 0,
-            showAll: false,
-            type: "design",
-            show: 'show_designs'
+            showAll: true,
+            type: "website",
+            show: 'show_websites' 
         },
         {
             title: "scott brothers",
@@ -230,7 +230,7 @@ export const workData = {
         },
         {
             title: "the barber bar",
-            img: '/images/work/design/barberBar/The-Barber-Bar.webp',
+            img: '/images/work/design/barberBar/The-Barber-Bar-Black-Bkg.png',
             url: '',
             description: 'Logo design and brand identity suite for a locally owned barber salon in Birmingham, Alabama',
             id: 3,
@@ -289,31 +289,21 @@ export const workData = {
             show: 'show_websites'
         },
         {
-            title: "winter capriola zenner",
-            img: '/images/work/code/winter-capriola-zenner.jpg',
-            url: 'https://wczlaw.com/',
-            description: 'A newly designed website for WCZ, a legal firm that offers litigation, business transactions, real estate and disputes services',
-            id: 9,
-            showAll: true,
-            type: "website",
-            show: 'show_websites'
-        },
-        {
-            title: "robinson weeks partners",
-            img: '/images/work/code/robinson-weeks-partners.jpg',
-            url: 'https://robinsonweeks.com/',
-            description: 'A website for Robinson Weeks Partners, an industrial real estate development and investment firm located in Atlanta, GA',
-            id: 10,
-            showAll: true,
-            type: "website",
-            show: 'show_websites'
+            title: "Volunteer State Builders",
+            img: '/images/work/design/Volunteer-State-Builders.png',
+            url: '',
+            description: 'Logo design for Volunteer State Builders, a General Contractor/Home Builder located in Middle Tennessee',
+            id: 12,
+            showAll: false,
+            type: "design",
+            show: 'show_designs'
         },
         {
             title: "waffle house",
             img: '/images/work/code/waffle/The-Waffle-House.jpg',
             url: 'https://www.wafflehouse.com/',
             description: `A newly redesigned website for Waffle House, America's favorite breakfast spot`,
-            id: 11,
+            id: 10,
             showAll: true,
             type: "website",
             show: 'show_websites'
@@ -323,10 +313,40 @@ export const workData = {
             img: '/images/work/code/conlan/Conlan-Company.webp',
             url: 'https://conlancompany.com/',
             description: `A newly designed website for Conlan Company, a large contracting company located in Goergia, Florida and Texas`,
-            id: 12,
+            id: 11,
             showAll: true,
             type: "website",
             show: 'show_websites' 
+        },
+        {
+            title: "kelly kahn art",
+            img: '/images/work/design/kelly-kahn-art.jpg',
+            url: '',
+            description: 'Logo design for fine artist, Kelly Kahn, who specializes in custom portrait and landscape paintings',
+            id: 12,
+            showAll: false,
+            type: "design",
+            show: 'show_designs'
+        },
+        {
+            title: "robinson weeks partners",
+            img: '/images/work/code/rw/Robinson-Weeks.webp',
+            url: 'https://robinsonweeks.com/',
+            description: 'A website for Robinson Weeks Partners, an industrial real estate development and investment firm located in Atlanta, GA',
+            id: 13,
+            showAll: true,
+            type: "website",
+            show: 'show_websites'
+        },
+        {
+            title: "clover hill",
+            img: '/images/work/design/clover-hill.jpg',
+            url: '',
+            description: 'Logo design for clothing boutique in Pell City, Alabama',
+            id: 14,
+            showAll: false,
+            type: "design",
+            show: 'show_designs'
         },
     ]
 }
