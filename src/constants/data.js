@@ -224,7 +224,7 @@ export const workData = {
             url: '',
             description: `Pet portrait of a dear friend's sister's dog`,
             id: 2,
-            showAll: true,
+            showAll: false,
             type: "art",
             show: 'show_art'
         },
@@ -234,7 +234,7 @@ export const workData = {
             url: '',
             description: 'Logo design and brand identity suite for a locally owned barber salon in Birmingham, Alabama',
             id: 3,
-            showAll: true,
+            showAll: false,
             type: "design",
             show: 'show_designs'
         },

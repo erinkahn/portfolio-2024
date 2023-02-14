@@ -3,20 +3,24 @@ export default function FilteredProject(props) {
         <>
             {props.filteredProjectProp.projects.filter(
                 (project) => project.show === props.stateProp.active).map(
-                    (filteredWebsite, f) => (
+                    (filteredPr, f) => (
                         <li 
                         key={`item-${f}`} 
-                        aria-labelledby={filteredWebsite.type}
+                        aria-labelledby={filteredPr.type}
                         role="tabpanel" 
+                        className={`project-item ${f === 1 ? 'active-thumb' : ''}`}
                         >
-                            <a 
+                            <button 
                                 tabIndex="0" 
-                                href={filteredWebsite.url} 
-                                target="_blank" 
-                                rel="noreferrer"
+                                // href={filteredPr.url} 
+                                // target="_blank" 
+                                className="project-image" 
+                                style={{backgroundImage: `url(${filteredPr.img})`}}
                             >
-                                {filteredWebsite.title}
-                            </a>
+                                <span className="project-link sr-only">
+                                    {filteredPr.title}
+                                </span>
+                            </button>
                         </li>
                     )
                 )

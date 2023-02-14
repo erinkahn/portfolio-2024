@@ -10,15 +10,16 @@
     }
 
     @media screen and (min-width: $medUp) {
-        grid-template-rows: 12% 15% 70% 3%;
-        max-width: 900px;
+        grid-template-rows: 11% 9% 71% 3%;
+        max-width: 1200px;
+        gap: 3%;
     }
 
     .filter-bar {
         grid-row: 2;
         display: grid;
         align-items: center;
-        margin-bottom: 1em;
+        align-content: center;
         
         .tabs-wrapper {
             display: grid;
@@ -66,13 +67,16 @@
         grid-row: 3;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        gap: 3%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
         text-align: center;
 
-        @media screen and (max-width: $medDown) {
-            // gap: 3.99%;
+        @media screen and (min-width: $smUp) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (min-width: $medUp) {
+            grid-template-columns: repeat(4, 1fr);
         }
 
         // &.show_all {
@@ -92,18 +96,37 @@
         // }
     }
 
-    .project-wrapper {
-        background-position: center;
+    .project-btn {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .project-item {
+        position: relative;
+        min-height: 187px;
+
+        // &.active-thumb {
+        //     background-position: top;
+        //     grid-column: 2 / span 2;
+        //     grid-row: span 3;
+
+        //     @media screen and (min-width: $smUp) {
+        //         grid-column: 3 / span 3;
+        //         grid-row: span 4;
+        //     }
+        // }
+    }
+
+    .project-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: none;
+        background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 100%;
-        border-radius: 15px;
-
-        &:nth-of-type(2) {
-            background-position: top;
-            grid-column: span 2;
-            grid-row: span 3;
-        }
+        // border-radius: 15px;  
     }
 }

@@ -8,6 +8,10 @@
 	overflow-y: scroll;
     background-color: $white;
 
+    &.work {
+        scroll-snap-type: none;
+    }
+
     .hero-container, 
     #maincontent > *,
     footer {
