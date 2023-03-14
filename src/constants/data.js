@@ -176,24 +176,24 @@ export const featuredData = {
 export const workData = {
     sectionTitle: 'work',
     tabs: [
-        {
-            tabTitle: 'All',
-            id: 0,
-            showTab: 'show_all'
-        },
+        // {
+        //     tabTitle: 'All',
+        //     id: 0,
+        //     showTab: 'show_all'
+        // },
         {
             tabTitle: 'Code',
-            id: 1,
+            id: 0,
             showTab: 'show_websites'
         },
         {
             tabTitle: 'Design',
-            id: 2,
+            id: 1,
             showTab: 'show_designs'
         },
         {
             tabTitle: 'Art',
-            id: 3,
+            id: 2,
             showTab: 'show_art'
         }
     ],
@@ -204,7 +204,7 @@ export const workData = {
             url: 'https://aerangis.com/',
             description: `A newly designed website for Aerangis, a handmade fragrance line based out of New York City with a small but impressive inventory of scents presented in custom clay pots`,
             id: 0,
-            showAll: true,
+            showAll: false,
             type: "website",
             show: 'show_websites' 
         },
@@ -214,7 +214,7 @@ export const workData = {
             url: 'https://thescottbrothers.com/',
             description: 'A newly designed Wordpress website built for The Scott Brothers, the famous HGTV fixer-upper brothers',
             id: 1,
-            showAll: true,
+            showAll: false,
             type: "website",
             show: 'show_websites'
         },
@@ -230,7 +230,7 @@ export const workData = {
         },
         {
             title: "the barber bar",
-            img: '/images/work/design/barberBar/The-Barber-Bar-Black-Bkg.png',
+            img: '/images/work/design/barberBar/The-Barber-Bar.png',
             url: '',
             description: 'Logo design and brand identity suite for a locally owned barber salon in Birmingham, Alabama',
             id: 3,
@@ -244,7 +244,7 @@ export const workData = {
             url: '',
             description: 'Artwork inspired by one of my favorite artist, Gustav Klimt',
             id: 4,
-            showAll: true,
+            showAll: false,
             type: "art",
             show: 'show_art'
         },
@@ -254,7 +254,7 @@ export const workData = {
             url: 'https://www.powell.law/',
             description: 'A custom built site for Powell Law Firm, an injury law firm located in Kentucky',
             id: 5,
-            showAll: true,
+            showAll: false,
             type: "website",
             show: 'show_websites' 
         },
@@ -264,7 +264,7 @@ export const workData = {
             url: 'https://www.sheffieldlentine.com/',
             description: 'A website built for Birmingham law firm, Sheffield & Lentine, which won 3rd place in the 2019 Webby Awards under the law category',
             id: 6,
-            showAll: true,
+            showAll: false,
             type: "website",
             show: 'show_websites'
         },
@@ -274,7 +274,7 @@ export const workData = {
             url: 'https://firesidenaturalgas.com/',
             description: `A custom built website for FireSide Natural Gas, one of Georgia's top providers of natural gas service for commercial and industrial users`,
             id: 7,
-            showAll: true,
+            showAll: false,
             type: "website",
             show: 'show_websites' 
         },
@@ -284,7 +284,7 @@ export const workData = {
             url: 'https://www.vehiclemedia.com/',
             description: 'Vehicle Media is a digital marketing agency in Atlanta, Georgia that focuses on graphic + web design, social media, web development, photography and communication strategies.',
             id: 8,
-            showAll: true,
+            showAll: false,
             type: "website",
             show: 'show_websites'
         },
@@ -304,26 +304,36 @@ export const workData = {
             url: 'https://www.wafflehouse.com/',
             description: `A newly redesigned website for Waffle House, America's favorite breakfast spot`,
             id: 10,
-            showAll: true,
+            showAll: false,
             type: "website",
             show: 'show_websites'
+        },
+        {
+            title: "calligraphy",
+            img: '/images/work/art/calligraphy.jpg',
+            url: '',
+            description: 'Calligraphy',
+            id: 11,
+            showAll: false,
+            type: "art",
+            show: 'show_art'
         },
         {
             title: "conlan company",
             img: '/images/work/code/conlan/Conlan-Company.webp',
             url: 'https://conlancompany.com/',
             description: `A newly designed website for Conlan Company, a large contracting company located in Goergia, Florida and Texas`,
-            id: 11,
-            showAll: true,
+            id: 12,
+            showAll: false,
             type: "website",
             show: 'show_websites' 
         },
         {
             title: "kelly kahn art",
-            img: '/images/work/design/kelly-kahn-art.jpg',
+            img: '/images/work/design/kelly-kahn-art.png',
             url: '',
             description: 'Logo design for fine artist, Kelly Kahn, who specializes in custom portrait and landscape paintings',
-            id: 12,
+            id: 13,
             showAll: false,
             type: "design",
             show: 'show_designs'
@@ -333,8 +343,8 @@ export const workData = {
             img: '/images/work/code/rw/Robinson-Weeks.webp',
             url: 'https://robinsonweeks.com/',
             description: 'A website for Robinson Weeks Partners, an industrial real estate development and investment firm located in Atlanta, GA',
-            id: 13,
-            showAll: true,
+            id: 14,
+            showAll: false,
             type: "website",
             show: 'show_websites'
         },
@@ -343,10 +353,120 @@ export const workData = {
             img: '/images/work/design/clover-hill.jpg',
             url: '',
             description: 'Logo design for clothing boutique in Pell City, Alabama',
-            id: 14,
+            id: 15,
             showAll: false,
             type: "design",
             show: 'show_designs'
+        },
+        {
+            title: "back portrait",
+            img: '/images/work/art/back-portrait.jpg',
+            url: '',
+            description: `Acrylic portrait`,
+            id: 16,
+            showAll: false,
+            type: "art",
+            show: 'show_art'
+        },
+        {
+            title: "grace klein logo",
+            img: '/images/work/design/grace-klein-community.jpg',
+            url: '',
+            description: 'Logo design for non-profit organization in Alabama',
+            id: 17,
+            showAll: false,
+            type: "design",
+            show: 'show_designs'
+        },
+        {
+            title: "expo home improvements",
+            img: '/images/work/code/expo/Expo-Home-Improvement.webp',
+            url: 'https://expohomeimprovement.com/',
+            description: `A custom built website for Expo Home Improvement, a home improvement company located in Texas`,
+            id: 18,
+            showAll: false,
+            type: "website",
+            show: 'show_websites' 
+        },
+        {
+            title: "floral diptych",
+            img: '/images/work/art/floral-diptych.jpg',
+            url: '',
+            description: `Acrylic diptych on wood`,
+            id: 19,
+            showAll: false,
+            type: "art",
+            show: 'show_art'
+        },
+        {
+            title: "novo",
+            img: '/images/work/design/Novo.png',
+            url: '',
+            description: 'Web design created for a law-firm app built by Vehicle Media',
+            id: 20,
+            showAll: false,
+            type: "design",
+            show: 'show_designs'
+        },
+        {
+            title: "Cahaba Brewing Company",
+            img: '/images/work/code/cahaba/Cahaba-Brewing-Co.png',
+            url: '',
+            description: 'Web design and code improvements for Cahaba Brewing Company, a brewery located in Birmingham, AL',
+            id: 21,
+            showAll: false,
+            type: "website",
+            show: 'show_websites'
+        },
+        {
+            title: "split",
+            img: '/images/work/school/split.png',
+            url: '',
+            description: 'A site showcasing the 2016 thriller, Split. A film about a man who kidnaps three young girls, and after doing so reveals his 24 unique, yet terrifying personalities',
+            id: 22,
+            showAll: false,
+            type: "website",
+            show: 'show_websites'
+        },
+        {
+            title: "Aretha Franklin",
+            img: '/images/work/school/aretha.png',
+            url: '',
+            description: `Celebrating the life of the legendary 'Queen of Soul', this site takes the user through the journey of Aretha Franklin's life.`,
+            id: 23,
+            showAll: false,
+            type: "website",
+            show: 'show_websites'
+        },
+        {
+            title: "moodie",
+            img: '/images/work/school/Moodie.png',
+            url: '',
+            description: `Moodie is an app designed for users with anxiety and/or depression. It tracks a user's mood over time and sends that information and progress to a user's doctor in order to see if a medication is or is not working for a patient.`,
+            id: 24,
+            showAll: false,
+            type: "design",
+            show: 'show_designs'
+        },
+        {
+            title: "self portrait",
+            img: '/images/work/art/pencil-drawing.png',
+            url: '',
+            description: `Pencil portrait playing piano`,
+            id: 25,
+            showAll: false,
+            type: "art",
+            show: 'show_art'
+        },
+        {
+            title: "Nerds Candy",
+            img: '/images/work/school/Nerds.png',
+            url: '',
+            description: `A site for kids, focusing on unique characters and self expressive games that allow children to embrace their weirdness and unique traits`,
+            id: 26,
+            showAll: false,
+            type: "website",
+            show: 'show_websites'
         },
     ]
 }

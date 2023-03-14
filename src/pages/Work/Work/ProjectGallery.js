@@ -7,17 +7,17 @@ import FilteredProject from './FilteredProject';
 
 const initialState = {
     showAll: true,
-    active: 'show_all'
+    active: 'show_websites'
 }
 
 const reducer = (state = initialState, action) => {
     switch(action.type) {
-        case "show_all":
-            return {
-                ...state,
-                showAll: true,
-                active: 'show_all'
-            }
+        // case "show_all":
+        //     return {
+        //         ...state,
+        //         showAll: true,
+        //         active: 'show_all'
+        //     }
         case 'show_websites':
             return {
                 ...state,
@@ -62,11 +62,11 @@ export default function ProjectGallery() {
                 </div>
 
                 <ul className={`project-grid ${state.active}`}>
-                    {state.showAll &&
+                    {/* {state.showAll &&
                         <Project 
                             projectProp={workData}
                         />
-                    }
+                    } */}
 
                     {state.active && 
                         <FilteredProject 

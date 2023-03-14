@@ -14,7 +14,7 @@ export default function Footer() {
 			role="contentinfo" 
 			className="section"
 		>
-			<div className="outer-wrapper">
+			<div className={`outer-wrapper`}>
 				<span id="footer" role="tabpanel">
 					<button 
 						className="btn-scroll" 

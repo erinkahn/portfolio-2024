@@ -8,10 +8,6 @@
 	overflow-y: scroll;
     background-color: $white;
 
-    &.work {
-        scroll-snap-type: none;
-    }
-
     .hero-container, 
     #maincontent > *,
     footer {
@@ -78,5 +74,22 @@
                 background: $white;
             }
         }
+    }
+
+    &.work {
+        height: 100%;
+        overflow-y: revert;
+        scroll-snap-type: none;
+        scroll-snap-stop: unset;
+
+        .hero-container{
+            height: auto;
+            scroll-snap-align: none;
+        }
+  
+        #maincontent > * {
+            height: calc(100vh + 20vh);
+        }
+        
     }
 }

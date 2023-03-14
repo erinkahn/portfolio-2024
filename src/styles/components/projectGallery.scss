@@ -27,7 +27,7 @@
             justify-items: flex-start;
 
             @media screen and (min-width: $smUp) {
-                grid-template-columns: repeat(4, 1fr) 40%;
+                grid-template-columns: repeat(3, 1fr) 60%;
             }
         }
 
@@ -66,6 +66,7 @@
     .project-grid {
         grid-row: 3;
         width: 100%;
+        max-height: 300px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -106,7 +107,7 @@
         min-height: 187px;
 
         @media screen and (min-width: $xlarge) {
-            min-height: 250px;
+            min-height: 270px;
         }
 
         // &.active-thumb {
