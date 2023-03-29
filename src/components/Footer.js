@@ -25,13 +25,18 @@ export default function Footer() {
 
 					<div className="inner-footer-wrapper">
 						<div className="row one">
-							{
-								location.pathname === '/' ? (
-									<h6>Let's Brainstorm</h6>
-								) : (
-									<h3>Let's Brainstorm</h3>
-								)
-							}
+							<div className="cta-btn">
+								{
+									location.pathname === '/' ? (
+										<h6>Let's Brainstorm</h6>
+									) : (
+										<h3>Let's Brainstorm</h3>
+									)
+								}
+								<div className="btn-wrapper">
+									<a href="mailto:erinnicolekahn@gmail.com">Get In Touch</a>
+								</div>
+							</div>
 							<ul className="footer-nav-list">
 								{navData.navigation.map((item) => (
 									<li
@@ -50,12 +55,7 @@ export default function Footer() {
 							</ul>
 						</div>
 
-						<div className="btn-wrapper">
-							<a href="mailto:erinnicolekahn@gmail.com">Get In Touch</a>
-						</div>
-
 						<div className="row two">
-							<p className="copyright">Copyright &copy; {today}. All rights reserved.</p>					
 							<ul className="social">
 								{navData.socialIcons.map((icon) => (
 									<li
@@ -75,6 +75,7 @@ export default function Footer() {
 									</li>
 								))}
 							</ul>
+							<p className="copyright">Copyright &copy; {today}. All rights reserved.</p>					
 						</div>
 					</div>
 					{/* <Instafeed /> */}

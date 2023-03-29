@@ -1,6 +1,7 @@
 footer {
     display: grid;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 25% 75%;
+    height: 100vh;
 
     @media screen and (min-width: $smUp) {
         grid-template-rows: 40% 60%;
@@ -11,13 +12,23 @@ footer {
     }
 
     .outer-wrapper {
-        position: relative;
         display: grid;
         background-color: $primaryLight;
         grid-row: 2;
 
         .theme-dark & {
             background-color: $primaryDark;
+        }
+    }
+
+    #footer {
+        display: grid;
+        grid-template-rows: 35% 65%;
+        position: relative;
+        padding: 0 2em;
+
+        @media screen and (min-width: $xsUp) {
+            padding: 0 4em;
         }
 
         &::before {
@@ -28,7 +39,7 @@ footer {
             background-position: bottom;
             width: 100%;
             height: 0;
-            padding-top: 60%;
+            padding-bottom: 39%;
             bottom: auto;
             right: auto;
             pointer-events: none;
@@ -40,19 +51,9 @@ footer {
         }
     }
 
-    #footer {
-        display: grid;
-        grid-template-rows: 35% 65%;
-        padding: 0 2em;
-
-        @media screen and (min-width: $xsUp) {
-            padding: 0 4em;
-        }
-    }
-
     .inner-footer-wrapper {
         display: grid;
-        grid-template-rows: 30% 45% 25%;
+        grid-template-rows: 50% 50%;
         grid-row: 2;
         margin: 0 auto;
         width: 100%;
@@ -60,6 +61,10 @@ footer {
 
         .theme-dark & {
             background-color: $primaryDark;
+        }
+
+        @media screen and (min-width: $xsUp) {
+            grid-template-rows: 40% 60%;
         }
     }
 
@@ -90,6 +95,10 @@ footer {
             font-size: 2em;
         }
 
+        @media screen and (min-width: $smUp) {
+            font-size: 2.5em;
+        }
+
         @media screen and (min-width: $large) {
             max-width: none;
         }
@@ -107,20 +116,27 @@ footer {
     }
 
     .row {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+        .cta-btn {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
 
         .footer-nav-list {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            padding-right: 1em;
+
+            @media screen and (min-width: $xsUp) {
+                padding-right: 0;
+            }
 
             @media screen and (min-width: $smUp) {
-                // flex-direction: row;
                 justify-content: space-between;
                 justify-self: flex-end;
                 width: 100%;
-                max-width: 300px;
+                max-width: 300px; 
             }
 
             .nav-item {
@@ -145,7 +161,14 @@ footer {
             }
         }
 
+        &.one {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+        }
+
         &.two {
+            margin-top: auto;
             grid-template-columns: 1fr;
             grid-template-rows: 3fr 1fr;
             grid-gap: 2em;           
@@ -153,6 +176,7 @@ footer {
             padding-bottom: 2em;
 
             @media screen and (min-width: $xsUp) {
+                display: grid;
                 grid-template-columns: 70% 30%;
                 grid-template-rows: auto 1fr;
                 grid-gap: 0;
@@ -192,7 +216,6 @@ footer {
     }
 
     .social {
-        grid-row: 1;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
@@ -201,18 +224,19 @@ footer {
         margin: 0 auto;
 
         @media screen and (min-width: $xsUp) {
-            grid-row: 2;
+            grid-template-columns: auto;
             grid-column: 2;
             grid-gap: 3em;
-            align-content: center;
-            justify-items: self-end;
             width: auto;
-            margin-left: auto;
             margin-right: 0;
 
             li {
                 margin-right: 9px;
             }
+        }
+
+        @media screen and (min-width: $smUp) {
+            grid-template-columns: repeat(3, 1fr);
         }
 
         .icon {
@@ -224,16 +248,17 @@ footer {
     }
 
     .copyright {
-        grid-row: 2;
         margin: 0 auto;
         font-family: $montserrat;
         font-size: 0.75em;
         text-align: center;
         color: $white;
+        padding-top: 3em;
 
         @media screen and (min-width: $xsUp) {
             margin: 0;
             text-align: left;
+            padding-top: 0;
         }
     }
 }

@@ -1,20 +1,6 @@
 .page-wrapper {
     position: relative;
-    width: 100vw;
-	height: 100vh;
-	scroll-snap-type: y mandatory;
-    scroll-snap-stop: always;
-    overflow-x: hidden; // need this to remove white at bottom
-	overflow-y: scroll;
     background-color: $white;
-
-    .hero-container, 
-    #maincontent > *,
-    footer {
-        height: 100vh;
-        width: 100vw;
-        scroll-snap-align: center;
-    }
 
     .inside-wrapper {
         position: relative;
@@ -22,11 +8,6 @@
 
     #maincontent {
         position: relative;
-        padding-bottom: 40vw;
-
-        @media screen and (min-width: $medUp) {
-            padding-bottom: 15vw;
-        }
         
         &::before {
             @include pseudo;
@@ -55,41 +36,5 @@
     .section-wrapper {
         position: relative;
         margin: 0 auto;
-    }
-
-    &.home {
-        .section-wrapper {
-            &:nth-of-type(1) {
-                display: grid;
-                grid-template-rows: 20% 70% 10%;
-    
-                @media screen and (min-width: $medUp) {
-                    grid-template-rows: 35% 65%;
-                }
-            }
-            &:nth-of-type(3) {
-                background-color: $white;
-            }
-            &:last-of-type {
-                background: $white;
-            }
-        }
-    }
-
-    &.work {
-        height: 100%;
-        overflow-y: revert;
-        scroll-snap-type: none;
-        scroll-snap-stop: unset;
-
-        .hero-container{
-            height: auto;
-            scroll-snap-align: none;
-        }
-  
-        #maincontent > * {
-            height: calc(100vh + 20vh);
-        }
-        
     }
 }

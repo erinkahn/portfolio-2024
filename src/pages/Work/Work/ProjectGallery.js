@@ -2,7 +2,7 @@ import React, {useReducer} from 'react';
 import { workData } from '../../../constants/data';
 import SectionWrapper from '../../../components/SectionWrapper';
 import Tabs from './Tabs';
-import Project from './Project';
+// import Project from './Project';
 import FilteredProject from './FilteredProject';
 
 const initialState = {

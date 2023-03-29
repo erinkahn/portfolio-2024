@@ -1,8 +1,5 @@
 .gallery-container {
-    display: grid;
-    grid-template-rows: 10% 15% 65% 10%;
     margin: 0 auto;
-    height: 100%;
     width: 85%;
 
     @media screen and (min-width: $xsUp) {
@@ -10,14 +7,13 @@
     }
 
     @media screen and (min-width: $medUp) {
-        grid-template-rows: 11% 9% 71% 3%;
         max-width: 1200px;
-        gap: 3%;
     }
 
     .filter-bar {
         grid-row: 2;
         display: grid;
+        padding-bottom: 2em;
         align-items: center;
         align-content: center;
         
@@ -66,7 +62,6 @@
     .project-grid {
         grid-row: 3;
         width: 100%;
-        max-height: 300px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -107,7 +102,7 @@
         min-height: 187px;
 
         @media screen and (min-width: $xlarge) {
-            min-height: 270px;
+            max-height: 270px;
         }
 
         // &.active-thumb {

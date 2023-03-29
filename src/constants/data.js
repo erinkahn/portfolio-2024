@@ -151,7 +151,7 @@ export const featuredData = {
             tech: 'PHP, WordPress, Git, Sass, JavaScript, Waypoints, GSAP',
             content: 'A newly designed website for Conlan Company, a large contracting company located in Goergia, Florida and Texas',
             role: 'Lead Developer',
-            devs: 'none',
+            devs: 'John Finch',
             src: '/images/work/code/conlan/Conlan-Company.webp',
             fallback: '/images/work/code/conlan/Conlan-Company.jpg',
             lowRes: '/images/work/code/conlan/Conlan-Company-lr.jpg',
