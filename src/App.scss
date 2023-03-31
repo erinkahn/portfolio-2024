@@ -6,6 +6,7 @@
 @import './styles/base/variables';
 @import './styles/base/globals';
 @import './styles/base/imports';
+@import './styles/base/keyframes';
 
 // ***********************************************//
 // COMPONENTS STYLES
@@ -24,6 +25,7 @@
 @import './styles/components/about';
 @import './styles/components/services';
 @import './styles/components/projectGallery';
+@import './styles/components/projectModal';
 @import './styles/components/featured';
 @import './styles/components/testimonials';
 @import './styles/components/sectionScrollTab';

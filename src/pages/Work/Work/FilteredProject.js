@@ -1,3 +1,5 @@
+import {useState, useEffect} from 'react';
+
 export default function FilteredProject(props) {
     return (
         <>
@@ -12,9 +14,9 @@ export default function FilteredProject(props) {
                         >
                             <button 
                                 tabIndex="0" 
-                                // href={filteredPr.url} 
-                                // target="_blank" 
+                                onClick={props.showProjectModal}
                                 className="project-image" 
+                                id={filteredPr.id}
                                 style={{backgroundImage: `url(${filteredPr.img})`}}
                             >
                                 <span className="project-link sr-only">

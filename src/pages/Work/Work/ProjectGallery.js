@@ -1,9 +1,10 @@
-import React, {useReducer} from 'react';
+import React, {useReducer, useState, useEffect} from 'react';
 import { workData } from '../../../constants/data';
 import SectionWrapper from '../../../components/SectionWrapper';
 import Tabs from './Tabs';
 // import Project from './Project';
 import FilteredProject from './FilteredProject';
+import ProjectModal from './ProjectModal';
 
 const initialState = {
     showAll: true,
@@ -43,6 +44,34 @@ const reducer = (state = initialState, action) => {
 
 export default function ProjectGallery() {
     const [state, dispatch] = useReducer(reducer, initialState);
+    const [modalShowing, setModalShowing] = useState(false);
+    const [projectSelected, setProjectSelected] = useState("");
+
+    const showProjectModal = (e) => {
+        if (e.target.classList.contains('project-image')) {
+            setModalShowing(true)
+        }
+
+        console.log(e.target.id) // continue here
+    }
+
+    const detectOutsideClick = (e) => {
+        if (!e.target.classList.contains('project-image')) {
+            setModalShowing(false)
+        }
+    }
+    useEffect(() => {
+        document.addEventListener('click', detectOutsideClick)
+        return () => {
+            document.removeEventListener('click', detectOutsideClick)
+        }
+    })
+
+    const closeModal = (e) => {
+        if (e.target.classList.contains('close-btn')) {
+            setModalShowing(false)
+        }
+    }
 
     return (
         <SectionWrapper>
@@ -62,19 +91,22 @@ export default function ProjectGallery() {
                 </div>
 
                 <ul className={`project-grid ${state.active}`}>
-                    {/* {state.showAll &&
-                        <Project 
-                            projectProp={workData}
-                        />
-                    } */}
-
                     {state.active && 
                         <FilteredProject 
                             filteredProjectProp={workData}
                             stateProp={state}
+                            showProjectModal={showProjectModal}
                         />
                     }
                 </ul>
+
+                {modalShowing &&
+                    <ProjectModal 
+                        showProjectModal={showProjectModal}
+                        closeModal={closeModal}
+                    />
+                }
+
             </div>
         </SectionWrapper>
     )

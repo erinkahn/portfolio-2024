@@ -97,19 +97,19 @@ export const servicesData = {
     services: [
         {
             serviceTitle: 'Branding + Logos',
-            description: 'I make logos, branding identity suites, business cards, stickers, fliers, and more.',
+            description: 'create logos, branding identity suites, business cards, stickers, fliers, and more.',
             icon: '/images/services/branding.svg',
             alt: 'fingerprint'
         },
         {
             serviceTitle: 'Web/UX Design',
-            description: 'I design small to large websites, web pages, and even mobile applications.',
+            description: 'design small to large websites, web pages, and even mobile applications.',
             icon: '/images/services/webDesign.svg',
             alt: 'artboard'
         },
         {
             serviceTitle: 'Web Development',
-            description: 'I build custom websites from scratch with front end technologies.',
+            description: 'build custom websites and web apps with front end technology.',
             icon: '/images/services/webDevelopment.svg',
             alt: 'webpage'
         }
