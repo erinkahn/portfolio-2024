@@ -492,40 +492,40 @@ export const testimonialData = {
     ]
 }
 
-export const instaData = {
-    posts: [
-        {
-            img: '/images/instafeed/typography.webp',
-            fallback: '/images/instafeed/typography.png',
-            alt: 'typography quote',
-            id: 0
-        },
-        {
-            img: '/images/instafeed/dog_pet_portrait.webp',
-            fallback: '/images/instafeed/dog_pet_portrait.png',
-            alt: 'pet portrait painting of a dog on canvas',
-            id: 1
-        },
-        {
-            img: '/images/instafeed/clover_hill_boutique.webp',
-            fallback: '/images/instafeed/clover_hill_boutique.png',
-            alt: 'clover hill boutique logo',
-            id: 2
-        },
-        {
-            img: '/images/instafeed/black_white_portrait.webp',
-            fallback: '/images/instafeed/black_white_portrait.png',
-            alt: 'black and white portrait painting on canvas',
-            id: 3
-        },
-        {
-            img: '/images/instafeed/flower_petals.webp',
-            fallback: '/images/instafeed/flower_petals.png',
-            alt: 'flower petals diptych painting on wood',
-            id: 4
-        }
-    ]
-}
+// export const instaData = {
+//     posts: [
+//         {
+//             img: '/images/instafeed/typography.webp',
+//             fallback: '/images/instafeed/typography.png',
+//             alt: 'typography quote',
+//             id: 0
+//         },
+//         {
+//             img: '/images/instafeed/dog_pet_portrait.webp',
+//             fallback: '/images/instafeed/dog_pet_portrait.png',
+//             alt: 'pet portrait painting of a dog on canvas',
+//             id: 1
+//         },
+//         {
+//             img: '/images/instafeed/clover_hill_boutique.webp',
+//             fallback: '/images/instafeed/clover_hill_boutique.png',
+//             alt: 'clover hill boutique logo',
+//             id: 2
+//         },
+//         {
+//             img: '/images/instafeed/black_white_portrait.webp',
+//             fallback: '/images/instafeed/black_white_portrait.png',
+//             alt: 'black and white portrait painting on canvas',
+//             id: 3
+//         },
+//         {
+//             img: '/images/instafeed/flower_petals.webp',
+//             fallback: '/images/instafeed/flower_petals.png',
+//             alt: 'flower petals diptych painting on wood',
+//             id: 4
+//         }
+//     ]
+// }
 
 export const timelineData = {
     sectionTitle: 'timeline',

@@ -44,7 +44,10 @@ export default function Featured() {
 
                 <div className="slide-images">
                     <div className="image-container">                          
-                        <FeaturedImage featuredData={featuredData} isActive={isActive} />                          
+                        <FeaturedImage 
+                            featuredData={featuredData} 
+                            isActive={isActive} 
+                        />                          
                     </div>
                 </div>
 

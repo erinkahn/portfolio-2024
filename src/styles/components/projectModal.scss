@@ -26,8 +26,6 @@
 
     .inner-wrapper {
         position: relative;
-        height: 100%;
-        width: 100%;
     }
 
     .close-btn {
@@ -35,16 +33,29 @@
         background-size: 50% auto;
         background-repeat: no-repeat;
         position: absolute;
-        left: 0em;
+        left: 2em;
         top: 2em;
         width: 3em;
         height: 3em;
         border-radius: 2em;
         border: 2px solid $primaryLight;
 
+        @media screen and (min-width: $smUp) {
+            left: 0;
+            top: 4em;
+        }
+
         .theme-dark & {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48.859' height='37.573' viewBox='0 0 48.859 37.573'%3E%3Cg id='Group' transform='translate(2.413 2.414)'%3E%3Cpath id='Line_2' data-name='Line 2' d='M0,8.559,46.944,0' transform='matrix(0.839, -0.545, 0.545, 0.839, 0, 25.568)' fill='none' stroke='%23363957' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3'/%3E%3Cpath id='Line_2_Copy' data-name='Line 2 Copy' d='M0,0,46.324,7.946' transform='matrix(0.839, 0.545, -0.545, 0.839, 4.848, 0.541)' fill='none' stroke='%23363957' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4'/%3E%3C/g%3E%3C/svg%3E%0A");
             border: 2px solid $primaryDark;
         }
+    }
+
+    .dialog-content {
+        position: relative;
+        height: 64vh;
+        width: 63vw;
+        margin: 18vh auto;
+        border: 2px solid blue;
     }
 }

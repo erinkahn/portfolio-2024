@@ -2,13 +2,12 @@ import React, {useReducer, useState, useEffect} from 'react';
 import { workData } from '../../../constants/data';
 import SectionWrapper from '../../../components/SectionWrapper';
 import Tabs from './Tabs';
-// import Project from './Project';
 import FilteredProject from './FilteredProject';
 import ProjectModal from './ProjectModal';
 
 const initialState = {
     showAll: true,
-    active: 'show_websites'
+    active: 'show_websites',
 }
 
 const reducer = (state = initialState, action) => {
@@ -45,33 +44,34 @@ const reducer = (state = initialState, action) => {
 export default function ProjectGallery() {
     const [state, dispatch] = useReducer(reducer, initialState);
     const [modalShowing, setModalShowing] = useState(false);
-    const [projectSelected, setProjectSelected] = useState("");
+    const [projectSelected, setProjectSelected] = useState(undefined);
 
-    const showProjectModal = (e) => {
+    const showProjectModal = (e => {
         if (e.target.classList.contains('project-image')) {
             setModalShowing(true)
         }
-
-        console.log(e.target.id) // continue here
-    }
+        
+        setProjectSelected(parseInt(e.target.id));
+    })
 
     const detectOutsideClick = (e) => {
         if (!e.target.classList.contains('project-image')) {
             setModalShowing(false)
         }
     }
-    useEffect(() => {
-        document.addEventListener('click', detectOutsideClick)
-        return () => {
-            document.removeEventListener('click', detectOutsideClick)
-        }
-    })
 
     const closeModal = (e) => {
         if (e.target.classList.contains('close-btn')) {
             setModalShowing(false)
         }
     }
+ 
+    useEffect(() => {
+        document.addEventListener('click', detectOutsideClick)
+        return () => {
+            document.removeEventListener('click', detectOutsideClick)
+        }
+    })
 
     return (
         <SectionWrapper>
@@ -102,6 +102,8 @@ export default function ProjectGallery() {
 
                 {modalShowing &&
                     <ProjectModal 
+                        projectSelected={projectSelected}
+                        filteredProjectProp={workData}
                         showProjectModal={showProjectModal}
                         closeModal={closeModal}
                     />
