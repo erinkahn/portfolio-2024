@@ -29,7 +29,7 @@
     }
 
     .close-btn {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50.469' height='39.182' viewBox='0 0 50.469 39.182'%3E%3Cg id='Group' transform='translate(3.218 3.218)'%3E%3Cpath id='Line_2' data-name='Line 2' d='M0,8.559,46.944,0' transform='matrix(0.839, -0.545, 0.545, 0.839, 0, 25.568)' fill='none' stroke='%23781ad6' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4'/%3E%3Cpath id='Line_2_Copy' data-name='Line 2 Copy' d='M0,0,46.324,7.946' transform='matrix(0.839, 0.545, -0.545, 0.839, 4.848, 0.541)' fill='none' stroke='%23781ad6' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4'/%3E%3C/g%3E%3C/svg%3E%0A");        background-position: center;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48.859' height='37.573' viewBox='0 0 48.859 37.573'%3E%3Cg id='Group' transform='translate(2.413 2.414)'%3E%3Cpath id='Line_2' data-name='Line 2' d='M0,8.559,46.944,0' transform='matrix(0.839, -0.545, 0.545, 0.839, 0, 25.568)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3'/%3E%3Cpath id='Line_2_Copy' data-name='Line 2 Copy' d='M0,0,46.324,7.946' transform='matrix(0.839, 0.545, -0.545, 0.839, 4.848, 0.541)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A");        background-position: center;
         background-size: 50% auto;
         background-repeat: no-repeat;
         position: absolute;
@@ -38,24 +38,114 @@
         width: 3em;
         height: 3em;
         border-radius: 2em;
-        border: 2px solid $primaryLight;
+        border: 2px solid $white;
 
         @media screen and (min-width: $smUp) {
             left: 0;
             top: 4em;
-        }
-
-        .theme-dark & {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48.859' height='37.573' viewBox='0 0 48.859 37.573'%3E%3Cg id='Group' transform='translate(2.413 2.414)'%3E%3Cpath id='Line_2' data-name='Line 2' d='M0,8.559,46.944,0' transform='matrix(0.839, -0.545, 0.545, 0.839, 0, 25.568)' fill='none' stroke='%23363957' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3'/%3E%3Cpath id='Line_2_Copy' data-name='Line 2 Copy' d='M0,0,46.324,7.946' transform='matrix(0.839, 0.545, -0.545, 0.839, 4.848, 0.541)' fill='none' stroke='%23363957' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4'/%3E%3C/g%3E%3C/svg%3E%0A");
-            border: 2px solid $primaryDark;
         }
     }
 
     .dialog-content {
         position: relative;
         height: 64vh;
-        width: 63vw;
+        width: 60vw;
+        max-width: 750px;
         margin: 18vh auto;
-        border: 2px solid blue;
+
+        @media screen and (min-width: $xsUp) {
+            width: 50vw;
+            height: 60vh;
+        }
+        @media screen and (min-width: $smUp) {
+            width: 60vw;
+        }
+        @media screen and (min-width: $medUp) {
+           height: 45vh;
+           margin: 24vh auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap; 
+
+            @media screen and (min-width: $medUp) {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+
+            .col {
+                @media screen and (max-width: $medDown) {
+                    &:last-of-type {
+                        display: flex;
+                    }
+                }
+
+                @media screen and (min-width: $medUp) {
+                    &:first-of-type {
+                        width: 60%;
+                    }
+    
+                    &:last-of-type {
+                      text-align: center; 
+                      width: 25%;
+    
+                      p {
+                        margin-bottom: 0.5em;
+                      }
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    gap: 30px;
+
+                    @media screen and (min-width: $medUp) {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 4%;
+
+                        li {
+                            width: 48%;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }    
+            }
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: $semibold;
+            margin-bottom: 1.5em;
+        }
+
+        .desc {
+            font-size: 0.875em;
+            margin-bottom: 3em;
+        }    
+        
+        .roles {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 3em;
+
+            p:first-of-type {
+                margin-bottom: 1.5em;
+            }
+
+            p{
+                @media screen and (min-width: $medUp) {
+                    width: 50%;
+                    font-size: 0.875em;
+                }
+            }
+        }
+
+        span {
+            font-weight: $semibold;
+            margin-right: 1em;   
+        }
     }
 }

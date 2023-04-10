@@ -21,23 +21,25 @@ export default function ProjectModal(props) {
                                 aria-describedby={`dialogDescription${m}`}
                                 role="dialog"
                             >
-                                <div className="col">
-                                    <h2 id={`dialogTitle${m}`}>{filteredPro.title}</h2>
-                                    <p id={`dialogDescription${m}`}>{filteredPro.description}</p>
+                                <h2 className="section-title" id={`dialogTitle${m}`}>{filteredPro.title}</h2>
+                                <div className="row">
+                                    <div className="col">
+                                        <p className="desc" id={`dialogDescription${m}`}>{filteredPro.description}</p>
 
-                                    <div className="row">
-                                        <p><span>My Role:</span>...insert role here</p>
-                                        <p><span>Designer:</span>...insert others here</p>
+                                        <div className="roles">
+                                            <p><span>My Role:</span>...insert role here</p>
+                                            <p><span>Designer:</span>...insert others here</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="col">
-                                    <p>Tech Stack:</p>
-                                    <ul> make this dynamic frmo the data file
-                                        <li>icon</li>
-                                        <li>icon</li>
-                                        <li>icon</li>
-                                        <li>icon</li>
-                                    </ul>
+                                    <div className="col">
+                                        <p><span>Tech Stack:</span></p>
+                                        <ul>
+                                            <li>icon</li>
+                                            <li>icon</li>
+                                            <li>icon</li>
+                                            <li>icon</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         )
