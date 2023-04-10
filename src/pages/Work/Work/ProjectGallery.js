@@ -1,9 +1,10 @@
-import React, {useReducer, useState, useEffect} from 'react';
+import React, {useReducer, useState, useEffect, useContext} from 'react';
 import { workData } from '../../../constants/data';
 import SectionWrapper from '../../../components/SectionWrapper';
 import Tabs from './Tabs';
 import FilteredProject from './FilteredProject';
 import ProjectModal from './ProjectModal';
+import { ThemeContext } from "../../../contexts/Theme/ThemeContext";
 
 const initialState = {
     showAll: true,
@@ -42,6 +43,7 @@ const reducer = (state = initialState, action) => {
 }
 
 export default function ProjectGallery() {
+    const themeName = useContext(ThemeContext);
     const [state, dispatch] = useReducer(reducer, initialState);
     const [modalShowing, setModalShowing] = useState(false);
     const [projectSelected, setProjectSelected] = useState(undefined);
@@ -50,19 +52,21 @@ export default function ProjectGallery() {
         if (e.target.classList.contains('project-image')) {
             setModalShowing(true)
         }
-        
         setProjectSelected(parseInt(e.target.id));
+        modalShowing ? document.body.classList.remove(`theme-${themeName.theme}`) : document.body.classList.add(`theme-${themeName.theme}`)
     })
 
     const detectOutsideClick = (e) => {
         if (!e.target.classList.contains('project-image')) {
             setModalShowing(false)
+            document.body.classList.remove(`theme-${themeName.theme}`)
         }
     }
 
     const closeModal = (e) => {
         if (e.target.classList.contains('close-btn')) {
             setModalShowing(false)
+            document.body.classList.remove(`theme-${themeName.theme}`)
         }
     }
  

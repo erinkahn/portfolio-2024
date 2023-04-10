@@ -7,9 +7,12 @@ export default function useLockBodyScroll() {
         if (!locked) {
             return
         }
-        const originalOverflow = window.getComputedStyle(document.body).overflow;
-        document.body.style.overflow = 'hidden';
-        return () => document.body.style.overflow = originalOverflow;
+        const htmlDoc = document.documentElement;
+        const originalOverflow = window.getComputedStyle(htmlDoc).overflow;
+        htmlDoc.style.overflow = 'hidden';
+        return () => {
+            htmlDoc.style.overflow = originalOverflow;
+        }
     }, [locked]); 
 
 

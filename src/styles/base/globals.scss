@@ -1,5 +1,23 @@
 body {
     overflow-x: hidden;
+
+    &.theme-dark,
+    &.theme-light {
+        position: relative;
+
+        &::after {
+            @include pseudo;
+            z-index: 4;
+        }
+    }
+
+    &.theme-dark::after {
+        background-color: rgba($primaryDark, 0.8);
+    }
+
+    &.theme-light::after {
+        background-color: rgba($primaryLight, 0.5);
+    }
 }
 
 p {
