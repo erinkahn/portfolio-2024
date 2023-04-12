@@ -27,17 +27,21 @@ export default function ProjectModal(props) {
                                         <p className="desc" id={`dialogDescription${m}`}>{filteredPro.description}</p>
 
                                         <div className="roles">
-                                            <p><span>My Role:</span>...insert role here</p>
-                                            <p><span>Designer:</span>...insert others here</p>
+                                            <p><span>My Role:</span>{filteredPro.role}</p>
+                                            {filteredPro.designers &&
+                                                <p><span>Designer:</span>{filteredPro.designers}</p>
+                                            }
+                                            {filteredPro.devs &&
+                                                <p><span>Co-Devs:</span>{filteredPro.devs}</p>
+                                            }
                                         </div>
                                     </div>
                                     <div className="col">
-                                        <p><span>Tech Stack:</span></p>
+                                        <p><span>Tools:</span></p>
                                         <ul>
-                                            <li>icon</li>
-                                            <li>icon</li>
-                                            <li>icon</li>
-                                            <li>icon</li>
+                                            {filteredPro.icons.map(icon => (
+                                               <li><img src={icon} /></li>
+                                            ))}
                                         </ul>
                                     </div>
                                 </div>

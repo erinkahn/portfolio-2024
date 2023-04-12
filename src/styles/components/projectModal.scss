@@ -8,7 +8,6 @@
     height: 100vh;
     filter: drop-shadow(-1px 9px 5px rgb(0 0 0 / 0.1));
     transform: translate(-50%, -50%);
-    // animation: morph 10s linear infinite alternate;
     z-index: 5;
 
     @media screen and (min-width: $xsUp) {

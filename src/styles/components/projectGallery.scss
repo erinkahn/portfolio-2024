@@ -74,22 +74,6 @@
         @media screen and (min-width: $medUp) {
             grid-template-columns: repeat(4, 1fr);
         }
-
-        // &.show_all {
-
-        // }
-
-        // &.show_websites {
-
-        // }
-
-        // &.show_designs {
-
-        // }
-
-        // &.show_art {
-
-        // }
     }
 
     .project-btn {
@@ -105,17 +89,6 @@
         @media screen and (min-width: $xlarge) {
             max-height: 270px;
         }
-
-        // &.active-thumb {
-        //     background-position: top;
-        //     grid-column: 2 / span 2;
-        //     grid-row: span 3;
-
-        //     @media screen and (min-width: $smUp) {
-        //         grid-column: 3 / span 3;
-        //         grid-row: span 4;
-        //     }
-        // }
     }
 
     .project-image {
