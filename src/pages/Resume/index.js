@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import { heroData } from "../../constants/data";
+import Timeline from "./Timeline";
 
 export default function Resume() {
 	return (
@@ -13,7 +14,9 @@ export default function Resume() {
 				subtitle={heroData.resume.subtitle}
 				image={heroData.resume.image}
 			/>
-			<main id="maincontent" role="main"></main>
+			<main id="maincontent" role="main">
+				<Timeline/>
+			</main>
 			<Footer />
 		</PageWrapper>
 	);

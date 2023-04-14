@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import { heroData } from "../../constants/data";
-import ProjectGallery from "./Work/ProjectGallery";
+import ProjectGallery from "./Grid/ProjectGallery";
 
 export default function Work() {
 	return (

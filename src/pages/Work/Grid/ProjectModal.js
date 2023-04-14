@@ -1,6 +1,4 @@
 export default function ProjectModal(props) {
-    console.log(props.filteredProjectProp.projects)
-
     return (
         <div className="project-modal">
             <button 

@@ -682,34 +682,46 @@ export const timelineData = {
     years: [
         {
             year: '2016',
-            company: 'graduated from U of A',
-            jobTitle: 'Graphic Design + Advertising Degree',
+            company: 'graduated from University of Alabama',
+            position: 'Graphic Design + Advertising Degree',
+            image: '',
+        },
+        {
+            year: '',
+            company: 'Walls Media, CCG Ideas, Flex Digital',
+            position: 'Graphic Design Intern, Freelance Designer',
+            image: '',
         },
         {
             year: '2017',
-            company: 'walls media, ccg ideas, flex digital',
-            jobTitle: 'Creative Graphic Design Intern',
+            company: 'started Portfolio School in Atlanta',
+            position: 'Interactive Design + Web Development Student',
+            image: '',
         },
         {
             year: '2018',
             company: 'graduated from The Creative Circus',
-            jobTitle: 'Interactive Web Development Certificate',
+            position: 'Interactive Web Development Certification',
+            image: '',
         },
         {
-            year: '2019',
+            year: '',
             company: 'Vehicle Media',
-            jobTitle: 'WordPress / PHP Developer',
+            position: 'WordPress + PHP Developer, Freelance Designer',
+            image: '',
         },
         {
             year: '2021',
-            company: 'DynamiX',
-            jobTitle: 'Front-End Developer',
+            company: 'DynamiX Web Design',
+            position: 'Front-End Developer, Freelance Designer',
+            image: '',
         },
         {
             year: '2022',
             company: 'Avanade',
-            jobTitle: 'Senior Analyst, Software Engineer',
-        }
+            position: 'React Developer, Freelance Designer/Developer',
+       
+    image: '',        }
     ]
 }
 
