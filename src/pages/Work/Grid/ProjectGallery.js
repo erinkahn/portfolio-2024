@@ -48,7 +48,7 @@ export default function ProjectGallery() {
     const [modalShowing, setModalShowing] = useState(false);
     const [projectSelected, setProjectSelected] = useState(undefined);
 
-    const showProjectModal = (e => {
+    const openModal = (e => {
         if (e.target.classList.contains('project-image')) {
             setModalShowing(true)
         }
@@ -106,7 +106,7 @@ export default function ProjectGallery() {
                         <FilteredProject 
                             filteredProjectProp={workData}
                             stateProp={state}
-                            showProjectModal={showProjectModal}
+                            openModal={openModal}
                         />
                     }
                 </ul>
@@ -115,7 +115,7 @@ export default function ProjectGallery() {
                     <ProjectModal 
                         projectSelected={projectSelected}
                         filteredProjectProp={workData}
-                        showProjectModal={showProjectModal}
+                        openModal={openModal}
                         closeModal={closeModal}
                     />
                 }

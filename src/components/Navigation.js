@@ -1,13 +1,26 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { navData } from "./../constants/data";
 import useLockBodyScroll from "./../hooks/useLockBodyScroll";
+import useScrollPos from "./../hooks/useScrollPos";
 
 const Navigation = (props) => {
 	const today = new Date().getFullYear();
 	const [hidden, setHidden] = useState(true);
 	const [locked, setLocked] = useLockBodyScroll();
+	const [buttonIsWhite, setButtonIsWhite] = useState(true);
 	const btnRef = useRef();
+	const sideNavRef = useRef();
+	const scrollPos = useScrollPos();
+
+	useEffect(() => {
+		if (scrollPos[1] >= 470) {
+			setButtonIsWhite(false);
+			console.log('hit')
+		} else {
+			setButtonIsWhite(true);
+		}
+	})
 
 	const toggle = () => {
 		hidden ? setHidden(false) : setHidden(true);
@@ -28,9 +41,9 @@ const Navigation = (props) => {
 	};
 
 	return (
-		<div className="side-nav-wrap">
+		<div ref={sideNavRef} className="side-nav-wrap">
 			<button
-				className={`menuBtn ${hidden ? "" : "open"}`}
+				className={`menuBtn ${hidden ? "" : "open"} ${!buttonIsWhite ? "colored" : ""}`}
 				aria-label={`${
 					hidden ? "Open Navigation" : "Close Navigation"
 				}`}

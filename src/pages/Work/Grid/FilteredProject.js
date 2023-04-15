@@ -12,7 +12,7 @@ export default function FilteredProject(props) {
                         >
                             <button 
                                 tabIndex="0" 
-                                onClick={props.showProjectModal}
+                                onClick={props.openModal}
                                 className="project-image" 
                                 id={filteredPr.id}
                                 style={{backgroundImage: `url(${filteredPr.img})`}}

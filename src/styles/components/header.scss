@@ -69,6 +69,17 @@ header {
         z-index: 3;
         transform: translate(0, -50%);
 
+        &.colored {
+            &::before,
+            &::after {
+                background-color: $primaryLight;
+
+                .theme-dark & {
+                    background-color: $primaryDark;
+                }
+            }
+        }
+
         &::before,
         &::after {
             @include pseudo;
