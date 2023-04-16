@@ -12,21 +12,18 @@ import SectionScrollTabs from "./SectionScrollTabs";
 export default function Home() {
 	return (
 		<PageWrapper>	
-			<Header/>
+			<Header />
 			<SectionScrollTabs />
-			
 			<Hero 
 				title={heroData.home.title}
 				subtitle={heroData.home.subtitle}
 			/>
-
 			<main id="maincontent" role="main">
 				<Services />
 				<Featured /> 
 				<About />
 				<Testimonials />	
 			</main>
-
 			<Footer />
 		</PageWrapper>
 	);

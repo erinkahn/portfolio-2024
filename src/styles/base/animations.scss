@@ -1,0 +1,9 @@
+.fade-in {
+    opacity: 1;
+    transition: opacity $quick;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity $quick;
+}
