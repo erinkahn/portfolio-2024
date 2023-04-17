@@ -1,5 +1,5 @@
 {
-	"name": "portfolio2021",
+	"name": "portfolio2023",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -18,6 +18,7 @@
 		"@welldone-software/why-did-you-render": "^6.2.3",
 		"axios": "^0.24.0",
 		"focus-trap-react": "^8.9.1",
+		"framer-motion": "^6.5.1",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-helmet-async": "^1.2.2",

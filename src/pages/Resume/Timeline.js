@@ -1,25 +1,27 @@
 import { useRef } from "react";
 import SectionWrapper from "../../components/SectionWrapper";
 import { timelineData } from "../../constants/data";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import {motion as m} from 'framer-motion';
 
 export default function Timeline() {
     const dateRef = useRef();
-    const { isVisible } = useIntersectionObserver(dateRef);
 
     return (
         <SectionWrapper>
             <div className="timeline-container">
-                <ul className="inner-wrapper" ref={dateRef}>
+                <ul className="inner-wrapper">
                     {timelineData.years.map((date, d) => (
-                        <li 
+                        <m.li 
+                            ref={dateRef}
                             key={`date-${d}`}
-                            className={isVisible ? 'fade-in' : 'fade-out'}
+                            initial={{ opacity: 0, Y: 0 }}
+                            whileInView={{ opacity: 1, y: '100%' }}
+                            transition={{transition: .25, ease: "easeInOut", delay: .1}}
                         >
                             <h2 className="year">{date.year}</h2>
                             <p className="company">{date.company}</p>
                             <p className="title"><em>{date.position}</em></p>
-                        </li>
+                        </m.li>
                     ))}
                 </ul>
             </div>
