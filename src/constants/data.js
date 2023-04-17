@@ -206,8 +206,22 @@ export const workData = {
             designers: 'Jade Nipper',
             devs: '',
             icons: [
-                '/images/work/icons/shopify.svg',
-                '/images/work/icons/sass.svg'
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/sketch.svg',
+                    alt: 'sketch icon'
+                },
+                {
+                    img: '/images/work/icons/shopify.svg',
+                    alt: 'shopify icon'
+                }
             ],
             description: `Aerangis is a handmade fragrance line based out of New York City. Filled in beautiful clay pots, Aerangis’ candles come in an array of signature + custom scents based on clients’ favorite herbs and flowers. While working at Vehicle Media, I took a customized design based on the client's Shopify theme and adjusted the styles and markup to match the revised design.`,
             id: 0,
@@ -223,8 +237,30 @@ export const workData = {
             designers: 'Leah Watson, Jade Nipper',
             devs: 'John Finch, Dave Carney',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/wordpress.svg',
+                    alt: 'wordpress icon'
+                },
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/jquery.svg',
+                    alt: 'jquery icon'
+                },
+                {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
+                    img: '/images/work/icons/sketch.svg',
+                    alt: 'sketch icon'
+                },
+                {
+                    img: '/images/work/icons/acf.svg',
+                    alt: 'advanced custom fields icon'
+                }
             ],
             description: 'Drew and Jonathan, the celebrity HGTV contractor brothers, wanted a site that housed all of their creative ventures in one place. While working at Vehicle Media, myself and two developers built a custom WordPress website that featured everything from their shows and books to their blog and furniture line all on one interactive interface.',
             id: 1,

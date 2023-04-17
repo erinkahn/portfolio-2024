@@ -1,4 +1,9 @@
+import React, { useContext } from "react";
+import { ThemeContext } from "../../../contexts/Theme/ThemeContext";
+
 export default function ProjectModal(props) {
+    const themeName = useContext(ThemeContext);
+
     return (
         <div className="project-modal">
             <button 
@@ -35,14 +40,32 @@ export default function ProjectModal(props) {
                                         </div>
                                     </div>
                                     <div className="col">
-                                        <p><span>Tools:</span></p>
-                                        <ul>
-                                            {filteredPro.icons.map(icon => (
-                                               <li><img src={icon} /></li>
-                                            ))}
-                                        </ul>
+                                        <div className="tools">
+                                            <p><span>Tools:</span></p>
+                                            <ul>
+                                                {filteredPro.icons.map((icon, i) => (
+                                                    <li key={`icon-${i}`}>
+                                                        <img src={icon.img} alt={icon.alt}/>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                        <div className="button-col">
+                                            <div className="button-wrapper">
+                                                <a 
+                                                    target="_blank" 
+                                                    aria-label={`Click to see ${filteredPro.title}'s live site`} 
+                                                    href={filteredPro.url}
+                                                >
+                                                    <div aria-hidden="true">Live Site 
+                                                        <img className="arrow" src={`/images/icons/arrow-${themeName.theme}.svg`} alt=""/>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                
                             </div>
                         )
                     )}
