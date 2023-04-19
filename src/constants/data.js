@@ -207,6 +207,18 @@ export const workData = {
             devs: '',
             icons: [
                 {
+                    img: '/images/work/icons/shopify.svg',
+                    alt: 'shopify icon'
+                },
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
                     img: '/images/work/icons/sass.svg',
                     alt: 'sass icon'
                 },
@@ -217,10 +229,10 @@ export const workData = {
                 {
                     img: '/images/work/icons/sketch.svg',
                     alt: 'sketch icon'
-                },
+                }, 
                 {
-                    img: '/images/work/icons/shopify.svg',
-                    alt: 'shopify icon'
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
                 }
             ],
             description: `Aerangis is a handmade fragrance line based out of New York City. Filled in beautiful clay pots, Aerangis’ candles come in an array of signature + custom scents based on clients’ favorite herbs and flowers. While working at Vehicle Media, I took a customized design based on the client's Shopify theme and adjusted the styles and markup to match the revised design.`,
@@ -238,28 +250,49 @@ export const workData = {
             devs: 'John Finch, Dave Carney',
             icons: [
                 {
-                    img: '/images/work/icons/wordpress.svg',
-                    alt: 'wordpress icon'
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
                 },
                 {
                     img: '/images/work/icons/sass.svg',
                     alt: 'sass icon'
                 },
                 {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
                     img: '/images/work/icons/jquery.svg',
                     alt: 'jquery icon'
                 },
                 {
-                    img: '/images/work/icons/php.svg',
-                    alt: 'php icon'
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
                 },
+                {
+                    img: '/images/work/icons/git.svg',
+                    alt: 'git icon'
+                },
+                {
+                    img: '/images/work/icons/acf.svg',
+                    alt: 'advanced custom fields icon'
+                },
+                {
+                    img: '/images/work/icons/wordpress.svg',
+                    alt: 'wordpress icon'
+                },
+                
                 {
                     img: '/images/work/icons/sketch.svg',
                     alt: 'sketch icon'
                 },
                 {
-                    img: '/images/work/icons/acf.svg',
-                    alt: 'advanced custom fields icon'
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
                 }
             ],
             description: 'Drew and Jonathan, the celebrity HGTV contractor brothers, wanted a site that housed all of their creative ventures in one place. While working at Vehicle Media, myself and two developers built a custom WordPress website that featured everything from their shows and books to their blog and furniture line all on one interactive interface.',
@@ -276,8 +309,14 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                'acrylic',
-                'canvas'
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
             ],
             description: `Pet portrait of a dear friend's sister's dog`,
             id: 2,
@@ -293,8 +332,14 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                },
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
             ],
             description: 'Logo design and brand identity suite for a locally owned barber salon in Birmingham, Alabama',
             id: 3,
@@ -310,7 +355,14 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                'colored pencil'
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
             ],
             description: 'Artwork inspired by one of my favorite artist, Gustav Klimt',
             id: 4,
@@ -326,8 +378,34 @@ export const workData = {
             designers: 'David Bilbo',
             devs: 'Andrew Borem',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/git.svg',
+                    alt: 'git icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                }
             ],
             description: 'Powell Law Firm is an injury law firm located in Kentucky. While working at DynamiX Web Design, I transformed a PhotoShop design file into a fully custom and dynamic CMS website with PHP.',
             id: 5,
@@ -343,8 +421,54 @@ export const workData = {
             designers: 'Jade Nipper',
             devs: 'John Finch',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/jquery.svg',
+                    alt: 'jquery icon'
+                },
+                {
+                    img: '/images/work/icons/wordpress.svg',
+                    alt: 'wordpress icon'
+                },
+                {
+                    img: '/images/work/icons/acf.svg',
+                    alt: 'advanced custom fields icon'
+                },
+                {
+                    img: '/images/work/icons/git.svg',
+                    alt: 'git icon'
+                },
+                {
+                    img: '/images/work/icons/gsap.svg',
+                    alt: 'gsap icon'
+                },
+                {
+                    img: '/images/work/icons/xd.svg',
+                    alt: 'xd icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                }
             ],
             description: 'Based out of Birmingham, Alabama, Sheffield and Lentine is a law firm that specializes in all areas of criminal defense, including personal injuries, domestic relations and family law. S&L was in need of a full rebrand. I built a custom WordPress theme from scratch while working at Vehicle Media. The website was nominated and finished in the top 5 for the Webby Awards as “one of the best of web” in the “law” category.',
             id: 6,
@@ -360,8 +484,34 @@ export const workData = {
             designers: 'David Bilbo',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/git.svg',
+                    alt: 'git icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                }
             ],
             description: `FireSide Natural Gas is one of Georgia's top providers of natural gas service for commercial and industrial users. While working at DynamiX Web Design, I turned a PhotoShop design with many layers into a fully responsive, dynamic, and customizable website.`,
             id: 7,
@@ -377,8 +527,50 @@ export const workData = {
             designers: 'Yinan Xu, Jade Nipper',
             devs: 'Dave Carney, John Finch',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/wordpress.svg',
+                    alt: 'wordpress icon'
+                },
+                {
+                    img: '/images/work/icons/acf.svg',
+                    alt: 'advanced custom fields icon'
+                },
+                {
+                    img: '/images/work/icons/git.svg',
+                    alt: 'git icon'
+                },
+                {
+                    img: '/images/work/icons/gsap.svg',
+                    alt: 'gsap icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                },
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                }
             ],
             description: 'Vehicle Media is a digital marketing agency in Atlanta, Georgia that focuses on graphic + web design, social media, web development, photography and communication strategies. While working at Vehicle Media, I built a new site for the company that showcased new designs, updated projects, blogposts, and more.',
             id: 8,
@@ -394,8 +586,18 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                },
+                {
+                    img: '/images/work/icons/indesign.svg',
+                    alt: 'indesign icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                },
             ],
             description: 'Logo design for Volunteer State Builders, a General Contractor/Home Builder located in Middle Tennessee',
             id: 9,
@@ -411,8 +613,54 @@ export const workData = {
             designers: 'Leah Watson',
             devs: 'John Finch, Dave Carney',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/wordpress.svg',
+                    alt: 'wordpress icon'
+                },
+                {
+                    img: '/images/work/icons/acf.svg',
+                    alt: 'advanced custom fields icon'
+                },
+                {
+                    img: '/images/work/icons/git.svg',
+                    alt: 'git icon'
+                },
+                {
+                    img: '/images/work/icons/gsap.svg',
+                    alt: 'gsap icon'
+                },
+                {
+                    img: '/images/work/icons/vue.svg',
+                    alt: 'vue icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                },
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                }
             ],
             description: `You either know what Waffle House is or you don't. America's favorite breakfast spot was in need of a major site rehaul. While working with two other develoepers at Vehicle Media on this project, I built and styled several components, pages, and sections of the website. Specific examples being the blogposts, homepage components and sliders, animations, parts of the nav menu, etc.`,
             id: 10,
@@ -428,8 +676,14 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
             ],
             description: 'Calligraphy',
             id: 11,
@@ -445,8 +699,50 @@ export const workData = {
             designers: 'VM Designer',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/jquery.svg',
+                    alt: 'jquery icon'
+                },
+                {
+                    img: '/images/work/icons/wordpress.svg',
+                    alt: 'wordpress icon'
+                },
+                {
+                    img: '/images/work/icons/git.svg',
+                    alt: 'git icon'
+                },
+                {
+                    img: '/images/work/icons/gsap.svg',
+                    alt: 'gsap icon'
+                },
+                {
+                    img: '/images/work/icons/xd.svg',
+                    alt: 'xd icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                }
             ],
             description: `Conlan Company is a large contracting company located in Goergia, Florida and Texas. Conlan invisioned a new website with Parallax features and small movements. While working at Vehicle Media, I built a new custom WordPress theme that included subtle animations and parallax scrolling.`,
             id: 12,
@@ -462,8 +758,18 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                },
+                {
+                    img: '/images/work/icons/indesign.svg',
+                    alt: 'indesign icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                }
             ],
             description: 'Logo design for fine artist, Kelly Kahn, who specializes in custom portrait and landscape paintings',
             id: 13,
@@ -475,12 +781,50 @@ export const workData = {
             title: "Robinson Weeks Partners",
             img: '/images/work/code/rw/Robinson-Weeks.webp',
             url: 'https://robinsonweeks.com/',
-            role: '',
-            designers: '',
+            role: 'Developer',
+            designers: 'VM Designer',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/jquery.svg',
+                    alt: 'jquery icon'
+                },
+                {
+                    img: '/images/work/icons/wordpress.svg',
+                    alt: 'wordpress icon'
+                },
+                {
+                    img: '/images/work/icons/git.svg',
+                    alt: 'git icon'
+                },
+                {
+                    img: '/images/work/icons/xd.svg',
+                    alt: 'xd icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                }
             ],
             description: 'Based out of Atlanta, Robinson Weeks is an industrial real estate development and investment firm. Being a niche market, their overall goal was to take their outdated site and make it modern while still keeping a high-end specialty aesthetic. I built a custom WordPress theme from scratch with ACF and ACP for customization and dynamic content.',
             id: 14,
@@ -492,14 +836,28 @@ export const workData = {
             title: "Clover Hill",
             img: '/images/work/design/clover-hill.jpg',
             url: '',
-            role: '',
+            role: 'Designer + Developer',
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                },
+                {
+                    img: '/images/work/icons/indesign.svg',
+                    alt: 'indesign icon'
+                },
+                {
+                    img: '/images/work/icons/shopify.svg',
+                    alt: 'shopify icon'
+                }
             ],
-            description: 'Logo design for clothing boutique in Pell City, Alabama',
+            description: 'Logo design and shopify development for clothing boutique in Pell City, Alabama',
             id: 15,
             showAll: false,
             type: "design",
@@ -513,8 +871,14 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
             ],
             description: `Acrylic portrait`,
             id: 16,
@@ -530,8 +894,14 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                },
+                {
+                    img: '/images/work/icons/indesign.svg',
+                    alt: 'indesign icon'
+                },
             ],
             description: 'Logo design for non-profit organization in Alabama',
             id: 17,
@@ -543,14 +913,44 @@ export const workData = {
             title: "Expo Home Improvements",
             img: '/images/work/code/expo/Expo-Home-Improvement.webp',
             url: 'https://expohomeimprovement.com/',
-            role: '',
-            designers: '',
-            devs: '',
+            role: 'Developer',
+            designers: 'David Bilbo',
+            devs: 'Eric King',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/git.svg',
+                    alt: 'git icon'
+                },
+                {
+                    img: '/images/work/icons/vue.svg',
+                    alt: 'vue icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                }
             ],
-            description: `A custom built website for Expo Home Improvement, a home improvement company located in Texas`,
+            description: `Expo Home Improvement is a home improvement company located in Texas. Their purpose is providing homeowners throughout the Dallas-Fort Worth area with high-quality, efficient, and affordable home remodeling. While working at DynamiX Web Design, I turned a PhotoShop web design into a fully responsive, dynamic, and customizable CMS website.`,
             id: 18,
             showAll: false,
             type: "website",
@@ -564,8 +964,14 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
             ],
             description: `Acrylic diptych on wood`,
             id: 19,
@@ -581,8 +987,14 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/xd.svg',
+                    alt: 'xd icon'
+                },
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                },
             ],
             description: 'Web design created for a law-firm app built by Vehicle Media',
             id: 20,
@@ -593,15 +1005,49 @@ export const workData = {
         {
             title: "Cahaba Brewing Company",
             img: '/images/work/code/cahaba/Cahaba-Brewing-Co.png',
-            url: '',
-            role: '',
-            designers: '',
-            devs: '',
+            url: 'https://cahababrewing.com/',
+            role: 'Freelance Developer + Designer',
+            designers: 'Devote Studio',
+            devs: 'Devote Studio',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/php.svg',
+                    alt: 'php icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/wordpress.svg',
+                    alt: 'wordpress icon'
+                },
+                {
+                    img: '/images/work/icons/acf.svg',
+                    alt: 'advanced custom fields icon'
+                },
+                {
+                    img: '/images/work/icons/gravityforms.svg',
+                    alt: 'gravity forms icon'
+                },
+                {
+                    img: '/images/work/icons/yoast.svg',
+                    alt: 'yoast seo icon'
+                },
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                }
             ],
-            description: 'Web design and code improvements for Cahaba Brewing Company, a brewery located in Birmingham, AL',
+            description: 'Cahaba Brewing Company is microbrewery and distillery located in Birmingham, Alabama and distributing quality craft beer throughout Alabama. Hired as a freelance designer/developer, my goal was to offer creative design and technical solutions to improve the overall code quality, page responsiveness, SEO, and design consistency across the site. I added custom fields to allow the client to update the site on their own, removed repetitive code, designed and created new pages such as 404, added conditionals for the backend, and cleaned up their existing stylesheet significantly.',
             id: 21,
             showAll: false,
             type: "website",
@@ -610,12 +1056,33 @@ export const workData = {
         {
             title: "Split",
             img: '/images/work/school/split.png',
-            url: '',
-            role: '',
-            designers: '',
+            url: 'https://erin-kahn.com/sites/split/',
+            role: 'Developer',
+            designers: 'Carol Ehreth',
             devs: '',
-            icons: '/images/work/icons/',
-            description: 'A site showcasing the 2016 thriller, Split. A film about a man who kidnaps three young girls, and after doing so reveals his 24 unique, yet terrifying personalities',
+            icons: [
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/gsap.svg',
+                    alt: 'gsap icon'
+                },
+                {
+                    img: '/images/work/icons/sketch.svg',
+                    alt: 'sketch icon'
+                }
+            ],
+            description: 'While studying interactive development at The Creative Circus, a designer and I were given an assignment to come up with a design and landing page that was within the category of media. The site we came up with showcases the 2016 thriller film, Split. We decided to play off of the multiple personalities of the protagonist while showcasing parallax animations and both a dark (Beast) and light (Kevin) theme.',
             id: 22,
             showAll: false,
             type: "website",
@@ -624,15 +1091,37 @@ export const workData = {
         {
             title: "Aretha Franklin",
             img: '/images/work/school/aretha.png',
-            url: '',
-            role: '',
+            url: 'https://erin-kahn.com/sites/aretha/',
+            role: 'Developer + Designer',
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/gsap.svg',
+                    alt: 'gsap icon'
+                },
+                {
+                    img: '/images/work/icons/sketch.svg',
+                    alt: 'sketch icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                }
             ],
-            description: `Celebrating the life of the legendary 'Queen of Soul', this site takes the user through the journey of Aretha Franklin's life.`,
+            description: `As an interactive development student at The Creative Circus, I took an animations class. The assignment was to build a mini-website that showcased our favorite musical artist. Celebrating the life of the legendary 'Queen of Soul', I chose to build a site that takes the user through the journey of Aretha Franklin's life.`,
             id: 23,
             showAll: false,
             type: "website",
@@ -641,15 +1130,25 @@ export const workData = {
         {
             title: "Moodie",
             img: '/images/work/school/Moodie.png',
-            url: '',
-            role: '',
+            url: 'https://www.erin-kahn.com/moodie.html',
+            role: 'Designer',
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                },
+                {
+                    img: '/images/work/icons/sketch.svg',
+                    alt: 'sketch icon'
+                },
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                }
             ],
-            description: `Moodie is an app designed for users with anxiety and/or depression. It tracks a user's mood over time and sends that information and progress to a user's doctor in order to see if a medication is or is not working for a patient.`,
+            description: `During my time at The Creative Circus, an advertising portfolio school in Atlanta, I took an interactive design class. The assignment was to build an app that makes a difference in the world. I created Moodie, an app designed for users with anxiety, depression, or ptsd. The purpose of this app is to track a user's mood over time, which then transmits the stored data and progress to the user's doctor in order to see if a medication is beneficial to the patient. It also has mindfullness features such as a daily gratitude list, feelings journal, stress tools, and more.`,
             id: 24,
             showAll: false,
             type: "design",
@@ -663,8 +1162,14 @@ export const workData = {
             designers: '',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
+                {
+                    img: '/images/work/icons/',
+                    alt: ' icon'
+                },
             ],
             description: `Pencil portrait playing piano`,
             id: 25,
@@ -675,15 +1180,37 @@ export const workData = {
         {
             title: "Nerds Candy",
             img: '/images/work/school/Nerds.png',
-            url: '',
-            role: '',
-            designers: '',
+            url: 'https://erin-kahn.com/sites/nerds/',
+            role: 'Developer + Co-Illustrator',
+            designers: 'Kate Gallihugh, Leeah Emerson (AD), Will Aebi (Copy)',
             devs: '',
             icons: [
-                '/images/work/icons/',
-                '/images/work/icons/'
+                {
+                    img: '/images/work/icons/html.svg',
+                    alt: 'html icon'
+                },
+                {
+                    img: '/images/work/icons/css.svg',
+                    alt: 'css icon'
+                },
+                {
+                    img: '/images/work/icons/sass.svg',
+                    alt: 'sass icon'
+                },
+                {
+                    img: '/images/work/icons/javascript.svg',
+                    alt: 'javascript icon'
+                },
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                },
             ],
-            description: `A site for kids, focusing on unique characters and self expressive games that allow children to embrace their weirdness and unique traits`,
+            description: `While at The Creative Circus, an advertising portolio and web development school in Atlanta, I teamed up with a designer, art director, and copywriter. Our assignment was to create a landing page that showcased a brand for kids. We created a Nerds landing page that focuses on unique characters and self expressive games that allow children to embrace their weirdness and unique traits.`,
             id: 26,
             showAll: false,
             type: "website",

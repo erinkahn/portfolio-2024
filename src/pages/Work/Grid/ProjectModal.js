@@ -50,19 +50,22 @@ export default function ProjectModal(props) {
                                                 ))}
                                             </ul>
                                         </div>
-                                        <div className="button-col">
-                                            <div className="button-wrapper">
-                                                <a 
-                                                    target="_blank" 
-                                                    aria-label={`Click to see ${filteredPro.title}'s live site`} 
-                                                    href={filteredPro.url}
-                                                >
-                                                    <div aria-hidden="true">Live Site 
-                                                        <img className="arrow" src={`/images/icons/arrow-${themeName.theme}.svg`} alt=""/>
-                                                    </div>
-                                                </a>
+
+                                        {filteredPro.url &&
+                                            <div className="button-col">
+                                                <div className="button-wrapper">
+                                                    <a 
+                                                        target="_blank" 
+                                                        aria-label={`Click to see ${filteredPro.title}'s live site`} 
+                                                        href={filteredPro.url}
+                                                    >
+                                                        <div aria-hidden="true">Live Site 
+                                                            <img className="arrow" src={`/images/icons/arrow-${themeName.theme}.svg`} alt=""/>
+                                                        </div>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
+                                        }
                                     </div>
                                 </div>
                                 
