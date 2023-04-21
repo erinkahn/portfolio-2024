@@ -68,7 +68,6 @@ export default function ProjectModal(props) {
                                         }
                                     </div>
                                 </div>
-                                
                             </div>
                         )
                     )}

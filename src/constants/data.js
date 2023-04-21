@@ -1006,7 +1006,7 @@ export const workData = {
             title: "Cahaba Brewing Company",
             img: '/images/work/code/cahaba/Cahaba-Brewing-Co.png',
             url: 'https://cahababrewing.com/',
-            role: 'Freelance Developer + Designer',
+            role: 'Freelance Dev / Designer',
             designers: 'Devote Studio',
             devs: 'Devote Studio',
             icons: [

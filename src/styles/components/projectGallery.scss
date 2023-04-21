@@ -83,11 +83,20 @@
 
     .project-item {
         position: relative;
-        min-height: 187px;
+        height:40vw;
+        width: 100%;
         overflow: hidden;
 
-        @media screen and (min-width: $xlarge) {
-            max-height: 270px;
+        @media screen and (min-width: $xsUp) {
+            height: 32vw;
+        }
+
+        @media screen and (min-width: $smUp) {
+            height: 22vw;
+        }
+
+        @media screen and (min-width: $medUp) {
+            height: 16vw;
         }
     }
 

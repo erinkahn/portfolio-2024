@@ -1,5 +1,5 @@
 .project-modal {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1157.892' height='2114.788' viewBox='0 0 1157.892 2114.788'%3E%3Cpath id='Path_231' data-name='Path 231' d='M7545.47-1341.361c144.426,29.962,158.872,81.173,255.211,49.908s131.175-81.152,242.574-51.52,159.781,45.725,142.258,319.728c-16.068,251.261-100.787,305.613-75.249,522.371s43.86,219.739,80.429,482.405,3.133,497.061-120.686,647.033c-73.394,72.094-247.348,81.559-381.149,53.792s-116.9-138.76-343.085-193.1S7197.532,204.414,7211.323-13.281c7.143-112.766,92.5-300.415,103.246-574.159,10.037-255.67-83.524-309.948-26.509-498.561S7401.044-1371.322,7545.47-1341.361Z' transform='matrix(0.998, -0.07, 0.07, 0.998, -7075.403, 1921.07)' fill='%23fff'/%3E%3C/svg%3E%0A");    background-size: 100% 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     position: fixed;
     left: 50%;
@@ -10,7 +10,7 @@
     transform: translate(-50%, -50%);
     z-index: 5;
 
-    @media screen and (max-width: $xxxsDown) {
+    @media screen and (max-width: $xsDown) {
         background-color: $white;
         background-image: none;
     }
@@ -21,11 +21,11 @@
 
     @media screen and (min-width: $smUp) {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='873.342' height='894.699' viewBox='0 0 873.342 894.699'%3E%3Cpath id='Path_231' data-name='Path 231' d='M7588.16-1354.031c109.731,22.433,185.293,41.459,236.613,31.082s116.814-47.988,159.252-43.169,112.215,74.294,94.691,184.34-37.761,233.771-57.105,324.255c-9.453,92.552-17.865,241.752-141.681,301.984-73.394,28.955-167.844,47.556-218.576-1.974-68.469-52.991-88.983-63.214-166.66-68.71-231.7,6.459-239.589-61.771-225.8-149.2s32.4-449.047,63.285-492.8C7393.962-1355.724,7478.431-1376.464,7588.16-1354.031Z' transform='matrix(0.998, -0.07, 0.07, 0.998, -7151.71, 1926.949)' fill='%23fff'/%3E%3C/svg%3E%0A");
-        width: 90%;
     }
 
     @media screen and (min-width: $medUp) {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1628.992' height='1352.458' viewBox='0 0 1628.992 1352.458'%3E%3Cpath id='Path_231' data-name='Path 231' d='M7985.078-1323.472c136.978,68.5,199.745,157.677,312.771,138.967s211.534-142.459,297.545-154.017,199.337,22.652,239.755,154.181S8730.1-927.628,8683.194-788.775s29.791,241.182,44.149,315.225,17.378,372.41-316.152,328.739c-140.737-24.106-154.79-128.639-266.522-217.943-150.793-95.542-341.779-61.858-466.056,29.146-204.738,149.925-293.277,32.506-346.261-24.213s-56.862-297.519,53.906-430.751-62.1-336.72,73.96-494.485S7848.1-1391.969,7985.078-1323.472Z' transform='matrix(0.998, -0.07, 0.07, 0.998, -7181.83, 2001.558)' fill='%23fff'/%3E%3C/svg%3E%0A");
+        width: 100%;
     }
 
     .inner-wrapper {
@@ -45,15 +45,22 @@
         border-radius: 2em;
         border: 2px solid $white;
         filter: drop-shadow(2px 2px 3px rgba($black, 0.6));
+        transition: background-size $quick, border-color $quick;
 
-        @media screen and (max-width: $xxxsDown) {
+        @media screen and (max-width: $xsDown) {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48.859' height='37.573' viewBox='0 0 48.859 37.573'%3E%3Cg id='Group' transform='translate(2.413 2.414)'%3E%3Cpath id='Line_2' data-name='Line 2' d='M0,8.559,46.944,0' transform='matrix(0.839, -0.545, 0.545, 0.839, 0, 25.568)' fill='none' stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3'/%3E%3Cpath id='Line_2_Copy' data-name='Line 2 Copy' d='M0,0,46.324,7.946' transform='matrix(0.839, 0.545, -0.545, 0.839, 4.848, 0.541)' fill='none' stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A");
             border-color: $black;
+
+            &:hover,
+            &:focus {
+                border-color: rgba($black, 0.3);
+            }
         }
 
-        @media screen and (min-width: $smUp) {
-            left: 0;
-            top: 4em;
+        &:hover,
+        &:focus {
+            background-size: 30% auto;
+            border-color: rgba($white, 0.5);
         }
     }
 
@@ -61,21 +68,22 @@
         display: flex;
         place-items: center;
         position: relative;
-        height: 64vh;
-        width: 60vw;
-        max-width: 750px;
+        height: 72vh;
+        width: 100%;
+        max-width: 85%;
         margin: 18vh auto;
 
         @media screen and (min-width: $xsUp) {
-            width: 50vw;
+            max-width: 300px;
             height: 60vh;
         }
         @media screen and (min-width: $smUp) {
-            width: 60vw;
+            max-width: 64%;
         }
         @media screen and (min-width: $medUp) {
-           height: 45vh;
-           margin: 24vh auto;
+            max-width: 700px;
+            height: 45vh;
+            margin: 24vh auto;
         }
 
         .row {
@@ -86,67 +94,41 @@
                 flex-wrap: nowrap;
                 justify-content: space-between;
             }
+        }
 
-            .col {
-                &:last-of-type {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 3em;
-                    width: 100%;
-                    justify-content: space-between;
+        .col {
+            &:last-of-type {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3em;
+                width: 100%;
+                justify-content: space-between;
 
-                    @media screen and (max-width: $smDown) {
-                        flex-direction: column;
-                    }  
+                @media screen and (max-width: $smDown) {
+                    flex-direction: column;
+                }  
 
-                    @media screen and (min-width: $smUp) {
-                        align-items: self-end;
-                    }
-
-                    @media screen and (min-width: $medUp) {
-                        flex-direction: column;
-                        align-items: center;
-                        text-align: center; 
-                        width: 20%;
-    
-                        p {
-                            margin-bottom: 0.5em;
-                        }
-                    }
-                }
-                              
-                &:first-of-type {
-                    @media screen and (min-width: $medUp) {
-                        width: 65%;
-                    }
+                @media screen and (min-width: $smUp) {
+                    align-items: self-end;
                 }
 
-                ul {
-                    display: flex;
+                @media screen and (min-width: $medUp) {
+                    flex-direction: column;
                     align-items: center;
-                    flex-wrap: wrap;
-                    gap: 30px;
+                    text-align: center; 
+                    width: 23%;
 
-                    @media screen and (min-width: $medUp) {
-                        flex-wrap: wrap;
-                        gap: 25px 4%;
-
-                        li {
-                            width: 48%;
-                            display: flex;
-                            place-content: end;
-                            place-items: center;
-                            justify-content: center;
-                            align-items: center;
-                        }
+                    p {
+                        margin-bottom: 0.5em;
                     }
-
-                    img {
-                        width: 32px;
-                        margin: auto;
-                    }
-                }    
+                }
             }
+                          
+            &:first-of-type {
+                @media screen and (min-width: $medUp) {
+                    width: 68%;
+                }
+            }  
         }
 
         h2 {
@@ -154,30 +136,40 @@
             font-weight: $semibold;
             margin-bottom: 1.5em;
 
-            @media screen and (max-width: 353px) {
+            @media screen and (max-width: $smDown) {
+                margin-bottom: 0.75em;
+
                 &::after {
-                    transform: translateY(3.2em);
+                    display: none;
                 }
             }
         }
 
         .desc {
             font-size: 0.875em;
-            margin-bottom: 3em;
+            margin-bottom: 2em;
+
+            @media screen and (max-width: $smDown) {
+                overflow: auto;
+                max-height: 180px;
+                position: relative;
+            }
+
+            @media screen and (min-width: $medUp) {
+                margin-bottom: 3em;
+            }
         }    
         
         .roles {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            margin-bottom: 3em;
+            gap: 10px;
+            margin-bottom: 2em;
 
             @media screen and (min-width: $medUp) {
                 margin-bottom: 0;
-            }
-
-            p:not(:last-of-type) {
-                margin-bottom: 1.5em;
+                gap: 10px 0px;
             }
 
             p {
@@ -190,8 +182,44 @@
 
         span {
             font-weight: $semibold;
-            margin-right: 1em;   
+            margin-right: 0.5em;   
         }
+
+        .tools {
+            p {
+                margin-bottom: 1em;
+            }
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            @media screen and (min-width: $medUp) {
+                flex-wrap: wrap;
+                gap: 25px 4%;
+
+                li {
+                    width: 48%;
+                    display: flex;
+                    place-content: flex-end;
+                    place-items: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            img {
+                width: 25px;
+                margin: auto;
+
+                @media screen and (min-width: $medUp) {
+                    width: 30px;
+                }
+            }
+        }  
 
         .button-col {
             max-width: 135px;
@@ -238,6 +266,14 @@
 
                     img {
                         max-width: 20px;
+                        transition: max-width $quick;
+                    }
+                }
+
+                &:hover,
+                &:focus {
+                    img {
+                        max-width: 10px;
                     }
                 }
             }
