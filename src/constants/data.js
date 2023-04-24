@@ -202,9 +202,8 @@ export const workData = {
             title: "Aerangis",
             img: '/images/work/code/aerangis/Aerangis.webp',
             url: 'https://aerangis.com/',
-            role: 'developer',
+            role: 'Developer',
             designers: 'Jade Nipper',
-            devs: '',
             icons: [
                 {
                     img: '/images/work/icons/shopify.svg',
@@ -304,20 +303,13 @@ export const workData = {
         {
             title: "Pet Portrait",
             img: '/images/work/art/dog.jpg',
-            url: '',
             role: 'Artist',
-            designers: '',
-            devs: '',
-            icons: [
+            thumbnails: [
                 {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
-                {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
-            ],
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
+            ],      
             description: `Pet portrait of a dear friend's sister's dog`,
             id: 2,
             showAll: false,
@@ -327,18 +319,21 @@ export const workData = {
         {
             title: "The Barber Bar",
             img: '/images/work/design/barberBar/The-Barber-Bar.png',
-            url: '',
             role: 'Designer',
-            designers: '',
-            devs: '',
+            thumbnails: [
+                {
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
+            ],
             icons: [
                 {
                     img: '/images/work/icons/illustrator.svg',
                     alt: 'illustrator icon'
                 },
                 {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
+                    img: '/images/work/icons/indesign.svg',
+                    alt: 'indesign icon'
                 },
             ],
             description: 'Logo design and brand identity suite for a locally owned barber salon in Birmingham, Alabama',
@@ -350,19 +345,12 @@ export const workData = {
         {
             title: "Klimt",
             img: '/images/work/art/klimt.jpg',
-            url: '',
             role: 'Artist',
-            designers: '',
-            devs: '',
-            icons: [
+            thumbnails: [
                 {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
-                {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
             ],
             description: 'Artwork inspired by one of my favorite artist, Gustav Klimt',
             id: 4,
@@ -482,7 +470,6 @@ export const workData = {
             url: 'https://firesidenaturalgas.com/',
             role: 'Developer',
             designers: 'David Bilbo',
-            devs: '',
             icons: [
                 {
                     img: '/images/work/icons/html.svg',
@@ -581,10 +568,13 @@ export const workData = {
         {
             title: "Volunteer State Builders",
             img: '/images/work/design/Volunteer-State-Builders.png',
-            url: '',
-            role: '',
-            designers: '',
-            devs: '',
+            role: 'Designer',
+            thumbnails: [
+                {
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
+            ],
             icons: [
                 {
                     img: '/images/work/icons/illustrator.svg',
@@ -671,19 +661,12 @@ export const workData = {
         {
             title: "Calligraphy",
             img: '/images/work/art/calligraphy.jpg',
-            url: '',
-            role: '',
-            designers: '',
-            devs: '',
-            icons: [
+            role: 'Artist',
+            thumbnails: [
                 {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
-                {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
             ],
             description: 'Calligraphy',
             id: 11,
@@ -697,7 +680,6 @@ export const workData = {
             url: 'https://conlancompany.com/',
             role: 'Developer',
             designers: 'VM Designer',
-            devs: '',
             icons: [
                 {
                     img: '/images/work/icons/html.svg',
@@ -753,10 +735,13 @@ export const workData = {
         {
             title: "Kelly Kahn Art",
             img: '/images/work/design/kelly-kahn-art.png',
-            url: '',
-            role: '',
-            designers: '',
-            devs: '',
+            role: 'Designer',
+            thumbnails: [
+                {
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
+            ],
             icons: [
                 {
                     img: '/images/work/icons/illustrator.svg',
@@ -783,7 +768,6 @@ export const workData = {
             url: 'https://robinsonweeks.com/',
             role: 'Developer',
             designers: 'VM Designer',
-            devs: '',
             icons: [
                 {
                     img: '/images/work/icons/html.svg',
@@ -835,10 +819,13 @@ export const workData = {
         {
             title: "Clover Hill",
             img: '/images/work/design/clover-hill.jpg',
-            url: '',
             role: 'Designer + Developer',
-            designers: '',
-            devs: '',
+            thumbnails: [
+                {
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
+            ],
             icons: [
                 {
                     img: '/images/work/icons/illustrator.svg',
@@ -866,19 +853,12 @@ export const workData = {
         {
             title: "Portrait",
             img: '/images/work/art/back-portrait.jpg',
-            url: '',
-            role: '',
-            designers: '',
-            devs: '',
-            icons: [
+            role: 'Artist',
+            thumbnails: [
                 {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
-                {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
             ],
             description: `Acrylic portrait`,
             id: 16,
@@ -889,10 +869,13 @@ export const workData = {
         {
             title: "Grace Klein Community",
             img: '/images/work/design/grace-klein-community.jpg',
-            url: '',
-            role: '',
-            designers: '',
-            devs: '',
+            role: 'Graphic Designer',
+            thumbnails: [
+                {
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
+            ],
             icons: [
                 {
                     img: '/images/work/icons/illustrator.svg',
@@ -959,19 +942,12 @@ export const workData = {
         {
             title: "Floral Diptych",
             img: '/images/work/art/floral-diptych.jpg',
-            url: '',
-            role: '',
-            designers: '',
-            devs: '',
-            icons: [
+            role: 'Artist',
+            thumbnails: [
                 {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
-                {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
             ],
             description: `Acrylic diptych on wood`,
             id: 19,
@@ -983,9 +959,13 @@ export const workData = {
             title: "Novo",
             img: '/images/work/design/Novo.png',
             url: '',
-            role: '',
-            designers: '',
-            devs: '',
+            role: 'Designer',
+            thumbnails: [
+                {
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
+            ],
             icons: [
                 {
                     img: '/images/work/icons/xd.svg',
@@ -1059,7 +1039,6 @@ export const workData = {
             url: 'https://erin-kahn.com/sites/split/',
             role: 'Developer',
             designers: 'Carol Ehreth',
-            devs: '',
             icons: [
                 {
                     img: '/images/work/icons/html.svg',
@@ -1093,8 +1072,6 @@ export const workData = {
             img: '/images/work/school/aretha.png',
             url: 'https://erin-kahn.com/sites/aretha/',
             role: 'Developer + Designer',
-            designers: '',
-            devs: '',
             icons: [
                 {
                     img: '/images/work/icons/html.svg',
@@ -1132,8 +1109,12 @@ export const workData = {
             img: '/images/work/school/Moodie.png',
             url: 'https://www.erin-kahn.com/moodie.html',
             role: 'Designer',
-            designers: '',
-            devs: '',
+            thumbnails: [
+                {
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
+            ],
             icons: [
                 {
                     img: '/images/work/icons/photoshop.svg',
@@ -1157,19 +1138,12 @@ export const workData = {
         {
             title: "Self Portrait",
             img: '/images/work/art/pencil-drawing.png',
-            url: '',
-            role: '',
-            designers: '',
-            devs: '',
-            icons: [
+            role: 'Artist',
+            thumbnails: [
                 {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
-                {
-                    img: '/images/work/icons/',
-                    alt: ' icon'
-                },
+                    img: '/images/work/thumbnails/',
+                    alt: ''
+                }
             ],
             description: `Pencil portrait playing piano`,
             id: 25,
@@ -1183,7 +1157,6 @@ export const workData = {
             url: 'https://erin-kahn.com/sites/nerds/',
             role: 'Developer + Co-Illustrator',
             designers: 'Kate Gallihugh, Leeah Emerson (AD), Will Aebi (Copy)',
-            devs: '',
             icons: [
                 {
                     img: '/images/work/icons/html.svg',

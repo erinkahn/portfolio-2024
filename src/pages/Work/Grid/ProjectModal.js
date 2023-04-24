@@ -38,18 +38,45 @@ export default function ProjectModal(props) {
                                                 <p><span>Co-Devs:</span>{filteredPro.devs}</p>
                                             }
                                         </div>
+
+                                        {filteredPro.type == 'design' && 
+                                            (
+                                                <div className="tools design">
+                                                    <p><span>Tools:</span></p>
+                                                    <ul>
+                                                        {filteredPro.icons.map((icon, i) => (
+                                                            <li key={`icon-${i}`}>
+                                                                <img src={icon.img} alt={icon.alt}/>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )
+                                        }
                                     </div>
                                     <div className="col">
-                                        <div className="tools">
-                                            <p><span>Tools:</span></p>
-                                            <ul>
-                                                {filteredPro.icons.map((icon, i) => (
-                                                    <li key={`icon-${i}`}>
-                                                        <img src={icon.img} alt={icon.alt}/>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
+                                        {filteredPro.type == 'website' ? (
+                                            <div className="tools">
+                                                <p><span>Tools:</span></p>
+                                                <ul>
+                                                    {filteredPro.icons.map((icon, i) => (
+                                                        <li key={`icon-${i}`}>
+                                                            <img src={icon.img} alt={icon.alt}/>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        ) : (
+                                            <div className="thumbnails">                                              
+                                                <ul>
+                                                    {filteredPro.thumbnails.map((thumb, i) => (
+                                                        <li key={`thumb-${i}`}>
+                                                            <img src={thumb.img} alt={thumb.alt}/>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
 
                                         {filteredPro.url &&
                                             <div className="button-col">
