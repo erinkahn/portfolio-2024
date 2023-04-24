@@ -23,9 +23,10 @@ export default function ProjectModal(props) {
                                 aria-labelledby={`dialogTitle${m}`}
                                 aria-describedby={`dialogDescription${m}`}
                                 role="dialog"
+                                className="content-wrapper"
                             >
                                 <h2 className="section-title" id={`dialogTitle${m}`}>{filteredPro.title}</h2>
-                                <div className="row">
+                                <div className={`row ${filteredPro.type}`}>
                                     <div className="col">
                                         <p className="desc" id={`dialogDescription${m}`}>{filteredPro.description}</p>
 
@@ -39,7 +40,7 @@ export default function ProjectModal(props) {
                                             }
                                         </div>
 
-                                        {filteredPro.type == 'design' && 
+                                        {filteredPro.type === 'design' && 
                                             (
                                                 <div className="tools design">
                                                     <p><span>Tools:</span></p>
@@ -52,10 +53,10 @@ export default function ProjectModal(props) {
                                                     </ul>
                                                 </div>
                                             )
-                                        }
+                                        }       
                                     </div>
                                     <div className="col">
-                                        {filteredPro.type == 'website' ? (
+                                        {filteredPro.type === 'website' ? (
                                             <div className="tools">
                                                 <p><span>Tools:</span></p>
                                                 <ul>
@@ -71,7 +72,7 @@ export default function ProjectModal(props) {
                                                 <ul>
                                                     {filteredPro.thumbnails.map((thumb, i) => (
                                                         <li key={`thumb-${i}`}>
-                                                            <img src={thumb.img} alt={thumb.alt}/>
+                                                            <img className={`${i < 1 ? 'single' : 'more'}`} src={thumb.img} alt={thumb.alt}/>
                                                         </li>
                                                     ))}
                                                 </ul>

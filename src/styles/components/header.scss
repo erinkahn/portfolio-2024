@@ -15,6 +15,10 @@ header {
         z-index: 1;
         transform: translate(18%, 0%);
 
+        @media screen and (min-height: 500px) {
+            width: 16vh;
+        }
+
         @media screen and (min-width: $smUp) {
             transform: translate(14%, 0%);
         }

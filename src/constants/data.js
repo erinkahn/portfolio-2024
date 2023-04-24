@@ -306,11 +306,11 @@ export const workData = {
             role: 'Artist',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
-                    alt: ''
+                    img: '/images/work/art/dog.jpg',
+                    alt: 'painting of a dog holding a tennis ball'
                 }
             ],      
-            description: `Pet portrait of a dear friend's sister's dog`,
+            description: `acrylic on canvas`,
             id: 2,
             showAll: false,
             type: "art",
@@ -348,11 +348,11 @@ export const workData = {
             role: 'Artist',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
-                    alt: ''
+                    img: '/images/work/art/klimt.jpg',
+                    alt: 'hanging art in living room'
                 }
             ],
-            description: 'Artwork inspired by one of my favorite artist, Gustav Klimt',
+            description: 'Colored Pencil, inspired by one of my favorite artists, Gustav Klimt',
             id: 4,
             showAll: false,
             type: "art",
@@ -571,7 +571,7 @@ export const workData = {
             role: 'Designer',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
+                    img: '/images/work/art/',
                     alt: ''
                 }
             ],
@@ -659,16 +659,16 @@ export const workData = {
             show: 'show_websites'
         },
         {
-            title: "Calligraphy",
+            title: "Handlettering",
             img: '/images/work/art/calligraphy.jpg',
-            role: 'Artist',
+            role: 'Calligrapher',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
-                    alt: ''
+                    img: '/images/work/art/calligraphy.jpg',
+                    alt: 'frame of a quote sitting on a desk'
                 }
             ],
-            description: 'Calligraphy',
+            description: 'digital ipad',
             id: 11,
             showAll: false,
             type: "art",
@@ -738,7 +738,7 @@ export const workData = {
             role: 'Designer',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
+                    img: '/images/work/art/',
                     alt: ''
                 }
             ],
@@ -822,7 +822,7 @@ export const workData = {
             role: 'Designer + Developer',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
+                    img: '/images/work/art/',
                     alt: ''
                 }
             ],
@@ -851,16 +851,16 @@ export const workData = {
             show: 'show_designs'
         },
         {
-            title: "Portrait",
-            img: '/images/work/art/back-portrait.jpg',
+            title: "Nude Portrait",
+            img: '/images/work/art/back-portrait2.jpg',
             role: 'Artist',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
-                    alt: ''
+                    img: '/images/work/art/back-portrait.jpg',
+                    alt: 'living room painting'
                 }
             ],
-            description: `Acrylic portrait`,
+            description: 'acrylic on canvas',
             id: 16,
             showAll: false,
             type: "art",
@@ -872,7 +872,7 @@ export const workData = {
             role: 'Graphic Designer',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
+                    img: '/images/work/art/',
                     alt: ''
                 }
             ],
@@ -945,11 +945,11 @@ export const workData = {
             role: 'Artist',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
-                    alt: ''
+                    img: '/images/work/art/floral-diptych.jpg',
+                    alt: 'colorful flowers painted on two boards'
                 }
             ],
-            description: `Acrylic diptych on wood`,
+            description: "acrylic on wood",
             id: 19,
             showAll: false,
             type: "art",
@@ -1141,11 +1141,11 @@ export const workData = {
             role: 'Artist',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
-                    alt: ''
+                    img: '/images/work/art/pencil-drawing.png',
+                    alt: 'black and white drawing of girl playing piano'
                 }
             ],
-            description: `Pencil portrait playing piano`,
+            description: 'pencil',
             id: 25,
             showAll: false,
             type: "art",

@@ -86,6 +86,10 @@
             margin: 24vh auto;
         }
 
+        .content-wrapper {
+            width: 100%;
+        }
+
         .row {
             display: flex;
             flex-wrap: wrap; 
@@ -93,6 +97,37 @@
             @media screen and (min-width: $medUp) {
                 flex-wrap: nowrap;
                 justify-content: space-between;
+            }
+
+            &.art {
+                @media screen and (max-width: $smDown) {
+                    flex-direction: column;
+                }
+
+                .desc {
+                    margin-bottom: 1em;
+                }
+
+                .col {
+                    width: 100%;
+
+                    @media screen and (max-width: $medDown) {
+                        &:first-of-type {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+
+                    @media screen and (min-width: $medUp) {
+                        &:first-of-type {
+                            width: 40%;                 
+                        }
+
+                        &:last-of-type {
+                            width: 60%;
+                        }
+                    }
+                }
             }
         }
 
@@ -189,37 +224,84 @@
             p {
                 margin-bottom: 1em;
             }
-        }
 
-        ul {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-
-            @media screen and (min-width: $medUp) {
+            ul {
+                display: flex;
+                align-items: center;
                 flex-wrap: wrap;
-                gap: 25px 4%;
-
-                li {
-                    width: 48%;
-                    display: flex;
-                    place-content: flex-end;
-                    place-items: center;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-
-            img {
-                width: 25px;
-                margin: auto;
+                gap: 20px;
 
                 @media screen and (min-width: $medUp) {
-                    width: 30px;
+                    flex-wrap: wrap;
+                    gap: 25px 4%;
+
+                    li {
+                        width: 48%;
+                        display: flex;
+                        place-content: flex-end;
+                        place-items: center;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                img {
+                    width: 25px;
+                    margin: auto;
+
+                    @media screen and (min-width: $medUp) {
+                        width: 30px;
+                    }
+                }
+            }  
+
+            &.design {
+                display: flex;
+                margin-top: 2em;
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                ul {
+                    flex-wrap: nowrap;
+                    gap: 25px 20%;
                 }
             }
-        }  
+        }
+
+        .thumbnails {
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                li {
+                    img {
+                        transition: transform $quick;
+
+                        &.single {
+                            border-radius: 50px 10px;
+                        }
+
+                        &:hover {
+                            transform: scale(1.5);
+                        }
+                    }
+                    // flex: 1;
+
+                    // img {
+                    //     height: 100%;
+                    //     object-fit: cover;
+                    // }
+
+                    // &:last-of-type {
+                    //     margin-left: -30px;
+                    //     transform: scale(1.15);
+                    // }
+                }
+            }
+        }
 
         .button-col {
             max-width: 135px;
