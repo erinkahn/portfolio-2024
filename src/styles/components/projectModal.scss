@@ -129,6 +129,15 @@
                     }
                 }
             }
+
+            &.design {
+                flex-direction: column;
+                gap: 30px;
+
+                .col {
+                    width: 100%;
+                }
+            }
         }
 
         .col {
@@ -280,25 +289,38 @@
                     img {
                         transition: transform $quick;
 
-                        &.single {
-                            border-radius: 50px 10px;
-                        }
-
                         &:hover {
-                            transform: scale(1.5);
+                            transform: scale(2);
                         }
                     }
-                    // flex: 1;
+                }
+            }
 
-                    // img {
-                    //     height: 100%;
-                    //     object-fit: cover;
-                    // }
+            &.art {
+                img {
+                    &.single {
+                        border-radius: 50px 10px;
+                    }
+                }
+            }
 
-                    // &:last-of-type {
-                    //     margin-left: -30px;
-                    //     transform: scale(1.15);
-                    // }
+            &.design {
+                ul {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 10px 2%;
+
+                    li {
+                        width: 48%;
+
+                        img {
+                            border-radius: 5px;
+                        }
+                    }
+
+                    @media screen and (min-width: $smUp) {
+                        flex-wrap: nowrap;
+                    }
                 }
             }
         }

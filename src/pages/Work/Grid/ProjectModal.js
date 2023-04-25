@@ -67,12 +67,22 @@ export default function ProjectModal(props) {
                                                     ))}
                                                 </ul>
                                             </div>
-                                        ) : (
-                                            <div className="thumbnails">                                              
+                                        ) : filteredPro.type === 'art' ? (
+                                            <div className="thumbnails art">                                              
                                                 <ul>
-                                                    {filteredPro.thumbnails.map((thumb, i) => (
-                                                        <li key={`thumb-${i}`}>
-                                                            <img className={`${i < 1 ? 'single' : 'more'}`} src={thumb.img} alt={thumb.alt}/>
+                                                    {filteredPro.thumbnails.map((athumb, a) => (
+                                                        <li key={`thumb-${a}`}>
+                                                            <img className={`${a < 1 ? 'single' : 'more'}`} src={athumb.img} alt={athumb.alt}/>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        ) : (
+                                            <div className="thumbnails design">                                              
+                                                <ul>
+                                                    {filteredPro.thumbnails.map((dthumb, d) => (
+                                                        <li key={`thumb-${d}`}>
+                                                            <img src={dthumb.img} alt={dthumb.alt}/>
                                                         </li>
                                                     ))}
                                                 </ul>

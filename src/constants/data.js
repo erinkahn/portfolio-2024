@@ -322,8 +322,16 @@ export const workData = {
             role: 'Designer',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
-                    alt: ''
+                    img: '/images/work/design/barberBar/store-exterior.jpg',
+                    alt: 'storefront exterior'
+                },
+                {
+                    img: '/images/work/design/barberBar/logo-concepts.jpg',
+                    alt: 'storefront exterior'
+                },
+                {
+                    img: '/images/work/design/barberBar/team-ts.jpg',
+                    alt: 'barber team wearing matching black tshirts'
                 }
             ],
             icons: [
