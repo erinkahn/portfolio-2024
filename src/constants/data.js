@@ -318,7 +318,7 @@ export const workData = {
         },
         {
             title: "The Barber Bar",
-            img: '/images/work/design/barberBar/The-Barber-Bar.png',
+            img: '/images/work/design/barberBar/logo.png',
             role: 'Designer',
             thumbnails: [
                 {
@@ -361,8 +361,9 @@ export const workData = {
             thumbnails: [
                 {
                     img: '/images/work/art/klimt.jpg',
-                    alt: 'hanging art in living room'
-                }
+                    alt: 'artwork'
+                },
+                
             ],
             description: 'Colored Pencil, inspired by one of my favorite artists, Gustav Klimt',
             id: 4,
@@ -686,6 +687,10 @@ export const workData = {
                 {
                     img: '/images/work/art/calligraphy.jpg',
                     alt: 'frame of a quote sitting on a desk'
+                },
+                {
+                    img: '/images/work/art/quote.jpg',
+                    alt: 'quote'
                 }
             ],
             description: 'digital ipad',
@@ -753,30 +758,34 @@ export const workData = {
             show: 'show_websites' 
         },
         {
-            title: "Kelly Kahn Art",
-            img: '/images/work/design/kelly-kahn-art.png',
-            role: 'Designer',
+            title: "Novo",
+            img: '/images/work/design/novo/ipad-colors.jpg',
+            role: 'Freelance Designer',
             thumbnails: [
                 {
-                    img: '/images/work/art/',
-                    alt: ''
+                    img: '/images/work/design/novo/ipad-colors.jpg',
+                    alt: 'ipad screen on desk'
+                },
+                {
+                    img: '/images/work/design/novo/desktop.jpg',
+                    alt: 'mac desktop computer on a desk'
+                },
+                {
+                    img: '/images/work/design/novo/xd.jpg',
+                    alt: 'xd program'
                 }
             ],
             icons: [
                 {
+                    img: '/images/work/icons/xd.svg',
+                    alt: 'xd icon'
+                },
+                {
                     img: '/images/work/icons/illustrator.svg',
                     alt: 'illustrator icon'
                 },
-                {
-                    img: '/images/work/icons/indesign.svg',
-                    alt: 'indesign icon'
-                },
-                {
-                    img: '/images/work/icons/photoshop.svg',
-                    alt: 'photoshop icon'
-                }
             ],
-            description: 'Logo design for fine artist, Kelly Kahn, who specializes in custom portrait and landscape paintings',
+            description: 'User interface design and brand cleanup for a law-based web application built by Vehicle Media',
             id: 13,
             showAll: false,
             type: "design",
@@ -838,12 +847,24 @@ export const workData = {
         },
         {
             title: "Clover Hill",
-            img: '/images/work/design/clover-hill.jpg',
+            img: '/images/work/design/ch/earrings.jpg',
             role: 'Designer + Developer',
             thumbnails: [
                 {
-                    img: '/images/work/art/',
-                    alt: ''
+                    img: '/images/work/design/ch/earrings.jpg',
+                    alt: 'earrings'
+                },
+                {
+                    img: '/images/work/design/ch/clothing-tags.jpg',
+                    alt: 'clothing tags'
+                },
+                {
+                    img: '/images/work/design/ch/storefront.jpg',
+                    alt: 'store opening'
+                },
+                {
+                    img: '/images/work/design/ch/bus-cards.jpg',
+                    alt: 'business cards'
                 }
             ],
             icons: [
@@ -876,8 +897,12 @@ export const workData = {
             role: 'Artist',
             thumbnails: [
                 {
-                    img: '/images/work/art/back-portrait.jpg',
+                    img: '/images/work/art/back-portrait2.jpg',
                     alt: 'living room painting'
+                },
+                {
+                    img: '/images/work/art/back-portrait.jpg',
+                    alt: 'painting on an easel'
                 }
             ],
             description: 'acrylic on canvas',
@@ -888,12 +913,24 @@ export const workData = {
         },
         {
             title: "Grace Klein Community",
-            img: '/images/work/design/grace-klein-community.jpg',
+            img: '/images/work/design/gk/grace-klein-community.jpg',
             role: 'Graphic Designer',
             thumbnails: [
                 {
-                    img: '/images/work/art/',
-                    alt: ''
+                    img: '/images/work/design/gk/grace-klein-community.jpg',
+                    alt: 'non-profit truck'
+                },
+                {
+                    img: '/images/work/design/gk/ipad.jpg',
+                    alt: 'holding an ipad'
+                },
+                {
+                    img: '/images/work/design/gk/logo-concepts.jpg',
+                    alt: 'logo concepts on a desk'
+                },
+                {
+                    img: '/images/work/design/gk/ipad2.jpg',
+                    alt: 'ipad on a desk'
                 }
             ],
             icons: [
@@ -906,7 +943,7 @@ export const workData = {
                     alt: 'indesign icon'
                 },
             ],
-            description: 'Logo design for non-profit organization in Alabama',
+            description: 'While an intern, I created a logo designn for GKC, a non-profit organization in Alabama',
             id: 17,
             showAll: false,
             type: "design",
@@ -976,34 +1013,34 @@ export const workData = {
             show: 'show_art'
         },
         {
-            title: "Novo",
-            img: '/images/work/design/novo/ipad-colors.jpg',
-            role: 'Freelance Designer',
+            title: "Kelly Kahn Art",
+            img: '/images/work/design/kkart/logo-light.jpg',
+            role: 'Graphic Designer',
             thumbnails: [
                 {
-                    img: '/images/work/design/novo/ipad-colors.jpg',
-                    alt: 'ipad screen on desk'
+                    img: '/images/work/design/kkart/bus-cards.jpg',
+                    alt: 'business card design'
                 },
                 {
-                    img: '/images/work/design/novo/desktop.jpg',
-                    alt: 'mac desktop computer on a desk'
-                },
-                {
-                    img: '/images/work/design/novo/xd.jpg',
-                    alt: 'xd program'
+                    img: '/images/work/design/kkart/kkart-logo.jpg',
+                    alt: 'logo design'
                 }
             ],
             icons: [
                 {
-                    img: '/images/work/icons/xd.svg',
-                    alt: 'xd icon'
-                },
-                {
                     img: '/images/work/icons/illustrator.svg',
                     alt: 'illustrator icon'
                 },
+                {
+                    img: '/images/work/icons/indesign.svg',
+                    alt: 'indesign icon'
+                },
+                {
+                    img: '/images/work/icons/photoshop.svg',
+                    alt: 'photoshop icon'
+                }
             ],
-            description: 'User interface design and brand cleanup for a law-based web application built by Vehicle Media',
+            description: 'Logo design for fine artist, Kelly Kahn, who specializes in custom portrait and landscape paintings',
             id: 20,
             showAll: false,
             type: "design",
@@ -1134,12 +1171,15 @@ export const workData = {
         {
             title: "Moodie",
             img: '/images/work/school/Moodie.png',
-            url: 'https://www.erin-kahn.com/moodie.html',
             role: 'Designer',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
-                    alt: ''
+                    img: '/images/work/school/moodie-app.jpg',
+                    alt: 'iphone screen'
+                },
+                {
+                    img: '/images/work/school/illustrations.jpg',
+                    alt: 'iphone app'
                 }
             ],
             icons: [

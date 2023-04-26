@@ -98,6 +98,9 @@
         @media screen and (min-width: $medUp) {
             height: 16vw;
         }
+        @media screen and (min-width: 2000px) {
+            max-height: 280px;
+        }
     }
 
     .project-image {
