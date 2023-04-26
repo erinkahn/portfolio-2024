@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../../contexts/Theme/ThemeContext";
 
 export default function ProjectModal(props) {
     const themeName = useContext(ThemeContext);
+    const [isActive, setIsActive] = useState(0);
 
     return (
         <div className="project-modal">
@@ -25,9 +26,16 @@ export default function ProjectModal(props) {
                                 role="dialog"
                                 className="content-wrapper"
                             >
-                                <h2 className="section-title" id={`dialogTitle${m}`}>{filteredPro.title}</h2>
+                                {filteredPro.type === 'website' &&
+                                    <h2 className="section-title" id={`dialogTitle${m}`}>{filteredPro.title}</h2>
+                                }
+
                                 <div className={`row ${filteredPro.type}`}>
                                     <div className="col">
+
+                                        {filteredPro.type !== 'website' &&
+                                            <h2 className="section-title" id={`dialogTitle${m}`}>{filteredPro.title}</h2>
+                                        }
                                         <p className="desc" id={`dialogDescription${m}`}>{filteredPro.description}</p>
 
                                         <div className="roles">
@@ -55,6 +63,7 @@ export default function ProjectModal(props) {
                                             )
                                         }       
                                     </div>
+                                    
                                     <div className="col">
                                         {filteredPro.type === 'website' ? (
                                             <div className="tools">
@@ -67,26 +76,37 @@ export default function ProjectModal(props) {
                                                     ))}
                                                 </ul>
                                             </div>
-                                        ) : filteredPro.type === 'art' ? (
-                                            <div className="thumbnails art">                                              
-                                                <ul>
+                                        ) : (
+                                            <>
+                                                <ul className="thumbnails">
                                                     {filteredPro.thumbnails.map((athumb, a) => (
-                                                        <li key={`thumb-${a}`}>
+                                                        <li 
+                                                            key={`thumb-${a}`} 
+                                                            className={`thumbnail-slide ${a === isActive ? 'active' : ''}`}
+                                                        >
                                                             <img className={`${a < 1 ? 'single' : 'more'}`} src={athumb.img} alt={athumb.alt}/>
                                                         </li>
                                                     ))}
                                                 </ul>
-                                            </div>
-                                        ) : (
-                                            <div className="thumbnails design">                                              
-                                                <ul>
-                                                    {filteredPro.thumbnails.map((dthumb, d) => (
-                                                        <li key={`thumb-${d}`}>
-                                                            <img src={dthumb.img} alt={dthumb.alt}/>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
+
+                                                {filteredPro.thumbnails.length > 1 && 
+                                                    <div className="pager-btns-container" role="tablist">
+                                                        {filteredPro.thumbnails.map((thumbButton, b) => (
+                                                            <button 
+                                                                key={`btn-${b}`} 
+                                                                className={`pager-btn ${b === isActive ? 'active' : ''}`}
+                                                                aria-label={`Navigate to slide ${b}`}
+                                                                aria-current={b === isActive ? true : false}
+                                                                role="tab"
+                                                                id={thumbButton.client}
+                                                                onClick={(e) => {
+                                                                    setIsActive(b)
+                                                                }}>
+                                                            </button>
+                                                        ))}
+                                                    </div>
+                                                }
+                                            </>
                                         )}
 
                                         {filteredPro.url &&

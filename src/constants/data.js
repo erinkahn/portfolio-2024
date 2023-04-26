@@ -322,6 +322,10 @@ export const workData = {
             role: 'Designer',
             thumbnails: [
                 {
+                    img: '/images/work/design/barberBar/logo.png',
+                    alt: 'barber bar logo'
+                },
+                {
                     img: '/images/work/design/barberBar/store-exterior.jpg',
                     alt: 'storefront exterior'
                 },
@@ -575,12 +579,20 @@ export const workData = {
         },
         {
             title: "Volunteer State Builders",
-            img: '/images/work/design/Volunteer-State-Builders.png',
+            img: '/images/work/design/vsb/vsb-bus-card.jpg',
             role: 'Designer',
             thumbnails: [
                 {
-                    img: '/images/work/art/',
-                    alt: ''
+                    img: '/images/work/design/vsb/vsb-bus-card.jpg',
+                    alt: 'business cards'
+                },
+                {
+                    img: '/images/work/design/vsb/logo-concepts.jpg',
+                    alt: 'desk with two papers of logos'
+                },
+                {
+                    img: '/images/work/design/vsb/brand-identity.jpg',
+                    alt: 'holding an ipad at a desk'
                 }
             ],
             icons: [
@@ -965,13 +977,20 @@ export const workData = {
         },
         {
             title: "Novo",
-            img: '/images/work/design/Novo.png',
-            url: '',
-            role: 'Designer',
+            img: '/images/work/design/novo/ipad-colors.jpg',
+            role: 'Freelance Designer',
             thumbnails: [
                 {
-                    img: '/images/work/thumbnails/',
-                    alt: ''
+                    img: '/images/work/design/novo/ipad-colors.jpg',
+                    alt: 'ipad screen on desk'
+                },
+                {
+                    img: '/images/work/design/novo/desktop.jpg',
+                    alt: 'mac desktop computer on a desk'
+                },
+                {
+                    img: '/images/work/design/novo/xd.jpg',
+                    alt: 'xd program'
                 }
             ],
             icons: [
@@ -984,7 +1003,7 @@ export const workData = {
                     alt: 'illustrator icon'
                 },
             ],
-            description: 'Web design created for a law-firm app built by Vehicle Media',
+            description: 'User interface design and brand cleanup for a law-based web application built by Vehicle Media',
             id: 20,
             showAll: false,
             type: "design",

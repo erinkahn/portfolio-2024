@@ -117,56 +117,16 @@
             }
         }
 
-        .btns-container {
+        .pager-btns-container {
             grid-row: 3;
             grid-column: 3;
-            position: relative;
-            display: flex;
             justify-content: flex-end;
-            z-index: 1;
             transform: rotate(-8deg);
 
             @media screen and (min-width: $smUp) {
                 transform: rotate(0);
             }
-        }
-
-        .pager-btn {
-            background-color: rgba($fiveLight, 0.5);
-            border: none;
-            border-radius: 90px;
-            width: 0.35em;
-            height: 0.35em;
-            padding: 0.35em;
-    
-            &:nth-of-type(2) {
-                margin: 0 15px;
-            }
-    
-            &:nth-of-type(4) {
-                margin-left: 15px;
-            }
-    
-            @media screen and (min-width: $medUp) {
-                width: 1em;
-                height: 1em;
-                padding: .5em;
-            }
-    
-            .theme-dark & {
-                background-color: rgba($primaryDark, 0.5);
-            }
-    
-            &.active,
-            &:hover,
-            &:focus {
-                background-color: $fiveLight;
-    
-                .theme-dark & {
-                    background-color: $primaryDark;
-                }
-            }
-        }    
+        }  
     }
 
     .slide-images {

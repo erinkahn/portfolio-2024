@@ -24,7 +24,7 @@ export default function Featured() {
                         </h4>
                     </div>
 
-                    <div className="btns-container" role="tablist">
+                    <div className="pager-btns-container" role="tablist">
                         {featuredData.featured.map((featuredBtn, b) => (
                             <button 
                                 key={`btn-${b}`} 
