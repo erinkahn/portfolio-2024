@@ -57,17 +57,17 @@
 	-webkit-mask-image: url('#{$svgPath}#{$image}');
 }
 
-@mixin retina($bg-image, $size: contain, $file-type: 'png') {
-	background-image: url('#{$publicPath}#{$bg-image}.#{$file-type}');
-	background-size: $size;
-	background-repeat: no-repeat;
+// @mixin retina($bg-image, $size: contain, $file-type: 'png') {
+// 	background-image: url('#{$publicPath}#{$bg-image}.#{$file-type}');
+// 	background-size: $size;
+// 	background-repeat: no-repeat;
 
-	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-		only screen and (min--moz-device-pixel-ratio: 1.5),
-		only screen and (min-device-pixel-ratio: 1.5){
+// 	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+// 		only screen and (min--moz-device-pixel-ratio: 1.5),
+// 		only screen and (min-device-pixel-ratio: 1.5){
 
-			background-image: url('#{$publicPath}#{$bg-image}@2x.#{$file-type}');
-			background-size: $size;
+// 			background-image: url('#{$publicPath}#{$bg-image}@2x.#{$file-type}');
+// 			background-size: $size;
             
-	}
-}
+// 	}
+// }

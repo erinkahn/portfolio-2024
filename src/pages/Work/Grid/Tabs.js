@@ -1,5 +1,4 @@
 export default function Tabs(props) {
-    console.log(props)
     return (
         <>
             {props.tabProp.tabs.map((tab) => (

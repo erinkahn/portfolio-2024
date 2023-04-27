@@ -579,7 +579,7 @@ export const workData = {
             show: 'show_websites'
         },
         {
-            title: "Volunteer State Builders",
+            title: "VSB",
             img: '/images/work/design/vsb/vsb-bus-card.jpg',
             role: 'Designer',
             thumbnails: [
@@ -912,7 +912,7 @@ export const workData = {
             show: 'show_art'
         },
         {
-            title: "Grace Klein Community",
+            title: "GKC",
             img: '/images/work/design/gk/grace-klein-community.jpg',
             role: 'Graphic Designer',
             thumbnails: [
@@ -1196,7 +1196,7 @@ export const workData = {
                     alt: 'illustrator icon'
                 }
             ],
-            description: `During my time at The Creative Circus, an advertising portfolio school in Atlanta, I took an interactive design class. The assignment was to build an app that makes a difference in the world. I created Moodie, an app designed for users with anxiety, depression, or ptsd. The purpose of this app is to track a user's mood over time, which then transmits the stored data and progress to the user's doctor in order to see if a medication is beneficial to the patient. It also has mindfullness features such as a daily gratitude list, feelings journal, stress tools, and more.`,
+            description: `At The Creative Circus, I created and designed Moodie, an app for users with anxiety, depression, or ptsd. It track a user's mood over time, which then transmits the stored data/progress to the user's doctor to see if a medication is beneficial to the patient. Other features include mindfulness practices, a daily gratitude list, feelings journal, stress tools, and more.`,
             id: 24,
             showAll: false,
             type: "design",

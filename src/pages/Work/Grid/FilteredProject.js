@@ -7,7 +7,7 @@ export default function FilteredProject(props) {
                         <li 
                         key={`item-${f}`} 
                         aria-labelledby={filteredPr.type}
-                        className={`project-item ${f === 1 ? 'active-thumb' : ''}`}
+                        className="project-item"
                         >
                             <button 
                                 tabIndex="0" 

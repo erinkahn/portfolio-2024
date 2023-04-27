@@ -64,7 +64,7 @@ const Navigation = (props) => {
 				ref={btnRef}
 				tabIndex="0"
 			>
-				<span class="close">{hidden ? "" : "close"}</span>
+				<span className="close">{hidden ? "" : "close"}</span>
 			</button>
 
 			<div

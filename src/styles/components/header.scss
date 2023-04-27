@@ -100,15 +100,14 @@ header {
         }
 
         &::before {
-            top: 2vh;
+            top: 1.5vh;
         }
 
         &::after {
-            top: 4vh;
+            top: 3vh;
         }
 
         .close {
-            
             opacity: 0;
             color: $white;
             letter-spacing: 1px;
@@ -147,7 +146,7 @@ header {
             .close {
                 opacity: 1;
                 padding: 1em 3em 1em 1em;
-                transform: rotate(0deg) translate(15%, 8%);
+                transform: rotate(0deg) translate(9%, 0%);
 
                 @media screen and (min-width: $smUp) {
                     padding: 2em 3em 2em 1em;
