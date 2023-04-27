@@ -64,7 +64,7 @@ const Navigation = (props) => {
 				ref={btnRef}
 				tabIndex="0"
 			>
-				<span className="sr-only">{hidden ? "Menu" : "Close"}</span>
+				<span class="close">{hidden ? "" : "close"}</span>
 			</button>
 
 			<div

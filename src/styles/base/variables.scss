@@ -78,82 +78,8 @@ $github: url('../../assets/images/github.svg');
 $instagram: url('../../assets/images/instagram.svg');
 $spotify: url('../../assets/images/spotify.svg');
 
-// ***********************************************//
-// mixins
-// ***********************************************//
-
-@use "sass:math";
-
-@mixin cascadeTransition {
-  @for $i from 1 through 5 {
-    &:nth-child(#{$i}) {
-      transition-delay: #{$i * 200ms};
-    }
-  }
-}
-
-@mixin pseudo($content: '', $pos: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0) {
-  content: $content;
-  position: $pos;
-  top: $top;
-  bottom: $bottom;
-  left: $left;
-  right: $right;
-}
-
-@mixin aspectRatioContainer($x, $y) {
-  position: relative;
-  height: 0;
-  width: 100%;
-  padding-top: $y / $x * 100%;
-}
-
-@mixin aspectRatioImage() {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-// ***********************************************//
-// button & links
-// ***********************************************//
-
-
-
-// @mixin button($background-color, $color, $radius, $border, $background-hover, $color-hover, $border-hover) {
-//   position: relative;
-//   display: inline-block;
-//   -webkit-appearance: none!important;
-//   text-decoration: none;
-//   cursor: pointer;
-//   text-align: center;
-//   padding: 0.75em 2.75em 0.875em;
-//   // font-family: $martelSans;
-//   font-size: 1.25em;
-//   font-weight: $regular;
-//   background-color: $background-color;
-//   color: $color;
-//   border-radius: $radius;
-//   border: $border;
-//   cursor: pointer;
-//   transition: all 300ms ease;
-  
-//   @media screen and (max-width: 767px) {
-//     font-size: 1.125em;
-//   }
-
-//   &:hover,
-//   &:focus {
-//       outline: none;
-//       box-shadow: none;
-//       background-color: $background-hover;
-//       color: $color-hover;
-//       border: $border-hover;
-//   }
-// }
-
-// .btn {
-//   @include button($darkBrown, $white, 15px, 3px solid $darkBrown, transparent, $darkBrown, 3px solid $darkBrown);
-// } 
+//****************************************************************************/
+//	Images
+//****************************************************************************/
+$svgPath: '../../assets/images/';
+$publicPath: '../../../public/images/';

@@ -1,8 +1,6 @@
-import React, { useContext, useState } from "react";
-import { ThemeContext } from "../../../contexts/Theme/ThemeContext";
+import React, { useState } from "react";
 
 export default function ProjectModal(props) {
-    const themeName = useContext(ThemeContext);
     const [isActive, setIsActive] = useState(0);
 
     return (
@@ -114,12 +112,11 @@ export default function ProjectModal(props) {
                                                 <div className="button-wrapper">
                                                     <a 
                                                         target="_blank" 
+                                                        rel="noreferrer"
                                                         aria-label={`Click to see ${filteredPro.title}'s live site`} 
                                                         href={filteredPro.url}
                                                     >
-                                                        <div aria-hidden="true">Live Site 
-                                                            <img className="arrow" src={`/images/icons/arrow-${themeName.theme}.svg`} alt=""/>
-                                                        </div>
+                                                        <div aria-hidden="true">Live Site</div>
                                                     </a>
                                                 </div>
                                             </div>

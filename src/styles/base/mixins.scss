@@ -1,0 +1,73 @@
+// ***********************************************//
+// mixins
+// ***********************************************//
+
+@use "sass:math";
+
+@mixin cascadeTransition {
+    @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+            transition-delay: #{$i * 200ms};
+        }
+    }
+}
+
+@mixin aspectRatioContainer($x, $y) {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-top: $y / $x * 100%;
+}
+
+@mixin aspectRatioImage() {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin pseudo($content: '', $pos: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0) {
+    content: $content;
+    display: block;
+    position: $pos;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+}
+
+@mixin background-svg {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@mixin mask-svg-set {
+	mask-position: center;
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+}
+
+@mixin mask-svg-img($image: '') {
+	mask-image: url('#{$svgPath}#{$image}');
+	-webkit-mask-image: url('#{$svgPath}#{$image}');
+}
+
+@mixin retina($bg-image, $size: contain, $file-type: 'png') {
+	background-image: url('#{$publicPath}#{$bg-image}.#{$file-type}');
+	background-size: $size;
+	background-repeat: no-repeat;
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+		only screen and (min--moz-device-pixel-ratio: 1.5),
+		only screen and (min-device-pixel-ratio: 1.5){
+
+			background-image: url('#{$publicPath}#{$bg-image}@2x.#{$file-type}');
+			background-size: $size;
+            
+	}
+}

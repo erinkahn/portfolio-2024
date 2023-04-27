@@ -33,10 +33,9 @@ footer {
 
         &::before {
             @include pseudo;
-            background: url('../../../public/images/footer/footer-light-shape.svg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
+            @include mask-svg-set;
+            @include mask-svg-img('../../assets/images/footer-shape.svg');
+            background-color: $primaryLight;
             width: 100%;
             height: 0;
             padding-bottom: 39%;
@@ -46,7 +45,7 @@ footer {
             transform: translate(-11%, -38.5vw);
 
             .theme-dark & {
-                background-image: url('../../../public/images/footer/footer-dark-shape.svg');
+                background-color: $primaryDark;
             }
         }
     }
@@ -78,6 +77,13 @@ footer {
             white-space: nowrap;
             display: block;
             transform: translate(0em, -8em) rotate(90deg);
+            transition: transform $slow;
+        }
+
+        &:hover {
+            &::after {
+                transform: translate(0em, -8em) rotate(-270deg);
+            }
         }
 
         @media screen and (min-width: $xsUp) {

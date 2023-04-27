@@ -110,6 +110,7 @@
         align-self: center;
         font-size: 4em;
         text-align: right;
+        padding-right: 1em;
         transition: font-size $quick, grid-column $quick, grid-gap $quick, grid-row $quick;
 
         @media screen and (max-width: $smDown) {
@@ -117,6 +118,7 @@
             grid-gap: 0.5em;
             grid-row: 1;
             font-size: 3em;
+            padding-right: 0;
         }
 
         @media screen and (max-width: $xxsDown) {

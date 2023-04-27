@@ -10,7 +10,7 @@ export default function Services() {
                 {servicesData.services.map((service, i) => (
                     <div key={`service-${i}`} className="service">
                         <div className="service-img-container">
-                            <img src={service.icon} alt={service.alt}/>
+                            <img src={service.icon} alt={service.alt} width={48} height={48}/>
                         </div>
                         <h3>{service.serviceTitle}</h3>
                         <p>{service.description}</p>

@@ -20,10 +20,11 @@
 
     &::before {
         @include pseudo;
-        content: url('../../assets/images/quote-light.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include mask-svg-set;
+        @include mask-svg-img('../../assets/images/quote.svg');
+        background-color: $primaryLight;
         width: 30%;
+        height: 100%;
         right: 0;
         left: auto;
         top: 0;
@@ -35,11 +36,11 @@
             top: auto;
             width: 25%;
             max-width: none;
-            transform: translate(65%, -50vh) scale(1, 1);
+            transform: translate(65%, -12vh) scale(1, 1);
         }
 
         .theme-dark & {
-            content: url('../../assets/images/quote-dark.svg');
+            background-color: $fiveDark;
         }
     }
 

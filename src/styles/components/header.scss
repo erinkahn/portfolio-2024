@@ -5,13 +5,12 @@ header {
 
     &::before {
         @include pseudo;
-        left: auto;
-        background-image: url('../../assets/images/wavesLight.svg');
-        background-size: cover;
+        @include mask-svg-set;
+        @include mask-svg-img('../../assets/images/side-nav-shape.svg');
+        background-color: $secondaryLight;
         width: 9em;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
+        left: auto;
+        height: 100.2vh;
         z-index: 1;
         transform: translate(18%, 0%);
 
@@ -24,7 +23,7 @@ header {
         }
         
         .theme-dark & {
-            background-image: url('../../assets/images/wavesDark.svg');
+            background-color: $fiveDark;
         }
     }
 
@@ -53,12 +52,6 @@ header {
         width: 100%;
         max-width: 213px;
         z-index: 3;
-
-        .theme-dark & {
-            &::before {
-                background-image: url('../../assets/images/wavesDark.svg');
-            }
-        }
     }
 
     .menuBtn {
@@ -71,7 +64,7 @@ header {
         width: 5em;
         border: none;
         z-index: 3;
-        transform: translate(0, -50%);
+        transform: translate(-1vh, -50%);
 
         &.colored {
             &::before,
@@ -89,7 +82,7 @@ header {
             @include pseudo;
             left: auto;
             width: 2.25em;
-            height: 0.2em;
+            height: 3px;
             background-color: $white;
             border-radius: 1em;
             transform: translate(-1em, 0) rotate(0deg);
@@ -114,21 +107,33 @@ header {
             top: 4vh;
         }
 
-        &:hover,
-        &.open {   
-            &::before {
-                transform: translate(-1.5vw, 50%) rotate(35deg);
+        .close {
+            
+            opacity: 0;
+            color: $white;
+            letter-spacing: 1px;
+            font-size: 1.125em;
+            border-left: 3px solid $white;
+            padding-left: 1em;
+            transform: rotate(0deg) translate(82%, 8%);
+            background-color: $fiveLight;
+            border-radius: 90px 90px 0;
+            border-color: transparent;
+            transition: opacity $slow, transform $slow;
+            transition-delay: .3s;
 
-                @media screen and (min-width: $smUp) {
-                    transform: translate(-1vw, 50%) rotate(35deg);
-                }
+            .theme-dark & {
+                background-color: $primaryDark;
             }
+        }
 
+        &:hover {
+            &::before,
             &::after {
-                transform: translate(-1.5vw, 50%) rotate(-35deg);
+                background-color: $primaryLight;
 
-                @media screen and (min-width: $smUp) {
-                    transform: translate(-1vw, 50%) rotate(-35deg);
+                .theme-dark & {
+                    background-color: $primaryDark;
                 }
             }
         }
@@ -136,10 +141,16 @@ header {
         &.open {
             &::before,
             &::after {
-                background-color: $primaryLight;
+                content: none;
+            }
 
-                .theme-dark & {
-                    background-color: $primaryDark;
+            .close {
+                opacity: 1;
+                padding: 1em 3em 1em 1em;
+                transform: rotate(0deg) translate(15%, 8%);
+
+                @media screen and (min-width: $smUp) {
+                    padding: 2em 3em 2em 1em;
                 }
             }
         }

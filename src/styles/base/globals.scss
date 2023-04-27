@@ -97,9 +97,6 @@ p {
 }
 
 .btn-scroll {
-    background-image: url('../../assets/images/chevron.svg');
-    background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -111,14 +108,37 @@ p {
     font-family: $sourceCode;
     font-size: 1em;
     z-index: 1;
-    transition: color $quick;
     transform: translate(22vw, -5vw);
+    transform-origin: center;
+    transition: transform $quick, border-color $quick;
+
+    &::before {
+        @include pseudo;
+        @include mask-svg-set;
+        @include mask-svg-img('../../assets/images/chevron.svg');
+        left: 50%;
+        top: 50%;
+        background-color: $white;
+        width: 1em;
+        height: 1em;
+        transform: translate(-50%,-50%);
+        transition: background-color $quick, width $quick, height $quick;
+    }
 
     &:hover {
-        &::after {
-            color: $tertiaryLight;
+        border-color: $accessibleBtnLight;
+
+        .theme-dark & {
+            border-color: $fiveDark;
+        }
+
+        &::before {
+            height: 0.8em;
+            width: 0.8em;
+            background-color: $accessibleBtnLight;
+
             .theme-dark & {
-                color: $fiveDark;
+                background-color: $fiveDark;
             }
         }
     }

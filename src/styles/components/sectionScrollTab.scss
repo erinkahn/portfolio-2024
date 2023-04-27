@@ -22,7 +22,8 @@
             background: rgba($quaternaryDark, 0.3);
         }
 
-        &.active {
+        &:hover,
+        &:focus {
             background: $tertiaryLight;
 
             .theme-dark & {

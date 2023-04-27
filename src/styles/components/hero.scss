@@ -20,9 +20,9 @@
 
     &:after {
         content: '';
-        background-image: url('../../assets/images/hero-pattern-light.svg');
-        background-size: cover;
-        display: block;
+        @include mask-svg-set;
+        @include mask-svg-img('../../assets/images/hero-pattern.svg');
+        background-color: $quaternaryLight;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -37,7 +37,7 @@
         }
 
         .theme-dark & {
-            background-image: url('../../assets/images/hero-pattern-dark.svg');
+            background-color: $fiveDark;
         }
     }
     
@@ -100,6 +100,13 @@
             content: 'scroll';
             display: block;
             transform: translate(0em, -3em) rotate(-90deg);
+            transition: transform $slow;
+        }
+
+        &:hover {
+            &::after {
+                transform: translate(0em, -2.5em) rotate(270deg);
+            }
         }
     }
 }
