@@ -9,7 +9,8 @@ export default function Hero(props) {
 		<section	
 			className="hero-container"
 			id="hero"
-			role="tabpanel"
+			role="tabpanel"	
+			style={{height: "100vh"}}
 		>
 			<Prallax speed={6} className="text-box-container">
 				<div className="text-wrapper">

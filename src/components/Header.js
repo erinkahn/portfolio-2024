@@ -4,7 +4,6 @@ import { ThemeContext } from "./../contexts/Theme/ThemeContext";
 import ThemeToggler from "./../contexts/Theme/ThemeToggler";
 import Navigation from "./Navigation";
 import ProgressBar from "./ProgressBar";
-// import Weather from "../Weather";
 
 export default function Header(props) {
 	const themeName = useContext(ThemeContext);
@@ -26,8 +25,6 @@ export default function Header(props) {
 			<Navigation />
 
 			<ThemeToggler />
-
-			{/* <Weather /> */}
 
 			<ProgressBar />
 		</header>

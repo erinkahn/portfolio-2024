@@ -9,6 +9,8 @@ import Footer from "../../components/Footer";
 import { heroData } from "../../constants/data";
 import SectionScrollTabs from "./SectionScrollTabs";
 import {motion as m} from 'framer-motion';
+import Seo from "../../components/Seo";
+import { Fragment } from "react";
 
 export default function Home() {
 	return (
@@ -16,7 +18,15 @@ export default function Home() {
 			initial={{opacity: 0}} 
 			animate={{opacity: 1}} 
 			transition={{duration: 0.75, ease: 'easeOut'}}
-			>
+		>
+
+			<Fragment>
+				<Seo
+					title="Erin Kahn | Home"
+					url="https://erin-kahn.com"
+				/>
+			</Fragment>
+
 			<PageWrapper>	
 				<Header />
 				<SectionScrollTabs />

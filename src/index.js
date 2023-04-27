@@ -1,5 +1,5 @@
 import "./wdyr";
-import React from "react";
+import React, {StrictMode} from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { HelmetProvider } from "react-helmet-async";
@@ -17,10 +17,10 @@ import { HelmetProvider } from "react-helmet-async";
 // }
 
 ReactDOM.render(
-	<React.StrictMode>
+	<StrictMode>
 		<HelmetProvider>
 			<App />
 		</HelmetProvider>
-	</React.StrictMode>,
+	</StrictMode>,
 	document.getElementById("root")
 );

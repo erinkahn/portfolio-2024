@@ -1,4 +1,5 @@
 export default function Tabs(props) {
+    console.log(props)
     return (
         <>
             {props.tabProp.tabs.map((tab) => (
@@ -9,7 +10,6 @@ export default function Tabs(props) {
                     tabIndex={`${tab.showTab === props.stateProp.active ? '' : '-1'}`}
                     className={`${tab.showTab === props.stateProp.active ? 'active' : ''} tab`}
                     aria-selected={tab.showTab === props.stateProp.active ? true : false} 
-                    aria-controls={`${tab.tabTitle}-tab`}
                     onClick={() => props.reducerProp({ type: `${tab.showTab}` })}
                 >
                     {tab.tabTitle}

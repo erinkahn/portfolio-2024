@@ -1,6 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { navData } from "../constants/data";
-// import Instafeed from "../../components/Instagram/Instafeed";
 
 export default function Footer() {
 	const location = useLocation();
@@ -78,7 +77,6 @@ export default function Footer() {
 							<p className="copyright">Copyright &copy; {today}. All rights reserved.</p>					
 						</div>
 					</div>
-					{/* <Instafeed /> */}
 				</span>
 			</div>
 		</footer>
