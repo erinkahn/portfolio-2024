@@ -18,6 +18,16 @@
         grid-template-rows: 1fr;
     }
 
+    &.animate {
+        &::before {
+            transform: translate(-40%, -11vh) scale(-1, 1) rotate(0);
+
+            @media screen and (min-width: $smUp) {
+                transform: translate(65%, -11vh) scale(1, 1) rotate(0);
+            }
+        }
+    }
+
     &::before {
         @include pseudo;
         @include mask-svg-set;
@@ -28,15 +38,16 @@
         right: 0;
         left: auto;
         top: 0;
-        transform: translate(-40%, 30vh) scale(-1, 1);
-        
+        transform: translate(-40%, 30vh) scale(-1, 1) rotate(-30deg);
+        transition: transform $quick;
+
         @media screen and (min-width: $smUp) {
             right: auto;
             left: 0;
             top: auto;
             width: 25%;
             max-width: none;
-            transform: translate(65%, -12vh) scale(1, 1);
+            transform: translate(65%, -12vh) scale(1, 1) rotate(-30deg);
         }
 
         .theme-dark & {
@@ -99,13 +110,14 @@
         width: 0.5em;
         height: 0.5em;
         padding: 5px;
+        margin-left: 20px;
 
         .theme-dark & {
             border: 2px solid $quaternaryDark;
         }
 
-        &:nth-of-type(2) {
-            margin: 0 20px;
+        &:nth-of-type(1) {
+            margin: 0px;
         }
 
         &.active,

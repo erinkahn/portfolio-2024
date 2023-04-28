@@ -26,7 +26,7 @@ export default function AboutImage(props) {
             {isVisible && 
                 <img 
                     loading="lazy"
-                    className="ft-img" 
+                    className={`ft-img ${isVisible ? 'twirl-in': 'twirl-out'}`} 
                     src={isWebpSupported ? props.aboutProp.src : props.aboutProp.fallback} 
                     alt={props.aboutProp.alt} 
                     width="350" 

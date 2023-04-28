@@ -64,7 +64,11 @@ header {
         width: 5em;
         border: none;
         z-index: 3;
-        transform: translate(-1vh, -50%);
+        transform: translate(-0.5vh, -50%);
+
+        @media screen and (min-height: 1100px) {
+            transform: translate(-1vh, -50%);
+        }
 
         &.colored {
             &::before,

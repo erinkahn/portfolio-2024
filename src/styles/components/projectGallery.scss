@@ -74,6 +74,10 @@
         @media screen and (min-width: $medUp) {
             grid-template-columns: repeat(4, 1fr);
         }
+
+        &.no-pointer {
+            pointer-events: none;
+        }
     }
 
     .project-btn {

@@ -22,7 +22,7 @@
         @include pseudo;
         @include mask-svg-set;
         @include mask-svg-img('../../assets/images/left-shape.svg');
-        background-color: $fiveLight;
+        background-color: $primaryLight;
         height: 100%;
         width: 30%;
         left: 0;
@@ -34,7 +34,7 @@
 
         @media screen and (min-width: $smUp) {
             width: 20%;
-            max-width: 280px;
+            max-width: 250px;
         }   
 
         .theme-dark & {
@@ -160,13 +160,25 @@
         &.show {
             @include aspectRatioContainer(709px, 892px);
 
+            @media screen and (min-width: $smUp) and (min-height: 1000px) {
+                padding-top: 67vh;
+            }
+
             @media screen and (min-width: $medUp) and (max-width: 1350px) {
                 padding-top: 118vh;
+            }
+
+            @media screen and (min-width: $medUp) and (min-height: 1000px) {
+                padding-top: 109vh;
             }
         }
 
         .ft-img {
             @include aspectRatioImage;
+
+            @media screen and (min-width: $medUp){
+                background-position: top;
+            }
         }
     }
 

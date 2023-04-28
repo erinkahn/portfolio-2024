@@ -1,12 +1,12 @@
 import { useRef, Suspense } from 'react';
 import useImageOnLoad from '../../../hooks/useImageOnLoad';
-import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
+// import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 import {isWebpSupported} from 'react-image-webp/dist/utils';
 
 export default function FeaturedImage(props) {
     const { handleImageOnLoad, imageStyles, lowResStyle, highResStyle } = useImageOnLoad();
     const imageRef = useRef();
-    const { isVisible } = useIntersectionObserver(imageRef);
+    // const { isVisible } = useIntersectionObserver(imageRef);
 
     return (<>
         {props.featuredData.featured.map((project, p) => (

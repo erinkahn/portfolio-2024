@@ -1,17 +1,68 @@
 .timeline-container {
-    margin: 0 auto;
-    width: 85%;
+    position: relative;
 
-    @media screen and (min-width: $smUp) {
-        width: 70%;
+    .img-wrapper {
+        position: absolute;
+        top: 0;
+        height: calc(100vh + 100px);
+        width: 100%;
+        z-index: 0;
+
+        img {
+            position: absolute;
+            opacity: 0.4;
+            width: 100%;
+            max-width: 100px;
+            filter: grayscale(1);
+
+            @media screen and (min-width: $medUp) {
+                opacity: 0.6;
+                max-width: 200px;
+            }
+
+            &:first-of-type {
+                top: 0;
+                left: auto;
+                right: 0;
+                transform: scaleX(-1);    
+            }
+
+            &:nth-of-type(2) {
+                top: 20vh;
+                transform: scaleX(-1);
+            }
+
+            &:nth-of-type(3) {
+                top: 80vh;
+                left: auto;
+                right: 0;
+            }
+
+            &:last-of-type {
+                top: 120vh;
+                right: auto;
+                left: 0;
+            }
+        }
     }
 
-    @media screen and (min-width: $medUp) {
-        max-width: 700px;
-    }
+    .inner-wrapper {
+        position: relative;
+        margin: 0 auto;
+        width: 85%;
+        z-index: 1;
 
-    @media screen and (min-width: $xxlarge) {
-        max-width: 900px;
+        @media screen and (min-width: $smUp) {
+            width: 70%;
+        }
+
+        @media screen and (min-width: $medUp) {
+            max-width: 700px;
+        }
+
+        @media screen and (min-width: $xxlarge) {
+            max-width: 900px;
+        }
     }
 
     li {
@@ -27,7 +78,7 @@
         font-size: 3em;
         font-family: $montserrat;
         font-weight: $semibold;
-        color: $fiveLight;
+        color: $primaryLight;
 
         .theme-dark & {
             color: $fiveDark;

@@ -348,7 +348,7 @@ export const workData = {
                     alt: 'indesign icon'
                 },
             ],
-            description: 'Logo design and brand identity suite for a locally owned barber salon in Birmingham, Alabama',
+            description: 'As a freelance designer, I created a brand identity suite and new logo for a locally owned barber salon in Birmingham, Alabama called The Barber Bar.',
             id: 3,
             showAll: false,
             type: "design",
@@ -610,7 +610,7 @@ export const workData = {
                     alt: 'photoshop icon'
                 },
             ],
-            description: 'Logo design for Volunteer State Builders, a General Contractor/Home Builder located in Middle Tennessee',
+            description: 'As a freelance designer, I designed the logo and brand identity suite for Volunteer State Builders, a General Contractor/Home Builder located in Middle Tennessee.',
             id: 9,
             showAll: false,
             type: "design",
@@ -785,7 +785,7 @@ export const workData = {
                     alt: 'illustrator icon'
                 },
             ],
-            description: 'User interface design and brand cleanup for a law-based web application built by Vehicle Media',
+            description: 'As a freelance designer, I redesigned the user interface and provided logo/branding adjustments for a legal software application built by Vehicle Media.',
             id: 13,
             showAll: false,
             type: "design",
@@ -885,7 +885,7 @@ export const workData = {
                     alt: 'shopify icon'
                 }
             ],
-            description: 'Logo design and shopify development for clothing boutique in Pell City, Alabama',
+            description: 'As a freelance designer/developer, I created the logo and worked on the shopify site for a clothing boutique in Pell City, Alabama called Clover Hill. I also designed business cards, clothing tags, and stickers.',
             id: 15,
             showAll: false,
             type: "design",
@@ -943,7 +943,7 @@ export const workData = {
                     alt: 'indesign icon'
                 },
             ],
-            description: 'While an intern, I created a logo designn for GKC, a non-profit organization in Alabama',
+            description: 'As an intern, I created the new logo for GKC, a non-profit organization in Alabama',
             id: 17,
             showAll: false,
             type: "design",
@@ -1040,7 +1040,7 @@ export const workData = {
                     alt: 'photoshop icon'
                 }
             ],
-            description: 'Logo design for fine artist, Kelly Kahn, who specializes in custom portrait and landscape paintings',
+            description: 'As a freelance designer, I created a logo for fine artist, Kelly Kahn, who specializes in custom portrait and landscape paintings.',
             id: 20,
             showAll: false,
             type: "design",
@@ -1196,7 +1196,7 @@ export const workData = {
                     alt: 'illustrator icon'
                 }
             ],
-            description: `At The Creative Circus, I created and designed Moodie, an app for users with anxiety, depression, or ptsd. It track a user's mood over time, which then transmits the stored data/progress to the user's doctor to see if a medication is beneficial to the patient. Other features include mindfulness practices, a daily gratitude list, feelings journal, stress tools, and more.`,
+            description: `As a student, I designed Moodie, an app for users with anxiety, depression, or ptsd. It track a user's mood over time, which then transmits the stored data/progress to the user's doctor to see if a medication is beneficial to the patient. Other features include mindfulness practices, a daily gratitude list, feelings journal, stress tools, and more.`,
             id: 24,
             showAll: false,
             type: "design",
@@ -1255,7 +1255,7 @@ export const workData = {
             showAll: false,
             type: "website",
             show: 'show_websites'
-        },
+        }
     ]
 }
 
@@ -1263,20 +1263,30 @@ export const testimonialData = {
     sectionTitle: 'kind words',
     testimonials: [
         {
-            text: "Erin helped me rebrand my online clothing boutique. She met with me and figured out what I was trying to achieve (even when I wasn't quite sure myself). She turned my vision into a reality, and I couldn't be more pleased with the outcome!",
-            person: "Owner of Clover Hill Boutique",
+            text: "Erin is self-motivated, diligent, and earns praise from peers and leads alike. She shows consistent above-expectations performance as indicated by feedback across her projects. She puts the needs of the company before her own preference.",
+            person: "Software Engineering Manager at Avanade",
             id: '0'
         },
         {
-            text: " I appreciate you so much for so many reasons but particularly going the grind of what was the most stressful time ever. This all looks so good. My lord. I’m so grateful to have met you.",
-            person: "President of Vehicle Media",
+            text: "Erin helped me rebrand my online clothing boutique. She met with me and figured out what I was trying to achieve (even when I wasn't quite sure myself). She turned my vision into a reality, and I couldn't be more pleased with the outcome!",
+            person: "Client, Owner of Clover Hill Boutique",
             id: '1'
         },
         {
-            text: "You can't depend on hardly ANYbody these days to finish things. I love my logo so much. Thank you!",
-            person: "Author of The 50th Dimension",
+            text: " I appreciate you so much for so many reasons but particularly going the grind of what was the most stressful time ever. This all looks so good. My lord. I’m so grateful to have met you.",
+            person: "Former boss, President of Vehicle Media",
             id: '2'
-        }
+        },
+        {
+            text: "You can't depend on hardly ANYbody these days to finish things. I love my logo so much. Thank you!",
+            person: "Client, Author of The 50th Dimension",
+            id: '3'
+        },
+        {
+            text: "It's always a pleasure working with you. It's amazing to see your constant growth since our first project. I haven't seen too many developers come in and hit the ground running like you have. Your efficiency and communicaiton is going to take you a long way.",
+            person: "Peer Developer at Avanade",
+            id: '4'
+        },
     ]
 }
 

@@ -1,14 +1,17 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import SectionWrapper from '../../components/SectionWrapper';
 import {testimonialData} from '../../constants/data';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 export default function Testimonials() {
     const [isActive, setIsActive] = useState(0);
+    const titleRef = useRef();
+    const { isVisible } = useIntersectionObserver(titleRef);
 
     return (
         <SectionWrapper>
-            <div className="testimonials-container" id="testimonials">
-                <div className="inner-wrap">
+            <div className={`testimonials-container ${isVisible ? 'animate' : ''}`} id="testimonials">
+                <div className="inner-wrap" ref={titleRef}>
                     <h5 className="section-title">{testimonialData.sectionTitle}</h5>
                     {testimonialData.testimonials.map((testimonial, t) => (
                         <div 

@@ -79,6 +79,7 @@
         }
 
         &::after {
+            opacity: 0;
             @include pseudo;
             @include mask-svg-set;
             @include mask-svg-img('../../assets/images/about-crosses.svg');
@@ -87,10 +88,19 @@
             width: 100%;
             left: auto;
             top: auto;
-            transform: translate(5em, 3em) scale(0.6);
+            transform: translate(5em, 3em) scale(0);
+            transition-delay:3s;
+            transition: opacity $slow, transform $slow;
 
             .theme-dark & {
                background-color: $quaternaryDark;
+            }
+        }
+
+        &.animate {
+            &::after {
+                opacity: 1;
+                transform: translate(5em, 3em) scale(0.7);
             }
         }
 

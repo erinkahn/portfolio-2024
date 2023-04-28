@@ -101,7 +101,7 @@ export default function ProjectGallery() {
                     <h2 className="section-title">{workData.sectionTitle}</h2>
                 </div>
 
-                <ul className={`project-grid ${state.active}`}>
+                <ul className={`project-grid ${state.active} ${modalShowing ? 'no-pointer' : ''}`}>
                     {state.active && 
                         <FilteredProject 
                             filteredProjectProp={workData}
@@ -113,6 +113,7 @@ export default function ProjectGallery() {
 
                 {modalShowing &&
                     <ProjectModal 
+                        modalShowing={modalShowing}
                         projectSelected={projectSelected}
                         filteredProjectProp={workData}
                         openModal={openModal}
