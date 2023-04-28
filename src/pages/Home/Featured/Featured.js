@@ -1,17 +1,20 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import SectionWrapper from "../../../components/SectionWrapper";
 import { featuredData } from '../../../constants/data';
 import FeaturedImage from './FeaturedImage';
+import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 
 export default function Featured() {
     const [isActive, setIsActive] = useState(0);
+    const oneRef = useRef();
+    const {isVisible} = useIntersectionObserver(oneRef);
 
     return (
         <SectionWrapper>
             <div className="featured-container" id="featured" aria-label="carousel">
                 <div className="title-carousel-wrapper">            
                     <div className="slide-title">
-                        <h4 className="section-title">
+                        <h4 className={`section-title ${isVisible ? 'fade-in' : 'fade-out'}`}>
                             {featuredData.sectionTitle}
                             {featuredData.featured.map((featNum, n) => (
                                 <span 
@@ -24,7 +27,7 @@ export default function Featured() {
                         </h4>
                     </div>
 
-                    <div className="pager-btns-container" role="tablist">
+                    <div className="pager-btns-container" role="tablist" ref={oneRef}>
                         {featuredData.featured.map((featuredBtn, b) => (
                             <button 
                                 key={`btn-${b}`} 

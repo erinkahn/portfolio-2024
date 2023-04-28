@@ -3,7 +3,7 @@ body {
 
     &.theme-dark,
     &.theme-light {
-        position: relative;
+        // position: relative; this fucks up the focus trap background color
 
         &::after {
             @include pseudo;
@@ -16,7 +16,7 @@ body {
     }
 
     &.theme-light::after {
-        background-color: rgba($primaryLight, 0.5);
+        background-color: rgba($primaryLight, 0.8);
     }
 }
 

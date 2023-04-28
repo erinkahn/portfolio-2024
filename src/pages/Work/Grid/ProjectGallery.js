@@ -56,13 +56,6 @@ export default function ProjectGallery() {
         modalShowing ? document.body.classList.remove(`theme-${themeName.theme}`) : document.body.classList.add(`theme-${themeName.theme}`)
     })
 
-    // const detectOutsideClick = (e) => {
-    //     if (!e.target.classList.contains('project-image')) {
-    //         setModalShowing(false)
-    //         document.body.classList.remove(`theme-${themeName.theme}`)
-    //     }
-    // }
-
     const closeModal = (e) => {
         if (e.target.classList.contains('close-btn')) {
             setModalShowing(false)

@@ -2,35 +2,13 @@ import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { navData } from "./../constants/data";
 import useLockBodyScroll from "./../hooks/useLockBodyScroll";
-import useScrollPos from "./../hooks/useScrollPos";
-import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 const Navigation = (props) => {
 	const today = new Date().getFullYear();
 	const [hidden, setHidden] = useState(true);
 	const [locked, setLocked] = useLockBodyScroll();
-	const [buttonIsWhite, setButtonIsWhite] = useState(true);
 	const btnRef = useRef();
 	const sideNavRef = useRef();
-	const scrollPos = useScrollPos();
-    const { isVisible } = useIntersectionObserver(document.querySelector('footer .outer-wrapper'));
-
-	const changeButtonColor = () => {
-		if (scrollPos[1] >= 470) {
-			setButtonIsWhite(false);
-		} else if (isVisible) {
-			setButtonIsWhite(true);
-		} else {
-			setButtonIsWhite(true)
-		}
-	}
-
-	useEffect(() => {
-		document.addEventListener('scroll', changeButtonColor);
-		return() => {
-			document.removeEventListener('scroll', changeButtonColor);
-		}
-	})
 
 	const toggle = () => {
 		hidden ? setHidden(false) : setHidden(true);
@@ -56,7 +34,7 @@ const Navigation = (props) => {
 			className="side-nav-wrap" 
 		>
 			<button
-				className={`menuBtn ${hidden ? "" : "open"} ${!buttonIsWhite ? "colored" : ""}`}
+				className={`menuBtn ${hidden ? "" : "open"}`}
 				aria-label={`${
 					hidden ? "Open Navigation" : "Close Navigation"
 				}`}

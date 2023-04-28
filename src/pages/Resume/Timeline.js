@@ -25,10 +25,10 @@ export default function Timeline() {
                     ))}
                 </ul>
                 <div className="img-wrapper">
-                    <img width="200px" height="750px" src="../../images/timeline/grad.png" alt="graduate student"/>
-                    <img width="200px" height="750px" src="../../images/timeline/cert.png" alt="certification"/>
-                    <img width="200px" height="750px" src="../../images/timeline/headshot.png" alt="headshot"/>
-                    <img width="200px" height="750px" src="../../images/timeline/code.png" alt="code"/>
+                    <img width="130px" height="504px" src="../../images/timeline/grad.png" alt="graduate student"/>
+                    <img width="130px" height="504px" src="../../images/timeline/cert.png" alt="certification"/>
+                    <img width="130px" height="504px" src="../../images/timeline/headshot.png" alt="headshot"/>
+                    <img width="130px" height="504px" src="../../images/timeline/code.png" alt="code"/>
                 </div>
             </div>
         </SectionWrapper>

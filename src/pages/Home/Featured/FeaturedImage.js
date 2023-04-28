@@ -1,13 +1,6 @@
-import { useRef, Suspense } from 'react';
-import useImageOnLoad from '../../../hooks/useImageOnLoad';
-// import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
-import {isWebpSupported} from 'react-image-webp/dist/utils';
+import { Suspense } from 'react';
 
 export default function FeaturedImage(props) {
-    const { handleImageOnLoad, imageStyles, lowResStyle, highResStyle } = useImageOnLoad();
-    const imageRef = useRef();
-    // const { isVisible } = useIntersectionObserver(imageRef);
-
     return (<>
         {props.featuredData.featured.map((project, p) => (
             <Suspense 
@@ -16,8 +9,6 @@ export default function FeaturedImage(props) {
             >
                 <div 
                     className={`img-wrapper ${props.isActive === p  ? 'show' : ''}`}
-                    style={imageStyles.wrapper} 
-                    ref={imageRef}
                     aria-current={p === props.isActive ? true : false}
                     aria-hidden={p === props.isActive ? false : true}
                     aria-label={`image ${p+1} of 4`}
@@ -27,24 +18,12 @@ export default function FeaturedImage(props) {
                     <img 
                         loading="lazy"
                         className="ft-img" 
-                        src={isWebpSupported ? project.src : project.lowRes} 
-                        alt={project.alt} 
-                        width="609" 
-                        height="792"
-                        style={lowResStyle}
+                        src={project.mobile} 
+                        width={974}
+                        height={1299}
+                        srcSet={`${project.mobile} 300w, ${project.tablet} 768w, ${project.desktop} 1280w`} 
+                        alt={project.alt}
                     />
-                    {/* {isVisible &&  */}
-                        <img 
-                            loading="lazy"
-                            className="ft-img" 
-                            src={isWebpSupported ? project.src : project.fallback} 
-                            alt={project.alt} 
-                            width="709" 
-                            height="892"
-                            style={highResStyle}
-                            onLoad={handleImageOnLoad}
-                        />
-                    {/* } */}
                 </div> 
             </Suspense>
         ))}

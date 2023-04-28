@@ -126,9 +126,9 @@ export const featuredData = {
             content: 'A newly designed Wordpress website built for The Scott Brothers, the famous HGTV fixer-upper brothers',
             role: 'Developer',
             devs: 'John Finch, Dave Carney',
-            src: '/images/work/code/d&j/Drew-and-Jonathan-Scott.webp',
-            fallback: '/images/work/code/d&j/Drew-and-Jonathan-Scott.jpg',
-            lowRes: '/images/work/code/d&j/Drew-and-Jonathan-Scott-lr.jpg',
+            desktop: '/images/work/code/d&j/SB-desktop.jpg',
+            tablet: '/images/work/code/d&j/SB-tablet.jpg',
+            mobile: '/images/work/code/d&j/SB-mobile.jpg',
             alt: 'The Scott Brother Twins',
             url: 'https://thescottbrothers.com/'
         },
@@ -139,9 +139,9 @@ export const featuredData = {
             content: `A newly redesigned website for Waffle House, America's favorite breakfast spot`,
             role: 'Developer',
             devs: 'John Finch, Dave Carney',
-            src: '/images/work/code/waffle/The-Waffle-House.webp',
-            fallback: '/images/work/code/waffle/The-Waffle-House.jpg',
-            lowRes: '/images/work/code/waffle/The-Waffle-House-lr.jpg',
+            desktop: '/images/work/code/waffle/WH-desktop.jpg',
+            tablet: '/images/work/code/waffle/WH-tablet.jpg',
+            mobile: '/images/work/code/waffle/WH-mobile.jpg',
             alt: 'Waffle House building',
             url: 'https://www.wafflehouse.com/'
         },
@@ -152,9 +152,9 @@ export const featuredData = {
             content: 'A newly designed website for Conlan Company, a large contracting company located in Goergia, Florida and Texas',
             role: 'Lead Developer',
             devs: 'John Finch',
-            src: '/images/work/code/conlan/Conlan-Company.webp',
-            fallback: '/images/work/code/conlan/Conlan-Company.jpg',
-            lowRes: '/images/work/code/conlan/Conlan-Company-lr.jpg',
+            desktop: '/images/work/code/conlan/Conlan-desktop.jpg',
+            tablet: '/images/work/code/conlan/Conlan-tablet.jpg',
+            mobile: '/images/work/code/conlan/Conlan-mobile.jpg',
             alt: 'The Conlan Company',
             url: 'https://conlancompany.com/'
         },{
@@ -164,9 +164,9 @@ export const featuredData = {
             content: 'A custom built website for Expo Home Improvement, a home improvement company located in Texas',
             role: 'Lead Developer',
             devs: 'Eric King',
-            src: '/images/work/code/expo/Expo-Home-Improvement.webp',
-            fallback: '/images/work/code/expo/Expo-Home-Improvement.jpg',
-            lowRes: '/images/work/code/expo/Expo-Home-Improvement-lr.jpg',
+            desktop: '/images/work/code/expo/Expo-desktop.jpg',
+            tablet: '/images/work/code/expo/Expo-tablet.jpg',
+            mobile: '/images/work/code/expo/Expo-mobile.jpg',
             alt: 'Expo Home Improvement',
             url: 'https://expohomeimprovement.com/'
         }

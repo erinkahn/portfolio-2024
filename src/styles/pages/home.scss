@@ -1,17 +1,11 @@
 .page-wrapper.home {
     width: 100vw;
-    // height: 100vh;
     overflow-x: hidden; // need this to remove white at bottom
-	// overflow-y: scroll;
-    // scroll-snap-type: y mandatory;
-    // scroll-snap-stop: always;
 
     .hero-container, 
-    #maincontent > *,
-    footer {
+    #maincontent > * {
         height: 100vh;
         width: 100vw;
-        // scroll-snap-align: center;
     }
 
     .section-wrapper {

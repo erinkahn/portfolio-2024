@@ -148,36 +148,26 @@
         }
 
         @media screen and (min-width: $medUp) {
-            grid-column: 2 / span 2;
+            grid-column: 3 / span 2;
             grid-row: 1 / span 3;
         }
     }
 
     .img-wrapper {
-        padding-top: 0;
-        transition: padding-top $quick;
+        display: none;
+        height: 0;
+        transition: height $quick;
 
         &.show {
-            @include aspectRatioContainer(709px, 892px);
+            display: block;
 
-            @media screen and (min-width: $smUp) and (min-height: 1000px) {
-                padding-top: 67vh;
-            }
+            @media screen and (min-height: 1000px) {
+                height: 100%;
 
-            @media screen and (min-width: $medUp) and (max-width: 1350px) {
-                padding-top: 118vh;
-            }
-
-            @media screen and (min-width: $medUp) and (min-height: 1000px) {
-                padding-top: 109vh;
-            }
-        }
-
-        .ft-img {
-            @include aspectRatioImage;
-
-            @media screen and (min-width: $medUp){
-                background-position: top;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
     }

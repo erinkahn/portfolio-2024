@@ -7,7 +7,7 @@ header {
         @include pseudo;
         @include mask-svg-set;
         @include mask-svg-img('../../assets/images/side-nav-shape.svg');
-        background-color: $secondaryLight;
+        background-color: $accessibleBtnLight;
         width: 9em;
         left: auto;
         height: 100.2vh;
@@ -70,24 +70,13 @@ header {
             transform: translate(-1vh, -50%);
         }
 
-        &.colored {
-            &::before,
-            &::after {
-                background-color: $primaryLight;
-
-                .theme-dark & {
-                    background-color: $primaryDark;
-                }
-            }
-        }
-
         &::before,
         &::after {
             @include pseudo;
             left: auto;
             width: 2.25em;
             height: 3px;
-            background-color: $white;
+            background-color: $fiveLight;
             border-radius: 1em;
             transform: translate(-1em, 0) rotate(0deg);
             transition: transform $quick;
