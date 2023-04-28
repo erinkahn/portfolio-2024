@@ -85,4 +85,19 @@
         }
     }
 
+    .link {
+        color: $primaryLight;
+        font-weight: 500;
+        transition: font-weight $quick;
+
+        .theme-dark & {
+            color: $primaryDark;
+        }
+
+        &:hover,
+        &:focus {
+            font-weight: 600;
+        }
+    }
+
 }

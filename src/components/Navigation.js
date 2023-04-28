@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { navData } from "./../constants/data";
 import useLockBodyScroll from "./../hooks/useLockBodyScroll";

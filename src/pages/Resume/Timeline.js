@@ -19,7 +19,19 @@ export default function Timeline() {
                             transition={{transition: .25, ease: "easeInOut", delay: .1}}
                         >
                             <h2 className="year">{date.year}</h2>
-                            <p className="company">{date.company}</p>
+
+                            {date.url ? (
+                                <a 
+                                    className="link" 
+                                    href={date.url} 
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                        <p className="company">{date.company}</p>
+                                </a>
+                            ) : (
+                                <p className="company">{date.company}</p>
+                            )}
                             <p className="title"><em>{date.position}</em></p>
                         </m.li>
                     ))}

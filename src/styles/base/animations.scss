@@ -28,7 +28,7 @@
 
 .slide-out-left {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-35px);
     transition: opacity $slow, transform $slow;
 }
 
@@ -70,15 +70,17 @@
     }
 }
 
-//services
-@for $i from 1 through 3 {
-    .fade-in-up:nth-of-type(#{$i}) {
-        -webkit-transition-delay: $i * 0.2s;
-        transition-delay: $i * 0.2s - 0.2s;
+// cascade animation loop
+$nums: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
+
+@each $num in $nums{
+    .fade-in-up:nth-of-type(#{$num}) {
+        -webkit-transition-delay: $num * 0.2s;
+        transition-delay: $num * 0.2s - 0.2s;
     }
-    .fade-out-down:nth-of-type(#{$i}) {
-        -webkit-transition-delay: $i * 0.2s;
-        transition-delay: $i * 0.2s - 0.2s;
+    .fade-out-down:nth-of-type(#{$num}) {
+        -webkit-transition-delay: $num * 0.2s;
+        transition-delay: $num * 0.2s - 0.2s;
     }
 }
 

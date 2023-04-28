@@ -126,9 +126,9 @@ export const featuredData = {
             content: 'A newly designed Wordpress website built for The Scott Brothers, the famous HGTV fixer-upper brothers',
             role: 'Developer',
             devs: 'John Finch, Dave Carney',
-            desktop: '/images/work/code/d&j/SB-desktop.jpg',
-            tablet: '/images/work/code/d&j/SB-tablet.jpg',
-            mobile: '/images/work/code/d&j/SB-mobile.jpg',
+            desktop: '/images/work/code/d&j/SB-desktop.webp',
+            tablet: '/images/work/code/d&j/SB-tablet.webp',
+            mobile: '/images/work/code/d&j/SB-mobile.webp',
             alt: 'The Scott Brother Twins',
             url: 'https://thescottbrothers.com/'
         },
@@ -139,9 +139,9 @@ export const featuredData = {
             content: `A newly redesigned website for Waffle House, America's favorite breakfast spot`,
             role: 'Developer',
             devs: 'John Finch, Dave Carney',
-            desktop: '/images/work/code/waffle/WH-desktop.jpg',
-            tablet: '/images/work/code/waffle/WH-tablet.jpg',
-            mobile: '/images/work/code/waffle/WH-mobile.jpg',
+            desktop: '/images/work/code/waffle/WH-desktop.webp',
+            tablet: '/images/work/code/waffle/WH-tablet.webp',
+            mobile: '/images/work/code/waffle/WH-mobile.webp',
             alt: 'Waffle House building',
             url: 'https://www.wafflehouse.com/'
         },
@@ -152,9 +152,9 @@ export const featuredData = {
             content: 'A newly designed website for Conlan Company, a large contracting company located in Goergia, Florida and Texas',
             role: 'Lead Developer',
             devs: 'John Finch',
-            desktop: '/images/work/code/conlan/Conlan-desktop.jpg',
-            tablet: '/images/work/code/conlan/Conlan-tablet.jpg',
-            mobile: '/images/work/code/conlan/Conlan-mobile.jpg',
+            desktop: '/images/work/code/conlan/Conlan-Desktop.webp',
+            tablet: '/images/work/code/conlan/Conlan-tablet.webp',
+            mobile: '/images/work/code/conlan/Conlan-mobile.webp',
             alt: 'The Conlan Company',
             url: 'https://conlancompany.com/'
         },{
@@ -164,9 +164,9 @@ export const featuredData = {
             content: 'A custom built website for Expo Home Improvement, a home improvement company located in Texas',
             role: 'Lead Developer',
             devs: 'Eric King',
-            desktop: '/images/work/code/expo/Expo-desktop.jpg',
-            tablet: '/images/work/code/expo/Expo-tablet.jpg',
-            mobile: '/images/work/code/expo/Expo-mobile.jpg',
+            desktop: '/images/work/code/expo/Expo-Desktop.webp',
+            tablet: '/images/work/code/expo/Expo-tablet.webp',
+            mobile: '/images/work/code/expo/Expo-mobile.webp',
             alt: 'Expo Home Improvement',
             url: 'https://expohomeimprovement.com/'
         }
@@ -242,7 +242,7 @@ export const workData = {
         },
         {
             title: "Scott Brothers",
-            img: '/images/work/code/d&j/Drew-and-Jonathan-Scott.webp',
+            img: '/images/work/code/d&j/SB-mobile.webp',
             url: 'https://thescottbrothers.com/',
             role: 'Developer',
             designers: 'Leah Watson, Jade Nipper',
@@ -372,12 +372,12 @@ export const workData = {
             show: 'show_art'
         },
         {
-            title: "Powell Law Firm",
-            img: '/images/work/code/powell/Powell-Law-Firm.webp',
-            url: 'https://www.powell.law/',
+            title: "Vehicle Media",
+            img: '/images/work/code/vm/vehicle-media.webp',
+            url: 'https://www.vehiclemedia.com/',
             role: 'Developer',
-            designers: 'David Bilbo',
-            devs: 'Andrew Borem',
+            designers: 'Yinan Xu, Jade Nipper',
+            devs: 'Dave Carney, John Finch',
             icons: [
                 {
                     img: '/images/work/icons/html.svg',
@@ -400,19 +400,35 @@ export const workData = {
                     alt: 'javascript icon'
                 },
                 {
+                    img: '/images/work/icons/wordpress.svg',
+                    alt: 'wordpress icon'
+                },
+                {
+                    img: '/images/work/icons/acf.svg',
+                    alt: 'advanced custom fields icon'
+                },
+                {
                     img: '/images/work/icons/git.svg',
                     alt: 'git icon'
                 },
                 {
+                    img: '/images/work/icons/gsap.svg',
+                    alt: 'gsap icon'
+                },
+                {
                     img: '/images/work/icons/photoshop.svg',
                     alt: 'photoshop icon'
+                },
+                {
+                    img: '/images/work/icons/illustrator.svg',
+                    alt: 'illustrator icon'
                 }
             ],
-            description: 'Powell Law Firm is an injury law firm located in Kentucky. While working at DynamiX Web Design, I transformed a PhotoShop design file into a fully custom and dynamic CMS website with PHP.',
+            description: 'Vehicle Media is a digital marketing agency in Atlanta, Georgia that focuses on graphic + web design, social media, web development, photography and communication strategies. While working at Vehicle Media, I built a new site for the company that showcased new designs, updated projects, blogposts, and more.',
             id: 5,
             showAll: false,
             type: "website",
-            show: 'show_websites' 
+            show: 'show_websites'
         },
         {
             title: "Sheffield Lentine",
@@ -520,12 +536,12 @@ export const workData = {
             show: 'show_websites' 
         },
         {
-            title: "Vehicle Media",
-            img: '/images/work/code/vm/vehicle-media.webp',
-            url: 'https://www.vehiclemedia.com/',
+            title: "Powell Law Firm",
+            img: '/images/work/code/powell/Powell-Law.webp',
+            url: 'https://www.powell.law/',
             role: 'Developer',
-            designers: 'Yinan Xu, Jade Nipper',
-            devs: 'Dave Carney, John Finch',
+            designers: 'David Bilbo',
+            devs: 'Andrew Borem',
             icons: [
                 {
                     img: '/images/work/icons/html.svg',
@@ -548,35 +564,19 @@ export const workData = {
                     alt: 'javascript icon'
                 },
                 {
-                    img: '/images/work/icons/wordpress.svg',
-                    alt: 'wordpress icon'
-                },
-                {
-                    img: '/images/work/icons/acf.svg',
-                    alt: 'advanced custom fields icon'
-                },
-                {
                     img: '/images/work/icons/git.svg',
                     alt: 'git icon'
                 },
                 {
-                    img: '/images/work/icons/gsap.svg',
-                    alt: 'gsap icon'
-                },
-                {
                     img: '/images/work/icons/photoshop.svg',
                     alt: 'photoshop icon'
-                },
-                {
-                    img: '/images/work/icons/illustrator.svg',
-                    alt: 'illustrator icon'
                 }
             ],
-            description: 'Vehicle Media is a digital marketing agency in Atlanta, Georgia that focuses on graphic + web design, social media, web development, photography and communication strategies. While working at Vehicle Media, I built a new site for the company that showcased new designs, updated projects, blogposts, and more.',
+            description: 'Powell Law Firm is an injury law firm located in Kentucky. While working at DynamiX Web Design, I transformed a PhotoShop design file into a fully custom and dynamic CMS website with PHP.',
             id: 8,
             showAll: false,
             type: "website",
-            show: 'show_websites'
+            show: 'show_websites' 
         },
         {
             title: "VSB",
@@ -618,7 +618,7 @@ export const workData = {
         },
         {
             title: "Waffle House",
-            img: '/images/work/code/waffle/The-Waffle-House.jpg',
+            img: '/images/work/code/waffle/WH-desktop.webp',
             url: 'https://www.wafflehouse.com/',
             role: 'Developer',
             designers: 'Leah Watson',
@@ -701,7 +701,7 @@ export const workData = {
         },
         {
             title: "Conlan Company",
-            img: '/images/work/code/conlan/Conlan-Company.webp',
+            img: '/images/work/code/conlan/Conlan-mobile.webp',
             url: 'https://conlancompany.com/',
             role: 'Developer',
             designers: 'VM Designer',
@@ -951,7 +951,7 @@ export const workData = {
         },
         {
             title: "Expo Home Improvements",
-            img: '/images/work/code/expo/Expo-Home-Improvement.webp',
+            img: '/images/work/code/expo/Expo-mobile.webp',
             url: 'https://expohomeimprovement.com/',
             role: 'Developer',
             designers: 'David Bilbo',
@@ -1048,7 +1048,7 @@ export const workData = {
         },
         {
             title: "Cahaba Brewing Company",
-            img: '/images/work/code/cahaba/Cahaba-Brewing-Co.png',
+            img: '/images/work/code/cahaba/Cahaba-Brewing-Co.webp',
             url: 'https://cahababrewing.com/',
             role: 'Freelance Dev / Designer',
             designers: 'Devote Studio',
@@ -1099,7 +1099,7 @@ export const workData = {
         },
         {
             title: "Split",
-            img: '/images/work/school/split.png',
+            img: '/images/work/school/Split.webp',
             url: 'https://erin-kahn.com/sites/split/',
             role: 'Developer',
             designers: 'Carol Ehreth',
@@ -1133,7 +1133,7 @@ export const workData = {
         },
         {
             title: "Aretha Franklin",
-            img: '/images/work/school/aretha.png',
+            img: '/images/work/school/aretha.webp',
             url: 'https://erin-kahn.com/sites/aretha/',
             role: 'Developer + Designer',
             icons: [
@@ -1170,15 +1170,15 @@ export const workData = {
         },
         {
             title: "Moodie",
-            img: '/images/work/school/Moodie.png',
+            img: '/images/work/school/Moodie.webp',
             role: 'Designer',
             thumbnails: [
                 {
-                    img: '/images/work/school/moodie-app.jpg',
+                    img: '/images/work/school/moodie-app.webp',
                     alt: 'iphone screen'
                 },
                 {
-                    img: '/images/work/school/illustrations.jpg',
+                    img: '/images/work/school/illustrations.webp',
                     alt: 'iphone app'
                 }
             ],
@@ -1220,7 +1220,7 @@ export const workData = {
         },
         {
             title: "Nerds Candy",
-            img: '/images/work/school/Nerds.png',
+            img: '/images/work/school/Nerds.webp',
             url: 'https://erin-kahn.com/sites/nerds/',
             role: 'Developer + Co-Illustrator',
             designers: 'Kate Gallihugh, Leeah Emerson (AD), Will Aebi (Copy)',
@@ -1297,44 +1297,44 @@ export const timelineData = {
             year: '2016',
             company: 'graduated from University of Alabama',
             position: 'Graphic Design + Advertising Degree',
-            image: '',
+            url: 'https://www.ua.edu/',
         },
         {
             year: '',
             company: 'Walls Media, CCG Ideas, Flex Digital',
             position: 'Graphic Design Intern, Freelance Designer',
-            image: '',
+            url: 'https://www.ccgideas.com/',
         },
         {
             year: '2017',
             company: 'started Portfolio School in Atlanta',
             position: 'Interactive Design + Web Development Student',
-            image: '',
+            url: '',
         },
         {
             year: '2018',
             company: 'graduated from The Creative Circus',
             position: 'Interactive Web Development Certification',
-            image: '',
+            url: 'http://creativecircus.edu/',
         },
         {
-            year: '',
+            year: '2018-20',
             company: 'Vehicle Media',
             position: 'WordPress + PHP Developer, Freelance Designer',
-            image: '',
+            url: 'https://www.vehiclemedia.com/',
         },
         {
-            year: '2021',
+            year: '2020-21',
             company: 'DynamiX Web Design',
             position: 'Front-End Developer, Freelance Designer',
-            image: '',
+            url: 'https://dynamix.site/',
         },
         {
-            year: '2022',
+            year: '2021-',
             company: 'Avanade',
             position: 'React Developer, Freelance Designer/Developer',
-       
-    image: '',        }
+            url: 'https://www.avanade.com/en',        
+        }
     ]
 }
 

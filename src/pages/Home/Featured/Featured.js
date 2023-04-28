@@ -14,7 +14,7 @@ export default function Featured() {
             <div className="featured-container" id="featured" aria-label="carousel">
                 <div className="title-carousel-wrapper">            
                     <div className="slide-title">
-                        <h4 className={`section-title ${isVisible ? 'fade-in' : 'fade-out'}`}>
+                        <h4 className={`section-title ${isVisible ? 'fade-in' : 'fade-out'}`} ref={oneRef}>
                             {featuredData.sectionTitle}
                             {featuredData.featured.map((featNum, n) => (
                                 <span 
@@ -27,11 +27,11 @@ export default function Featured() {
                         </h4>
                     </div>
 
-                    <div className="pager-btns-container" role="tablist" ref={oneRef}>
+                    <div className="pager-btns-container" role="tablist">
                         {featuredData.featured.map((featuredBtn, b) => (
                             <button 
                                 key={`btn-${b}`} 
-                                className={`pager-btn ${b === isActive ? 'active' : ''}`}
+                                className={`pager-btn ${b === isActive ? 'active' : ''} ${isVisible ? 'fade-in-up' : 'fade-out-down'}`}
                                 aria-label={`Navigate to slide ${b}`}
                                 aria-controls={`panel${(featuredBtn.client).replaceAll(" ", "")}`}
                                 aria-current={b === isActive ? true : false}

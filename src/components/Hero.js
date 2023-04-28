@@ -1,10 +1,20 @@
-import Prallax from "react-rellax";
+import {useState, useEffect} from 'react';
 
 export default function Hero(props) {
 	const scrollToSection = () => {
 		document.querySelector('#maincontent').scrollIntoView({behavior: "smooth"})
 	}
 
+	const [offsetY, setOffsetY] = useState(0);
+	const handleScroll = () => setOffsetY(window.pageYOffset);
+
+	useEffect(() => {
+	  window.addEventListener('scroll', handleScroll);
+	  return () => {
+		window.removeEventListener('scroll', handleScroll);
+	  }
+	}, [])
+	
 	return (
 		<section	
 			className="hero-container"
@@ -12,12 +22,15 @@ export default function Hero(props) {
 			role="tabpanel"	
 			style={{height: "100vh"}}
 		>
-			<Prallax speed={6} className="text-box-container">
-				<div className="text-wrapper">
+			<div 
+				className="text-box-container" 
+				style={{transform: `translateY(-${offsetY * 0.5}px)`}}
+			>
+				<div className="text-wrapper" >
 					<h1 className="hero-title">{props.title}</h1>
 					<p className="hero-subtitle">{props.subtitle}</p>
 				</div>
-			</Prallax>
+			</div>
 
 			<button onClick={scrollToSection} className="btn-scroll">
 				<span className="sr-only">scroll to next section</span>

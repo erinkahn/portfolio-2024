@@ -55,6 +55,7 @@
     .text-wrapper {
         padding-left: 15vw;
         color: $white;
+        transition: transform $slow;
     }
 
     .hero-title {

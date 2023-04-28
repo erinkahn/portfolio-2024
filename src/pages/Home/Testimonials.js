@@ -39,7 +39,7 @@ export default function Testimonials() {
                                 aria-controls={`testimonial${testiBtn.id}`}
                                 aria-label={`Navigate to testimonial ${s}`}
                                 aria-selected={s === isActive ? true : false}
-                                className={`testimonial-btn ${s === isActive ? 'active' : ''}`}>
+                                className={`testimonial-btn ${s === isActive ? 'active' : ''} ${isVisible ? 'fade-in-up' : 'fade-out-down'}`}>
                             </button>
                         ))}
                     </div>
