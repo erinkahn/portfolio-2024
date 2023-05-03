@@ -7,7 +7,11 @@
     justify-content: space-between;
     height: 30vh;
     z-index: 3;
-    transform: translate(1em, -50%);
+    transform: translate(1em, -35%);
+
+    @media screen and (min-width: $smUp) {
+        transform: translate(1em, -50%);
+    }
 
     button {
         height: 2em;   

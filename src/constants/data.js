@@ -1196,7 +1196,7 @@ export const workData = {
                     alt: 'illustrator icon'
                 }
             ],
-            description: `As a student, I designed Moodie, an app for users with anxiety, depression, or ptsd. It track a user's mood over time, which then transmits the stored data/progress to the user's doctor to see if a medication is beneficial to the patient. Other features include mindfulness practices, a daily gratitude list, feelings journal, stress tools, and more.`,
+            description: `As a student, I designed an app for users with mental health obstacles. Its purpose is to track a user's mood over time, which transmits stored data to a provider to see progress and if a medication is helpful. Other features include a daily gratitude list, feelings journal, stress tools, and more.`,
             id: 24,
             showAll: false,
             type: "design",
@@ -1274,7 +1274,7 @@ export const testimonialData = {
         },
         {
             text: " I appreciate you so much for so many reasons but particularly going the grind of what was the most stressful time ever. This all looks so good. My lord. I’m so grateful to have met you.",
-            person: "Former boss, President of Vehicle Media",
+            person: "President of Vehicle Media",
             id: '2'
         },
         {
@@ -1300,10 +1300,10 @@ export const timelineData = {
             url: 'https://www.ua.edu/',
         },
         {
-            year: '',
+            year: '2016-2017',
             company: 'Walls Media, CCG Ideas, Flex Digital',
             position: 'Graphic Design Intern, Freelance Designer',
-            url: 'https://www.ccgideas.com/',
+            url: '',
         },
         {
             year: '2017',

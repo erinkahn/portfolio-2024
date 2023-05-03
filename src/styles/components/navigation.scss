@@ -110,6 +110,7 @@
         align-self: center;
         font-size: 4em;
         text-align: right;
+        padding-top: 5vh;
         padding-right: 1em;
         transition: font-size $quick, grid-column $quick, grid-gap $quick, grid-row $quick;
 
@@ -118,7 +119,8 @@
             grid-gap: 0.5em;
             grid-row: 1;
             font-size: 3em;
-            padding-right: 0;
+            padding-right: 15vw;
+            padding-top: 0vh;
         }
 
         @media screen and (max-width: $xxsDown) {

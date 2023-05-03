@@ -12,12 +12,12 @@
             position: absolute;
             opacity: 0.4;
             width: 100%;
-            max-width: 100px;
-            filter: grayscale(1);
-
+            max-width: 80px;
+            
             @media screen and (min-width: $medUp) {
                 opacity: 0.6;
                 max-width: 130px;
+                filter: grayscale(1);
             }
 
             &:first-of-type {
@@ -49,12 +49,8 @@
     .inner-wrapper {
         position: relative;
         margin: 0 auto;
-        width: 85%;
+        width: 70%;
         z-index: 1;
-
-        @media screen and (min-width: $smUp) {
-            width: 70%;
-        }
 
         @media screen and (min-width: $medUp) {
             max-width: 700px;
@@ -75,10 +71,14 @@
     }
 
     .year {
-        font-size: 3em;
+        font-size: 2em;
         font-family: $montserrat;
         font-weight: $semibold;
         color: $primaryLight;
+
+        @media screen and (min-width: $medUp) {
+            font-size: 3em;
+        }
 
         .theme-dark & {
             color: $fiveDark;

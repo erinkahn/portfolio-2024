@@ -33,34 +33,32 @@
     }
 
     .close-btn {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48.859' height='37.573' viewBox='0 0 48.859 37.573'%3E%3Cg id='Group' transform='translate(2.413 2.414)'%3E%3Cpath id='Line_2' data-name='Line 2' d='M0,8.559,46.944,0' transform='matrix(0.839, -0.545, 0.545, 0.839, 0, 25.568)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3'/%3E%3Cpath id='Line_2_Copy' data-name='Line 2 Copy' d='M0,0,46.324,7.946' transform='matrix(0.839, 0.545, -0.545, 0.839, 4.848, 0.541)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A");
-        background-position: center;
-        background-size: 50% auto;
-        background-repeat: no-repeat;
+        @include mask-svg-set;
+        @include mask-svg-img('../../assets/images/x.svg');
         position: absolute;
         left: 2em;
-        top: 2em;
+        top: 7vh;
         width: 3em;
         height: 3em;
-        border-radius: 2em;
-        border: 2px solid $white;
-        filter: drop-shadow(2px 2px 3px rgba($black, 0.6));
-        transition: background-size $quick, border-color $quick;
+        background-color: $white;
+        transition: background-color $quick;
 
         @media screen and (max-width: $xsDown) {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48.859' height='37.573' viewBox='0 0 48.859 37.573'%3E%3Cg id='Group' transform='translate(2.413 2.414)'%3E%3Cpath id='Line_2' data-name='Line 2' d='M0,8.559,46.944,0' transform='matrix(0.839, -0.545, 0.545, 0.839, 0, 25.568)' fill='none' stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3'/%3E%3Cpath id='Line_2_Copy' data-name='Line 2 Copy' d='M0,0,46.324,7.946' transform='matrix(0.839, 0.545, -0.545, 0.839, 4.848, 0.541)' fill='none' stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A");
-            border-color: $black;
-
-            &:hover,
-            &:focus {
-                border-color: rgba($black, 0.3);
-            }
+            background-color: $black;
         }
 
-        &:hover,
-        &:focus {
-            background-size: 30% auto;
-            border-color: rgba($white, 0.5);
+        &:hover {
+            background-color: rgba($white, 0.5);
+        }
+
+        @media screen and (min-width: $smUp) {
+            &:focus {
+                background-color: $accessibleBtnLight;
+
+                .theme-dark & {
+                    background-color: $fiveDark;
+                }
+            }
         }
     }
 
@@ -211,6 +209,7 @@
                     flex-direction: column;
                     flex-wrap: wrap; 
                     margin-bottom: 0;
+                    gap: 1em;
                 }
 
                 .desc {
@@ -272,8 +271,12 @@
             &.design {
                 display: flex;
                 margin-top: 2em;
-                flex-direction: column;
-                align-items: baseline;
+                align-items: flex-start;
+
+                @media screen and (min-width: $smUp) {
+                    flex-direction: column;
+                    align-items: baseline;
+                }
 
                 ul {
                     flex-wrap: nowrap;
@@ -285,6 +288,12 @@
         .thumbnails {
             position: relative;
             overflow: hidden;
+            max-width: 300px;
+            margin: 0 auto;
+
+            @media screen and (min-width: $smUp) {
+                max-width: none;
+            }
 
             .thumbnail-slide {
                 opacity: 0;
@@ -332,7 +341,7 @@
             .pager-btn {
                 &:not(:first-of-type),
                 &:not(:last-of-type) {                  
-                    margin: 0 20px;
+                    margin: 0 10px;
                 }
 
                 @media screen and (max-width: $medDown) {
