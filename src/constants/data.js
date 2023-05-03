@@ -373,7 +373,7 @@ export const workData = {
         },
         {
             title: "Vehicle Media",
-            img: '/images/work/code/vm/vehicle-media.webp',
+            img: '/images/work/code/vm/Vehicle-Media.webp',
             url: 'https://www.vehiclemedia.com/',
             role: 'Developer',
             designers: 'Yinan Xu, Jade Nipper',
@@ -1133,7 +1133,7 @@ export const workData = {
         },
         {
             title: "Aretha Franklin",
-            img: '/images/work/school/aretha.webp',
+            img: '/images/work/school/Aretha.webp',
             url: 'https://erin-kahn.com/sites/aretha/',
             role: 'Developer + Designer',
             icons: [
