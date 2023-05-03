@@ -7,12 +7,12 @@ export const navData = {
         },
         {
             pageTitle: 'Work',
-            linkTo: '/Work',
+            linkTo: '/work',
             id: 1
         },
         {
             pageTitle: 'Resume',
-            linkTo: '/Resume',
+            linkTo: '/resume',
             id: 2
         }
     ],

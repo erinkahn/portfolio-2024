@@ -12,10 +12,10 @@ export default function PageRoutes() {
                 <Route exact path='/'
                     element={<Home/>}>
                 </Route>
-                <Route exact path='/Work'
+                <Route exact path='/work'
                     element={<Work/>}>
                 </Route>
-                <Route exact path='/Resume'
+                <Route exact path='/resume'
                     element={<Resume/>}>
                 </Route>
             </Routes>

@@ -19,7 +19,7 @@ export default function Work() {
 			<Fragment>
 				<Seo
 					title="Erin Kahn | Work"
-					url="https://erin-kahn.com/Work"
+					url="https://erin-kahn.com/work"
 				/>
 			</Fragment>
 
