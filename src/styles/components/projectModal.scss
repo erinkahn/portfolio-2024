@@ -8,6 +8,7 @@
     height: 100vh;
     filter: drop-shadow(-1px 9px 5px rgb(0 0 0 / 0.1));
     transform: translate(-50%, -50%);
+    transition: background-image .01s ease-in-out;
     z-index: 5;
 
     @media screen and (max-width: $xsDown) {
@@ -25,7 +26,7 @@
 
     @media screen and (min-width: $medUp) {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1628.992' height='1352.458' viewBox='0 0 1628.992 1352.458'%3E%3Cpath id='Path_231' data-name='Path 231' d='M7985.078-1323.472c136.978,68.5,199.745,157.677,312.771,138.967s211.534-142.459,297.545-154.017,199.337,22.652,239.755,154.181S8730.1-927.628,8683.194-788.775s29.791,241.182,44.149,315.225,17.378,372.41-316.152,328.739c-140.737-24.106-154.79-128.639-266.522-217.943-150.793-95.542-341.779-61.858-466.056,29.146-204.738,149.925-293.277,32.506-346.261-24.213s-56.862-297.519,53.906-430.751-62.1-336.72,73.96-494.485S7848.1-1391.969,7985.078-1323.472Z' transform='matrix(0.998, -0.07, 0.07, 0.998, -7181.83, 2001.558)' fill='%23fff'/%3E%3C/svg%3E%0A");
-        width: 100%;
+        max-width: 1200px;
     }
 
     .inner-wrapper {
