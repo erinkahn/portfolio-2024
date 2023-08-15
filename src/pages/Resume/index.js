@@ -30,6 +30,7 @@ export default function Resume() {
 					title={heroData.resume.title}
 					subtitle={heroData.resume.subtitle}
 					image={heroData.resume.image}
+					scrollBtn={heroData.resume.scrollBtn}
 				/>
 				<main id="maincontent" role="main">
 					<Timeline/>

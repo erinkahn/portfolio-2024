@@ -9,10 +9,10 @@ export default function Hero(props) {
 	const handleScroll = () => setOffsetY(window.pageYOffset);
 
 	useEffect(() => {
-	  window.addEventListener('scroll', handleScroll);
-	  return () => {
-		window.removeEventListener('scroll', handleScroll);
-	  }
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		}
 	}, [])
 	
 	return (
@@ -32,9 +32,11 @@ export default function Hero(props) {
 				</div>
 			</div>
 
-			<button onClick={scrollToSection} className="btn-scroll">
-				<span className="sr-only">scroll to next section</span>
-			</button>
+			{props.scrollBtn === true && 
+				<button onClick={scrollToSection} className="btn-scroll">
+					<span className="sr-only">scroll to next section</span>
+				</button>
+			}
 		</section>
 	);
 }

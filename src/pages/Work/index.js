@@ -29,6 +29,7 @@ export default function Work() {
 					title={heroData.work.title}
 					subtitle={heroData.work.subtitle}
 					image={heroData.work.image}
+					scrollBtn={heroData.work.scrollBtn}
 				/>
 				<main id="maincontent" role="main">
 					<ProjectGallery/>

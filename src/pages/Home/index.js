@@ -33,6 +33,7 @@ export default function Home() {
 				<Hero 
 					title={heroData.home.title}
 					subtitle={heroData.home.subtitle}
+					scrollBtn={heroData.home.scrollBtn}
 				/>
 				<main id="maincontent" role="main">
 					<Services />

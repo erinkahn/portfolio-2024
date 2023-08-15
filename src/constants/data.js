@@ -73,14 +73,22 @@ export const heroData = {
     home: {
         title: 'hello world',
         subtitle: 'I bring design to life',
+        scrollBtn: true
     },
     work: {
         title: 'work',
         subtitle: 'coding + design',
+        scrollBtn: true
     },
     resume: {
         title: 'resume',
         subtitle: 'experience + skills',
+        scrollBtn: true
+    },
+    missing: {
+        title: '404',
+        subtitle: 'Oops...try again',
+        scrollBtn: false
     }
 }
 
