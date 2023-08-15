@@ -17,7 +17,7 @@ export default function PageRoutes() {
                 </Route>
                 <Route exact path='/resume'
                     element={<Resume/>}>
-                </Route>
+git                 </Route>
             </Routes>
         </Suspense>
     )
