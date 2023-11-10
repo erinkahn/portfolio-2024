@@ -18,12 +18,7 @@ export default function Services() {
                         className={`service ${isVisible ? 'fade-in-up' : 'fade-out-down'}`}
                     >
                         <div className="service-img-container" ref={iref}>
-                            <img 
-                                src={service.icon} 
-                                alt={service.alt} 
-                                width={48} 
-                                height={48}
-                            />
+                            {service.icon}         
                         </div>
                         <h3>{service.serviceTitle}</h3>
                         <p>{service.description}</p>

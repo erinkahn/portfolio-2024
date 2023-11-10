@@ -27,6 +27,7 @@ const useIntersectionObserver = elementRef => {
 		currentObserver.observe(node);
 
 		return () => currentObserver.disconnect();
+		// eslint-disable-next-line
 	}, [elementRef]);
 
 	return { isVisible: !!entry?.isIntersecting, entry };
