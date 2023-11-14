@@ -70,23 +70,26 @@
     }
 
     .svg-fill {
-       stroke-width: 2;
+       strokeWidth: 2;
+    }
+
+    .path0, .path1, .path2 {
+        animation: draw 3s linear infinite alternate;
     }
 
     .path0 {
         stroke-dasharray: 120;
         stroke-dashoffset: 120;
-        animation: draw 3s linear infinite alternate;
     }
+
     .path1 {
         stroke-dasharray: 20;
         stroke-dashoffset: 20;
-        animation: draw 3s linear infinite alternate;
     }
+
     .path2 {
         stroke-dasharray: 295;
         stroke-dashoffset: 295;
-        animation: draw2 4s linear infinite alternate;
     }
       
     @keyframes draw {
@@ -97,6 +100,7 @@
             stroke-dashoffset: 0;
         }
     }
+    
     @keyframes draw2 {
         from {
             stroke-dashoffset: 295;

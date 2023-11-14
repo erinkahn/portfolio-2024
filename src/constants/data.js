@@ -107,16 +107,16 @@ export const servicesData = {
             serviceTitle: 'Branding + Logos',
             description: 'create logos, branding identity suites, business cards, stickers, fliers, and more.',
             icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 92">
-                        <g fill="none" class="svg-stroke" stroke="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" data-name="Group 12">
-                            <path class="path0" d="M5 15s30-29 60-3"/>
-                            <path class="path0" d="M67 28S33-13 1 32" data-name="Path 2"/>
-                            <path class="path0" d="M67 34s6 12 2 28" data-name="Path 3"/>
-                            <path class="path0" d="M39 91s-5-17-17-2" data-name="Path 4"/>
-                            <path class="path0" d="M50 86s-12-7-7-19" data-name="Path 5"/>
-                            <path class="path0" d="M5 80s26-21 31-33" data-name="Path 6"/>
-                            <path class="path0" d="M1 69s22-18 25-26 18-11 19 2-31 39-31 39" data-name="Path 7"/>
-                            <path class="path0" d="M61 80s-14-9-10-27-4-24-10-26-17-2-24 13l-7 10a33 33 0 0 1-8 7" data-name="Path 8"/>
-                            <path class="path0" d="M66 73s-9-8-5-24-12-29-21-31-17-1-25 12-6 8-14 14" data-name="Path 9"/>
+                        <g fill="none" className="svg-stroke" stroke="none" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2" data-name="Group 12">
+                            <path className="path0" d="M5 15s30-29 60-3"/>
+                            <path className="path0" d="M67 28S33-13 1 32" data-name="Path 2"/>
+                            <path className="path0" d="M67 34s6 12 2 28" data-name="Path 3"/>
+                            <path className="path0" d="M39 91s-5-17-17-2" data-name="Path 4"/>
+                            <path className="path0" d="M50 86s-12-7-7-19" data-name="Path 5"/>
+                            <path className="path0" d="M5 80s26-21 31-33" data-name="Path 6"/>
+                            <path className="path0" d="M1 69s22-18 25-26 18-11 19 2-31 39-31 39" data-name="Path 7"/>
+                            <path className="path0" d="M61 80s-14-9-10-27-4-24-10-26-17-2-24 13l-7 10a33 33 0 0 1-8 7" data-name="Path 8"/>
+                            <path className="path0" d="M66 73s-9-8-5-24-12-29-21-31-17-1-25 12-6 8-14 14" data-name="Path 9"/>
                         </g>
                     </svg>,
             alt: 'fingerprint'
@@ -125,10 +125,10 @@ export const servicesData = {
             serviceTitle: 'Web/UX Design',
             description: 'design small to large websites, web pages, and even mobile applications.',
             icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 87">
-                    <g class="svg-stroke" fill="none" stroke="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" data-name="Group 8">
+                    <g className="svg-stroke" fill="none" stroke="none" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2" data-name="Group 8">
                     <g transform="translate(7 7)">
-                        <rect class="path1" width="73" height="73" stroke="none" rx="3"/>
-                        <rect class="path1" width="71" height="71" x="1" y="1" rx="2"/>
+                        <rect className="path1" width="73" height="73" stroke="none" rx="3"/>
+                        <rect className="path1" width="71" height="71" x="1" y="1" rx="2"/>
                     </g>
                         <path d="M80 5V1" data-name="Path 9"/>
                         <path d="M80 86v-4" data-name="Path 9 Copy 2"/>
@@ -146,13 +146,13 @@ export const servicesData = {
             serviceTitle: 'Web Development',
             description: 'build custom websites and web apps with front end technology.',
             icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.6 74.2">
-                    <g class="svg-stroke">
-                        <path class="path2" stroke-width="2" fill="none" d="M80.7 73.3H3.5c-1.6 0-3-1.3-3-3v-67c0-1.6 1.3-3 3-3h77.2c1.6 0 3 1.3 3 3v67c0 1.7-1.3 3-3 3z"/>
-                        <path class="path2" stroke-width="2" fill="none" d="M75.1 68.4h-66c-1.4 0-2.5-1.1-2.5-2.5V8.7c0-1.4 1.1-2.5 2.5-2.5h66c1.4 0 2.5 1.1 2.5 2.5v57.2c0 1.4-1.1 2.5-2.5 2.5z"/>
-                        <path class="path2" stroke-width="2" fill="none" d="M15.6 17.9h-.5c-1.8 0-3.2-1.4-3.2-3.2v-.4c0-1.8 1.4-3.2 3.2-3.2h.5c1.8 0 3.2 1.4 3.2 3.2v.4c.1 1.8-1.4 3.2-3.2 3.2z"/>
-                        <path class="path2" stroke-width="2" fill="none" d="M70.5 43.2H13.3c-.7 0-1.3-.6-1.3-1.3V24.8c0-.7.6-1.3 1.3-1.3h57.2c.7 0 1.3.6 1.3 1.3v17.1c0 .7-.6 1.3-1.3 1.3z"/>
-                        <path class="path2" stroke-width="2" fill="none" d="M25.5 61.8H12.3c-.3 0-.5-.2-.5-.5v-11c0-.3.2-.5.5-.5h13.2c.3 0 .5.2.5.5v11c0 .3-.2.5-.5.5zm22.8 0H35.1c-.3 0-.5-.2-.5-.5v-11c0-.3.2-.5.5-.5h13.2c.3 0 .5.2.5.5v11c0 .3-.2.5-.5.5zm23.1 0H58.1c-.3 0-.5-.2-.5-.5v-11c0-.3.2-.5.5-.5h13.2c.3 0 .5.2.5.5v11c.1.3-.2.5-.4.5z"/>
-                        <path class="path2" stroke-width="2" fill="none" d="M48.1 14.9h6M31.2 32.6h22.4M36.2 36h11.6M57 14.9h6m2.3 0h6" />
+                    <g className="svg-stroke">
+                        <path className="path2" strokeWidth="2" fill="none" d="M80.7 73.3H3.5c-1.6 0-3-1.3-3-3v-67c0-1.6 1.3-3 3-3h77.2c1.6 0 3 1.3 3 3v67c0 1.7-1.3 3-3 3z"/>
+                        <path className="path2" strokeWidth="2" fill="none" d="M75.1 68.4h-66c-1.4 0-2.5-1.1-2.5-2.5V8.7c0-1.4 1.1-2.5 2.5-2.5h66c1.4 0 2.5 1.1 2.5 2.5v57.2c0 1.4-1.1 2.5-2.5 2.5z"/>
+                        <path className="path2" strokeWidth="2" fill="none" d="M15.6 17.9h-.5c-1.8 0-3.2-1.4-3.2-3.2v-.4c0-1.8 1.4-3.2 3.2-3.2h.5c1.8 0 3.2 1.4 3.2 3.2v.4c.1 1.8-1.4 3.2-3.2 3.2z"/>
+                        <path className="path2" strokeWidth="2" fill="none" d="M70.5 43.2H13.3c-.7 0-1.3-.6-1.3-1.3V24.8c0-.7.6-1.3 1.3-1.3h57.2c.7 0 1.3.6 1.3 1.3v17.1c0 .7-.6 1.3-1.3 1.3z"/>
+                        <path className="path2" strokeWidth="2" fill="none" d="M25.5 61.8H12.3c-.3 0-.5-.2-.5-.5v-11c0-.3.2-.5.5-.5h13.2c.3 0 .5.2.5.5v11c0 .3-.2.5-.5.5zm22.8 0H35.1c-.3 0-.5-.2-.5-.5v-11c0-.3.2-.5.5-.5h13.2c.3 0 .5.2.5.5v11c0 .3-.2.5-.5.5zm23.1 0H58.1c-.3 0-.5-.2-.5-.5v-11c0-.3.2-.5.5-.5h13.2c.3 0 .5.2.5.5v11c.1.3-.2.5-.4.5z"/>
+                        <path className="path2" strokeWidth="2" fill="none" d="M48.1 14.9h6M31.2 32.6h22.4M36.2 36h11.6M57 14.9h6m2.3 0h6" />
                     </g>
                 </svg>,
             alt: 'webpage'

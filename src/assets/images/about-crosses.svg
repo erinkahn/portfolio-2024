@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="154.287" height="97.081" viewBox="0 0 154.287 97.081">
   <g id="Group_215" data-name="Group 215" transform="translate(-1283.056 -5033.239)">
     <g id="Group_73" data-name="Group 73" transform="translate(1283.056 5053.714)">
-      <path id="Path_37" data-name="Path 37" d="M155.813,2547.526H104.056" transform="translate(-104.056 -2521.647)" fill="none" stroke="#c4a8dd" stroke-width="1"/>
-      <path id="Path_38" data-name="Path 38" d="M51.758,0H0" transform="translate(25.879 0) rotate(90)" fill="none" stroke="#c4a8dd" stroke-width="1"/>
+      <path id="Path_37" data-name="Path 37" d="M155.813,2547.526H104.056" transform="translate(-104.056 -2521.647)" fill="none" stroke="#c4a8dd" strokeWidth="1"/>
+      <path id="Path_38" data-name="Path 38" d="M51.758,0H0" transform="translate(25.879 0) rotate(90)" fill="none" stroke="#c4a8dd" strokeWidth="1"/>
     </g>
     <g id="Group_75" data-name="Group 75" transform="translate(1360.736 5053.714)">
-      <path id="Path_37-2" data-name="Path 37" d="M180.662,2547.526H104.056" transform="translate(-104.056 -2509.223)" fill="none" stroke="#c4a8dd" stroke-width="1"/>
-      <path id="Path_38-2" data-name="Path 38" d="M76.607,0H0" transform="translate(38.303 0) rotate(90)" fill="none" stroke="#c4a8dd" stroke-width="1"/>
+      <path id="Path_37-2" data-name="Path 37" d="M180.662,2547.526H104.056" transform="translate(-104.056 -2509.223)" fill="none" stroke="#c4a8dd" strokeWidth="1"/>
+      <path id="Path_38-2" data-name="Path 38" d="M76.607,0H0" transform="translate(38.303 0) rotate(90)" fill="none" stroke="#c4a8dd" strokeWidth="1"/>
     </g>
     <g id="Group_74" data-name="Group 74" transform="translate(1334.813 5033.239)">
-      <path id="Path_37-3" data-name="Path 37" d="M135.813,2547.526H104.056" transform="translate(-104.056 -2531.647)" fill="none" stroke="#c4a8dd" stroke-width="1"/>
-      <path id="Path_38-3" data-name="Path 38" d="M31.758,0H0" transform="translate(15.879 0) rotate(90)" fill="none" stroke="#c4a8dd" stroke-width="1"/>
+      <path id="Path_37-3" data-name="Path 37" d="M135.813,2547.526H104.056" transform="translate(-104.056 -2531.647)" fill="none" stroke="#c4a8dd" strokeWidth="1"/>
+      <path id="Path_38-3" data-name="Path 38" d="M31.758,0H0" transform="translate(15.879 0) rotate(90)" fill="none" stroke="#c4a8dd" strokeWidth="1"/>
     </g>
   </g>
 </svg>
