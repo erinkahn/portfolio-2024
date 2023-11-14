@@ -1240,7 +1240,7 @@ export const workData = {
                     alt: 'illustrator icon'
                 }
             ],
-            description: `As a student, I designed an app for users with mental health obstacles. Its purpose is to track a user's mood over time, which transmits stored data to a provider to see progress and if a medication is helpful. Other features include a daily gratitude list, feelings journal, stress tools, and more.`,
+            description: `As a student at The Creative Circus, I designed an app for users with mental health obstacles. Its purpose is to track a user's mood over time, which transmits stored data to the user's psychiatrist to see progress and if a medication is helpful. Other features include a daily gratitude list, feelings journal, stress tools, and more.`,
             id: 24,
             showAll: false,
             type: "design",
@@ -1385,7 +1385,7 @@ export const timelineData = {
 export const aboutData = {
     sectionTitle: "about",
     content: 'I am a creative front-end developer with a background in design. I switched over to coding full-time in 2017. I do freelance design on the side for fun. Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology.',
-    content2: 'Being out in nature, hiking, camping, and staying active are things that fill my cup. I enjoy living a minimalist life, listening to old music, reading about psychology, and writing.',
+    content2: 'Being out in nature, hiking, camping, and staying active fill my cup. I enjoy living a minimalist life, painting, listening to old music, reading about psychology, and playing piano.',
     img: {
         src: './images/about/erin.webp',
         fallback: './images/about/erin.png',
