@@ -28,6 +28,9 @@
         }
 
         .tab {
+            display: flex;
+            justify-content: center;
+            width: 100%;
             padding: 0.5em 1.5em;
             border: none;
             font-family: $sourceCode;
