@@ -74,7 +74,7 @@ export default function Footer() {
 									</li>
 								))}
 							</ul>
-							<p className="copyright">Designed & Built by Erin Kahn {today}</p>					
+							<p className="copyright">Designed & Coded by Erin Kahn {today}</p>					
 						</div>
 					</div>
 				</span>

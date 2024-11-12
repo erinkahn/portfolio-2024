@@ -27,12 +27,13 @@ export default function Timeline() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                        <p className="company">{date.company}</p>
+                                    <p className="company">{date.company}</p>
                                 </a>
                             ) : (
                                 <p className="company">{date.company}</p>
                             )}
                             <p className="title"><em>{date.position}</em></p>
+                            <p className="summary">{date.summary}</p>
                         </m.li>
                     ))}
                 </ul>

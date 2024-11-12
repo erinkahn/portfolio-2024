@@ -95,7 +95,7 @@ export const heroData = {
 export const typewriterData = {
     typewriter: [
         'front-end developer.',
-        'freelance designer.',
+        'software engineer.',
         'creative technologist.'
     ]
 }
@@ -104,8 +104,8 @@ export const servicesData = {
     sectionTitle: '',
     services: [
         {
-            serviceTitle: 'Branding + Logos',
-            description: 'create logos, branding identity suites, business cards, stickers, fliers, and more.',
+            serviceTitle: 'Attention to detail',
+            description: 'As a former designer, I can spot UI/UX issues early on before they become a problem.',
             icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 92">
                         <g fill="none" className="svg-stroke" stroke="none" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2" data-name="Group 12">
                             <path className="path0" d="M5 15s30-29 60-3"/>
@@ -122,8 +122,8 @@ export const servicesData = {
             alt: 'fingerprint'
         },
         {
-            serviceTitle: 'Web/UX Design',
-            description: 'design small to large websites, web pages, and even mobile applications.',
+            serviceTitle: 'Future Thinking',
+            description: 'I build things with the future in mind. Clean, modular code creates happy teams.',
             icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 87">
                     <g className="svg-stroke" fill="none" stroke="none" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2" data-name="Group 8">
                     <g transform="translate(7 7)">
@@ -143,8 +143,8 @@ export const servicesData = {
             alt: 'artboard'
         },
         {
-            serviceTitle: 'Web Development',
-            description: 'build custom websites and web apps with front end technology.',
+            serviceTitle: 'Consistent Communication',
+            description: 'Communicating and asking questions consistently reduces problems and saves time.',
             icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.6 74.2">
                     <g className="svg-stroke">
                         <path className="path2" strokeWidth="2" fill="none" d="M80.7 73.3H3.5c-1.6 0-3-1.3-3-3v-67c0-1.6 1.3-3 3-3h77.2c1.6 0 3 1.3 3 3v67c0 1.7-1.3 3-3 3z"/>
@@ -164,21 +164,8 @@ export const featuredData = {
     sectionTitle: 'work',
     featured: [
         {
-            client: 'Scott Brothers',
-            slideNum: '01',
-            tech: 'PHP, WordPress, Git, Sass, JavaScript',
-            content: 'A newly designed Wordpress website built for The Scott Brothers, the famous HGTV fixer-upper brothers',
-            role: 'Developer',
-            devs: 'John Finch, Dave Carney',
-            desktop: '/images/work/code/d&j/SB-desktop.webp',
-            tablet: '/images/work/code/d&j/SB-tablet.webp',
-            mobile: '/images/work/code/d&j/SB-mobile.webp',
-            alt: 'The Scott Brother Twins',
-            url: 'https://thescottbrothers.com/'
-        },
-        {
             client: 'Waffle House',
-            slideNum: '02',
+            slideNum: '01',
             tech: 'HTML, PHP, WordPress, Git, Sass, JavaScript, Vue',
             content: `A newly redesigned website for Waffle House, America's favorite breakfast spot`,
             role: 'Developer',
@@ -190,20 +177,21 @@ export const featuredData = {
             url: 'https://www.wafflehouse.com/'
         },
         {
-            client: 'The Conlan Company',
-            slideNum: '03',
-            tech: 'PHP, WordPress, Git, Sass, JavaScript, Waypoints, GSAP',
-            content: 'A newly designed website for Conlan Company, a large contracting company located in Goergia, Florida and Texas',
-            role: 'Lead Developer',
-            devs: 'John Finch',
-            desktop: '/images/work/code/conlan/Conlan-desktop.webp',
-            tablet: '/images/work/code/conlan/Conlan-tablet.webp',
-            mobile: '/images/work/code/conlan/Conlan-mobile.webp',
-            alt: 'The Conlan Company',
-            url: 'https://conlancompany.com/'
-        },{
+            client: 'Cahaba Brewing Co.',
+            slideNum: '02',
+            tech: 'PHP, WordPress, Git, Sass, JavaScript, Illustrator, ACF',
+            content: 'As a freelance designer/developer, I offered creative designs and technical solutions that improved the overall code quality, page responsiveness, SEO, and design consistency across the site.',
+            role: 'Freelance Developer/Designer',
+            devs: 'Devote Studio',
+            desktop: '/images/work/code/cahaba/Cahaba-Brewing-Co.webp',
+            tablet: '/images/work/code/cahaba/Cahaba-Brewing-Co.webp',
+            mobile: '/images/work/code/cahaba/Cahaba-Brewing-Co.webp',
+            alt: 'Cahaba Brewing blonde beer webpage',
+            url: 'https://cahababrewing.com/'
+        },
+        {
             client: 'Expo Home Improvement',
-            slideNum: '04',
+            slideNum: '03',
             tech: 'PHP, Git, Sass, JavaScript, Vue, Custom CMS',
             content: 'A custom built website for Expo Home Improvement, a home improvement company located in Texas',
             role: 'Lead Developer',
@@ -239,6 +227,11 @@ export const workData = {
             tabTitle: 'Art',
             id: 2,
             showTab: 'show_art'
+        },
+        {
+            tabTitle: 'Student',
+            id:3,
+            showTab: 'show_student'
         }
     ],
     projects: [
@@ -285,66 +278,6 @@ export const workData = {
             show: 'show_websites' 
         },
         {
-            title: "Scott Brothers",
-            img: '/images/work/code/d&j/SB-mobile.webp',
-            url: 'https://thescottbrothers.com/',
-            role: 'Developer',
-            designers: 'Leah Watson, Jade Nipper',
-            devs: 'John Finch, Dave Carney',
-            icons: [
-                {
-                    img: '/images/work/icons/html.svg',
-                    alt: 'html icon'
-                },
-                {
-                    img: '/images/work/icons/css.svg',
-                    alt: 'css icon'
-                },
-                {
-                    img: '/images/work/icons/sass.svg',
-                    alt: 'sass icon'
-                },
-                {
-                    img: '/images/work/icons/php.svg',
-                    alt: 'php icon'
-                },
-                {
-                    img: '/images/work/icons/jquery.svg',
-                    alt: 'jquery icon'
-                },
-                {
-                    img: '/images/work/icons/javascript.svg',
-                    alt: 'javascript icon'
-                },
-                {
-                    img: '/images/work/icons/git.svg',
-                    alt: 'git icon'
-                },
-                {
-                    img: '/images/work/icons/acf.svg',
-                    alt: 'advanced custom fields icon'
-                },
-                {
-                    img: '/images/work/icons/wordpress.svg',
-                    alt: 'wordpress icon'
-                },
-                
-                {
-                    img: '/images/work/icons/sketch.svg',
-                    alt: 'sketch icon'
-                },
-                {
-                    img: '/images/work/icons/photoshop.svg',
-                    alt: 'photoshop icon'
-                }
-            ],
-            description: 'Drew and Jonathan, the celebrity HGTV contractor brothers, wanted a site that housed all of their creative ventures in one place. While working at Vehicle Media, myself and two developers built a custom WordPress website that featured everything from their shows and books to their blog and furniture line all on one interactive interface.',
-            id: 1,
-            showAll: false,
-            type: "website",
-            show: 'show_websites'
-        },
-        {
             title: "Pet Portrait",
             img: '/images/work/art/dog.jpg',
             role: 'Artist',
@@ -355,7 +288,7 @@ export const workData = {
                 }
             ],      
             description: `acrylic on canvas`,
-            id: 2,
+            id: 1,
             showAll: false,
             type: "art",
             show: 'show_art'
@@ -393,7 +326,7 @@ export const workData = {
                 },
             ],
             description: 'As a freelance designer, I created a brand identity suite and new logo for a locally owned barber salon in Birmingham, Alabama called The Barber Bar.',
-            id: 3,
+            id: 2,
             showAll: false,
             type: "design",
             show: 'show_designs'
@@ -410,7 +343,7 @@ export const workData = {
                 
             ],
             description: 'Colored Pencil, inspired by one of my favorite artists, Gustav Klimt',
-            id: 4,
+            id: 3,
             showAll: false,
             type: "art",
             show: 'show_art'
@@ -469,7 +402,7 @@ export const workData = {
                 }
             ],
             description: 'Vehicle Media is a digital marketing agency in Atlanta, Georgia that focuses on graphic + web design, social media, web development, photography and communication strategies. While working at Vehicle Media, I built a new site for the company that showcased new designs, updated projects, blogposts, and more.',
-            id: 5,
+            id: 4,
             showAll: false,
             type: "website",
             show: 'show_websites'
@@ -532,52 +465,10 @@ export const workData = {
                 }
             ],
             description: 'Based out of Birmingham, Alabama, Sheffield and Lentine is a law firm that specializes in all areas of criminal defense, including personal injuries, domestic relations and family law. S&L was in need of a full rebrand. I built a custom WordPress theme from scratch while working at Vehicle Media. The website was nominated and finished in the top 5 for the Webby Awards as “one of the best of web” in the “law” category.',
-            id: 6,
+            id: 5,
             showAll: false,
             type: "website",
             show: 'show_websites'
-        },
-        {
-            title: "Fireside Natural Gas",
-            img: '/images/work/code/fireside/Fireside-Natural-Gas.webp',
-            url: 'https://firesidenaturalgas.com/',
-            role: 'Developer',
-            designers: 'David Bilbo',
-            icons: [
-                {
-                    img: '/images/work/icons/html.svg',
-                    alt: 'html icon'
-                },
-                {
-                    img: '/images/work/icons/css.svg',
-                    alt: 'css icon'
-                },
-                {
-                    img: '/images/work/icons/sass.svg',
-                    alt: 'sass icon'
-                },
-                {
-                    img: '/images/work/icons/php.svg',
-                    alt: 'php icon'
-                },
-                {
-                    img: '/images/work/icons/javascript.svg',
-                    alt: 'javascript icon'
-                },
-                {
-                    img: '/images/work/icons/git.svg',
-                    alt: 'git icon'
-                },
-                {
-                    img: '/images/work/icons/photoshop.svg',
-                    alt: 'photoshop icon'
-                }
-            ],
-            description: `FireSide Natural Gas is one of Georgia's top providers of natural gas service for commercial and industrial users. While working at DynamiX Web Design, I turned a PhotoShop design with many layers into a fully responsive, dynamic, and customizable website.`,
-            id: 7,
-            showAll: false,
-            type: "website",
-            show: 'show_websites' 
         },
         {
             title: "Powell Law Firm",
@@ -617,7 +508,7 @@ export const workData = {
                 }
             ],
             description: 'Powell Law Firm is an injury law firm located in Kentucky. While working at DynamiX Web Design, I transformed a PhotoShop design file into a fully custom and dynamic CMS website with PHP.',
-            id: 8,
+            id: 6,
             showAll: false,
             type: "website",
             show: 'show_websites' 
@@ -655,7 +546,7 @@ export const workData = {
                 },
             ],
             description: 'As a freelance designer, I designed the logo and brand identity suite for Volunteer State Builders, a General Contractor/Home Builder located in Middle Tennessee.',
-            id: 9,
+            id: 7,
             showAll: false,
             type: "design",
             show: 'show_designs'
@@ -718,7 +609,7 @@ export const workData = {
                 }
             ],
             description: `You either know what Waffle House is or you don't. America's favorite breakfast spot was in need of a major site rehaul. While working with two other develoepers at Vehicle Media on this project, I built and styled several components, pages, and sections of the website. Specific examples being the blogposts, homepage components and sliders, animations, parts of the nav menu, etc.`,
-            id: 10,
+            id: 8,
             showAll: false,
             type: "website",
             show: 'show_websites'
@@ -738,68 +629,10 @@ export const workData = {
                 }
             ],
             description: 'digital ipad',
-            id: 11,
+            id: 9,
             showAll: false,
             type: "art",
             show: 'show_art'
-        },
-        {
-            title: "Conlan Company",
-            img: '/images/work/code/conlan/Conlan-mobile.webp',
-            url: 'https://conlancompany.com/',
-            role: 'Developer',
-            designers: 'VM Designer',
-            icons: [
-                {
-                    img: '/images/work/icons/html.svg',
-                    alt: 'html icon'
-                },
-                {
-                    img: '/images/work/icons/css.svg',
-                    alt: 'css icon'
-                },
-                {
-                    img: '/images/work/icons/sass.svg',
-                    alt: 'sass icon'
-                },
-                {
-                    img: '/images/work/icons/php.svg',
-                    alt: 'php icon'
-                },
-                {
-                    img: '/images/work/icons/javascript.svg',
-                    alt: 'javascript icon'
-                },
-                {
-                    img: '/images/work/icons/jquery.svg',
-                    alt: 'jquery icon'
-                },
-                {
-                    img: '/images/work/icons/wordpress.svg',
-                    alt: 'wordpress icon'
-                },
-                {
-                    img: '/images/work/icons/git.svg',
-                    alt: 'git icon'
-                },
-                {
-                    img: '/images/work/icons/gsap.svg',
-                    alt: 'gsap icon'
-                },
-                {
-                    img: '/images/work/icons/xd.svg',
-                    alt: 'xd icon'
-                },
-                {
-                    img: '/images/work/icons/photoshop.svg',
-                    alt: 'photoshop icon'
-                }
-            ],
-            description: `Conlan Company is a large contracting company located in Goergia, Florida and Texas. Conlan invisioned a new website with Parallax features and small movements. While working at Vehicle Media, I built a new custom WordPress theme that included subtle animations and parallax scrolling.`,
-            id: 12,
-            showAll: false,
-            type: "website",
-            show: 'show_websites' 
         },
         {
             title: "Novo",
@@ -830,7 +663,7 @@ export const workData = {
                 },
             ],
             description: 'As a freelance designer, I redesigned the user interface and provided logo/branding adjustments for a legal software application built by Vehicle Media.',
-            id: 13,
+            id: 10,
             showAll: false,
             type: "design",
             show: 'show_designs'
@@ -884,7 +717,7 @@ export const workData = {
                 }
             ],
             description: 'Based out of Atlanta, Robinson Weeks is an industrial real estate development and investment firm. Being a niche market, their overall goal was to take their outdated site and make it modern while still keeping a high-end specialty aesthetic. I built a custom WordPress theme from scratch with ACF and ACP for customization and dynamic content.',
-            id: 14,
+            id: 11,
             showAll: false,
             type: "website",
             show: 'show_websites'
@@ -930,7 +763,7 @@ export const workData = {
                 }
             ],
             description: 'As a freelance designer/developer, I created the logo and worked on the shopify site for a clothing boutique in Pell City, Alabama called Clover Hill. I also designed business cards, clothing tags, and stickers.',
-            id: 15,
+            id: 12,
             showAll: false,
             type: "design",
             show: 'show_designs'
@@ -950,7 +783,7 @@ export const workData = {
                 }
             ],
             description: 'acrylic on canvas',
-            id: 16,
+            id: 13,
             showAll: false,
             type: "art",
             show: 'show_art'
@@ -988,7 +821,7 @@ export const workData = {
                 },
             ],
             description: 'As an intern, I created the new logo for GKC, a non-profit organization in Alabama',
-            id: 17,
+            id: 14,
             showAll: false,
             type: "design",
             show: 'show_designs'
@@ -1035,7 +868,7 @@ export const workData = {
                 }
             ],
             description: `Expo Home Improvement is a home improvement company located in Texas. Their purpose is providing homeowners throughout the Dallas-Fort Worth area with high-quality, efficient, and affordable home remodeling. While working at DynamiX Web Design, I turned a PhotoShop web design into a fully responsive, dynamic, and customizable CMS website.`,
-            id: 18,
+            id: 15,
             showAll: false,
             type: "website",
             show: 'show_websites' 
@@ -1051,7 +884,7 @@ export const workData = {
                 }
             ],
             description: "acrylic on wood",
-            id: 19,
+            id: 16,
             showAll: false,
             type: "art",
             show: 'show_art'
@@ -1085,7 +918,7 @@ export const workData = {
                 }
             ],
             description: 'As a freelance designer, I created a logo for fine artist, Kelly Kahn, who specializes in custom portrait and landscape paintings.',
-            id: 20,
+            id: 17,
             showAll: false,
             type: "design",
             show: 'show_designs'
@@ -1136,7 +969,7 @@ export const workData = {
                 }
             ],
             description: 'Cahaba Brewing Company is microbrewery and distillery located in Birmingham, Alabama and distributing quality craft beer throughout Alabama. Hired as a freelance designer/developer, my goal was to offer creative design and technical solutions to improve the overall code quality, page responsiveness, SEO, and design consistency across the site. I added custom fields to allow the client to update the site on their own, removed repetitive code, designed and created new pages such as 404, added conditionals for the backend, and cleaned up their existing stylesheet significantly.',
-            id: 21,
+            id: 18,
             showAll: false,
             type: "website",
             show: 'show_websites'
@@ -1170,10 +1003,10 @@ export const workData = {
                 }
             ],
             description: 'While studying interactive development at The Creative Circus, a designer and I were given an assignment to come up with a design and landing page that was within the category of media. The site we came up with showcases the 2016 thriller film, Split. We decided to play off of the multiple personalities of the protagonist while showcasing parallax animations and both a dark (Beast) and light (Kevin) theme.',
-            id: 22,
+            id:19,
             showAll: false,
             type: "website",
-            show: 'show_websites'
+            show: 'show_student'
         },
         {
             title: "Aretha Franklin",
@@ -1207,10 +1040,10 @@ export const workData = {
                 }
             ],
             description: `As an interactive development student at The Creative Circus, I took an animations class. The assignment was to build a mini-website that showcased our favorite musical artist. Celebrating the life of the legendary 'Queen of Soul', I chose to build a site that takes the user through the journey of Aretha Franklin's life.`,
-            id: 23,
+            id: 20,
             showAll: false,
             type: "website",
-            show: 'show_websites'
+            show: 'show_student'
         },
         {
             title: "Moodie",
@@ -1241,10 +1074,10 @@ export const workData = {
                 }
             ],
             description: `As a student at The Creative Circus, I designed an app for users with mental health obstacles. Its purpose is to track a user's mood over time, which transmits stored data to the user's psychiatrist to see progress and if a medication is helpful. Other features include a daily gratitude list, feelings journal, stress tools, and more.`,
-            id: 24,
+            id: 21,
             showAll: false,
             type: "design",
-            show: 'show_designs'
+            show: 'show_student'
         },
         {
             title: "Self Portrait",
@@ -1257,7 +1090,7 @@ export const workData = {
                 }
             ],
             description: 'pencil',
-            id: 25,
+            id: 22,
             showAll: false,
             type: "art",
             show: 'show_art'
@@ -1295,10 +1128,10 @@ export const workData = {
                 },
             ],
             description: `While at The Creative Circus, an advertising portolio and web development school in Atlanta, I teamed up with a designer, art director, and copywriter. Our assignment was to create a landing page that showcased a brand for kids. We created a Nerds landing page that focuses on unique characters and self expressive games that allow children to embrace their weirdness and unique traits.`,
-            id: 26,
+            id: 23,
             showAll: false,
             type: "website",
-            show: 'show_websites'
+            show: 'show_student'
         }
     ]
 }
@@ -1307,29 +1140,34 @@ export const testimonialData = {
     sectionTitle: 'kind words',
     testimonials: [
         {
-            text: "Erin is self-motivated, diligent, and earns praise from peers and leads alike. She shows consistent above-expectations performance as indicated by feedback across her projects. She puts the needs of the company before her own preference.",
-            person: "Software Engineering Manager at Avanade",
+            text: "Erin, your passion for doing the job correctly is possibly unmatched here. You consistently ask good questions, and are definitely commited to performing quality work.",
+            person: "Principal Engineer at Alloy Digital",
             id: '0'
         },
         {
-            text: "Erin helped me rebrand my online clothing boutique. She met with me and figured out what I was trying to achieve (even when I wasn't quite sure myself). She turned my vision into a reality, and I couldn't be more pleased with the outcome!",
-            person: "Client, Owner of Clover Hill Boutique",
+            text: "Erin is self-motivated, diligent, and earns praise from peers and leads alike. She shows consistent above-expectations performance as indicated by feedback across her projects. She puts the needs of the company before her own preference.",
+            person: "Software Engineering Manager at Avanade",
             id: '1'
         },
         {
-            text: " I appreciate you so much for so many reasons but particularly going the grind of what was the most stressful time ever. This all looks so good. My lord. I’m so grateful to have met you.",
-            person: "President of Vehicle Media",
+            text: "You consistently ask insightful questions that help avoid issues and create better solutions. Your positive attitude makes collaboration a joy, even during challenging phases.",
+            person: "Lead Software QA Engineer at Alloy Digital",
             id: '2'
-        },
-        {
-            text: "You can't depend on hardly ANYbody these days to finish things. I love my logo so much. Thank you!",
-            person: "Client, Author of The 50th Dimension",
-            id: '3'
         },
         {
             text: "It's always a pleasure working with you. It's amazing to see your constant growth since our first project. I haven't seen too many developers come in and hit the ground running like you have. Your efficiency and communicaiton is going to take you a long way.",
             person: "Peer Developer at Avanade",
+            id: '3'
+        },
+        {
+            text: "I appreciate you so much for so many reasons but particularly going the grind of what was the most stressful time ever. This all looks so good. My lord. I’m so grateful to have met you.",
+            person: "President of Vehicle Media",
             id: '4'
+        },
+        {
+            text: "Erin helped me rebrand my online clothing boutique. She met with me and figured out what I was trying to achieve (even when I wasn't quite sure myself). She turned my vision into a reality, and I couldn't be more pleased with the outcome!",
+            person: "Client, Owner of Clover Hill Boutique",
+            id: '5'
         },
     ]
 }
@@ -1339,53 +1177,60 @@ export const timelineData = {
     years: [
         {
             year: '2016',
-            company: 'graduated from University of Alabama',
+            company: 'Graduated from University of Alabama',
             position: 'Graphic Design + Advertising Degree',
+            summary: 'Studied advertising and graphic design. Won first place at national competitions for designing the plansbooks for our advertising team. Received a 3.96 GPA. ',
             url: 'https://www.ua.edu/',
         },
         {
-            year: '2016-2017',
+            year: '2016-17',
             company: 'Walls Media, CCG Ideas, Flex Digital',
             position: 'Graphic Design Intern, Freelance Designer',
+            summary: 'Designed direct mail pieces, digital ads, billboards, info graphics, brochures, digital icons and other print material for CCG clients and websites using Illustrator, Photoshop and InDesign. Utilized WordPress, Umbraco and basic HTML by updating content and creating client web pages. Repositioned, organized and packaged web page mockups and elements in Photoshop, thus preparing files and images to be sent to web developers. Crafted corporate print material such as name tags, brochures, fliers, posters, logos and business cards for Walls Media clients, consistently achieving client satisfaction.',
             url: '',
         },
         {
-            year: '2017',
-            company: 'started Portfolio School in Atlanta',
-            position: 'Interactive Design + Web Development Student',
-            url: '',
-        },
-        {
-            year: '2018',
-            company: 'graduated from The Creative Circus',
+            year: '2017-18',
+            company: 'graduated from The Creative Circus Portfolio School',
             position: 'Interactive Web Development Certification',
+            summary: 'Gained 1.75 years of experience in developing websites and applications utilizing HTML5, CSS3, Sass, JavaScript, AJAX, Vue, Node, Flexbox, Greensock, WordPress, PHP, Git, and GitHub. Complemented coding skills with UX/UI coursework, designing mobile and desktop applications using Adobe XD, Azure, Balsamiq, Photoshop, InDesign, Illustrator, and Sketch. Collaborated with designers and developers to generate innovative solutions and design user interfaces that addressed real-world challenges.',
             url: 'http://creativecircus.edu/',
         },
         {
             year: '2018-20',
             company: 'Vehicle Media',
             position: 'WordPress + PHP Developer, Freelance Designer',
+            summary: 'Started as a frontend developer, then promoted to PHP Developer. Collaborated independently with designers, project managers, and two remote developers to convert designs into custom WordPress themes, Shopify sites, and Squarespace sites. Skills included HTML5, PHP, CSS3, Sass, Less, JavaScript, Bootstrap, Git, and jQuery. Managed the export and sizing of assets from Adobe XD, Photoshop, and InDesign. Notable projects included clients, Waffle House and The Scott Brothers.',
             url: 'https://www.vehiclemedia.com/',
         },
         {
             year: '2020-21',
             company: 'DynamiX Web Design',
             position: 'Front-End Developer, Freelance Designer',
+            summary: 'Developed custom web applications from design to production using PHP, Sass, ES6 JavaScript, NPM, and Git, ensuring dynamic, clean, and well-structured code. Responsible for creating and maintaining layouts, categories, pages, and overall site architecture. Conducted manual functionality, performance, and accessibility testing utilizing tools such as WAVE, Axe, WebAIM, W3C Validator, Lighthouse, PageSpeed Insights, VoiceOver, and BrowserStack.',
             url: 'https://dynamix.site/',
         },
         {
-            year: '2021-',
+            year: '2021-24',
             company: 'Avanade',
             position: 'React Developer, Freelance Designer/Developer',
+            summary: 'Brainstorm with Agile teams of UX/UI designers, developers, and scrum masters to translate designs, ideas, and estimates into efficient, seamless, and scalable software solutions. Utilized a comprehensive tech stack for building web apps, mocking APIs, debugging, and testing, including React, JEST, JSON, RESTful APIs, TypeScript, JavaScript, Git, NPM, Yarn, Visual Studio, Azure DevOps, Tailwind, Prism, WCAG, WAVE, Axe, Lighthouse, and VoiceOver. Promoted to Consultant in 2023.',
             url: 'https://www.avanade.com/en',        
+        },
+        {
+            year: '2024-',
+            company: 'Alloy Digital',
+            position: 'Senior Software Engineer',
+            summary: 'Rebuilt a headless WordPress website using React, Next.js, TypeScript, and GraphQL, resulting in a 28% performance increase and a 19% accessibility improvement. Independently resolved live bugs and managed client projects with minimal guidance. Acquired expertise in Sanity and GROQ, delivering a robust content management system in under three months. Optimized images and design assets, enhancing load times and initiating UX discussions to identify potential issues early.',
+            url: 'https://alloy.digital/',        
         }
     ]
 }
 
 export const aboutData = {
     sectionTitle: "about",
-    content: 'I am a creative front-end developer with a background in design. I switched over to coding full-time in 2017. I do freelance design on the side for fun. Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology.',
-    content2: 'Being out in nature, hiking, camping, and staying active fill my cup. I enjoy living a minimalist life, painting, listening to old music, reading about psychology, and playing piano.',
+    content: 'I am a creative front-end developer with a background in design. I switched over to coding full-time in 2017. Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology.',
+    content2: 'I live in Denver, CO with my dog, Athena. My favorite things to do are hiking, camping, backpacking, longboarding, and playing piano.',
     img: {
         src: './images/about/erin.webp',
         fallback: './images/about/erin.png',

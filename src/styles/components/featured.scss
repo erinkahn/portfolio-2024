@@ -53,6 +53,10 @@
         z-index: 0;
         transform: matrix(3, -.5, 1, 1, 0, -1);
 
+        @media screen and (min-width: $xsUp) {
+            height: 28%;
+        }
+
         @media screen and (min-width: $smUp) {
             width: 200%;
             right: 49%;
@@ -141,46 +145,53 @@
         @media screen and (min-width: $smUp) {
             grid-row: 1;
             grid-column: 2;
-
-            .image-container {
-                display: flex;
-                flex-direction: row;
-                width: calc(110% * 4);
-                transform: translate(-2%, 0);
-            }
         }
 
         @media screen and (min-width: $medUp) {
             grid-column: 3 / span 2;
             grid-row: 1 / span 3;
         }
+
+        .image-container {
+            display: flex;
+            height: 100%;
+            overflow: hidden;
+
+            @media screen and (min-width: $smUp) {
+                height: auto;
+                width: calc(110% * 4);
+                overflow: auto;
+                transform: translate(-2%, 0);
+            }
+        }
     }
 
     .img-wrapper {
-        height: 0;
+        width: 0;
+        height: 100%;
+        transition: width $quick;
 
-        @media screen and (min-width: $smUp) {
-            width: 0;
-            transition: width $quick;
+        &.show {
+            width: 100%;
+
+            @media screen and (min-width: $smUp) {
+                width: 28%;
+                height: auto;
+            }           
         }
 
         img {
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+
             @media screen and (min-width: $smUp) {
                 height: 65vh;
-                object-fit: cover;
                 object-position: right;
             }
             @media screen and (min-width: $medUp) {
                 height: 100vh;
             }
-        }
-
-        &.show {
-            height: auto;
-
-            @media screen and (min-width: $smUp) {
-                width: 28%;
-            }           
         }
     }
 

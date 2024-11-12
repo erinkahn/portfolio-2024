@@ -37,6 +37,12 @@ const reducer = (state = initialState, action) => {
                 showAll: false,
                 active: 'show_art'
             }
+        case 'show_student':
+            return {
+                ...state,
+                showAll: false,
+                active: 'show_student'
+            }
         default:
             throw new Error();
     }
