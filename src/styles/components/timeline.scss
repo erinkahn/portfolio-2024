@@ -62,12 +62,30 @@
     }
 
     li {
+        &:last-of-type {
+            margin-bottom: 30vh;
+
+            @media screen and (min-width: $medUp) {
+                margin-bottom:20vh;
+            }
+        }
         &:not(:last-of-type) {
             margin-bottom: 15vh;
         }
         &:nth-of-type(odd) {
             text-align: right;
+
+            .summary {
+                margin-left: auto;
+                margin-right: 0;
+            }
         }
+    }
+
+    .summary {
+        margin-top: 0.5em;
+        max-width: 600px;
+        font-size: 0.875em;
     }
 
     .year {

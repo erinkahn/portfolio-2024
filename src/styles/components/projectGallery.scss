@@ -19,11 +19,11 @@
         
         .tabs-wrapper {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(6, 1fr);
             justify-items: flex-start;
 
             @media screen and (min-width: $smUp) {
-                grid-template-columns: repeat(3, 1fr) 60%;
+                grid-template-columns: repeat(4, 1fr) 60%;
             }
         }
 
