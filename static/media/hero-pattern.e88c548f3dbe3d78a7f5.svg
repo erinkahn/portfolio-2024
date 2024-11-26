@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/2000/svg" viewBox="0 0 505.42 703.508">
+  <style type="text/css">
+   .path {
+      animation: dash 5s forwards infinite;
+
+    }
+
+    @keyframes dash {
+      0% {
+        scale(1);
+      }
+
+      100% {
+        scale(0);
+      }
+    }
+  </style>
+
+  <g id="svg-container" fill="none" stroke="#c4a8dd" data-name="Group 118">
+    <g data-name="Group 104" opacity=".569">
+      <g data-name="Group 76">
+        <path class="path" d="M316.971 412.288h-42.644" data-name="Path 37"/>
+        <path class="path"  d="M295.648 433.611v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 79">
+        <path d="M322.221 547.238h-42.644" data-name="Path 37"/>
+        <path d="M300.898 568.561v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 85">
+        <path class="path" d="M327.698 277.338h-42.644" data-name="Path 37"/>
+        <path class="path" d="M306.375 298.661v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 88">
+        <path class="path" d="M456.64 369.313h-42.644" data-name="Path 37"/>
+        <path class="path" d="M435.317 390.636v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 91">
+        <path d="M457.083 492.845h-42.644" data-name="Path 37"/>
+        <path d="M435.76 514.168v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 94">
+        <path class="path" d="M422.982 641.242h-42.644" data-name="Path 37"/>
+        <path class="path" d="M401.659 662.565v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 77">
+        <path d="M401.441 422.524h-63.114" data-name="Path 37"/>
+        <path d="M369.884 454.082v-63.115" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 80">
+        <path id='path' d="M406.691 557.474h-63.114" data-name="Path 37"/>
+        <path id='path' d="M375.134 589.032v-63.115" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 111">
+        <path d="M295.648 478.582h-49" data-name="Path 37"/>
+        <path d="M271.148 503.082v-49" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 83">
+        <path d="M335.3 671.951h-63.114" data-name="Path 37"/>
+        <path d="M303.743 703.509v-63.115" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 86">
+        <path d="M412.168 287.574h-63.114" data-name="Path 37"/>
+        <path d="M380.611 319.132v-63.115" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 78">
+        <path d="M343.133 355.049h-26.164" data-name="Path 37"/>
+        <path d="M330.051 368.132v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 98">
+        <path class="path" d="M284.553 207.017h-26.164" data-name="Path 37"/>
+        <path class="path" d="M271.471 220.1v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 81">
+        <path d="M348.383 489.999h-26.164" data-name="Path 37"/>
+        <path d="M335.301 503.082v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 112">
+        <path d="M248.161 544.391h-26.164" data-name="Path 37"/>
+        <path d="M235.079 557.474v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 113">
+        <path d="M393.42 690.426h-26.164" data-name="Path 37"/>
+        <path d="M380.338 703.509v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 114">
+        <path class="path" d="M505.42 547.237h-26.164" data-name="Path 37"/>
+        <path class="path" d="M492.338 560.32v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 115">
+        <path d="M483.245 643.723h-26.164" data-name="Path 37"/>
+        <path d="M470.163 656.806v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 116">
+        <path d="M469.72 301.355h-26.164" data-name="Path 37"/>
+        <path d="M456.638 314.438v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 84">
+        <path d="M276.992 604.476h-26.164" data-name="Path 37"/>
+        <path d="M263.91 617.559v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 117">
+        <path d="M212.992 591.393h-26.164" data-name="Path 37"/>
+        <path d="M199.91 604.476v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 101">
+        <path d="M358.979 617.558h-26.164" data-name="Path 37"/>
+        <path d="M345.897 630.641v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 87">
+        <path d="M353.86 220.099h-26.164" data-name="Path 37"/>
+        <path d="M340.778 233.182v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 93">
+        <path d="M483.245 435.606h-26.164" data-name="Path 37"/>
+        <path d="M470.163 448.689v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 96">
+        <path d="M449.144 584.003H422.98" data-name="Path 37"/>
+        <path d="M436.062 597.086v-26.165" data-name="Path 38"/>
+      </g>
+    </g>
+    <g data-name="Group 105" opacity=".569">
+      <g data-name="Group 76">
+        <path d="M80.002 313.794H37.358" data-name="Path 37"/>
+        <path d="M58.679 335.117v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 79">
+        <path d="M85.252 448.744H42.608" data-name="Path 37"/>
+        <path d="M63.929 470.067v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 85">
+        <path d="M80.002 199.317H37.358" data-name="Path 37"/>
+        <path d="M58.679 220.64v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 88">
+        <path d="M219.671 270.819h-42.644" data-name="Path 37"/>
+        <path d="M198.348 292.142v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 107">
+        <path d="M427.671 108.523h-42.644" data-name="Path 37"/>
+        <path d="M406.348 129.846V87.202" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 91">
+        <path d="M220.114 394.351H177.47" data-name="Path 37"/>
+        <path d="M198.791 415.674V373.03" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 94">
+        <path d="M186.013 542.748h-42.644" data-name="Path 37"/>
+        <path d="M164.69 564.071v-42.644" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 77">
+        <path d="M164.472 324.03h-63.114" data-name="Path 37"/>
+        <path d="M132.915 355.588v-63.115" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 80">
+        <path d="M169.722 458.98h-63.114" data-name="Path 37"/>
+        <path d="M138.165 490.538v-63.115" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 86">
+        <path d="M175.199 189.08h-63.114" data-name="Path 37"/>
+        <path d="M143.642 220.638v-63.115" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 106">
+        <path d="M348.199 142.443h-63.114" data-name="Path 37"/>
+        <path d="M316.642 174.001v-63.115" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 78">
+        <path d="M106.164 256.555H80" data-name="Path 37"/>
+        <path d="M93.082 269.638v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 110">
+        <path d="M26.164 394.351H0" data-name="Path 37"/>
+        <path d="M13.082 407.434v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 98">
+        <path d="M445.584 187.082H419.42" data-name="Path 37"/>
+        <path d="M432.502 200.165V174" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 108">
+        <path d="M453.834 13.082H427.67" data-name="Path 37"/>
+        <path d="M440.752 26.165V0" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 81">
+        <path d="M111.414 391.505H85.25" data-name="Path 37"/>
+        <path d="M98.332 404.588v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 101">
+        <path d="M122.01 519.064H95.846" data-name="Path 37"/>
+        <path d="M108.928 532.147v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 87">
+        <path d="M233.194 165.761H207.03" data-name="Path 37"/>
+        <path d="M220.112 178.844v-26.165" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 109">
+        <path d="M316.641 51.761h-26.164" data-name="Path 37"/>
+        <path d="M303.559 64.844V38.679" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 93">
+        <path d="M246.276 337.112h-26.164" data-name="Path 37"/>
+        <path d="M233.194 350.195V324.03" data-name="Path 38"/>
+      </g>
+      <g data-name="Group 96">
+        <path d="M212.175 485.509h-26.164" data-name="Path 37"/>
+        <path d="M199.093 498.592v-26.165" data-name="Path 38"/>
+      </g>
+    </g>
+  </g>
+</svg>
