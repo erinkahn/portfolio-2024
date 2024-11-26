@@ -106,24 +106,6 @@ export const servicesData = {
         {
             serviceTitle: 'Attention to detail',
             description: 'As a former designer, I can spot UI/UX issues early on before they become a problem.',
-            icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 92">
-                        <g fill="none" className="svg-stroke" stroke="none" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2" data-name="Group 12">
-                            <path className="path0" d="M5 15s30-29 60-3"/>
-                            <path className="path0" d="M67 28S33-13 1 32" data-name="Path 2"/>
-                            <path className="path0" d="M67 34s6 12 2 28" data-name="Path 3"/>
-                            <path className="path0" d="M39 91s-5-17-17-2" data-name="Path 4"/>
-                            <path className="path0" d="M50 86s-12-7-7-19" data-name="Path 5"/>
-                            <path className="path0" d="M5 80s26-21 31-33" data-name="Path 6"/>
-                            <path className="path0" d="M1 69s22-18 25-26 18-11 19 2-31 39-31 39" data-name="Path 7"/>
-                            <path className="path0" d="M61 80s-14-9-10-27-4-24-10-26-17-2-24 13l-7 10a33 33 0 0 1-8 7" data-name="Path 8"/>
-                            <path className="path0" d="M66 73s-9-8-5-24-12-29-21-31-17-1-25 12-6 8-14 14" data-name="Path 9"/>
-                        </g>
-                    </svg>,
-            alt: 'fingerprint'
-        },
-        {
-            serviceTitle: 'Future Thinking',
-            description: 'I build things with the future in mind. Clean, modular code creates happy teams.',
             icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 87">
                     <g className="svg-stroke" fill="none" stroke="none" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2" data-name="Group 8">
                     <g transform="translate(7 7)">
@@ -140,21 +122,27 @@ export const servicesData = {
                         <path d="M1 8h4" data-name="Path 10 Copy 3"/>
                     </g>
                 </svg>,
+            alt: 'fingerprint'
+        },
+        {
+            serviceTitle: 'Future Thinking',
+            description: 'I build things with the future in mind. Clean, modular code creates happy teams.',
+            icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g className="svg-stroke" fill="none">
+                <path className="path2" strokeWidth="0.5" stroke-linecap="round" d="M3.3 17.6a3.3 3.3 0 0 0 3.1 2.2h.1A2.8 2.8 0 0 0 9.2 22c.5 0 1-.1 1.3-.3a1 1 0 0 0 .5-.9V3a1 1 0 0 0-.8-1 2.3 2.3 0 0 0-1.5.2c-.7.4-1.1 1.2-1.1 2a2.8 2.8 0 0 0-2.8 4.5A3.3 3.3 0 0 0 2 12c0 1.2.6 2.2 1.5 2.8-.4.8-.5 1.8-.2 2.8zm15.9-8.9a2.8 2.8 0 0 0-2.8-4.4c0-.9-.4-1.7-1.1-2a2.3 2.3 0 0 0-1.5-.3 1 1 0 0 0-.8 1v17.8c0 .4.2.7.5.9.4.2.8.3 1.3.3a2.8 2.8 0 0 0 2.7-2.2c1.5 0 2.8-.9 3.2-2.2.3-1 .2-2-.2-2.8A3.4 3.4 0 0 0 22 12a3.3 3.3 0 0 0-2.8-3.3z"/>
+                </g>
+            </svg>,
             alt: 'artboard'
         },
         {
             serviceTitle: 'Consistent Communication',
-            description: 'Communicating and asking questions consistently reduces problems and saves time.',
-            icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.6 74.2">
-                    <g className="svg-stroke">
-                        <path className="path2" strokeWidth="2" fill="none" d="M80.7 73.3H3.5c-1.6 0-3-1.3-3-3v-67c0-1.6 1.3-3 3-3h77.2c1.6 0 3 1.3 3 3v67c0 1.7-1.3 3-3 3z"/>
-                        <path className="path2" strokeWidth="2" fill="none" d="M75.1 68.4h-66c-1.4 0-2.5-1.1-2.5-2.5V8.7c0-1.4 1.1-2.5 2.5-2.5h66c1.4 0 2.5 1.1 2.5 2.5v57.2c0 1.4-1.1 2.5-2.5 2.5z"/>
-                        <path className="path2" strokeWidth="2" fill="none" d="M15.6 17.9h-.5c-1.8 0-3.2-1.4-3.2-3.2v-.4c0-1.8 1.4-3.2 3.2-3.2h.5c1.8 0 3.2 1.4 3.2 3.2v.4c.1 1.8-1.4 3.2-3.2 3.2z"/>
-                        <path className="path2" strokeWidth="2" fill="none" d="M70.5 43.2H13.3c-.7 0-1.3-.6-1.3-1.3V24.8c0-.7.6-1.3 1.3-1.3h57.2c.7 0 1.3.6 1.3 1.3v17.1c0 .7-.6 1.3-1.3 1.3z"/>
-                        <path className="path2" strokeWidth="2" fill="none" d="M25.5 61.8H12.3c-.3 0-.5-.2-.5-.5v-11c0-.3.2-.5.5-.5h13.2c.3 0 .5.2.5.5v11c0 .3-.2.5-.5.5zm22.8 0H35.1c-.3 0-.5-.2-.5-.5v-11c0-.3.2-.5.5-.5h13.2c.3 0 .5.2.5.5v11c0 .3-.2.5-.5.5zm23.1 0H58.1c-.3 0-.5-.2-.5-.5v-11c0-.3.2-.5.5-.5h13.2c.3 0 .5.2.5.5v11c.1.3-.2.5-.4.5z"/>
-                        <path className="path2" strokeWidth="2" fill="none" d="M48.1 14.9h6M31.2 32.6h22.4M36.2 36h11.6M57 14.9h6m2.3 0h6" />
-                    </g>
-                </svg>,
+            description: 'I communicate and ask questions consistently to reduce confusion & save time.',
+            icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <g className="svg-stroke">
+                    <path className="path2" fill="none" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M6.6 16.6 2.8 19l.7-4.2A7.7 7.7 0 0 1 1 9C1 4.6 4.5 1 10 1s9 3.6 9 8c0 4.5-3.5 8.1-9 8.1a11 11 0 0 1-3.4-.5h0Z"/>
+                    <path className="path2" fill="none" stroke-width="0.5" d="M6 8a1 1 0 0 1 .1 2H6a1 1 0 0 1-.1-2H6ZM10 8a1 1 0 0 1 .1 2H10a1 1 0 0 1-.1-2h.1ZM14 8a1 1 0 0 1 .1 2H14a1 1 0 0 1-.1-2h.1Z"/>
+                </g>
+            </svg>,
             alt: 'webpage'
         }
     ]
@@ -1179,50 +1167,57 @@ export const timelineData = {
             year: '2016',
             company: 'Graduated from University of Alabama',
             position: 'Graphic Design + Advertising Degree',
-            summary: 'Studied advertising and graphic design. Won first place at national competitions for designing the plansbooks for our advertising team. Received a 3.96 GPA. ',
+            summary: `Studied advertising and graphic design, graduating with a 3.96 GPA and earning a spot on the President's List every year. Awarded first place in national advertising competition for designing the plansbook, which showcased our ad campaign, strategy, and creative direction. This accomplishment, achieved in my final year, demonstrated my ability to blend creativity with strategic insight in a highly competitive environment.`,
             url: 'https://www.ua.edu/',
+            tools: 'Adobe Creative Suite (Illustrator, Photoshop, InDesign)',
         },
         {
             year: '2016-17',
             company: 'Walls Media, CCG Ideas, Flex Digital',
             position: 'Graphic Design Intern, Freelance Designer',
-            summary: 'Designed direct mail pieces, digital ads, billboards, info graphics, brochures, digital icons and other print material for CCG clients and websites using Illustrator, Photoshop and InDesign. Utilized WordPress, Umbraco and basic HTML by updating content and creating client web pages. Repositioned, organized and packaged web page mockups and elements in Photoshop, thus preparing files and images to be sent to web developers. Crafted corporate print material such as name tags, brochures, fliers, posters, logos and business cards for Walls Media clients, consistently achieving client satisfaction.',
+            summary: 'Created a diverse range of creative assets for CCG clients, including direct mail pieces, digital ads, billboards, infographics, brochures, digital icons, and other print materials. Managed website updates and developed client web pages using WordPress, Umbraco, and basic HTML. Organized and polished web page mockups and design elements, ensuring files and images were ready for smooth handoff to web developers. Designed corporate print materials—such as name tags, brochures, flyers, posters, logos, and business cards—for Walls Media clients, consistently delivering high-quality designs that aligned with client expectations and strengthened brand identity.',
             url: '',
+            tools: 'Adobe Creative Suite (Illustrator, Photoshop, InDesign), Umbraco, WordPress, HTML, Microsoft PowerPoint',
         },
         {
             year: '2017-18',
             company: 'graduated from The Creative Circus Portfolio School',
             position: 'Interactive Web Development Certification',
-            summary: 'Gained 1.75 years of experience in developing websites and applications utilizing HTML5, CSS3, Sass, JavaScript, AJAX, Vue, Node, Flexbox, Greensock, WordPress, PHP, Git, and GitHub. Complemented coding skills with UX/UI coursework, designing mobile and desktop applications using Adobe XD, Azure, Balsamiq, Photoshop, InDesign, Illustrator, and Sketch. Collaborated with designers and developers to generate innovative solutions and design user interfaces that addressed real-world challenges.',
+            summary: 'Graduated from one of the top advertising portfolio schools in the country, where I gained 1.75 years of hands-on experience coding websites, web applications, and a mobile app. Strengthened my technical expertise through coursework in UX/UI design, with a focus on optimizing user experiences for mobile platforms. Developed proficiency in content management systems (CMS), including WordPress and BlueHost, to enhance website development and streamline content management. Collaborated closely with designers and developers to craft innovative solutions and create intuitive, user-centered interfaces that addressed real-world challenges.',
             url: 'http://creativecircus.edu/',
+            tools: 'HTML5, CSS3, SCSS (SASS), JavaScript, AJAX, Vue, NodeJS, Flexbox, Bootstrap, Greensock (GSAP), WordPress, PHP, Git, GitHub, Bluehost, ACF (Advanced Custom Fields), Sketch, Adobe Creative Suite (XD, Photoshop, InDesign, Illustrator, After Effects)',
         },
         {
             year: '2018-20',
             company: 'Vehicle Media',
             position: 'WordPress + PHP Developer, Freelance Designer',
-            summary: 'Started as a frontend developer, then promoted to PHP Developer. Collaborated independently with designers, project managers, and two remote developers to convert designs into custom WordPress themes, Shopify sites, and Squarespace sites. Skills included HTML5, PHP, CSS3, Sass, Less, JavaScript, Bootstrap, Git, and jQuery. Managed the export and sizing of assets from Adobe XD, Photoshop, and InDesign. Notable projects included clients, Waffle House and The Scott Brothers.',
+            summary: 'Began as a Frontend Developer and was quickly promoted to PHP Developer for successfully managing new website builds from start to finish. Took ownership of projects, collaborating independently with designers, project managers, and two remote developers to transform design concepts into fully functional websites. Managed asset export and optimization from Adobe XD, Photoshop, and InDesign to ensure seamless integration. Key projects included high-profile clients such as Waffle House and The Scott Brothers, where I delivered impactful, user-focused web experiences.',
             url: 'https://www.vehiclemedia.com/',
+            tools: 'Custom WordPress Child Theme Development, ACF, PHP, Squarespace, Shopify, WOOCommerce, HTML5, CSS3, Sass, JavaScript, BootStrap, Git, jQuery, Adobe Creative Suite (XD, Photoshop, InDesign, Illustrator, After Effects), Lighthouse, Axe, WAVE, BrowserStack',
         },
         {
             year: '2020-21',
             company: 'DynamiX Web Design',
             position: 'Front-End Developer, Freelance Designer',
-            summary: 'Developed custom web applications from design to production using PHP, Sass, ES6 JavaScript, NPM, and Git, ensuring dynamic, clean, and well-structured code. Responsible for creating and maintaining layouts, categories, pages, and overall site architecture. Conducted manual functionality, performance, and accessibility testing utilizing tools such as WAVE, Axe, WebAIM, W3C Validator, Lighthouse, PageSpeed Insights, VoiceOver, and BrowserStack.',
+            summary: 'Developed custom web applications from concept to production, ensuring dynamic, clean, and well-structured code. Managed the creation and maintenance of layouts, categories, pages, and overall site architecture. Regularly debugged and enhanced existing projects by adding new features and optimizing performance. Collaborated with team members through pair programming and conducted code reviews to ensure code quality, consistency, and best practices. Performed comprehensive functionality, performance, and accessibility testing to guarantee optimal user experience. Delivered high-quality websites for clients such as Expo Home Improvements and Powell Law Firm, customizing each project to meet specific business objectives and user needs.',
             url: 'https://dynamix.site/',
+            tools: 'PHP, Sass, ES6 JavaScript, NPM, Git, Content Management Systems, RESTFUL APIs, WAVE, Axe, WebAIM, W3C Validator, Lighthouse, PageSpeed Insights, VoiceOver, BrowserStack',
         },
         {
             year: '2021-24',
             company: 'Avanade',
             position: 'React Developer, Freelance Designer/Developer',
-            summary: 'Brainstorm with Agile teams of UX/UI designers, developers, and scrum masters to translate designs, ideas, and estimates into efficient, seamless, and scalable software solutions. Utilized a comprehensive tech stack for building web apps, mocking APIs, debugging, and testing, including React, JEST, JSON, RESTful APIs, TypeScript, JavaScript, Git, NPM, Yarn, Visual Studio, Azure DevOps, Tailwind, Prism, WCAG, WAVE, Axe, Lighthouse, and VoiceOver. Promoted to Consultant in 2023.',
-            url: 'https://www.avanade.com/en',        
+            summary: 'As a Sr. Analyst and Front-End Developer, I focused on delivering efficient, scalable software solutions for clients across multiple touchpoints. Collaborating with client, account, and UX leads, I assessed UI/UX needs, made technical recommendations to improve code quality, and implemented long-term maintenance strategies. In 2023, I received the Ambassador Award for proposing UX architecture changes and third-party libraries that enhanced client products. Recognized for my fast regression testing and proactive approach, I conducted code reviews, mentored new developers, and worked with Microsoft Teams to resolve bugs and ensure accurate translation of responsive designs from Figma to the web. I also performed QA testing across devices using BrowserStack, built new features, and wrote unit tests with technologies like React, JavaScript, and Webpack. Additionally, I resolved staffing gaps by quickly finding a replacement for a project role, saving company revenue and easing team workload. My contributions earned multiple awards, including Super Hero and Ambassador recognitions, for my leadership, technical expertise, and commitment to continuous improvement.',
+            url: 'https://www.avanade.com/en',    
+            tools: 'React, Webpack, JEST, JSON, RESTful APIs, React Testing Library, SQL Server Management Studio, Azure DevOps, TypeScript, JavaScript, Git, NPM, Yarn, Microsoft Visual Studio, Azure DevOps, Tailwind, Prism, WCAG, WAVE, Axe, Lighthouse, VoiceOver, Sketch, Adobe Creative Suite (XD, Illustrator, Photoshop), Figma, BrowserStack, Greensock GSAP',
         },
         {
             year: '2024-',
             company: 'Alloy Digital',
             position: 'Senior Software Engineer',
-            summary: 'Rebuilt a headless WordPress website using React, Next.js, TypeScript, and GraphQL, resulting in a 28% performance increase and a 19% accessibility improvement. Independently resolved live bugs and managed client projects with minimal guidance. Acquired expertise in Sanity and GROQ, delivering a robust content management system in under three months. Optimized images and design assets, enhancing load times and initiating UX discussions to identify potential issues early.',
+            summary: 'Independently rebuilt a headless WordPress website, resulting in a 28% performance boost and a 19% improvement in accessibility. With a strong ability to resolve live bugs and manage ongoing client projects, I navigate unfamiliar codebases with minimal direction, demonstrating independence and a commitment to delivering high-quality results. I proactively create QA items, support the QA team, and ensure swift resolution of bugs. Gained expertise in Sanity and GROQ, successfully implementing a robust front-end and back-end content management system in under three months. I take a proactive approach to user experience (UX) by initiating discussions during project phases to identify potential issues early, saving time and resources. Additionally, I optimize images and assets, improve load times, and ensure accessibility by adding alt tags, ARIA labels, and proper semantic HTML.',
             url: 'https://alloy.digital/',        
+            tools: 'React, Next.js, TypeScript, GraphQL, APIs, Postman, BrowserStack, Lighthouse, Axe, WAVE, GROQ, Sanity, WordPress, Git, GitHub, Figma, Jira, Vercel',
         }
     ]
 }

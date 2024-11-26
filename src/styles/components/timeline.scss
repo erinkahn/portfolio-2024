@@ -48,6 +48,9 @@
 
     .inner-wrapper {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 15vw;
         margin: 0 auto;
         width: 70%;
         z-index: 1;
@@ -62,30 +65,38 @@
     }
 
     li {
-        &:last-of-type {
-            margin-bottom: 30vh;
+        @media screen and (min-width: $medUp) {
+            text-align: justify;
+        }
 
-            @media screen and (min-width: $medUp) {
-                margin-bottom:20vh;
-            }
-        }
-        &:not(:last-of-type) {
-            margin-bottom: 15vh;
-        }
         &:nth-of-type(odd) {
-            text-align: right;
+            @media screen and (min-width: $medUp) {
+                margin-left: auto;
+            }
+            
 
-            .summary {
+            .summary,
+            .tools {
                 margin-left: auto;
                 margin-right: 0;
             }
         }
     }
 
+    .summary, 
+    .tools {
+        max-width: 600px;
+    }
+
     .summary {
         margin-top: 0.5em;
-        max-width: 600px;
         font-size: 0.875em;
+    }
+
+    .tools {
+        font-size: 0.875em;
+        margin-top: 0.25em;
+        font-weight: 600;
     }
 
     .year {

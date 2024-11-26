@@ -45,9 +45,10 @@
                 font-size: 0.875em;
             }
 
-            &.active {
+            &.active, &:hover, &:focus {
                 background-color: $primaryLight;
                 color: $white;
+                transition: background-color $quick, color $quick;
 
                 .theme-dark & {
                     background-color:$accessibleDark;
