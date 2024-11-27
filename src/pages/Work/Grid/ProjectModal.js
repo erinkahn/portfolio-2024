@@ -55,7 +55,8 @@ export default function ProjectModal(props) {
                                                         <ul>
                                                             {filteredPro.icons.map((icon, i) => (
                                                                 <li key={`icon-${i}`}>
-                                                                    <img src={icon.img} alt={icon.alt}/>
+                                                                    <img src={icon.img} alt={icon.alt} />
+                                                                    <span className="alt-tool">{icon.alt}</span>
                                                                 </li>
                                                             ))}
                                                         </ul>
@@ -71,7 +72,8 @@ export default function ProjectModal(props) {
                                                     <ul>
                                                         {filteredPro.icons.map((icon, i) => (
                                                             <li key={`icon-${i}`}>
-                                                                <img src={icon.img} alt={icon.alt}/>
+                                                                <img src={icon.img} alt={icon.alt} />
+                                                                <span className="alt-tool">{icon.alt}</span>
                                                             </li>
                                                         ))}
                                                     </ul>

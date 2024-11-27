@@ -246,6 +246,20 @@
                 flex-wrap: wrap;
                 gap: 20px;
 
+                li {
+                    position: relative;
+
+                    &:hover {
+                        .alt-tool {
+                            display: block;
+                            max-width: 100px;
+                            text-wrap: auto;
+                            text-align: center;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+
                 @media screen and (min-width: $medUp) {
                     flex-wrap: wrap;
                     gap: 25px 4%;
@@ -267,6 +281,19 @@
                     @media screen and (min-width: $medUp) {
                         width: 30px;
                     }
+                }
+
+                .alt-tool {
+                    display: none;
+                    position: absolute;
+                    background: $white;
+                    z-index: 1;
+                    padding: 1em;
+                    font-size: 0.875em;
+                    font-weight: 300;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
                 }
             }  
 
