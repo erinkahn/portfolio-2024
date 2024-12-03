@@ -9,9 +9,11 @@ export default function useScrollPos() {
 	useLayoutEffect(() => {
 		const getScrollPos = () =>
 			setScrollPos({
-				x: window.pageXOffset || document.documentElement.scrollLeft,
-				y: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop,
-				
+				x: window.scrollX || document.documentElement.scrollLeft,
+				y:
+					window.scrollY ||
+					document.documentElement.scrollTop ||
+					document.body.scrollTop,
 			});
 
 		window.addEventListener("scroll", getScrollPos);

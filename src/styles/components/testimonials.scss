@@ -1,132 +1,135 @@
 .testimonials-container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    height: 100%;
-    max-width: 1200px;
-    padding: 18vh 4em 0 4em;
-    margin: 0 auto;
-    
-    @media screen and (min-width: $smUp) {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	height: 100%;
+	max-width: 1200px;
+	padding: 18vh 4em 0 4em;
+	margin: 0 auto;
 
-    &.animate {
-        &::before {
-            transform: translate(-40%, -18vh) scale(-1, 1) rotate(0);
+	@media screen and (min-width: $smUp) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
 
-            @media screen and (min-width: $xsUp) {
-                transform: translate(-40%, -13vh) scale(-1, 1) rotate(0);
-            }
+	&.animate {
+		&::before {
+			transform: translate(-40%, -18vh) scale(-1, 1) rotate(0);
 
-            @media screen and (min-width: $smUp) {
-                transform: translate(65%, -11vh) scale(1, 1) rotate(0);
-            }
-        }
-    }
+			@media screen and (min-width: $xsUp) {
+				transform: translate(-40%, -13vh) scale(-1, 1) rotate(0);
+			}
 
-    &::before {
-        @include pseudo;
-        @include mask-svg-set;
-        @include mask-svg-img('../../assets/images/quote.svg');
-        background-color: $primaryLight;
-        width: 30%;
-        height: 100%;
-        right: 0;
-        left: auto;
-        top: 0;
-        transform: translate(-40%, 30vh) scale(-1, 1) rotate(-30deg);
-        transition: transform $quick;
+			@media screen and (min-width: $smUp) {
+				transform: translate(65%, -11vh) scale(1, 1) rotate(0);
+			}
+		}
+	}
 
-        @media screen and (min-width: $smUp) {
-            right: auto;
-            left: 0;
-            top: auto;
-            width: 25%;
-            max-width: none;
-            transform: translate(65%, -12vh) scale(1, 1) rotate(-30deg);
-        }
+	&::before {
+		@include pseudo;
+		@include mask-svg-set;
+		@include mask-svg-img("../../assets/images/quote.svg");
+		background-color: $primaryLight;
+		width: 30%;
+		height: 100%;
+		right: 0;
+		left: auto;
+		top: 0;
+		transform: translate(-40%, 30vh) scale(-1, 1) rotate(-30deg);
+		transition: transform $quick;
 
-        .theme-dark & {
-            background-color: $fiveDark;
-        }
-    }
+		@media screen and (min-width: $smUp) {
+			right: auto;
+			left: 0;
+			top: auto;
+			width: 25%;
+			max-width: none;
+			transform: translate(65%, -12vh) scale(1, 1) rotate(-30deg);
+		}
 
-    .inner-wrap {
-        grid-column: 2;
-        grid-row: 3;
+		.theme-dark & {
+			background-color: $fiveDark;
+		}
+	}
 
-        @media screen and (min-width: $smUp) {
-            grid-row: 1;
-        }
-    }
+	.inner-wrap {
+		grid-column: 2;
+		grid-row: 3;
 
-    .testimonial {
-        visibility: hidden;
-        opacity: 0;
-        height: 0;
-        width: 0;
-        transform: translateX(-9px);
-        transition: opacity $quick, transform $quick;
+		@media screen and (min-width: $smUp) {
+			grid-row: 1;
+		}
+	}
 
-        @media screen and (min-width: $smUp) {
-            max-width: 380px;
-        }
+	.testimonial {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		visibility: hidden;
+		opacity: 0;
+		height: 0;
+		width: 0;
+		transform: translateX(-9px);
+		transition: opacity $quick, transform $quick;
 
-        .person {
-            opacity: 0;
-            margin-top: 2em;
-            text-align: right;
-            transform: translateX(12px);
-            transition: opacity $quick, transform $quick;
-            transition-delay: .3s;
-        }
+		@media screen and (min-width: $smUp) {
+			max-width: 380px;
+		}
 
-        &.show {
-            visibility: visible;
-            opacity: 1;
-            height: auto;
-            width: 100%;
-            min-height: 130px;
-            transform: translateX(0);
+		.person {
+			opacity: 0;
+			margin-top: 2em;
+			text-align: right;
+			transform: translateX(12px);
+			transition: opacity $quick, transform $quick;
+			transition-delay: 0.3s;
+		}
 
-            .person {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-    }
+		&.show {
+			visibility: visible;
+			opacity: 1;
+			height: auto;
+			width: 100%;
+			min-height: 250px;
+			transform: translateX(0);
 
-    .btns-container {
-        margin-top: 2em;
-    }
+			.person {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+	}
 
-    .testimonial-btn {
-        border: 2px solid $primaryLight;
-        border-radius: 90px;
-        width: 0.5em;
-        height: 0.5em;
-        padding: 5px;
-        margin-left: 20px;
+	.btns-container {
+		margin-top: 2em;
+	}
 
-        .theme-dark & {
-            border: 2px solid $quaternaryDark;
-        }
+	.testimonial-btn {
+		border: 2px solid $primaryLight;
+		border-radius: 90px;
+		width: 0.5em;
+		height: 0.5em;
+		padding: 5px;
+		margin-left: 20px;
 
-        &:nth-of-type(1) {
-            margin: 0px;
-        }
+		.theme-dark & {
+			border: 2px solid $quaternaryDark;
+		}
 
-        &.active,
-        &:hover,
-        &:focus {
-            background-color: $primaryLight;
+		&:nth-of-type(1) {
+			margin: 0px;
+		}
 
-            .theme-dark & {
-                background-color: $quaternaryDark;
-            }
-        }
-    }
+		&.active,
+		&:hover,
+		&:focus {
+			background-color: $primaryLight;
+
+			.theme-dark & {
+				background-color: $quaternaryDark;
+			}
+		}
+	}
 }

@@ -1,69 +1,70 @@
 .typewriter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    grid-row: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	grid-row: 1;
+	min-height: 220px;
 
-    @media screen and (min-width: $medUp) {
-        grid-gap: 0.25em;
-        display: grid;
-        grid-template-columns: 40% 50% 10%;
-    }
+	@media screen and (min-width: $medUp) {
+		grid-gap: 0.25em;
+		display: grid;
+		grid-template-columns: 40% 50% 10%;
+	}
 
-    .typewriter {
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0;
+	.typewriter {
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
 
-        &.active {
-            position: relative;
-            opacity: 1;
-        }
-    }
+		&.active {
+			position: relative;
+			opacity: 1;
+		}
+	}
 
-    .section-title {
-        &.i-am {
-            @media screen and (min-width: $medUp) {
-                grid-column: 2;
-                align-self: flex-end;
-            }
-        }
-    }
+	.section-title {
+		&.i-am {
+			@media screen and (min-width: $medUp) {
+				grid-column: 2;
+				align-self: flex-end;
+			}
+		}
+	}
 
-    .type-wrapper {
-        @media screen and (min-width: $medUp) {
-            grid-column: 2;
-            align-self: baseline;
-        }   
-    }
+	.type-wrapper {
+		@media screen and (min-width: $medUp) {
+			grid-column: 2;
+			align-self: baseline;
+		}
+	}
 
-    .type {
-        position: relative;
-        padding-left: 0.275em;
+	.type {
+		position: relative;
+		padding-left: 0.275em;
 
-        @media screen and (max-width: $xxsDown) {
-            padding-left: 0;
-        }
+		@media screen and (max-width: $xxsDown) {
+			padding-left: 0;
+		}
 
-        &::after {
-            @include pseudo;
-            top: auto;
-            left: 0.25em;
-            height: 0.12em;
-            width: 100%;
-            background-color: $secondaryLight;
-            transform: translateY(0.35em);
+		&::after {
+			@include pseudo;
+			top: auto;
+			left: 0.25em;
+			height: 0.12em;
+			width: 100%;
+			background-color: $secondaryLight;
+			transform: translateY(0.35em);
 
-            .theme-dark & {
-                background-color: $fiveDark;
-            }
+			.theme-dark & {
+				background-color: $fiveDark;
+			}
 
-            @media screen and (max-width: $xxsDown) {
-                left: 0;
-            }
-        }
-    }
+			@media screen and (max-width: $xxsDown) {
+				left: 0;
+			}
+		}
+	}
 }

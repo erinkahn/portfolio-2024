@@ -29,15 +29,10 @@ const Navigation = (props) => {
 	};
 
 	return (
-		<div 
-			ref={sideNavRef} 
-			className="side-nav-wrap" 
-		>
+		<div ref={sideNavRef} className="side-nav-wrap">
 			<button
 				className={`menuBtn ${hidden ? "" : "open"}`}
-				aria-label={`${
-					hidden ? "Open Navigation" : "Close Navigation"
-				}`}
+				aria-label={`${hidden ? "Open Navigation" : "Close Navigation"}`}
 				onClick={toggle}
 				ref={btnRef}
 				tabIndex="0"
@@ -57,19 +52,14 @@ const Navigation = (props) => {
 				<div className="nav-wrapper">
 					<ul className="social">
 						{navData.socialIcons.map((icon) => (
-							<li
-								className="icon-list-item"
-								key={`icon-${icon.id}`}
-							>
+							<li className="icon-list-item" key={`icon-${icon.id}`}>
 								<a
 									className={`icon ${icon.siteName}`}
 									target="_blank"
 									rel="noreferrer"
 									href={icon.url}
 								>
-									<span className="sr-only">
-										{icon.siteName}
-									</span>
+									<span className="sr-only">{icon.siteName}</span>
 								</a>
 							</li>
 						))}
@@ -84,14 +74,9 @@ const Navigation = (props) => {
 							{navData.navigation.map((item) => (
 								<li
 									key={`nav-${item.id}`}
-									className={`nav-item ${
-										hidden ? "" : "open"
-									}`}
+									className={`nav-item ${hidden ? "" : "open"}`}
 								>
-									<NavLink
-										className="nav-link"
-										to={item.linkTo}
-									>
+									<NavLink className="nav-link" to={item.linkTo}>
 										{item.pageTitle}
 										<span className="sr-only">Page</span>
 									</NavLink>

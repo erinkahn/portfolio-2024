@@ -1,5 +1,5 @@
-import React, {useContext} from "react";
-import { Link} from "react-router-dom";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ThemeContext } from "./../contexts/Theme/ThemeContext";
 import ThemeToggler from "./../contexts/Theme/ThemeToggler";
 import Navigation from "./Navigation";
@@ -10,10 +10,7 @@ export default function Header(props) {
 
 	return (
 		<header ref={props.forwardedRef}>
-			<Link 
-				className="logo-wrapper" 
-				to="/"
-			>
+			<Link className="logo-wrapper" to="/">
 				<img
 					src={`/images/header/logo-${themeName.theme}.svg`}
 					style={{ width: "3em", height: "3em" }}
