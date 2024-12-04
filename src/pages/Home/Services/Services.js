@@ -11,7 +11,7 @@ export default function Services() {
 	return (
 		<SectionWrapper sectionid="1">
 			{/* <Typewriter /> */}
-			<div className="services-container">
+			<div className="services-container" id="services">
 				{servicesData.services.map((service, i) => (
 					<div
 						key={`service-${i}`}

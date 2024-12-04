@@ -47,7 +47,7 @@ export default function Typewriter() {
 	}, []);
 
 	return (
-		<div className="typewriter-container" id="services">
+		<div className="typewriter-container">
 			<h2 className="i-am section-title">I am a</h2>
 			<h2 className="type-wrapper">
 				<span className="type section-title">{`${words[index].substring(
