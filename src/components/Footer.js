@@ -9,7 +9,7 @@ export default function Footer() {
 	};
 
 	return (
-		<footer role="contentinfo" className="section">
+		<footer role="contentinfo" className="section" sectionid="5">
 			<div className={`outer-wrapper`}>
 				<span id="footer" role="tabpanel">
 					<button className="btn-scroll" onClick={scrollToTop}>

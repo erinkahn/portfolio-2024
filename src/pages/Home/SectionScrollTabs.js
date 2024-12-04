@@ -1,17 +1,8 @@
-import { useState, useRef } from "react";
-import { sections } from "../../constants/data";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 
-export default function SectionScrollTabs() {
-	const ref = useRef();
+export default function SectionScrollTabs({ sections }) {
 	const [isActive, setIsActive] = useState(0);
-
-	const changeActiveTab = (e, s) => {
-		if (e.currentTarget.className !== "active") {
-			setIsActive(s);
-		} else {
-			return;
-		}
-	};
+	const ref = useRef(null);
 
 	const scrollToSection = (e) => {
 		e.preventDefault();
@@ -19,23 +10,53 @@ export default function SectionScrollTabs() {
 		const str = "Navigate to section ";
 		const strippedAttribute = idAttribute.replace(str, "");
 		const sectionId = document.querySelector(`#${strippedAttribute}`);
-		sectionId.scrollIntoView({ behavior: "smooth" });
+		if (sectionId) {
+			sectionId.scrollIntoView({ behavior: "smooth" });
+		}
 	};
+
+	const handleScroll = useCallback(() => {
+		let newActiveIndex = 0;
+		let minDistance = Infinity;
+
+		sections.forEach((section, index) => {
+			const sectionElement = document.getElementById(section.id); // Corrected line
+			console.log(sectionElement, section.id); // Added section.id for debugging
+			if (sectionElement) {
+				const rect = sectionElement.getBoundingClientRect();
+				const distance = Math.abs(rect.top); //Distance from top of viewport
+
+				if (distance < minDistance) {
+					minDistance = distance;
+					newActiveIndex = index;
+				}
+			}
+		});
+		setIsActive(newActiveIndex);
+	}, [sections]);
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [handleScroll, sections]);
 
 	return (
 		<aside ref={ref} className="sectionScrollTabs">
-			{sections.homepage.map((section, s) => (
+			{sections.map((section, s) => (
 				<button
+					id={s}
 					key={`sectionTab-${s}`}
-					className={`${isActive === section.num ? "active" : ""}`}
+					className={`${isActive === s ? "active" : ""}`}
 					onClick={(e) => {
-						changeActiveTab(e, s);
+						setIsActive(s);
 						scrollToSection(e);
 					}}
 					aria-label={`Navigate to section ${section.id}`}
 					aria-controls={`${section.title}`}
 					aria-current={s === isActive ? true : false}
-				></button>
+				>
+					{/* {s} */}
+				</button>
 			))}
 		</aside>
 	);

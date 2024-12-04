@@ -21,8 +21,9 @@ export default function Hero(props) {
 		<section
 			className="hero-container"
 			id="hero"
+			sectionid="0"
 			role="tabpanel"
-			style={{ height: "100vh" }}
+			style={{ minheight: "100vh" }}
 		>
 			<div
 				className="text-box-container"

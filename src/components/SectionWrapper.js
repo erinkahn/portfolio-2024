@@ -4,7 +4,7 @@ export default function SectionWrapper(props) {
 			className="section-wrapper"
 			role="tabpanel"
 			aria-labelledby={props.id}
-			// aria-label={props.children._owner.elementType.name}
+			sectionid={props.sectionid}
 		>
 			{props.children}
 		</section>

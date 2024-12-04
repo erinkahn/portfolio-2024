@@ -159,7 +159,7 @@ export const servicesData = {
 						<path
 							className="path2"
 							strokeWidth="0.5"
-							stroke-linecap="round"
+							strokeLinecap="round"
 							d="M3.3 17.6a3.3 3.3 0 0 0 3.1 2.2h.1A2.8 2.8 0 0 0 9.2 22c.5 0 1-.1 1.3-.3a1 1 0 0 0 .5-.9V3a1 1 0 0 0-.8-1 2.3 2.3 0 0 0-1.5.2c-.7.4-1.1 1.2-1.1 2a2.8 2.8 0 0 0-2.8 4.5A3.3 3.3 0 0 0 2 12c0 1.2.6 2.2 1.5 2.8-.4.8-.5 1.8-.2 2.8zm15.9-8.9a2.8 2.8 0 0 0-2.8-4.4c0-.9-.4-1.7-1.1-2a2.3 2.3 0 0 0-1.5-.3 1 1 0 0 0-.8 1v17.8c0 .4.2.7.5.9.4.2.8.3 1.3.3a2.8 2.8 0 0 0 2.7-2.2c1.5 0 2.8-.9 3.2-2.2.3-1 .2-2-.2-2.8A3.4 3.4 0 0 0 22 12a3.3 3.3 0 0 0-2.8-3.3z"
 						/>
 					</g>
@@ -177,16 +177,15 @@ export const servicesData = {
 						<path
 							className="path2"
 							fill="none"
-							strokeWidth="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="0.5"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							strokeWidth="0.5"
 							d="M6.6 16.6 2.8 19l.7-4.2A7.7 7.7 0 0 1 1 9C1 4.6 4.5 1 10 1s9 3.6 9 8c0 4.5-3.5 8.1-9 8.1a11 11 0 0 1-3.4-.5h0Z"
 						/>
 						<path
 							className="path2"
 							fill="none"
-							stroke-width="0.5"
+							strokeWidth="0.5"
 							d="M6 8a1 1 0 0 1 .1 2H6a1 1 0 0 1-.1-2H6ZM10 8a1 1 0 0 1 .1 2H10a1 1 0 0 1-.1-2h.1ZM14 8a1 1 0 0 1 .1 2H14a1 1 0 0 1-.1-2h.1Z"
 						/>
 					</g>

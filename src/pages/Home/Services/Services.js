@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import SectionWrapper from "../../../components/SectionWrapper";
-import Typewriter from "./Typewriter";
+// import Typewriter from "./Typewriter";
 import { servicesData } from "../../../constants/data";
 import useIntersectionObserver from "../../../hooks/useIntersectionObserver";
 
@@ -9,8 +9,8 @@ export default function Services() {
 	const { isVisible } = useIntersectionObserver(iref);
 
 	return (
-		<SectionWrapper>
-			<Typewriter />
+		<SectionWrapper sectionid="1">
+			{/* <Typewriter /> */}
 			<div className="services-container">
 				{servicesData.services.map((service, i) => (
 					<div

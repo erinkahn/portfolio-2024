@@ -9,7 +9,7 @@ export default function Testimonials() {
 	const { isVisible } = useIntersectionObserver(titleRef);
 
 	return (
-		<SectionWrapper>
+		<SectionWrapper sectionid="4">
 			<div
 				className={`testimonials-container ${isVisible ? "animate" : ""}`}
 				id="testimonials"

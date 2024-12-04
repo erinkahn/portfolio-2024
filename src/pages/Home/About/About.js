@@ -9,7 +9,7 @@ export default function About() {
 	const { isVisible } = useIntersectionObserver(animateRef);
 
 	return (
-		<SectionWrapper>
+		<SectionWrapper sectionid="3">
 			<div className="about-container" id="about" ref={animateRef}>
 				<div
 					className={`col text ${

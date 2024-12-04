@@ -1,9 +1,10 @@
-import "./wdyr";
-import React, {StrictMode} from "react";
-import ReactDOM from "react-dom";
+import React, { StrictMode } from "react";
+import ReactDOM from "react-dom/client";
 import App from "./App";
 import { HelmetProvider } from "react-helmet-async";
-// import {getLCP, getFCP, getFID, getCLS, getTTFB} from 'web-vitals';
+import { BrowserRouter } from "react-router-dom";
+
+// import { getLCP, getFCP, getFID, getCLS, getTTFB } from "web-vitals";
 
 // getCLS(console.log);
 // getFCP(console.log);
@@ -16,11 +17,15 @@ import { HelmetProvider } from "react-helmet-async";
 // 	axe(React, ReactDOM, 1000);
 // }
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
 	<StrictMode>
 		<HelmetProvider>
-			<App />
+			<BrowserRouter
+				future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
+			>
+				<App />
+			</BrowserRouter>
 		</HelmetProvider>
-	</StrictMode>,
-	document.getElementById("root")
+	</StrictMode>
 );

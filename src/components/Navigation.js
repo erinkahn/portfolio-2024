@@ -15,8 +15,8 @@ const Navigation = (props) => {
 		locked ? setLocked(false) : setLocked(true);
 	};
 
-	const handleFocus = (event) => {
-		if (!event.currentTarget.contains(event.relatedTarget)) {
+	const handleFocus = () => {
+		if (btnRef.current) {
 			btnRef.current.focus();
 		}
 	};

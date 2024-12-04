@@ -10,7 +10,7 @@ export default function Featured() {
 	const { isVisible } = useIntersectionObserver(oneRef);
 
 	return (
-		<SectionWrapper>
+		<SectionWrapper sectionid="2">
 			<div className="featured-container" id="featured" aria-label="carousel">
 				<div className="title-carousel-wrapper">
 					<div className="slide-title">

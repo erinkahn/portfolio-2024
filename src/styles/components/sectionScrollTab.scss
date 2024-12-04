@@ -1,42 +1,43 @@
 .sectionScrollTabs {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 30vh;
-    z-index: 3;
-    transform: translate(1em, -35%);
+	position: fixed;
+	top: 50%;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 30vh;
+	z-index: 3;
+	transform: translate(1em, -35%);
 
-    @media screen and (min-width: $smUp) {
-        transform: translate(1em, -50%);
-    }
+	@media screen and (min-width: $smUp) {
+		transform: translate(1em, -50%);
+	}
 
-    button {
-        height: 2em;   
-        max-width: 10px;
-        padding: 0.2em;
-        background: rgba($tertiaryLight, 0.5);
-        border-radius: 1em;
-        border: none;
-        transition: background $quick;
+	button {
+		height: 2em;
+		max-width: 10px;
+		padding: 0.2em;
+		background: rgba($tertiaryLight, 0.5);
+		border-radius: 1em;
+		border: none;
+		transition: background $quick;
 
-        .theme-dark & {
-            background: rgba($quaternaryDark, 0.3);
-        }
+		.theme-dark & {
+			background: rgba($quaternaryDark, 0.3);
+		}
 
-        &:hover,
-        &:focus {
-            background: $tertiaryLight;
+		&.active,
+		&:hover,
+		&:focus {
+			background: $tertiaryLight;
 
-            .theme-dark & {
-                background: $quaternaryDark;
-            }
-        }
-    }
+			.theme-dark & {
+				background: $quaternaryDark;
+			}
+		}
+	}
 }
 
-header:has(.fullPageMenu.appear) ~ .sectionScrollTabs{
-    z-index: 1;
+header:has(.fullPageMenu.appear) ~ .sectionScrollTabs {
+	z-index: 1;
 }

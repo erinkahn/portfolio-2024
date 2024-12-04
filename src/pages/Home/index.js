@@ -6,7 +6,7 @@ import Featured from "./Featured/Featured";
 import About from "./About/About";
 import Testimonials from "./Testimonials";
 import Footer from "../../components/Footer";
-import { heroData } from "../../constants/data";
+import { heroData, sections } from "../../constants/data";
 import SectionScrollTabs from "./SectionScrollTabs";
 import { motion as m } from "framer-motion";
 import Seo from "../../components/Seo";
@@ -25,7 +25,7 @@ export default function Home() {
 
 			<PageWrapper>
 				<Header />
-				<SectionScrollTabs />
+				<SectionScrollTabs sections={sections.homepage} />
 				<Hero
 					title={heroData.home.title}
 					subtitle={heroData.home.subtitle}
