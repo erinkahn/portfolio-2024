@@ -6,7 +6,7 @@ export default function FilteredProject(props) {
 				.map((filteredPr, f) => (
 					<li
 						key={`item-${f}`}
-						aria-labelledby={filteredPr.type}
+						aria-labelledby={filteredPr.id}
 						className="project-item"
 					>
 						<button

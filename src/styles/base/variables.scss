@@ -2,38 +2,38 @@
 // colors
 // ***********************************************//
 
-$lightblue:  #69b9ed;
+$lightblue: #69b9ed;
 $sun: #f1f16e;
 $white: #ffffff;
-$softWhite: #DAD6D6;
+$softWhite: #dad6d6;
 $black: #000000;
 $dark: #1e1e1e;
 
-$primaryLight: #781AD6;
-$secondaryLight: #AF6AFF;
-$tertiaryLight:  #C4A8DD;
-$quaternaryLight: #F5EDFF;
-$fiveLight: #490B86;
+$primaryLight: #781ad6;
+$secondaryLight: #af6aff;
+$tertiaryLight: #c4a8dd;
+$quaternaryLight: #f5edff;
+$fiveLight: #490b86;
 
 $primaryDark: #363957;
-$secondaryDark: #A1D6B7;
-$tertiaryDark: #F2FDF5;
-$quaternaryDark: #7CC994;
-$fiveDark: #62C982;
+$secondaryDark: #a1d6b7;
+$tertiaryDark: #f2fdf5;
+$quaternaryDark: #7cc994;
+$fiveDark: #62c982;
 
 // accessibility colors
-$accessibleBtnLight: #E4C5FE;
+$accessibleBtnLight: #e4c5fe;
 $accessibleDark: #148237;
 
 // ***********************************************//
 // fonts and fonts weights
 // ***********************************************//
 
-$montserrat: 'Montserrat', sans-serif;
-$sourceCode: 'Source Code Pro', monospace;
-$commissioner: 'Commissioner', sans-serif;
-$fontAwesome: 'FontAwesome';
-$didot: 'Didot', sans-serif;
+$montserrat: "Montserrat", sans-serif;
+$sourceCode: "Source Code Pro", monospace;
+$commissioner: "Commissioner", sans-serif;
+$fontAwesome: "FontAwesome";
+$didot: "Didot", sans-serif;
 
 $ultralight: 100;
 $extralight: 200;
@@ -54,32 +54,32 @@ $slow: 500ms ease-in-out;
 // media queries / breakpoints
 // ***********************************************//
 
-$xxxsDown: 400px;        // max-width: 400px
-$xxsDown: 500px;        // max-width: 500px
-$xxsUp: 501px;          // min-width: 501px
-$xsDown: 567px;         // max-width: 567px
-$xsUp: 568px;           // min-width: 567px
-$smDown: 767px;         // max-width: 767px
-$smUp: 768px;           // min-width: 768px
-$medDown: 991px;        // max-width: 991px
-$medUp: 992px;          // min-width: 992px
-$large: 1000px;         // max or min -width: 1100px
-$xlarge: 1200px;        // max or min -width: 1300px
-$xxlarge: 1440px;       // max or min -width: 1440px
+$xxxsDown: 400px; // max-width: 400px
+$xxsDown: 500px; // max-width: 500px
+$xxsUp: 501px; // min-width: 501px
+$xsDown: 567px; // max-width: 567px
+$xsUp: 568px; // min-width: 567px
+$smDown: 767px; // max-width: 767px
+$smUp: 768px; // min-width: 768px
+$medDown: 991px; // max-width: 991px
+$medUp: 992px; // min-width: 992px
+$large: 1000px; // max or min -width: 1100px
+$xlarge: 1200px; // max or min -width: 1300px
+$xxlarge: 1440px; // max or min -width: 1440px
 
 // ***********************************************//
 // svg icons
 // ***********************************************//
 
-$sandbox: url('../../assets/images/codeSandbox.svg');
-$linkedin: url('../../assets/images/linkedin.svg');
-$codePen: url('../../assets/images/codepen.svg');
-$github: url('../../assets/images/github.svg');
-$instagram: url('../../assets/images/instagram.svg');
-$spotify: url('../../assets/images/spotify.svg');
+$sandbox: url("../../assets/images/codeSandbox.svg");
+$linkedin: url("../../assets/images/linkedin.svg");
+$codePen: url("../../assets/images/codepen.svg");
+$github: url("../../assets/images/github.svg");
+$instagram: url("../../assets/images/instagram.svg");
+$spotify: url("../../assets/images/spotify.svg");
 
 //****************************************************************************/
 //	Images
 //****************************************************************************/
-$svgPath: '../../assets/images/';
-$publicPath: '../../../public/images/';
+$svgPath: "../../assets/images/";
+$publicPath: "../../../public/images/";

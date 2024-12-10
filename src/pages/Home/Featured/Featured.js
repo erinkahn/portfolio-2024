@@ -42,7 +42,7 @@ export default function Featured() {
 								aria-controls={`panel${featuredBtn.client.replaceAll(" ", "")}`}
 								aria-current={b === isActive ? true : false}
 								role="tab"
-								id={featuredBtn.client}
+								id={featuredBtn.slideNum}
 								onClick={(e) => {
 									setIsActive(b);
 								}}
@@ -65,11 +65,11 @@ export default function Featured() {
 							aria-current={c === isActive ? true : false}
 							aria-hidden={c === isActive ? false : true}
 							aria-label={`content ${c + 1} of 4`}
-							aria-labelledby={content.client}
+							aria-labelledby={content.slideNum}
 							role="tabpanel"
 							id={`panel${content.client.replaceAll(" ", "")}`}
 						>
-							<h5>{content.client}</h5>
+							<p className="h5">{content.client}</p>
 							<p>
 								<span>Stack:</span> {content.tech}
 							</p>

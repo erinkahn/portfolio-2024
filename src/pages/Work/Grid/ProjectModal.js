@@ -10,7 +10,7 @@ export default function ProjectModal(props) {
 				<button
 					className="close-btn"
 					onClick={props.closeModal}
-					aria-label="Close Modal"
+					aria-label="Close the project details modal"
 				>
 					<span className="sr-only">Close Modal</span>
 				</button>
@@ -147,10 +147,10 @@ export default function ProjectModal(props) {
 														<a
 															target="_blank"
 															rel="noreferrer"
-															aria-label={`Click to see ${filteredPro.title}'s live site`}
+															aria-label={`Visit the live site for ${filteredPro.title}`}
 															href={filteredPro.url}
 														>
-															<div aria-hidden="true">Live Site</div>
+															<div>Live Site</div>
 														</a>
 													</div>
 												</div>

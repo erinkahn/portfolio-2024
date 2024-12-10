@@ -10,7 +10,7 @@ export default function FeaturedImage(props) {
 						aria-current={p === props.isActive ? true : false}
 						aria-hidden={p === props.isActive ? false : true}
 						aria-label={`image ${p + 1} of 4`}
-						aria-labelledby={project.client}
+						aria-labelledby={project.slideNum}
 						role="tabpanel"
 					>
 						<img

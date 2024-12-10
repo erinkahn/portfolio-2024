@@ -1280,7 +1280,7 @@ export const timelineData = {
 	sectionTitle: "timeline",
 	years: [
 		{
-			year: "2016",
+			year: "8/12 - 5/16",
 			company: "Graduated from University of Alabama",
 			position: "Graphic Design + Advertising Degree",
 			summary: `Studied advertising and graphic design, graduating with a 3.96 GPA and earning a spot on the President's List every year. Awarded first place in national advertising competition for designing the plansbook, which showcased our ad campaign, strategy, and creative direction. This accomplishment, achieved in my final year, demonstrated my ability to blend creativity with strategic insight in a highly competitive environment.`,
@@ -1288,7 +1288,7 @@ export const timelineData = {
 			tools: "Adobe Creative Suite (Illustrator, Photoshop, InDesign)",
 		},
 		{
-			year: "2016-17",
+			year: "5/16 - 4/17",
 			company: "Walls Media, CCG Ideas, Flex Digital",
 			position: "Graphic Design Intern, Freelance Designer",
 			summary:
@@ -1298,7 +1298,7 @@ export const timelineData = {
 				"Adobe Creative Suite (Illustrator, Photoshop, InDesign), Umbraco, WordPress, HTML, Microsoft PowerPoint",
 		},
 		{
-			year: "2017-18",
+			year: "4/17 - 8/18",
 			company: "graduated from The Creative Circus Portfolio School",
 			position: "Interactive Web Development Certification",
 			summary:
@@ -1308,7 +1308,7 @@ export const timelineData = {
 				"HTML5, CSS3, SCSS (SASS), JavaScript, AJAX, Vue, NodeJS, Flexbox, Bootstrap, Greensock (GSAP), WordPress, PHP, Git, GitHub, Bluehost, ACF (Advanced Custom Fields), Sketch, Adobe Creative Suite (XD, Photoshop, InDesign, Illustrator, After Effects)",
 		},
 		{
-			year: "2018-20",
+			year: "8/18 - 8/20",
 			company: "Vehicle Media",
 			position: "WordPress + PHP Developer, Freelance Designer",
 			summary:
@@ -1318,7 +1318,7 @@ export const timelineData = {
 				"Custom WordPress Child Theme Development, ACF, PHP, Squarespace, Shopify, WOOCommerce, HTML5, CSS3, Sass, JavaScript, BootStrap, Git, jQuery, Adobe Creative Suite (XD, Photoshop, InDesign, Illustrator, After Effects), Lighthouse, Axe, WAVE, BrowserStack",
 		},
 		{
-			year: "2020-21",
+			year: "8/20 - 7/21",
 			company: "DynamiX Web Design",
 			position: "Front-End Developer, Freelance Designer",
 			summary:
@@ -1328,17 +1328,17 @@ export const timelineData = {
 				"PHP, Sass, ES6 JavaScript, NPM, Git, Content Management Systems, RESTFUL APIs, WAVE, Axe, WebAIM, W3C Validator, Lighthouse, PageSpeed Insights, VoiceOver, BrowserStack",
 		},
 		{
-			year: "2021-24",
+			year: "7/21 - 1/24",
 			company: "Avanade",
-			position: "React Developer, Freelance Designer/Developer",
+			position: "Consultant, Sr. Analyst, Frontend Software Engineer",
 			summary:
-				"As a Sr. Analyst/Front-End Developer, I focused on delivering efficient, scalable software solutions for clients across multiple touchpoints. Collaborating with client, account, and UX leads, I assessed UI/UX needs, made technical recommendations to improve code quality, and implemented long-term maintenance strategies. In 2023, I received the Ambassador Award for proposing UX architecture changes and third-party libraries that enhanced client products. Recognized for my fast regression testing and proactive approach, I conducted code reviews, mentored new developers, and worked with Microsoft Teams to resolve bugs and ensure accurate translation of responsive designs from Figma to the web. I also performed QA testing across devices using BrowserStack, built new features, and wrote unit tests with technologies like JEST and React Testing Library. Additionally, I resolved staffing gaps by quickly finding a replacement for my project role, saving company revenue and easing team workload. My contributions earned multiple awards, including Super Hero and Ambassador recognitions, for my leadership, technical expertise, and commitment to continuous improvement.",
+				"As a Sr. Analyst (Frontend Engineer), I focused on delivering efficient, scalable software solutions for clients across multiple touchpoints. Collaborating with client, account, and UX leads, I assessed UI/UX needs, made technical recommendations to improve code quality, and implemented long-term maintenance strategies. In 2023, I received the Ambassador Award for proposing UX architecture changes and third-party libraries that enhanced client products. Recognized for my fast regression testing and proactive approach, I conducted code reviews, mentored new developers, and resolved bugs to ensure accurate translation of responsive designs from Figma to the web. I also performed QA tests across devices using BrowserStack, built new features, and wrote unit tests with technologies like JEST and React Testing Library. Additionally, I resolved staffing gaps by quickly finding a replacement for my project role, saving company revenue and easing team workload. My contributions earned multiple awards, including Super Hero and Ambassador recognitions, for my leadership, technical expertise, and commitment to continuous improvement.",
 			url: "https://www.avanade.com/en",
 			tools:
-				"React, Webpack, JEST, JSON, RESTful APIs, React Testing Library, SQL Server Management Studio, Azure DevOps, TypeScript, JavaScript, Git, NPM, Yarn, Microsoft Visual Studio, Azure DevOps, Tailwind, Prism, WCAG, WAVE, Axe, Lighthouse, VoiceOver, Sketch, Adobe Creative Suite (XD, Illustrator, Photoshop), Figma, BrowserStack, Greensock GSAP",
+				"React, Redux, React Query, Webpack, Git, GitHub, Bootstrap, Tailwind, JEST, JSON, RESTful APIs, React Testing Library, Azure DevOps, TypeScript, JavaScript, Git, NPM, Yarn, SQL Server Management Studio, BrowserStack, Confluence, InVision, Microsoft Visual Studio, Regression Testing, Prism, WCAG, WAVE, Axe, Lighthouse, VoiceOver, Sketch, Adobe Creative Suite (XD, Illustrator, Photoshop), Figma, BrowserStack, Greensock GSAP, Agile Methodologies, VoiceOver",
 		},
 		{
-			year: "2024-",
+			year: "1/24 - ",
 			company: "Alloy Digital",
 			position: "Senior Software Engineer",
 			summary:

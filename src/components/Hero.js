@@ -31,7 +31,7 @@ export default function Hero(props) {
 			>
 				<div className="text-wrapper">
 					<h1 className="hero-title">{props.title}</h1>
-					<p className="hero-subtitle">{props.subtitle}</p>
+					<h2 className="hero-subtitle">{props.subtitle}</h2>
 				</div>
 			</div>
 

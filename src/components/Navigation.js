@@ -42,14 +42,20 @@ const Navigation = (props) => {
 
 			<div
 				className={`fullPageMenu ${hidden ? "" : "appear"}`}
-				aria-hidden={hidden ? true : false}
+				aria-hidden={hidden ? "true" : "false"}
 				role="dialog"
 				aria-modal="true"
-				aria-labelledby="full page menu"
+				aria-labelledby={hidden ? undefined : "full page menu"}
 				onKeyUp={escapeModal}
 				onBlur={handleFocus}
 			>
 				<div className="nav-wrapper">
+					{!hidden && (
+						<h2 id="full page menu" className="sr-only">
+							Full Page Menu
+						</h2>
+					)}
+
 					<ul className="social">
 						{navData.socialIcons.map((icon) => (
 							<li className="icon-list-item" key={`icon-${icon.id}`}>
