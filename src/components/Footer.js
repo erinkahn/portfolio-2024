@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { navData } from "../constants/data";
 
 export default function Footer() {
@@ -31,10 +31,10 @@ export default function Footer() {
 							<ul className="footer-nav-list">
 								{navData.navigation.map((item) => (
 									<li key={`nav-${item.id}`} className="nav-item">
-										<NavLink className="nav-link" to={item.linkTo}>
+										<Link className="nav-link" to={item.linkTo}>
 											{item.pageTitle}
 											<span className="sr-only">Page</span>
-										</NavLink>
+										</Link>
 									</li>
 								))}
 							</ul>
