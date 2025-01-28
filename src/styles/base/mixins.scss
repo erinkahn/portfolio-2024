@@ -5,36 +5,43 @@
 @use "sass:math";
 
 @mixin cascadeTransition {
-    @for $i from 1 through 5 {
-        &:nth-child(#{$i}) {
-            transition-delay: #{$i * 200ms};
-        }
-    }
+	@for $i from 1 through 5 {
+		&:nth-child(#{$i}) {
+			transition-delay: #{$i * 200ms};
+		}
+	}
 }
 
 @mixin aspectRatioContainer($x, $y) {
-    position: relative;
-    height: 0;
-    width: 100%;
-    padding-top: $y / $x * 100%;
+	position: relative;
+	height: 0;
+	width: 100%;
+	padding-top: $y / $x * 100%;
 }
 
 @mixin aspectRatioImage() {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }
 
-@mixin pseudo($content: '', $pos: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0) {
-    content: $content;
-    display: block;
-    position: $pos;
-    top: $top;
-    bottom: $bottom;
-    left: $left;
-    right: $right;
+@mixin pseudo(
+	$content: "",
+	$pos: absolute,
+	$top: 0,
+	$bottom: 0,
+	$left: 0,
+	$right: 0
+) {
+	content: $content;
+	display: block;
+	position: $pos;
+	top: $top;
+	bottom: $bottom;
+	left: $left;
+	right: $right;
 }
 
 @mixin background-svg {
@@ -52,9 +59,9 @@
 	-webkit-mask-repeat: no-repeat;
 }
 
-@mixin mask-svg-img($image: '') {
-	mask-image: url('#{$svgPath}#{$image}');
-	-webkit-mask-image: url('#{$svgPath}#{$image}');
+@mixin mask-svg-img($image: "") {
+	mask-image: url("#{$svgPath}#{$image}");
+	-webkit-mask-image: url("#{$svgPath}#{$image}");
 }
 
 // @mixin retina($bg-image, $size: contain, $file-type: 'png') {
@@ -68,6 +75,6 @@
 
 // 			background-image: url('#{$publicPath}#{$bg-image}@2x.#{$file-type}');
 // 			background-size: $size;
-            
+
 // 	}
 // }

@@ -1,62 +1,76 @@
+import { motion } from "framer-motion";
 import SectionWrapper from "../../components/SectionWrapper";
 import { timelineData } from "../../constants/data";
+
+const containerVariants = {
+	hidden: { opacity: 0 },
+	visible: {
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.1,
+			delayChildren: 0.2,
+		},
+	},
+};
+
+const itemVariants = {
+	hidden: { opacity: 0, y: 20 },
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: { duration: 0.5, ease: "easeOut" },
+	},
+};
 
 export default function Timeline() {
 	return (
 		<SectionWrapper>
-			<div className="timeline-container">
-				<ul className="inner-wrapper">
-					{timelineData.years.map((date, d) => (
-						<li key={d}>
-							<h2 className="year">{date.year}</h2>
+			<motion.div
+				className="timeline-container"
+				variants={containerVariants}
+				initial="hidden"
+				animate="visible"
+			>
+				<ul className="timeline">
+					{timelineData.years.map((entry, index) => (
+						<motion.li
+							key={index}
+							className="timeline-item"
+							variants={itemVariants}
+						>
+							<h2 className="timeline-year">{entry.year}</h2>
 
-							{date.url ? (
+							{entry.url ? (
 								<a
-									className="link"
-									href={date.url}
+									className="timeline-link"
+									href={entry.url}
 									target="_blank"
 									rel="noreferrer"
 								>
-									<p className="company">{date.company}</p>
+									<p className="timeline-company">
+										<strong>{entry.company}</strong>
+									</p>
 								</a>
 							) : (
-								<p className="company">{date.company}</p>
+								<p className="timeline-company">
+									<strong>{entry.company}</strong>
+								</p>
 							)}
-							<p className="title">
-								<em>{date.position}</em>
+
+							<p className="timeline-title">
+								<em>{entry.position}</em>
 							</p>
-							<p className="summary">{date.summary}</p>
-							{date.tools && <p className="tools">{date.tools}</p>}
-						</li>
+							<p className="timeline-summary">{entry.summary}</p>
+
+							{entry.tools && (
+								<p className="timeline-tools">
+									<em>{entry.tools}</em>
+								</p>
+							)}
+						</motion.li>
 					))}
 				</ul>
-				<div className="img-wrapper">
-					<img
-						width="130px"
-						height="504px"
-						src="../../images/timeline/grad.png"
-						alt="graduate student"
-					/>
-					<img
-						width="130px"
-						height="504px"
-						src="../../images/timeline/cert.png"
-						alt="certification"
-					/>
-					<img
-						width="130px"
-						height="504px"
-						src="../../images/timeline/headshot.png"
-						alt="headshot"
-					/>
-					<img
-						width="130px"
-						height="504px"
-						src="../../images/timeline/code.png"
-						alt="code"
-					/>
-				</div>
-			</div>
+			</motion.div>
 		</SectionWrapper>
 	);
 }
