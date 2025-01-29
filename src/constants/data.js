@@ -285,11 +285,11 @@ export const workData = {
 					alt: "shopify",
 				},
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -297,7 +297,7 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -396,11 +396,11 @@ export const workData = {
 			devs: "Dave Carney, John Finch",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -408,11 +408,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -456,11 +456,11 @@ export const workData = {
 			devs: "John Finch",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -468,11 +468,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -520,11 +520,11 @@ export const workData = {
 			devs: "Andrew Borem",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -532,11 +532,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -603,11 +603,11 @@ export const workData = {
 			devs: "John Finch, Dave Carney",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -615,11 +615,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -720,11 +720,11 @@ export const workData = {
 			designers: "VM Designer",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -732,11 +732,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -882,11 +882,11 @@ export const workData = {
 			devs: "Eric King",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -894,11 +894,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -980,19 +980,19 @@ export const workData = {
 			devs: "Devote Studio",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -1031,15 +1031,15 @@ export const workData = {
 			designers: "Carol Ehreth",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -1065,15 +1065,15 @@ export const workData = {
 			role: "Developer + Designer",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -1153,11 +1153,11 @@ export const workData = {
 			designers: "Kate Gallihugh, Leeah Emerson (AD), Will Aebi (Copy)",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -1165,7 +1165,7 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -1211,7 +1211,7 @@ export const workData = {
 					alt: "wordpress",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -1280,52 +1280,15 @@ export const timelineData = {
 	sectionTitle: "timeline",
 	years: [
 		{
-			year: "8/12 - 5/16",
-			company: "Graduated from University of Alabama",
-			position: "Graphic Design + Advertising Degree",
-			summary: `Studied advertising and graphic design, graduating with a 3.96 GPA and earning a spot on the President's List every year. Awarded first place in national advertising competition for designing the plansbook, which showcased our ad campaign, strategy, and creative direction. This accomplishment, achieved in my final year, demonstrated my ability to blend creativity with strategic insight in a highly competitive environment.`,
-			url: "https://www.ua.edu/",
-			tools: "Adobe Creative Suite (Illustrator, Photoshop, InDesign)",
-		},
-		{
-			year: "5/16 - 4/17",
-			company: "Walls Media, CCG Ideas, Flex Digital",
-			position: "Graphic Design Intern, Freelance Designer",
+			year: "1/24 - ",
+			company: "Alloy Digital",
+			position: "Senior Software Engineer",
 			summary:
-				"Created a diverse range of creative assets for CCG clients, including direct mail pieces, digital ads, billboards, infographics, brochures, digital icons, and other print materials. Managed website updates and developed client web pages using WordPress, Umbraco, and basic HTML. Organized and polished web page mockups and design elements, ensuring files and images were ready for smooth handoff to web developers. Designed corporate print materials—such as name tags, brochures, flyers, posters, logos, and business cards—for Walls Media clients, consistently delivering high-quality designs that aligned with client expectations and strengthened brand identity.",
-			url: "",
+				"Independently rebuilt a headless WordPress website with Next, resulting in a 28% performance boost and a 19% improvement in accessibility. With a strong ability to resolve live bugs and manage ongoing client projects, I navigate unfamiliar codebases with minimal direction, demonstrating independence and a commitment to delivering high-quality results. I proactively create QA items, support the QA team, and ensure swift resolution of bugs. Gained expertise in Sanity and GROQ, successfully implementing a robust front-end and back-end content management system in under three months. I take a proactive approach to user experience (UX) by initiating discussions during project phases to identify potential issues early, saving time and resources. Additionally, I optimize images and assets, improve load times, and ensure accessibility by adding alt tags, ARIA labels, and proper semantic HTML.",
+			url: "https://alloy.digital/",
 			tools:
-				"Adobe Creative Suite (Illustrator, Photoshop, InDesign), Umbraco, WordPress, HTML, Microsoft PowerPoint",
-		},
-		{
-			year: "4/17 - 8/18",
-			company: "graduated from The Creative Circus Portfolio School",
-			position: "Interactive Web Development Certification",
-			summary:
-				"Graduated from one of the top advertising portfolio schools in the country, where I gained 1.75 years of hands-on experience coding websites, web applications, and a mobile app. Strengthened my technical expertise through coursework in UX/UI design, with a focus on optimizing user experiences for mobile platforms. Developed proficiency in content management systems (CMS's) and web hosting services, including WordPress and BlueHost, to enhance website development and streamline content management. Collaborated closely with designers and developers to craft innovative solutions and create intuitive, user-centered interfaces that addressed real-world challenges.",
-			url: "http://creativecircus.edu/",
-			tools:
-				"HTML5, CSS3, SCSS (SASS), JavaScript, AJAX, Vue, NodeJS, Flexbox, Bootstrap, Greensock (GSAP), WordPress, PHP, Git, GitHub, Bluehost, ACF (Advanced Custom Fields), Sketch, Adobe Creative Suite (XD, Photoshop, InDesign, Illustrator, After Effects)",
-		},
-		{
-			year: "8/18 - 8/20",
-			company: "Vehicle Media",
-			position: "WordPress + PHP Developer, Freelance Designer",
-			summary:
-				"Began as a Frontend Developer and was quickly promoted to PHP Developer for successfully managing new website builds from start to finish. Took ownership of projects, collaborating independently with designers, project managers, and two remote developers to transform design concepts into fully functional websites. Managed asset export and optimization from Adobe XD, Photoshop, and InDesign to ensure seamless integration. Key projects included high-profile clients such as Waffle House and The Scott Brothers, where I delivered impactful, user-focused web experiences.",
-			url: "https://www.vehiclemedia.com/",
-			tools:
-				"Custom WordPress Child Theme Development, ACF, PHP, Squarespace, Shopify, WOOCommerce, HTML5, CSS3, Sass, JavaScript, BootStrap, Git, jQuery, Adobe Creative Suite (XD, Photoshop, InDesign, Illustrator, After Effects), Lighthouse, Axe, WAVE, BrowserStack",
-		},
-		{
-			year: "8/20 - 7/21",
-			company: "DynamiX Web Design",
-			position: "Front-End Developer, Freelance Designer",
-			summary:
-				"Developed custom web applications from concept to production, ensuring dynamic, clean, and well-structured code. Managed the creation and maintenance of layouts, categories, pages, and overall site architecture. Regularly debugged and enhanced existing projects by adding new features and optimizing performance. Collaborated with team members through pair programming and conducted code reviews to ensure code quality, consistency, and best practices. Performed comprehensive functionality, performance, and accessibility testing to guarantee optimal user experience. Delivered high-quality websites for clients such as Expo Home Improvements and Powell Law Firm, customizing each project to meet specific business objectives and user needs.",
-			url: "https://dynamix.site/",
-			tools:
-				"PHP, Sass, ES6 JavaScript, NPM, Git, Content Management Systems, RESTFUL APIs, WAVE, Axe, WebAIM, W3C Validator, Lighthouse, PageSpeed Insights, VoiceOver, BrowserStack",
+				"React, Next.js, TypeScript, GraphQL, APIs, Postman, BrowserStack, Lighthouse, Axe, WAVE, GROQ, Sanity, WordPress, Git, GitHub, Figma, Jira, Vercel",
+			edu: false,
 		},
 		{
 			year: "7/21 - 1/24",
@@ -1336,16 +1299,60 @@ export const timelineData = {
 			url: "https://www.avanade.com/en",
 			tools:
 				"React, Redux, React Query, Webpack, Git, GitHub, Bootstrap, Tailwind, JEST, JSON, RESTful APIs, React Testing Library, Azure DevOps, TypeScript, JavaScript, Git, NPM, Yarn, SQL Server Management Studio, BrowserStack, Confluence, InVision, Microsoft Visual Studio, Regression Testing, Prism, WCAG, WAVE, Axe, Lighthouse, VoiceOver, Sketch, Adobe Creative Suite (XD, Illustrator, Photoshop), Figma, BrowserStack, Greensock GSAP, Agile Methodologies, VoiceOver",
+			edu: false,
 		},
 		{
-			year: "1/24 - ",
-			company: "Alloy Digital",
-			position: "Senior Software Engineer",
+			year: "8/20 - 7/21",
+			company: "DynamiX Web Design",
+			position: "Front-End Developer, Freelance Designer",
 			summary:
-				"Independently rebuilt a headless WordPress website with Next, resulting in a 28% performance boost and a 19% improvement in accessibility. With a strong ability to resolve live bugs and manage ongoing client projects, I navigate unfamiliar codebases with minimal direction, demonstrating independence and a commitment to delivering high-quality results. I proactively create QA items, support the QA team, and ensure swift resolution of bugs. Gained expertise in Sanity and GROQ, successfully implementing a robust front-end and back-end content management system in under three months. I take a proactive approach to user experience (UX) by initiating discussions during project phases to identify potential issues early, saving time and resources. Additionally, I optimize images and assets, improve load times, and ensure accessibility by adding alt tags, ARIA labels, and proper semantic HTML.",
-			url: "https://alloy.digital/",
+				"Developed custom web applications from concept to production, ensuring dynamic, clean, and well-structured code. Managed the creation and maintenance of layouts, categories, pages, and overall site architecture. Regularly debugged and enhanced existing projects by adding new features and optimizing performance. Collaborated with team members through pair programming and conducted code reviews to ensure code quality, consistency, and best practices. Performed comprehensive functionality, performance, and accessibility testing to guarantee optimal user experience. Delivered high-quality websites for clients such as Expo Home Improvements and Powell Law Firm, customizing each project to meet specific business objectives and user needs.",
+			url: "https://dynamix.site/",
 			tools:
-				"React, Next.js, TypeScript, GraphQL, APIs, Postman, BrowserStack, Lighthouse, Axe, WAVE, GROQ, Sanity, WordPress, Git, GitHub, Figma, Jira, Vercel",
+				"PHP, Sass, ES6 JavaScript, NPM, Git, Content Management Systems, RESTFUL APIs, WAVE, Axe, WebAIM, W3C Validator, Lighthouse, PageSpeed Insights, VoiceOver, BrowserStack",
+			edu: false,
+		},
+		{
+			year: "8/18 - 8/20",
+			company: "Vehicle Media",
+			position: "WordPress + PHP Developer, Freelance Designer",
+			summary:
+				"Began as a Frontend Developer and was quickly promoted to PHP Developer for successfully managing new website builds from start to finish. Took ownership of projects, collaborating independently with designers, project managers, and two remote developers to transform design concepts into fully functional websites. Managed asset export and optimization from Adobe XD, Photoshop, and InDesign to ensure seamless integration. Key projects included high-profile clients such as Waffle House and The Scott Brothers, where I delivered impactful, user-focused web experiences.",
+			url: "https://www.vehiclemedia.com/",
+			tools:
+				"Custom WordPress Child Theme Development, ACF, PHP, Squarespace, Shopify, WOOCommerce, HTML5, CSS3, Sass, JavaScript, BootStrap, Git, jQuery, Adobe Creative Suite (XD, Photoshop, InDesign, Illustrator, After Effects), Lighthouse, Axe, WAVE, BrowserStack",
+			edu: false,
+		},
+		{
+			year: "4/17 - 8/18",
+			company: "The Creative Circus Portfolio School",
+			position: "Interactive Web Development Certification",
+			summary:
+				"Graduated from one of the top advertising portfolio schools in the country, where I gained 1.75 years of hands-on experience coding websites, web applications, and a mobile app. Strengthened my technical expertise through coursework in UX/UI design, with a focus on optimizing user experiences for mobile platforms. Developed proficiency in content management systems (CMS's) and web hosting services, including WordPress and BlueHost, to enhance website development and streamline content management. Collaborated closely with designers and developers to craft innovative solutions and create intuitive, user-centered interfaces that addressed real-world challenges.",
+			url: "http://creativecircus.edu/",
+			tools:
+				"HTML5, CSS3, SCSS (SASS), JavaScript, AJAX, Vue, NodeJS, Flexbox, Bootstrap, Greensock (GSAP), WordPress, PHP, Git, GitHub, Bluehost, ACF (Advanced Custom Fields), Sketch, Adobe Creative Suite (XD, Photoshop, InDesign, Illustrator, After Effects)",
+			edu: true,
+		},
+		{
+			year: "5/16 - 4/17",
+			company: "Walls Media, CCG Ideas, Flex Digital",
+			position: "Graphic Design Intern, Freelance Designer",
+			summary:
+				"Created a diverse range of creative assets for CCG clients, including direct mail pieces, digital ads, billboards, infographics, brochures, digital icons, and other print materials. Managed website updates and developed client web pages using WordPress, Umbraco, and basic HTML. Organized and polished web page mockups and design elements, ensuring files and images were ready for smooth handoff to web developers. Designed corporate print materials—such as name tags, brochures, flyers, posters, logos, and business cards—for Walls Media clients, consistently delivering high-quality designs that aligned with client expectations and strengthened brand identity.",
+			url: "",
+			tools:
+				"Adobe Creative Suite (Illustrator, Photoshop, InDesign), Umbraco, WordPress, HTML, Microsoft PowerPoint",
+			edu: false,
+		},
+		{
+			year: "8/12 - 5/16",
+			company: "The University of Alabama",
+			position: "BA in Graphic Design and Advertising",
+			summary: `Studied advertising and graphic design, graduating with a 3.96 GPA and earning a spot on the President's List every year. Awarded first place in national advertising competition for designing the plansbook, which showcased our ad campaign, strategy, and creative direction. This accomplishment, achieved in my final year, demonstrated my ability to blend creativity with strategic insight in a highly competitive environment.`,
+			url: "https://www.ua.edu/",
+			tools: "Adobe Creative Suite (Illustrator, Photoshop, InDesign)",
+			edu: true,
 		},
 	],
 };

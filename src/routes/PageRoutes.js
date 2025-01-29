@@ -10,11 +10,11 @@ export default function PageRoutes() {
 	return (
 		<Suspense fallback={<div>Loading...</div>}>
 			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route exact path="/work" element={<Work />} />
-				<Route exact path="/resume" element={<Resume />} />
-				<Route exact path="/404" element={<NotFound />} />
-				<Route path="*" element={<Navigate replace to="/404" />} />
+				<Route path="/" element={<Home />} />
+				<Route path="/work" element={<Work />} />
+				<Route path="/resume" element={<Resume />} />
+				<Route path="/404" element={<NotFound />} />
+				<Route path="*" element={<Navigate to="/404" />} />
 			</Routes>
 		</Suspense>
 	);

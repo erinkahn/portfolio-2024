@@ -1,150 +1,166 @@
 header {
-    position: relative;
-    width: 100%;
-    z-index: 4;
+	position: relative;
+	width: 100%;
+	z-index: 4;
 
-    &::before {
-        @include pseudo;
-        @include mask-svg-set;
-        @include mask-svg-img('../../assets/images/side-nav-shape.svg');
-        background-color: $accessibleBtnLight;
-        width: 9em;
-        left: auto;
-        height: 100.2vh;
-        z-index: 1;
-        transform: translate(18%, 0%);
+	&::before {
+		@include pseudo;
+		@include mask-svg-set;
+		@include mask-svg-img("../../assets/images/side-nav-shape.svg");
+		background-color: $accessibleBtnLight;
+		width: 9em;
+		left: auto;
+		height: 100.2vh;
+		z-index: 1;
+		transform: translate(18%, 0%);
 
-        @media screen and (min-height: 500px) {
-            width: 16vh;
-        }
+		@media screen and (min-height: 500px) {
+			width: 16vh;
+		}
 
-        @media screen and (min-width: $smUp) {
-            transform: translate(14%, 0%);
-        }
-        
-        .theme-dark & {
-            background-color: $fiveDark;
-        }
-    }
+		@media screen and (min-width: $smUp) {
+			transform: translate(14%, 0%);
+		}
 
-    &.background {
-        height: 2em;
-        background-color: $white;
+		.theme-dark & {
+			background-color: $fiveDark;
+		}
+	}
 
-        .theme-dark & {
-            background-color: $dark;
-        }
-    }
+	&.background {
+		height: 2em;
+		background-color: $white;
 
-    .logo-wrapper {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(2em, 2em);
-        z-index: 3;
-    }
+		.theme-dark & {
+			background-color: $dark;
+		}
+	}
 
-    .side-nav-wrap {
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100vh;
-        width: 100%;
-        max-width: 213px;
-        z-index: 3;
-    }
+	.logo-wrapper {
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: translate(2em, 2em);
+		z-index: 3;
+	}
 
-    .menuBtn {
-        position: fixed;
-        right: 0;
-        top: 50vh;
-        display: flex;
-        height: 60px;
-        align-items: center;
-        width: 5em;
-        border: none;
-        z-index: 3;
-        transform: translate(-0.5vh, -50%);
+	.side-nav-wrap {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100vh;
+		width: 100%;
+		max-width: 213px;
+		z-index: 3;
+	}
 
-        @media screen and (min-height: 1100px) {
-            transform: translate(-1vh, -50%);
-        }
+	.menuBtn {
+		position: fixed;
+		right: -3px;
+		top: 50vh;
+		display: flex;
+		height: 60px;
+		align-items: center;
+		width: 4.25em;
+		border: none;
+		z-index: 3;
+		transform: translate(-0.5vh, -50%);
 
-        &::before,
-        &::after {
-            @include pseudo;
-            left: auto;
-            width: 2.25em;
-            height: 3px;
-            background-color: $fiveLight;
-            border-radius: 1em;
-            transform: translate(-1em, 0) rotate(0deg);
-            transition: transform $quick;
-            transform-origin: left;
+		&.open {
+			width: 5em;
+		}
 
-            .theme-dark & {
-                background-color: $primaryDark;
-            }
+		@media screen and (min-width: $smUp) {
+			width: 4.65em;
+		}
 
-            @media screen and (min-width: $smUp) {
-                width: 2.5em;
-                transform: translate(-1em, 0) rotate(0deg);
-            }
-        }
+		@media screen and (min-height: 1100px) {
+			transform: translate(-1vh, -50%);
+		}
 
-        &::before {
-            top: 1.5vh;
-        }
+		&::before,
+		&::after {
+			@include pseudo;
+			left: auto;
+			width: 2em;
+			height: 3px;
+			background-color: $fiveLight;
+			border-radius: 1em;
+			transform: translate(-50%, 0) rotate(0deg);
+			transition: transform $quick;
+			transform-origin: left;
 
-        &::after {
-            top: 3vh;
-        }
+			.theme-dark & {
+				background-color: $primaryDark;
+			}
 
-        .close {
-            opacity: 0;
-            color: $white;
-            letter-spacing: 1px;
-            font-size: 1.125em;
-            border-left: 3px solid $white;
-            padding-left: 1em;
-            transform: rotate(0deg) translate(82%, 8%);
-            background-color: $fiveLight;
-            border-radius: 90px 90px 0;
-            border-color: transparent;
-            transition: opacity $slow, transform $slow;
-            transition-delay: .3s;
+			@media screen and (min-width: $smUp) {
+				width: 2.25em;
+			}
+		}
 
-            .theme-dark & {
-                background-color: $primaryDark;
-            }
-        }
+		&::before {
+			top: 1.5vh;
+		}
 
-        &:hover {
-            &::before,
-            &::after {
-                background-color: $primaryLight;
+		&::after {
+			top: 3vh;
+		}
 
-                .theme-dark & {
-                    background-color: $primaryDark;
-                }
-            }
-        }
+		.close {
+			opacity: 0;
+			color: $white;
+			letter-spacing: 1px;
+			font-size: 1.125em;
+			border-left: 3px solid $white;
+			padding-left: 1em;
+			transform: rotate(0deg) translate(82%, 8%);
+			background-color: $fiveLight;
+			border-radius: 90px;
+			border-color: transparent;
+			transition: opacity $slow, transform $slow;
+			transition-delay: 0.3s;
 
-        &.open {
-            &::before,
-            &::after {
-                content: none;
-            }
+			.theme-dark & {
+				background-color: $primaryDark;
+			}
 
-            .close {
-                opacity: 1;
-                padding: 1em 3em 1em 1em;
-                transform: rotate(0deg) translate(9%, 0%);
+			&:hover,
+			&:focus {
+				background-color: $primaryLight;
 
-                @media screen and (min-width: $smUp) {
-                    padding: 2em 3em 2em 1em;
-                }
-            }
-        }
-    }
+				.theme-dark & {
+					background-color: $accessibleDark;
+				}
+			}
+		}
+
+		&:hover {
+			&::before,
+			&::after {
+				background-color: $primaryLight;
+
+				.theme-dark & {
+					background-color: $primaryDark;
+				}
+			}
+		}
+
+		&.open {
+			&::before,
+			&::after {
+				content: none;
+			}
+
+			.close {
+				opacity: 1;
+				padding: 1em 3em 1em 1em;
+				transform: rotate(0deg) translate(9%, 0%);
+
+				@media screen and (min-width: $smUp) {
+					padding: 2em 3em 2em 1em;
+				}
+			}
+		}
+	}
 }
