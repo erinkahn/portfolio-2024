@@ -1,133 +1,144 @@
 .timeline-container {
-    position: relative;
+	padding: 4rem 4rem 2rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-    .img-wrapper {
-        display: none;
-        position: absolute;
-        top: 0;
-        height: calc(100vh + 100px);
-        width: 100%;
-        z-index: 0;
+	@media screen and (min-width: $medUp) {
+		padding-right: 6rem;
+	}
 
-        @media screen and (min-width: $medUp) {
-            display: block;
-        }
+	.timeline {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		max-width: 1200px;
 
-        img {
-            position: absolute;
-            opacity: 0.4;
-            width: 100%;
-            max-width: 80px;
-            
-            @media screen and (min-width: $medUp) {
-                opacity: 0.6;
-                max-width: 130px;
-                filter: grayscale(1);
-            }
+		.timeline-item {
+			margin-bottom: 2rem;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 1.5rem;
 
-            &:first-of-type {
-                top: 0;
-                left: auto;
-                right: 0;
-                transform: scaleX(-1);    
-            }
+			@media screen and (min-width: $large) {
+				text-align: justify;
+			}
 
-            &:nth-of-type(2) {
-                top: 20vh;
-                transform: scaleX(-1);
-            }
+			&:nth-of-type(odd) {
+				@media screen and (min-width: $medUp) {
+					margin-left: auto;
+				}
+			}
 
-            &:nth-of-type(3) {
-                top: 80vh;
-                left: auto;
-                right: 0;
-            }
+			strong {
+				font-weight: $bold;
+			}
 
-            &:last-of-type {
-                top: 120vh;
-                right: auto;
-                left: 0;
-            }
-        }
-    }
+			b {
+				letter-spacing: 1px;
+				font-weight: $semibold;
+			}
 
-    .inner-wrapper {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 15vw;
-        margin: 0 auto;
-        width: 80%;
-        z-index: 1;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
 
-        @media screen and (min-width: $medUp) {
-            max-width: 700px;
-        }
+	.intro-section {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
 
-        @media screen and (min-width: $xxlarge) {
-            max-width: 900px;
-        }
-    }
+		.title-download {
+			display: none;
+		}
 
-    li {
-        &:first-of-type {
-            margin-top: 10vw;
-        }
-        @media screen and (min-width: $large){
-            text-align: justify;
-        }
+		.title {
+			font-size: 1.25rem;
+			font-family: $montserrat;
+		}
 
-        &:nth-of-type(odd) {
-            @media screen and (min-width: $medUp) {
-                margin-left: auto;
-            }
-        }
-    }
+		span {
+			text-align: right;
+			margin-left: auto;
+			margin-right: 0;
+		}
 
-    .summary, 
-    .tools {
-        max-width: 600px;
-    }
+		@media screen and (min-width: $smUp) {
+			.title-download {
+				display: block;
+			}
+		}
 
-    .summary {
-        margin-top: 0.5em;
-        font-size: 0.875em;
-    }
+		@media screen and (min-width: $medUp) {
+			flex-direction: row;
+		}
 
-    .tools {
-        font-size: 0.875em;
-        margin-top: 0.25em;
-        font-weight: 600;
-    }
+		.download {
+			font-family: $sourceCode;
+			display: inline-flex;
+			align-items: center;
+			gap: 1em;
+			justify-content: flex-end;
+			margin-top: 0.5rem;
+			color: $primaryLight;
 
-    .year {
-        font-size: 2em;
-        font-family: $montserrat;
-        font-weight: $semibold;
-        color: $primaryLight;
+			.theme-dark & {
+				color: $accessibleDark;
+			}
 
-        @media screen and (min-width: $medUp) {
-            font-size: 3em;
-        }
+			&:hover,
+			&:focus {
+				color: $secondaryLight;
 
-        .theme-dark & {
-            color: $fiveDark;
-        }
-    }
+				.theme-dark & {
+					color: $secondaryDark;
+				}
+			}
+		}
+	}
 
-    .link {
-        color: $primaryLight;
-        font-weight: 500;
-        transition: font-weight $quick;
+	.timeline-year {
+		font-size: 1.25rem;
+		margin-bottom: 0.5rem;
+		font-family: $sourceCode;
+	}
 
-        .theme-dark & {
-            color: $primaryDark;
-        }
+	.timeline-company {
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-bottom: 0.25rem;
+	}
 
-        &:hover,
-        &:focus {
-            font-weight: 600;
-        }
-    }
+	.timeline-title {
+		margin-bottom: 1rem;
+	}
 
+	.timeline-summary {
+		color: $dark;
+		margin-bottom: 0.5rem;
+	}
+
+	.timeline-tools {
+		color: $primaryLight;
+
+		.theme-dark & {
+			color: $accessibleDark;
+		}
+	}
+
+	.timeline-link {
+		color: $dark;
+		text-decoration: none;
+		font-weight: 500;
+
+		.theme-dark & {
+			color: $primaryDark;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }

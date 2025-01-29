@@ -1281,11 +1281,12 @@ export const timelineData = {
 	years: [
 		{
 			year: "8/12 - 5/16",
-			company: "Graduated from University of Alabama",
-			position: "Graphic Design + Advertising Degree",
+			company: "The University of Alabama",
+			position: "BA in Graphic Design and Advertising",
 			summary: `Studied advertising and graphic design, graduating with a 3.96 GPA and earning a spot on the President's List every year. Awarded first place in national advertising competition for designing the plansbook, which showcased our ad campaign, strategy, and creative direction. This accomplishment, achieved in my final year, demonstrated my ability to blend creativity with strategic insight in a highly competitive environment.`,
 			url: "https://www.ua.edu/",
 			tools: "Adobe Creative Suite (Illustrator, Photoshop, InDesign)",
+			edu: true,
 		},
 		{
 			year: "5/16 - 4/17",
@@ -1296,16 +1297,18 @@ export const timelineData = {
 			url: "",
 			tools:
 				"Adobe Creative Suite (Illustrator, Photoshop, InDesign), Umbraco, WordPress, HTML, Microsoft PowerPoint",
+			edu: false,
 		},
 		{
 			year: "4/17 - 8/18",
-			company: "graduated from The Creative Circus Portfolio School",
+			company: "The Creative Circus Portfolio School",
 			position: "Interactive Web Development Certification",
 			summary:
 				"Graduated from one of the top advertising portfolio schools in the country, where I gained 1.75 years of hands-on experience coding websites, web applications, and a mobile app. Strengthened my technical expertise through coursework in UX/UI design, with a focus on optimizing user experiences for mobile platforms. Developed proficiency in content management systems (CMS's) and web hosting services, including WordPress and BlueHost, to enhance website development and streamline content management. Collaborated closely with designers and developers to craft innovative solutions and create intuitive, user-centered interfaces that addressed real-world challenges.",
 			url: "http://creativecircus.edu/",
 			tools:
 				"HTML5, CSS3, SCSS (SASS), JavaScript, AJAX, Vue, NodeJS, Flexbox, Bootstrap, Greensock (GSAP), WordPress, PHP, Git, GitHub, Bluehost, ACF (Advanced Custom Fields), Sketch, Adobe Creative Suite (XD, Photoshop, InDesign, Illustrator, After Effects)",
+			edu: true,
 		},
 		{
 			year: "8/18 - 8/20",
@@ -1316,6 +1319,7 @@ export const timelineData = {
 			url: "https://www.vehiclemedia.com/",
 			tools:
 				"Custom WordPress Child Theme Development, ACF, PHP, Squarespace, Shopify, WOOCommerce, HTML5, CSS3, Sass, JavaScript, BootStrap, Git, jQuery, Adobe Creative Suite (XD, Photoshop, InDesign, Illustrator, After Effects), Lighthouse, Axe, WAVE, BrowserStack",
+			edu: false,
 		},
 		{
 			year: "8/20 - 7/21",
@@ -1326,6 +1330,7 @@ export const timelineData = {
 			url: "https://dynamix.site/",
 			tools:
 				"PHP, Sass, ES6 JavaScript, NPM, Git, Content Management Systems, RESTFUL APIs, WAVE, Axe, WebAIM, W3C Validator, Lighthouse, PageSpeed Insights, VoiceOver, BrowserStack",
+			edu: false,
 		},
 		{
 			year: "7/21 - 1/24",
@@ -1336,6 +1341,7 @@ export const timelineData = {
 			url: "https://www.avanade.com/en",
 			tools:
 				"React, Redux, React Query, Webpack, Git, GitHub, Bootstrap, Tailwind, JEST, JSON, RESTful APIs, React Testing Library, Azure DevOps, TypeScript, JavaScript, Git, NPM, Yarn, SQL Server Management Studio, BrowserStack, Confluence, InVision, Microsoft Visual Studio, Regression Testing, Prism, WCAG, WAVE, Axe, Lighthouse, VoiceOver, Sketch, Adobe Creative Suite (XD, Illustrator, Photoshop), Figma, BrowserStack, Greensock GSAP, Agile Methodologies, VoiceOver",
+			edu: false,
 		},
 		{
 			year: "1/24 - ",
@@ -1346,6 +1352,7 @@ export const timelineData = {
 			url: "https://alloy.digital/",
 			tools:
 				"React, Next.js, TypeScript, GraphQL, APIs, Postman, BrowserStack, Lighthouse, Axe, WAVE, GROQ, Sanity, WordPress, Git, GitHub, Figma, Jira, Vercel",
+			edu: false,
 		},
 	],
 };

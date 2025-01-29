@@ -2,68 +2,78 @@
 	.section-wrapper {
 		padding: 10vh 0;
 	}
-}
 
-.timeline-container {
-	padding: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	#maincontent {
+		position: relative;
 
-	.timeline {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		width: 100%;
-		max-width: 800px;
+		&::before {
+			content: none;
+		}
+	}
 
-		.timeline-item {
-			margin-bottom: 2rem;
-			border-bottom: 1px solid #ccc;
-			padding-bottom: 1.5rem;
+	header::before {
+		position: fixed;
+	}
 
-			&:last-child {
-				border-bottom: none;
+	footer {
+		@media screen and (max-width: $xsDown) {
+			.inner-footer-wrapper {
+				gap: 2rem;
 			}
+			.row.one {
+				grid-template-columns: 1fr;
+				gap: 2rem;
 
-			.timeline-year {
-				font-size: 1.8rem;
-				font-weight: bold;
-				margin-bottom: 1rem;
-			}
-
-			.timeline-company {
-				font-size: 1.2rem;
-				font-weight: bold;
-				margin-bottom: 0.5rem;
-			}
-
-			.timeline-link {
-				color: black;
-				text-decoration: none;
-
-				&:hover {
-					text-decoration: underline;
+				h3,
+				.btn-wrapper {
+					margin: 0 auto;
+					text-align: center;
 				}
 			}
 
-			.timeline-title {
-				font-style: italic;
-				margin-bottom: 0.5rem;
+			.footer-nav-list {
+				align-items: center;
+				flex-direction: row;
+				justify-content: center;
+				gap: 2rem;
+				padding-right: 0;
 			}
 
-			.timeline-summary {
-				color: $dark;
-				margin-bottom: 0.5rem;
+			.row.two {
+				max-width: 160px;
+				margin: auto auto;
+			}
+		}
+
+		@media screen and (min-width: $xsUp) {
+			.footer-nav-list {
+				padding-right: 3em;
 			}
 
-			.timeline-tools {
-				font-style: italic;
-				color: $primaryLight;
+			.row.two {
+				max-width: none;
+				margin: auto auto 2rem 0;
+				grid-gap: 1em;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
 
-				.theme-dark & {
-					color: $accessibleDark;
+				.social {
+					padding-left: 0.75em;
+					display: flex;
+					grid-column: 1;
+					grid-row: 1;
+					margin: auto auto auto 0;
 				}
+
+				.copyright {
+					grid-column: 1;
+				}
+			}
+		}
+
+		@media screen and (min-width: $medUp) {
+			.inner-footer-wrapper {
+				gap: 2rem;
 			}
 		}
 	}

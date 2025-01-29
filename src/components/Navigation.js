@@ -2,8 +2,9 @@ import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { navData } from "./../constants/data";
 import useLockBodyScroll from "./../hooks/useLockBodyScroll";
+import { IoCloseOutline } from "react-icons/io5";
 
-const Navigation = (props) => {
+const Navigation = () => {
 	const today = new Date().getFullYear();
 	const [hidden, setHidden] = useState(true);
 	const [locked, setLocked] = useLockBodyScroll();
@@ -37,7 +38,9 @@ const Navigation = (props) => {
 				ref={btnRef}
 				tabIndex="0"
 			>
-				<span className="close">{hidden ? "" : "close"}</span>
+				<span className="close">
+					{hidden ? "" : <IoCloseOutline size={32} />}
+				</span>
 			</button>
 
 			<div

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "../../components/SectionWrapper";
 import { timelineData } from "../../constants/data";
+import { FaDownload } from "react-icons/fa";
 
 const containerVariants = {
 	hidden: { opacity: 0 },
@@ -32,6 +33,16 @@ export default function Timeline() {
 				animate="visible"
 			>
 				<ul className="timeline">
+					<div className="intro-section">
+						<h1 className="section-title">Erin Kahn</h1>
+						<span className="title-download">
+							<p className="title">Frontend Developer</p>
+							<a className="download" href="/resume.pdf" download>
+								<FaDownload size={15} />
+								<span>Download PDF</span>
+							</a>
+						</span>
+					</div>
 					{timelineData.years.map((entry, index) => (
 						<motion.li
 							key={index}
@@ -58,12 +69,14 @@ export default function Timeline() {
 							)}
 
 							<p className="timeline-title">
+								<b>{entry.edu ? "Degree: " : "Role: "} </b>
 								<em>{entry.position}</em>
 							</p>
 							<p className="timeline-summary">{entry.summary}</p>
 
 							{entry.tools && (
 								<p className="timeline-tools">
+									<b>Skills: </b>
 									<em>{entry.tools}</em>
 								</p>
 							)}
