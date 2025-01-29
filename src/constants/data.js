@@ -285,11 +285,11 @@ export const workData = {
 					alt: "shopify",
 				},
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -297,7 +297,7 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -396,11 +396,11 @@ export const workData = {
 			devs: "Dave Carney, John Finch",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -408,11 +408,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -456,11 +456,11 @@ export const workData = {
 			devs: "John Finch",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -468,11 +468,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -520,11 +520,11 @@ export const workData = {
 			devs: "Andrew Borem",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -532,11 +532,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -603,11 +603,11 @@ export const workData = {
 			devs: "John Finch, Dave Carney",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -615,11 +615,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -720,11 +720,11 @@ export const workData = {
 			designers: "VM Designer",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -732,11 +732,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -882,11 +882,11 @@ export const workData = {
 			devs: "Eric King",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -894,11 +894,11 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -980,19 +980,19 @@ export const workData = {
 			devs: "Devote Studio",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
-					img: "/images/work/icons/PHP.svg",
+					img: "/images/work/icons/php.svg",
 					alt: "PHP",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -1031,15 +1031,15 @@ export const workData = {
 			designers: "Carol Ehreth",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -1065,15 +1065,15 @@ export const workData = {
 			role: "Developer + Designer",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -1153,11 +1153,11 @@ export const workData = {
 			designers: "Kate Gallihugh, Leeah Emerson (AD), Will Aebi (Copy)",
 			icons: [
 				{
-					img: "/images/work/icons/HTML.svg",
+					img: "/images/work/icons/html.svg",
 					alt: "HTML",
 				},
 				{
-					img: "/images/work/icons/CSS.svg",
+					img: "/images/work/icons/css.svg",
 					alt: "CSS",
 				},
 				{
@@ -1165,7 +1165,7 @@ export const workData = {
 					alt: "sass",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
@@ -1211,7 +1211,7 @@ export const workData = {
 					alt: "wordpress",
 				},
 				{
-					img: "/images/work/icons/JavaScript.svg",
+					img: "/images/work/icons/javascript.svg",
 					alt: "JavaScript",
 				},
 				{
