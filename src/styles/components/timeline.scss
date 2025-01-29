@@ -13,7 +13,7 @@
 		padding: 0;
 		margin: 0;
 		width: 100%;
-		max-width: 1200px;
+		max-width: 1000px;
 
 		.timeline-item {
 			margin-bottom: 2rem;
@@ -76,6 +76,8 @@
 		}
 
 		.download {
+			position: relative;
+			z-index: 3;
 			font-family: $sourceCode;
 			display: inline-flex;
 			align-items: center;
@@ -107,8 +109,14 @@
 
 	.timeline-company {
 		font-size: 1.2rem;
+		font-family: $montserrat;
 		font-weight: bold;
 		margin-bottom: 0.25rem;
+		color: $fiveLight;
+
+		.theme-dark & {
+			color: $accessibleDark;
+		}
 	}
 
 	.timeline-title {
@@ -121,10 +129,25 @@
 	}
 
 	.timeline-tools {
-		color: $primaryLight;
+		b {
+			color: $primaryLight;
+			background-color: rgba($tertiaryLight, 0.4);
+			padding: 3px 10px;
+			border-radius: 90px;
+			margin-right: 0.5em;
 
-		.theme-dark & {
-			color: $accessibleDark;
+			.theme-dark & {
+				color: $fiveDarker;
+				background-color: rgba($secondaryDark, 0.4);
+			}
+		}
+
+		em {
+			color: $primaryLight;
+
+			.theme-dark & {
+				color: $accessibleDark;
+			}
 		}
 	}
 
@@ -137,8 +160,14 @@
 			color: $primaryDark;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			text-decoration: underline;
+			text-decoration-color: $dark;
+
+			.theme-dark & {
+				text-decoration-color: $accessibleDark;
+			}
 		}
 	}
 }

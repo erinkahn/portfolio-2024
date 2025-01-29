@@ -36,8 +36,12 @@ export default function Timeline() {
 					<div className="intro-section">
 						<h1 className="section-title">Erin Kahn</h1>
 						<span className="title-download">
-							<p className="title">Frontend Developer</p>
-							<a className="download" href="/resume.pdf" download>
+							<p className="title">Senior Frontend Developer</p>
+							<a
+								className="download"
+								href="/images/ErinKahnResume.pdf"
+								download
+							>
 								<FaDownload size={15} />
 								<span>Download PDF</span>
 							</a>
@@ -49,7 +53,7 @@ export default function Timeline() {
 							className="timeline-item"
 							variants={itemVariants}
 						>
-							<h2 className="timeline-year">{entry.year}</h2>
+							<p className="timeline-year">{entry.year}</p>
 
 							{entry.url ? (
 								<a
@@ -58,14 +62,14 @@ export default function Timeline() {
 									target="_blank"
 									rel="noreferrer"
 								>
-									<p className="timeline-company">
+									<h2 className="timeline-company">
 										<strong>{entry.company}</strong>
-									</p>
+									</h2>
 								</a>
 							) : (
-								<p className="timeline-company">
+								<h2 className="timeline-company">
 									<strong>{entry.company}</strong>
-								</p>
+								</h2>
 							)}
 
 							<p className="timeline-title">
@@ -76,7 +80,7 @@ export default function Timeline() {
 
 							{entry.tools && (
 								<p className="timeline-tools">
-									<b>Skills: </b>
+									<b> Skills</b>
 									<em>{entry.tools}</em>
 								</p>
 							)}
