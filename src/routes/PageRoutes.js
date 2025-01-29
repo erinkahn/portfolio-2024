@@ -1,5 +1,5 @@
-import React, { Suspense, lazy } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import React, { Suspense, lazy, useEffect } from "react";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 const Home = lazy(() => import("../pages/Home/index"));
 const Work = lazy(() => import("../pages/Work/index"));
@@ -7,6 +7,12 @@ const Resume = lazy(() => import("../pages/Resume/index"));
 const NotFound = lazy(() => import("../pages/404/index"));
 
 export default function PageRoutes() {
+	const location = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location]);
+
 	return (
 		<Suspense fallback={<div>Loading...</div>}>
 			<Routes>
