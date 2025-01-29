@@ -21,9 +21,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<StrictMode>
 		<HelmetProvider>
-			<BrowserRouter
-				future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
-			>
+			<BrowserRouter>
 				<App />
 			</BrowserRouter>
 		</HelmetProvider>
