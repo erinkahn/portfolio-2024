@@ -201,15 +201,21 @@
 		display: flex;
 		width: 100%;
 		height: 100%;
+		min-height: 450px;
 		background-color: $white;
 		font-family: $montserrat;
 		z-index: 1;
 		box-shadow: 0 17px 41px -1px rgb(0 0 0 / 5%);
 
+		@media screen and (min-width: 500px) {
+			min-height: 350px;
+		}
+
 		@media screen and (min-width: $medUp) {
 			align-items: center;
 			grid-row: 4 / span 1;
 			grid-column: 1 / span 3;
+			min-height: none;
 		}
 	}
 
@@ -323,23 +329,23 @@
 			transition: background-color $quick;
 
 			@media screen and (min-width: $smUp) {
-				transform: translate(-2%, -9%) scale(1.3);
+				transform: translate(-4%, -8%) scale(1.3);
 			}
 
 			.theme-dark & {
-				background-color: $quaternaryDark;
+				background-color: $fiveDark;
 			}
 		}
 
 		&:hover,
 		&:focus {
-			color: $black;
+			color: $white;
 
 			&::after {
 				background-color: $primaryLight;
 
 				.theme-dark & {
-					background-color: $accessibleDark;
+					background-color: $fiveDarker;
 				}
 			}
 		}

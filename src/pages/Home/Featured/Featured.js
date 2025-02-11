@@ -77,9 +77,11 @@ export default function Featured() {
 							<p>
 								<span>My Role:</span> {content.role}
 							</p>
-							<p>
-								<span>Co-Developers:</span> {content.devs}
-							</p>
+							{content.devs && (
+								<p>
+									<span>Co-Developers:</span> {content.devs}
+								</p>
+							)}
 						</div>
 					))}
 					{featuredData.featured.map((content, a) => (

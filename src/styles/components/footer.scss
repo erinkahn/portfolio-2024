@@ -1,270 +1,271 @@
 footer {
-    display: grid;
-    grid-template-rows: 25% 75%;
-    height: 100vh;
+	display: grid;
+	grid-template-rows: 25% 75%;
+	height: 100vh;
 
-    @media screen and (min-width: $smUp) {
-        grid-template-rows: 40% 60%;
-    }
+	@media screen and (min-width: $smUp) {
+		grid-template-rows: 40% 60%;
+	}
 
-    @media screen and (min-width: $medUp) {
-        grid-template-rows: 55% 45%;
-    }
+	@media screen and (min-width: $medUp) {
+		grid-template-rows: 55% 45%;
+	}
 
-    .outer-wrapper {
-        display: grid;
-        background-color: $primaryLight;
-        grid-row: 2;
+	.outer-wrapper {
+		display: grid;
+		background-color: $primaryLight;
+		grid-row: 2;
 
-        .theme-dark & {
-            background-color: $primaryDark;
-        }
-    }
+		.theme-dark & {
+			background-color: $primaryDark;
+		}
+	}
 
-    #footer {
-        display: grid;
-        grid-template-rows: 35% 65%;
-        position: relative;
-        padding: 0 3em;
+	#footer {
+		display: grid;
+		grid-template-rows: 35% 65%;
+		position: relative;
+		padding: 0 3em;
 
-        @media screen and (min-width: $xsUp) {
-            padding: 0 4em;
-        }
+		@media screen and (min-width: $xsUp) {
+			padding: 0 4em;
+		}
 
-        &::before {
-            @include pseudo;
-            @include mask-svg-set;
-            @include mask-svg-img('../../assets/images/footer-shape.svg');
-            background-color: $primaryLight;
-            width: 100%;
-            height: 0;
-            padding-bottom: 39%;
-            bottom: auto;
-            right: auto;
-            pointer-events: none;
-            transform: translate(-11%, -38.5vw);
+		&::before {
+			@include pseudo;
+			@include mask-svg-set;
+			@include mask-svg-img("../../assets/images/footer-shape.svg");
+			background-color: $primaryLight;
+			width: 100%;
+			height: 0;
+			padding-bottom: 39%;
+			bottom: auto;
+			right: auto;
+			pointer-events: none;
+			transform: translate(-11%, -38.5vw);
 
-            .theme-dark & {
-                background-color: $primaryDark;
-            }
-        }
-    }
+			.theme-dark & {
+				background-color: $primaryDark;
+			}
+		}
+	}
 
-    .inner-footer-wrapper {
-        display: grid;
-        grid-template-rows: 50% 50%;
-        grid-row: 2;
-        margin: 0 auto;
-        width: 100%;
-        background-color: $primaryLight;
+	.inner-footer-wrapper {
+		display: grid;
+		grid-template-rows: 50% 50%;
+		grid-row: 2;
+		margin: 0 auto;
+		width: 100%;
+		background-color: $primaryLight;
 
-        .theme-dark & {
-            background-color: $primaryDark;
-        }
+		.theme-dark & {
+			background-color: $primaryDark;
+		}
 
-        @media screen and (min-width: $xsUp) {
-            grid-template-rows: 40% 60%;
-        }
-    }
+		@media screen and (min-width: $xsUp) {
+			grid-template-rows: 40% 60%;
+		}
+	}
 
-    .btn-scroll {
-        top: 0;
-        bottom: auto;
-        transform: translate(38vw, -13vw) rotate(-180deg);
+	.btn-scroll {
+		top: 0;
+		bottom: auto;
+		transform: translate(38vw, -13vw) rotate(-180deg);
 
-        &::after {
-            content: 'to the top';
-            white-space: nowrap;
-            display: block;
-            transform: translate(0em, -8em) rotate(90deg);
-            transition: transform $slow;
-        }
+		&::after {
+			content: "to the top";
+			white-space: nowrap;
+			display: block;
+			transform: translate(0em, -8em) rotate(90deg);
+			transition: transform $slow;
+		}
 
-        &:hover {
-            &::after {
-                transform: translate(0em, -8em) rotate(-270deg);
-            }
-        }
+		&:hover {
+			&::after {
+				transform: translate(0em, -8em) rotate(-270deg);
+			}
+		}
 
-        @media screen and (min-width: $xsUp) {
-            transform: translate(40vw, -13vw) rotate(-180deg);
-        }
-    }
+		@media screen and (min-width: $xsUp) {
+			transform: translate(40vw, -13vw) rotate(-180deg);
+		}
+	}
 
-    h3, h6 {
-        max-width: 200px;
-        font-family: $sourceCode;
-        font-size: 1.5em;
-        color: $white;
+	h3,
+	h6 {
+		max-width: 200px;
+		font-family: $sourceCode;
+		font-size: 1.5em;
+		color: $white;
 
-        @media screen and (min-width: $xxsUp) {
-            font-size: 2em;
-        }
+		@media screen and (min-width: $xxsUp) {
+			font-size: 2em;
+		}
 
-        @media screen and (min-width: $smUp) {
-            font-size: 2.5em;
-        }
+		@media screen and (min-width: $smUp) {
+			font-size: 2.5em;
+		}
 
-        @media screen and (min-width: $large) {
-            max-width: none;
-        }
+		@media screen and (min-width: $large) {
+			max-width: none;
+		}
 
-        &::after {
-            content: '.';
-            color: $secondaryLight;
-            font-size: 1.5em;
-            line-height: 0;
+		&::after {
+			content: ".";
+			color: $secondaryLight;
+			font-size: 1.5em;
+			line-height: 0;
 
-            .theme-dark & {
-                color: $secondaryDark;
-            }
-        }
-    }
+			.theme-dark & {
+				color: $secondaryDark;
+			}
+		}
+	}
 
-    .row {
-        .cta-btn {
-            display: flex;
-            flex-direction: column;
-            gap: 2em;
-        }
+	.row {
+		.cta-btn {
+			display: flex;
+			flex-direction: column;
+			gap: 2em;
+		}
 
-        .footer-nav-list {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            padding-right: 1em;
+		.footer-nav-list {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			padding-right: 1em;
 
-            @media screen and (min-width: $xsUp) {
-                padding-right: 0;
-            }
+			@media screen and (min-width: $xsUp) {
+				padding-right: 0;
+			}
 
-            @media screen and (min-width: $smUp) {
-                justify-content: space-between;
-                justify-self: flex-end;
-                width: 100%;
-                max-width: 300px; 
-            }
+			@media screen and (min-width: $smUp) {
+				justify-content: space-between;
+				justify-self: flex-end;
+				width: 100%;
+				max-width: 300px;
+			}
 
-            .nav-item {
-                padding: 0.75em 0;
-            }
+			.nav-item {
+				padding: 0.75em 0;
+			}
 
-            .nav-link {
-                font-family: $montserrat;
-                font-weight: $semibold;
-                font-size: 0.875em;
-                letter-spacing: 0.05em;
-                color: $white;
-                transition: opacity $quick;
+			.nav-link {
+				font-family: $montserrat;
+				font-weight: $semibold;
+				font-size: 0.875em;
+				letter-spacing: 0.05em;
+				color: $white;
+				transition: opacity $quick;
 
-                @media screen and (min-width: $xxsUp) {
-                    font-size: 1em;
-                }
+				@media screen and (min-width: $xxsUp) {
+					font-size: 1em;
+				}
 
-                &:hover {
-                    opacity: 0.5;
-                }
-            }
-        }
+				&:hover {
+					opacity: 0.5;
+				}
+			}
+		}
 
-        &.one {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            align-items: center;
-        }
+		&.one {
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			align-items: center;
+		}
 
-        &.two {
-            margin-top: auto;
-            grid-template-columns: 1fr;
-            grid-template-rows: 3fr 1fr;
-            grid-gap: 2em;           
-            align-items: center;
-            padding-bottom: 2em;
+		&.two {
+			margin-top: auto;
+			grid-template-columns: 1fr;
+			grid-template-rows: 3fr 1fr;
+			grid-gap: 2em;
+			align-items: center;
+			padding-bottom: 2em;
 
-            @media screen and (min-width: $xsUp) {
-                display: grid;
-                grid-template-columns: 70% 30%;
-                grid-template-rows: auto 1fr;
-                grid-gap: 0;
-            }
-        }
-    }
+			@media screen and (min-width: $xsUp) {
+				display: grid;
+				grid-template-columns: 70% 30%;
+				grid-template-rows: auto 1fr;
+				grid-gap: 0;
+			}
+		}
+	}
 
-    .btn-wrapper {
-        font-size: 0.875em;
+	.btn-wrapper {
+		font-size: 0.875em;
 
-        @media screen and (min-width: $xxsUp) {
-            font-size: 1em;
-        }
+		@media screen and (min-width: $xxsUp) {
+			font-size: 1em;
+		}
 
-        a {
-            padding: 0.875em 1.875em;
-            border-radius: 0.25em;
-            background-color: $accessibleBtnLight;
-            color: $primaryLight;
-            font-weight: $semibold;
-            font-family: $montserrat;
-            transition: background-color $quick;
+		a {
+			padding: 0.875em 1.875em;
+			border-radius: 0.25em;
+			background-color: $sixLight;
+			color: $primaryLight;
+			font-weight: $semibold;
+			font-family: $montserrat;
+			transition: background-color $quick;
 
-            .theme-dark & {
-                background-color: $fiveDark;
-                color: $primaryDark;
-            }
+			.theme-dark & {
+				background-color: $fiveDark;
+				color: $primaryDark;
+			}
 
-            &:hover {
-                background-color: rgba($secondaryLight, 0.6);
+			&:hover {
+				background-color: rgba($secondaryLight, 0.6);
 
-                .theme-dark & {
-                    background-color: rgba($fiveDark, 0.5);
-                }
-            }
-        }
-    }
+				.theme-dark & {
+					background-color: rgba($fiveDark, 0.5);
+				}
+			}
+		}
+	}
 
-    .social {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
+	.social {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
 
-        @media screen and (min-width: $xsUp) {
-            grid-template-columns: auto;
-            grid-column: 2;
-            grid-gap: 3em;
-            width: auto;
-            margin-right: 0;
+		@media screen and (min-width: $xsUp) {
+			grid-template-columns: auto;
+			grid-column: 2;
+			grid-gap: 3em;
+			width: auto;
+			margin-right: 0;
 
-            li {
-                margin-right: 9px;
-            }
-        }
+			li {
+				margin-right: 9px;
+			}
+		}
 
-        @media screen and (min-width: $smUp) {
-            grid-template-columns: repeat(3, 1fr);
-        }
+		@media screen and (min-width: $smUp) {
+			grid-template-columns: repeat(3, 1fr);
+		}
 
-        .icon {
-            &::before {
-                width: 1.25em;
-                height: 1.25em;
-            }
-        }
-    }
+		.icon {
+			&::before {
+				width: 1.25em;
+				height: 1.25em;
+			}
+		}
+	}
 
-    .copyright {
-        margin: 0 auto;
-        font-family: $montserrat;
-        font-size: 0.75em;
-        text-align: center;
-        color: $white;
-        padding-top: 3em;
+	.copyright {
+		margin: 0 auto;
+		font-family: $montserrat;
+		font-size: 0.75em;
+		text-align: center;
+		color: $white;
+		padding-top: 3em;
 
-        @media screen and (min-width: $xsUp) {
-            margin: 0;
-            text-align: left;
-            padding-top: 0;
-        }
-    }
+		@media screen and (min-width: $xsUp) {
+			margin: 0;
+			text-align: left;
+			padding-top: 0;
+		}
+	}
 }

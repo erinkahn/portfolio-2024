@@ -141,7 +141,7 @@ p {
 	}
 
 	&:hover {
-		border-color: $accessibleBtnLight;
+		border-color: $sixLight;
 
 		.theme-dark & {
 			border-color: $fiveDark;
@@ -150,7 +150,7 @@ p {
 		&::before {
 			height: 0.8em;
 			width: 0.8em;
-			background-color: $accessibleBtnLight;
+			background-color: $sixLight;
 
 			.theme-dark & {
 				background-color: $fiveDark;

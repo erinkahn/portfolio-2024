@@ -54,7 +54,7 @@
 
 		@media screen and (min-width: $smUp) {
 			&:focus {
-				background-color: $accessibleBtnLight;
+				background-color: $sixLight;
 
 				.theme-dark & {
 					background-color: $fiveDark;
@@ -391,13 +391,6 @@
 		}
 
 		.button-wrapper {
-			border: 2px solid $secondaryLight;
-			box-shadow: 2px 2px 6px 0px rgba($black, 20%);
-			background: $white;
-			border-radius: 1em;
-			padding: 0.2em 1em;
-			text-align: left;
-
 			.theme-dark & {
 				border-color: $fiveDark;
 			}
@@ -407,12 +400,25 @@
 			}
 
 			a {
+				display: block;
 				position: relative;
 				cursor: pointer;
 				pointer-events: all;
 				color: $black;
 				font-family: $montserrat;
 				z-index: 1;
+				border: 2px solid $secondaryLight;
+				box-shadow: 2px 2px 6px 0px rgba($black, 20%);
+				background: $white;
+				border-radius: 1em;
+				padding: 0.375em 1.25em;
+				text-align: left;
+				letter-spacing: 1px;
+				font-size: 0.9em;
+
+				.theme-dark & {
+					border: 2px solid $fiveDark;
+				}
 
 				div {
 					position: relative;
@@ -429,15 +435,23 @@
 						transition: width $quick;
 
 						.theme-dark & {
-							background-color: $fiveDark;
+							background-color: $fiveDarker;
 						}
 					}
 				}
 
-				&:hover {
+				&:hover,
+				&:focus {
+					background-color: $fiveLight;
+					color: $white;
+
+					.theme-dark & {
+						background-color: $fiveDarker;
+					}
+
 					div {
 						&::after {
-							width: 0.8em;
+							background-color: $white;
 						}
 					}
 				}

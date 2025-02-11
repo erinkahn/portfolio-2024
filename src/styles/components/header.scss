@@ -7,7 +7,7 @@ header {
 		@include pseudo;
 		@include mask-svg-set;
 		@include mask-svg-img("../../assets/images/side-nav-shape.svg");
-		background-color: $accessibleBtnLight;
+		background-color: $sixLight;
 		width: 9em;
 		left: auto;
 		height: 100.2vh;
