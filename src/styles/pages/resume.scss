@@ -76,5 +76,10 @@
 				gap: 2rem;
 			}
 		}
+		@media screen and (min-width: $large) {
+			.inner-footer-wrapper {
+				gap: 4rem;
+			}
+		}
 	}
 }
