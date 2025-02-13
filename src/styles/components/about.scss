@@ -3,13 +3,13 @@
 	grid-template-columns: 1fr;
 	grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
 	align-items: center;
-	height: 100vh;
 	max-width: 1200px;
 	padding: 0 4em 0 4em;
 	margin: 0 auto;
 
 	@media screen and (min-width: $xxsUp) {
 		padding: 0 4em;
+		margin-top: 0;
 	}
 
 	@media screen and (min-width: $smUp) {
@@ -17,6 +17,7 @@
 		grid-template-rows: 1fr;
 		grid-gap: 4em;
 		padding: 0 3em;
+		height: 100vh;
 	}
 
 	p:last-of-type {

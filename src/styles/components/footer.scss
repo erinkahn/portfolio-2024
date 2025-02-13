@@ -23,12 +23,20 @@ footer {
 
 	#footer {
 		display: grid;
-		grid-template-rows: 35% 65%;
+		grid-template-rows: 20% 65%;
 		position: relative;
 		padding: 0 3em;
 
+		@media screen and (min-width: 375px) {
+			grid-template-rows: 35% 65%;
+		}
+
 		@media screen and (min-width: $xsUp) {
 			padding: 0 4em;
+		}
+
+		@media screen and (min-width: 1000px) {
+			padding-bottom: 5em;
 		}
 
 		&::before {
@@ -65,6 +73,10 @@ footer {
 		@media screen and (min-width: $xsUp) {
 			grid-template-rows: 40% 60%;
 		}
+
+		@media screen and (min-width: 1000px) {
+			gap: 2em;
+		}
 	}
 
 	.btn-scroll {
@@ -73,11 +85,15 @@ footer {
 		transform: translate(38vw, -13vw) rotate(-180deg);
 
 		&::after {
-			content: "to the top";
+			content: "";
 			white-space: nowrap;
 			display: block;
 			transform: translate(0em, -8em) rotate(90deg);
 			transition: transform $slow;
+
+			@media screen and (min-width: 375px) {
+				content: "to the top";
+			}
 		}
 
 		&:hover {
@@ -127,13 +143,22 @@ footer {
 			display: flex;
 			flex-direction: column;
 			gap: 2em;
+			text-align: center;
+
+			@media screen and (min-width: 375px) {
+				text-align: left;
+			}
 		}
 
 		.footer-nav-list {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
-			padding-right: 1em;
+			display: none;
+
+			@media screen and (min-width: 375px) {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				padding-right: 1em;
+			}
 
 			@media screen and (min-width: $xsUp) {
 				padding-right: 0;
@@ -170,8 +195,12 @@ footer {
 
 		&.one {
 			display: grid;
-			grid-template-columns: 2fr 1fr;
 			align-items: center;
+			justify-content: center;
+
+			@media screen and (min-width: 375px) {
+				grid-template-columns: 2fr 1fr;
+			}
 		}
 
 		&.two {
@@ -180,13 +209,20 @@ footer {
 			grid-template-rows: 3fr 1fr;
 			grid-gap: 2em;
 			align-items: center;
-			padding-bottom: 2em;
+
+			@media screen and (min-width: 375px) {
+				padding-bottom: 2em;
+			}
 
 			@media screen and (min-width: $xsUp) {
 				display: grid;
 				grid-template-columns: 70% 30%;
 				grid-template-rows: auto 1fr;
 				grid-gap: 0;
+			}
+
+			@media screen and (min-width: 1000px) {
+				padding-bottom: 0;
 			}
 		}
 	}

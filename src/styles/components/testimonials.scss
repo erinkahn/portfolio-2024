@@ -15,7 +15,11 @@
 
 	&.animate {
 		&::before {
-			transform: translate(-40%, -18vh) scale(-1, 1) rotate(0);
+			transform: translate(-30%, -40vw) scale(-1, 1) rotate(0);
+
+			@media screen and (min-width: 375px) {
+				transform: translate(-40%, -28vw) scale(-1, 1) rotate(0);
+			}
 
 			@media screen and (min-width: $xsUp) {
 				transform: translate(-40%, -13vh) scale(-1, 1) rotate(0);
@@ -60,6 +64,12 @@
 
 		@media screen and (min-width: $smUp) {
 			grid-row: 1;
+		}
+	}
+
+	@media screen and (max-width: 350px) {
+		.section-title {
+			font-size: 1.25em;
 		}
 	}
 
