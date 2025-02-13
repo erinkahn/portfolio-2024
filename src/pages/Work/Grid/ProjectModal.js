@@ -1,8 +1,22 @@
-import React, { useState } from "react";
-import FocusTrap from "focus-trap-react";
+import React, { useState, useEffect } from "react";
+import { FocusTrap } from "focus-trap-react";
 
 export default function ProjectModal(props) {
 	const [isActive, setIsActive] = useState(0);
+
+	const escapeModal = (e) => {
+		if (e.key === "Escape") {
+			props.closeModal();
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener("keydown", escapeModal);
+
+		return () => {
+			window.removeEventListener("keydown", escapeModal);
+		};
+	}, []);
 
 	return (
 		<FocusTrap active={props.showingModal}>

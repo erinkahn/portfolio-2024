@@ -48,17 +48,12 @@
 			background-color: $black;
 		}
 
-		&:hover {
-			background-color: rgba($white, 0.5);
-		}
+		&:hover,
+		&:focus {
+			background-color: $fiveLight;
 
-		@media screen and (min-width: $smUp) {
-			&:focus {
-				background-color: $sixLight;
-
-				.theme-dark & {
-					background-color: $fiveDark;
-				}
+			.theme-dark & {
+				background-color: $fiveDark;
 			}
 		}
 	}
