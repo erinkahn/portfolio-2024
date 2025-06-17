@@ -15,6 +15,11 @@ export const navData = {
 			linkTo: "/resume",
 			id: 2,
 		},
+		{
+			pageTitle: "Blog",
+			linkTo: "/blog",
+			id: 3,
+		}
 	],
 	socialIcons: [
 		{
@@ -86,6 +91,11 @@ export const heroData = {
 		subtitle: "experience + skills",
 		scrollBtn: true,
 	},
+	blog: {
+		title: "blog",
+		subtitle: "thoughts + experiences",
+		scrollBtn: true,
+	},
 	missing: {
 		title: "404",
 		subtitle: "Oops...try again",
@@ -95,8 +105,8 @@ export const heroData = {
 
 export const typewriterData = {
 	typewriter: [
-		"front-end developer.",
-		"software engineer.",
+		"ui expert.",
+		"oftware engineer.",
 		"creative technologist.",
 	],
 };

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet-async";
 const description =
-	"Erin Kahn is a front-end web developer and freelance designer based in Birmingham, Alabama";
+	"Erin Kahn is a senior software engineer based in Denver, Colorado. She specializes in building accessible, performant, and user-friendly web applications. With a passion for clean code and a focus on user experience, Erin creates digital solutions that empower users and enhance their online interactions.";
 const img = "/public/images/seo/erin-kahn-portfolio.png";
 
 export default function Seo({ title, url }) {
