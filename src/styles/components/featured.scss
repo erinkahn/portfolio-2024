@@ -1,356 +1,354 @@
 .featured-container {
-	position: relative;
-	display: grid;
-	grid-template-rows: 22% 38% 40%;
-	height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: 22% 38% 40%;
+  height: 100vh;
 
-	@media screen and (min-width: $xxsUp) {
-		grid-template-rows: 22% 45% 33%;
-	}
+  @media screen and (min-width: $xxsUp) {
+    grid-template-rows: 22% 45% 33%;
+  }
 
-	@media screen and (min-width: $smUp) {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 65% 35%;
-	}
+  @media screen and (min-width: $smUp) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 65% 35%;
+  }
 
-	@media screen and (min-width: $medUp) {
-		grid-template-columns: 40% 10% 8% 42%;
-		grid-template-rows: 30% 10% 10% 40% 10%;
-	}
+  @media screen and (min-width: $medUp) {
+    grid-template-columns: 40% 10% 8% 42%;
+    grid-template-rows: 30% 10% 10% 40% 10%;
+  }
 
-	&::before {
-		@include pseudo;
-		@include mask-svg-set;
-		@include mask-svg-img("../../assets/images/left-shape.svg");
-		background-color: $primaryLight;
-		height: 100%;
-		width: 30%;
-		left: 0;
-		top: 0;
-		right: auto;
-		bottom: auto;
-		z-index: 2;
-		transform: translate(-1%, -35%);
+  &::before {
+    @include pseudo;
+    @include mask-svg-set;
+    @include mask-svg-img("../../assets/images/left-shape.svg");
+    background-color: $primaryLight;
+    height: 100%;
+    width: 30%;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    z-index: 2;
+    transform: translate(-1%, -35%);
 
-		@media screen and (min-width: $smUp) {
-			width: 20%;
-			max-width: 250px;
-		}
+    @media screen and (min-width: $smUp) {
+      width: 20%;
+      max-width: 250px;
+    }
 
-		@media screen and (min-width: $large) {
-			transform: translate(-3vw, -35%);
-		}
+    @media screen and (min-width: $large) {
+      transform: translate(-3vw, -35%);
+    }
 
-		.theme-dark & {
-			background-color: $primaryDark;
-		}
-	}
+    .theme-dark & {
+      background-color: $primaryDark;
+    }
+  }
 
-	&:after {
-		@include pseudo;
-		top: 0;
-		left: auto;
-		width: 100%;
-		height: 26%;
-		bottom: auto;
-		background-color: $quaternaryLight;
-		z-index: 0;
-		transform: matrix(3, -0.5, 1, 1, 0, -1);
+  &:after {
+    @include pseudo;
+    top: 0;
+    left: auto;
+    width: 100%;
+    height: 26%;
+    bottom: auto;
+    background-color: $quaternaryLight;
+    z-index: 0;
+    transform: matrix(3, -0.5, 1, 1, 0, -1);
 
-		@media screen and (min-width: $xsUp) {
-			height: 28%;
-		}
+    @media screen and (min-width: $xsUp) {
+      height: 28%;
+    }
 
-		@media screen and (min-width: $smUp) {
-			width: 200%;
-			right: 49%;
-			height: 100%;
-			transform: matrix(1, 0, -0.1, 1, 0, 0);
-		}
+    @media screen and (min-width: $smUp) {
+      width: 200%;
+      right: 49%;
+      height: 100%;
+      transform: matrix(1, 0, -0.1, 1, 0, 0);
+    }
 
-		.theme-dark & {
-			background-color: $tertiaryDark;
-		}
-	}
+    .theme-dark & {
+      background-color: $tertiaryDark;
+    }
+  }
 
-	.title-carousel-wrapper {
-		grid-column: 1 / span 4;
-		display: grid;
-		grid-template-columns: 35% 40% 25%;
-		grid-template-rows: 50% 45% 5%;
-		width: 95%;
+  .title-carousel-wrapper {
+    grid-column: 1 / span 4;
+    display: grid;
+    grid-template-columns: 35% 40% 25%;
+    grid-template-rows: 50% 45% 5%;
+    width: 95%;
 
-		@media screen and (min-width: $smUp) {
-			grid-column: 1;
-			width: 92%;
-		}
+    @media screen and (min-width: $smUp) {
+      grid-column: 1;
+      width: 92%;
+    }
 
-		@media screen and (min-width: $medUp) {
-			grid-template-columns: 20% 60% 20%;
-			grid-template-rows: 20% 65% 15%;
-			grid-row: 2 / span 2;
-			grid-column: 1 / span 2;
-			width: 95%;
-		}
+    @media screen and (min-width: $medUp) {
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: 20% 65% 15%;
+      grid-row: 2 / span 2;
+      grid-column: 1 / span 2;
+      width: 95%;
+    }
 
-		.slide-title {
-			grid-column: 2;
-			grid-row: 2;
+    .slide-title {
+      grid-column: 2;
+      grid-row: 2;
 
-			h4 {
-				position: relative;
-				margin-bottom: 0;
-				max-width: fit-content;
-				z-index: 1;
-			}
+      h4 {
+        position: relative;
+        margin-bottom: 0;
+        max-width: fit-content;
+        z-index: 1;
+      }
 
-			.slide-num {
-				position: absolute;
-				right: 0;
-				top: 0;
-				font-size: 3em;
-				opacity: 0;
-				color: $primaryLight;
-				transition: transform $quick, opacity $quick;
-				transform: translate(65%, -30%) scale(0);
+      .slide-num {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 3em;
+        opacity: 0;
+        color: $primaryLight;
+        transition: transform $quick, opacity $quick;
+        transform: translate(65%, -30%) scale(0);
 
-				.theme-dark & {
-					color: $primaryDark;
-				}
+        .theme-dark & {
+          color: $primaryDark;
+        }
 
-				&.active {
-					opacity: 0.1;
-					transform: translate(65%, -30%) scale(1);
-				}
-			}
-		}
+        &.active {
+          opacity: 0.1;
+          transform: translate(65%, -30%) scale(1);
+        }
+      }
+    }
 
-		.pager-btns-container {
-			grid-row: 3;
-			grid-column: 3;
-			justify-content: flex-end;
-			transform: rotate(-8deg);
+    .pager-btns-container {
+      grid-row: 3;
+      grid-column: 3;
+      justify-content: flex-end;
+      transform: rotate(-8deg);
 
-			.pager-btn {
-				width: 1em;
-				height: 1em;
-			}
+      .pager-btn {
+        width: 1em;
+        height: 1em;
+      }
 
-			@media screen and (min-width: $smUp) {
-				transform: rotate(0);
-			}
-		}
-	}
+      @media screen and (min-width: $smUp) {
+        transform: rotate(0);
+      }
+    }
+  }
 
-	.slide-images {
-		grid-row: 2;
-		grid-column: 1 / span 4;
+  .slide-images {
+    grid-row: 2;
+    grid-column: 1 / span 4;
 
-		@media screen and (min-width: $smUp) {
-			grid-row: 1;
-			grid-column: 2;
-		}
+    @media screen and (min-width: $smUp) {
+      grid-row: 1;
+      grid-column: 2;
+    }
 
-		@media screen and (min-width: $medUp) {
-			grid-column: 3 / span 2;
-			grid-row: 1 / span 3;
-		}
+    @media screen and (min-width: $medUp) {
+      grid-column: 3 / span 2;
+      grid-row: 1 / span 3;
+    }
 
-		.image-container {
-			display: flex;
-			height: 100%;
-			overflow: hidden;
+    .image-container {
+      display: flex;
+      height: 100%;
+      overflow: hidden;
 
-			@media screen and (min-width: $smUp) {
-				height: auto;
-				width: calc(110% * 4);
-				overflow: auto;
-				transform: translate(-2%, 0);
-			}
-		}
-	}
+      @media screen and (min-width: $smUp) {
+        height: auto;
+        width: calc(110% * 4);
+        overflow: auto;
+        transform: translate(-2%, 0);
+      }
+    }
+  }
 
-	.img-wrapper {
-		width: 0;
-		height: 100%;
-		transition: width $quick;
+  .img-wrapper {
+    width: 0;
+    height: 100%;
+    transition: width $quick;
 
-		&.show {
-			width: 100%;
+    &.show {
+      width: 100%;
 
-			@media screen and (min-width: $smUp) {
-				width: 28%;
-				height: auto;
-			}
-		}
+      @media screen and (min-width: $smUp) {
+        width: 28%;
+        height: auto;
+      }
+    }
 
-		img {
-			height: 100%;
-			object-fit: cover;
-			object-position: top;
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
 
-			@media screen and (min-width: $smUp) {
-				height: 65vh;
-				object-position: right;
-			}
-			@media screen and (min-width: $medUp) {
-				height: 100vh;
-			}
-		}
-	}
+      @media screen and (min-width: $smUp) {
+        height: 65vh;
+        object-position: right;
+      }
+      @media screen and (min-width: $medUp) {
+        height: 100vh;
+      }
+    }
+  }
 
-	.content-container {
-		position: relative;
-		grid-column: 1 / span 4;
-		display: flex;
-		width: 100%;
-		height: 100%;
-		min-height: 450px;
-		background-color: $white;
-		font-family: $montserrat;
-		z-index: 1;
-		box-shadow: 0 17px 41px -1px rgb(0 0 0 / 5%);
+  .content-container {
+    position: relative;
+    grid-column: 1 / span 4;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    background-color: $white;
+    font-family: $montserrat;
+    z-index: 1;
+    box-shadow: 0 17px 41px -1px rgb(0 0 0 / 5%);
 
-		@media screen and (min-width: 400px) {
-			min-height: 350px;
-		}
+    @media screen and (min-width: 400px) {
+      min-height: 350px;
+    }
 
-		@media screen and (min-width: $medUp) {
-			align-items: center;
-			grid-row: 4 / span 1;
-			grid-column: 1 / span 3;
-			min-height: none;
-		}
-	}
+    @media screen and (min-width: $medUp) {
+      align-items: center;
+      grid-row: 4 / span 1;
+      grid-column: 1 / span 3;
+      min-height: none;
+    }
+  }
 
-	.content {
-		width: 0;
-		height: 0;
-		opacity: 0;
-		transition: height $quick;
-		pointer-events: none;
+  .content {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: height $quick;
+    pointer-events: none;
 
-		&.active {
-			height: auto;
-			width: 100%;
-			max-width: 75%;
-			opacity: 1;
-			pointer-events: initial;
-			padding: 2em 0 5% 3em;
+    &.active {
+      height: auto;
+      width: 100%;
+      max-width: 75%;
+      opacity: 1;
+      pointer-events: initial;
+      padding: 2em 0 5% 3em;
 
-			@media screen and (min-width: $xxsUp) {
-				padding: 3em 0 3% 3em;
-			}
+      @media screen and (min-width: $xxsUp) {
+        padding: 3em 0 3% 3em;
+      }
 
-			@media screen and (min-width: $medUp) {
-				padding: 0 11% 3% 16%;
-			}
+      @media screen and (min-width: $medUp) {
+        padding: 0 11% 3% 16%;
+      }
 
-			.h5 {
-				font-size: 1em;
-				font-weight: $semibold;
-				color: $primaryLight;
+      .h5 {
+        padding-bottom: 1em;
+        font-size: 1em;
+        font-weight: $semibold;
+        color: $primaryLight;
 
-				@media screen and (min-width: $smUp) {
-					font-size: 1.2em;
-				}
+        @media screen and (min-width: $smUp) {
+          font-size: 1.2em;
+        }
 
-				.theme-dark & {
-					color: $primaryDark;
-				}
-			}
+        .theme-dark & {
+          color: $primaryDark;
+        }
+      }
 
-			p {
-				&:first-of-type {
-					padding-bottom: 1em;
-				}
-				&:nth-of-type(2) {
-					padding-bottom: 2em;
-				}
-				&:nth-of-type(3) {
-					padding-bottom: 0.5em;
-				}
-			}
+      p {
+        &:nth-of-type(2) {
+          padding-bottom: 1em;
+        }
+        &:nth-of-type(3) {
+          padding-bottom: 1.5em;
+        }
+      }
 
-			span {
-				color: $primaryDark;
-				font-weight: $semibold;
+      span {
+        color: $primaryDark;
+        font-weight: $semibold;
 
-				.theme-dark & {
-					color: $primaryDark;
-				}
-			}
+        .theme-dark & {
+          color: $primaryDark;
+        }
+      }
 
-			@media screen and (min-width: $smUp) {
-				max-width: 85%;
+      @media screen and (min-width: $smUp) {
+        max-width: 85%;
 
-				&:after {
-					@include pseudo;
-					left: auto;
-					width: 5em;
-					height: 100%;
-					background: $white;
-					transform: skew(354deg) translate(25%, 0%);
-					z-index: -2;
-				}
-			}
-		}
-	}
+        &:after {
+          @include pseudo;
+          left: auto;
+          width: 5em;
+          height: 100%;
+          background: $white;
+          transform: skew(354deg) translate(25%, 0%);
+          z-index: -2;
+        }
+      }
+    }
+  }
 
-	.site-link {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		justify-content: flex-end;
-		max-width: 136px;
-		padding: 0 0.5em 0.75em;
-		margin-left: auto;
-		font-weight: $semibold;
-		letter-spacing: 0.05em;
-		color: $white;
-		display: none;
+  .site-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    justify-content: flex-end;
+    max-width: 136px;
+    padding: 0 0.5em 0.75em;
+    margin-left: auto;
+    font-weight: $semibold;
+    letter-spacing: 0.05em;
+    color: $white;
+    display: none;
 
-		&.active {
-			display: flex;
-		}
+    &.active {
+      display: flex;
+    }
 
-		@media screen and (min-width: $smUp) {
-			padding: 2em 0.5em 1em;
-		}
+    @media screen and (min-width: $smUp) {
+      padding: 2em 0.5em 1em;
+    }
 
-		&::after {
-			@include pseudo;
-			@include mask-svg-set;
-			@include mask-svg-img("../../assets/images/ft-btn.svg");
-			top: auto;
-			left: auto;
-			width: 130px;
-			padding-bottom: 85%;
-			background-color: $secondaryLight;
-			z-index: -1;
-			transform: translate(0%, -13%) scale(1.4);
-			transition: background-color $quick;
+    &::after {
+      @include pseudo;
+      @include mask-svg-set;
+      @include mask-svg-img("../../assets/images/ft-btn.svg");
+      top: auto;
+      left: auto;
+      width: 130px;
+      padding-bottom: 85%;
+      background-color: $secondaryLight;
+      z-index: -1;
+      transform: translate(0%, -13%) scale(1.4);
+      transition: background-color $quick;
 
-			@media screen and (min-width: $smUp) {
-				transform: translate(-4%, -8%) scale(1.3);
-			}
+      @media screen and (min-width: $smUp) {
+        transform: translate(-4%, -8%) scale(1.3);
+      }
 
-			.theme-dark & {
-				background-color: $fiveDark;
-			}
-		}
+      .theme-dark & {
+        background-color: $fiveDark;
+      }
+    }
 
-		&:hover,
-		&:focus {
-			color: $white;
+    &:hover,
+    &:focus {
+      color: $white;
 
-			&::after {
-				background-color: $primaryLight;
+      &::after {
+        background-color: $primaryLight;
 
-				.theme-dark & {
-					background-color: $fiveDarker;
-				}
-			}
-		}
-	}
+        .theme-dark & {
+          background-color: $fiveDarker;
+        }
+      }
+    }
+  }
 }
