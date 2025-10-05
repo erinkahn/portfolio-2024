@@ -1,173 +1,173 @@
 .timeline-container {
-	padding: 4rem 4rem 2rem 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  padding: 4rem 4rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-	@media screen and (min-width: $medUp) {
-		padding-right: 6rem;
-	}
+  @media screen and (min-width: $medUp) {
+    padding-right: 6rem;
+  }
 
-	.timeline {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		width: 100%;
-		max-width: 1000px;
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1000px;
 
-		.timeline-item {
-			margin-bottom: 2rem;
-			border-bottom: 1px solid #ccc;
-			padding-bottom: 1.5rem;
+    .timeline-item {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1.5rem;
 
-			@media screen and (min-width: $large) {
-				text-align: justify;
-			}
+      @media screen and (min-width: $large) {
+        text-align: justify;
+      }
 
-			&:nth-of-type(odd) {
-				@media screen and (min-width: $medUp) {
-					margin-left: auto;
-				}
-			}
+      &:nth-of-type(odd) {
+        @media screen and (min-width: $medUp) {
+          margin-left: auto;
+        }
+      }
 
-			strong {
-				font-weight: $bold;
-			}
+      strong {
+        font-weight: $bold;
+      }
 
-			b {
-				letter-spacing: 1px;
-				font-weight: $semibold;
-			}
+      b {
+        letter-spacing: 1px;
+        font-weight: $semibold;
+      }
 
-			&:last-child {
-				border-bottom: none;
-			}
-		}
-	}
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
 
-	.intro-section {
-		display: flex;
-		align-items: baseline;
-		justify-content: space-between;
+  .intro-section {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 
-		.title-download {
-			display: none;
-		}
+    .title-download {
+      display: none;
+    }
 
-		.title {
-			font-size: 1.25rem;
-			font-family: $montserrat;
-		}
+    .title {
+      font-size: 1.25rem;
+      font-family: $montserrat;
+    }
 
-		span {
-			text-align: right;
-			margin-left: auto;
-			margin-right: 0;
-		}
+    span {
+      text-align: right;
+      margin-left: auto;
+      margin-right: 0;
+    }
 
-		@media screen and (min-width: $smUp) {
-			.title-download {
-				display: block;
-			}
-		}
+    @media screen and (min-width: $smUp) {
+      .title-download {
+        display: block;
+      }
+    }
 
-		@media screen and (min-width: $medUp) {
-			flex-direction: row;
-		}
+    @media screen and (min-width: $medUp) {
+      flex-direction: row;
+    }
 
-		.download {
-			position: relative;
-			z-index: 3;
-			font-family: $sourceCode;
-			display: inline-flex;
-			align-items: center;
-			gap: 1em;
-			justify-content: flex-end;
-			margin-top: 0.5rem;
-			color: $primaryLight;
+    .download {
+      position: relative;
+      z-index: 3;
+      font-family: $sourceCode;
+      display: inline-flex;
+      align-items: center;
+      gap: 1em;
+      justify-content: flex-end;
+      margin-top: 0.5rem;
+      color: $primaryLight;
 
-			.theme-dark & {
-				color: $accessibleDark;
-			}
+      .theme-dark & {
+        color: $accessibleDark;
+      }
 
-			&:hover,
-			&:focus {
-				color: $secondaryLight;
+      &:hover,
+      &:focus {
+        color: $secondaryLight;
 
-				.theme-dark & {
-					color: $secondaryDark;
-				}
-			}
-		}
-	}
+        .theme-dark & {
+          color: $secondaryDark;
+        }
+      }
+    }
+  }
 
-	.timeline-year {
-		font-size: 1.25rem;
-		margin-bottom: 0.5rem;
-		font-family: $sourceCode;
-	}
+  .timeline-year {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-family: $sourceCode;
+  }
 
-	.timeline-company {
-		font-size: 1.2rem;
-		font-family: $montserrat;
-		font-weight: bold;
-		margin-bottom: 0.25rem;
-		color: $fiveLight;
+  .timeline-company {
+    font-size: 1.2rem;
+    font-family: $montserrat;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: $fiveLight;
 
-		.theme-dark & {
-			color: $accessibleDark;
-		}
-	}
+    .theme-dark & {
+      color: $accessibleDark;
+    }
+  }
 
-	.timeline-title {
-		margin-bottom: 1rem;
-	}
+  .timeline-title {
+    margin-bottom: 1rem;
+  }
 
-	.timeline-summary {
-		color: $dark;
-		margin-bottom: 0.5rem;
-	}
+  .timeline-summary {
+    color: $dark;
+    margin-bottom: 0.5rem;
+  }
 
-	.timeline-tools {
-		b {
-			color: $primaryLight;
-			background-color: rgba($tertiaryLight, 0.4);
-			padding: 3px 10px;
-			border-radius: 90px;
-			margin-right: 0.5em;
+  .timeline-tools {
+    b {
+      color: $primaryLight;
+      background-color: rgba($tertiaryLight, 0.4);
+      padding: 3px 10px;
+      border-radius: 90px;
+      margin-right: 0.5em;
 
-			.theme-dark & {
-				color: $fiveDarker;
-				background-color: rgba($secondaryDark, 0.4);
-			}
-		}
+      .theme-dark & {
+        color: $fiveDarker;
+        background-color: rgba($secondaryDark, 0.4);
+      }
+    }
 
-		em {
-			color: $primaryLight;
+    em {
+      color: $primaryLight;
 
-			.theme-dark & {
-				color: $accessibleDark;
-			}
-		}
-	}
+      .theme-dark & {
+        color: $accessibleDark;
+      }
+    }
+  }
 
-	.timeline-link {
-		color: $dark;
-		text-decoration: none;
-		font-weight: 500;
+  .timeline-link {
+    color: $dark;
+    text-decoration: none;
+    font-weight: 500;
 
-		.theme-dark & {
-			color: $primaryDark;
-		}
+    .theme-dark & {
+      color: $primaryDark;
+    }
 
-		&:hover,
-		&:focus {
-			text-decoration: underline;
-			text-decoration-color: $dark;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      text-decoration-color: $dark;
 
-			.theme-dark & {
-				text-decoration-color: $accessibleDark;
-			}
-		}
-	}
+      .theme-dark & {
+        text-decoration-color: $accessibleDark;
+      }
+    }
+  }
 }

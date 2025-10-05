@@ -1,116 +1,116 @@
 .services-container {
-	display: grid;
-	grid-gap: 1em;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+  display: grid;
+  grid-gap: 1em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-	@media screen and (min-width: $medUp) {
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 4em;
-		padding: 0 4em;
-	}
+  @media screen and (min-width: $medUp) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4em;
+    padding: 0 4em;
+  }
 
-	@media screen and (min-width: $large) {
-		max-width: 900px;
-		margin: 0 auto;
-	}
+  @media screen and (min-width: $large) {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-	h3 {
-		display: flex;
-		justify-content: center;
-		margin: 0.5em auto;
-		max-width: 120px;
-		font-family: "Courier New", Courier, monospace;
-		font-size: 1em;
-		font-weight: $semibold;
-		text-transform: uppercase;
-		letter-spacing: 0.15em;
+  h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0.5em auto;
+    max-width: 140px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    font-weight: $semibold;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
 
-		@media screen and (min-width: $medUp) {
-			font-size: 1.25em;
-		}
-	}
+    @media screen and (min-width: $medUp) {
+      font-size: 1.25em;
+    }
+  }
 
-	p {
-		line-height: 1.8;
-		font-family: $montserrat;
-		font-size: 0.875em;
-		max-width: 288px;
-		margin: auto;
+  p {
+    line-height: 1.8;
+    font-family: $montserrat;
+    font-size: 0.875em;
+    max-width: 288px;
+    margin: auto;
 
-		@media screen and (min-width: $medUp) {
-			font-size: 1em;
-		}
-	}
+    @media screen and (min-width: $medUp) {
+      font-size: 1em;
+    }
+  }
 
-	.service-img-container {
-		display: flex;
-		justify-content: center;
-		width: 2em;
-		height: 2em;
-		margin: 1em auto;
-		padding: 1.25em;
-		border-radius: 90px;
-		background-color: $tertiaryLight;
+  .service-img-container {
+    display: flex;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    margin: 1em auto;
+    padding: 1.25em;
+    border-radius: 90px;
+    background-color: $tertiaryLight;
 
-		@media screen and (min-width: $medUp) {
-			width: 3em;
-			height: 3em;
-			padding: 1.5em;
-		}
+    @media screen and (min-width: $medUp) {
+      width: 3em;
+      height: 3em;
+      padding: 1.5em;
+    }
 
-		.theme-dark & {
-			background-color: $fiveDark;
-		}
-	}
+    .theme-dark & {
+      background-color: $fiveDark;
+    }
+  }
 
-	.svg-stroke,
-	.svg-fill {
-		stroke: $white;
-	}
+  .svg-stroke,
+  .svg-fill {
+    stroke: $white;
+  }
 
-	.svg-fill {
-		stroke-width: 2;
-	}
+  .svg-fill {
+    stroke-width: 2;
+  }
 
-	.path0,
-	.path1,
-	.path2 {
-		animation: draw 5s linear infinite alternate;
-	}
+  .path0,
+  .path1,
+  .path2 {
+    animation: draw 5s linear infinite alternate;
+  }
 
-	.path0 {
-		stroke-dasharray: 20;
-		stroke-dashoffset: 30;
-	}
+  .path0 {
+    stroke-dasharray: 20;
+    stroke-dashoffset: 30;
+  }
 
-	.path1 {
-		stroke-dasharray: 40;
-		stroke-dashoffset: 20;
-	}
+  .path1 {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 20;
+  }
 
-	.path2 {
-		stroke-dasharray: 60;
-		stroke-dashoffset: 60;
-	}
+  .path2 {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+  }
 
-	@keyframes draw {
-		from {
-			stroke-dashoffset: 120;
-		}
-		to {
-			stroke-dashoffset: 0;
-		}
-	}
+  @keyframes draw {
+    from {
+      stroke-dashoffset: 120;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
 
-	@keyframes draw2 {
-		from {
-			stroke-dashoffset: 295;
-		}
-		to {
-			stroke-dashoffset: 0;
-		}
-	}
+  @keyframes draw2 {
+    from {
+      stroke-dashoffset: 295;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
 }

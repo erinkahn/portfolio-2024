@@ -22,11 +22,11 @@ export const navData = {
       siteName: "github",
       id: 2,
     },
-    {
-      url: "https://open.spotify.com/user/121609086?si=e4fbfc938a8b4d12",
-      siteName: "spotify",
-      id: 1,
-    },
+    // {
+    //   url: "https://open.spotify.com/user/121609086?si=e4fbfc938a8b4d12",
+    //   siteName: "spotify",
+    //   id: 1,
+    // },
     {
       url: "https://www.linkedin.com/in/erinnkahn/",
       siteName: "linkedin",
@@ -72,13 +72,14 @@ export const sections = {
 
 export const heroData = {
   home: {
-    title: "hello world",
-    subtitle: "I bring design to life",
+    title: "hi! I'm erin",
+    subtitle:
+      "a creative, empathetic, and detail-oriented engineer & designer.",
     scrollBtn: true,
   },
   work: {
     title: "work",
-    subtitle: "coding + design",
+    subtitle: "coding + design + art",
     scrollBtn: true,
   },
   resume: {
@@ -107,7 +108,7 @@ export const servicesData = {
     {
       serviceTitle: "Attention to detail",
       description:
-        "As a former designer, I can spot UI/UX issues early on before they become a problem.",
+        "As a dev/designer, I can spot UI/UX issues early on before they become a problem.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 87">
           <g
@@ -205,7 +206,7 @@ export const featuredData = {
       tech: "React, Gatsby, TypeScript, TailwindCSS, Sanity, AWS",
       content: `Resolved functional and UI/UX bugs and built new components. Added Sanity queries, tested across devices, and fixed accessibility and performance issues. Improved responsiveness and refined layouts for a better user experience.`,
       role: "Senior Software Engineer",
-      devs: "Stan W., Scott D., Becca A.",
+      devs: "Stan, Scott, Becca",
       desktop: "/images/work/code/set/set-desktop.webp",
       tablet: "/images/work/code/set/set-tablet.webp",
       mobile: "/images/work/code/set/set-toyota.webp",
@@ -1366,9 +1367,9 @@ export const timelineData = {
 export const aboutData = {
   sectionTitle: "about",
   content:
-    "I am a creative front-end developer with a background in design. I switched over to coding full-time in 2017. Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology.",
+    "I am a Senior Front-End Developer, Software Engineer, or Web Developer (to put it simply) with a background in design. User experience is at the heart of my work. Every project I approach with empathy, ensuring that design decisions and technical solutions truly serve the needs of real people. My experience spans projects of all sizes, from custom websites to large-scale web applications, for clients including Toyota, USPS, Comcast, Waffle House, and The Scott Brothers.",
   content2:
-    "I live in Denver, CO with my dog, Athena. My favorite things to do are hiking, camping, longboarding, playing piano, and dancing.",
+    "Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology. I live in Denver, CO with my dog, Athena. My favorite things to do are hiking, camping, longboarding, playing piano, and dancing.",
   img: {
     src: "./images/about/erin.webp",
     fallback: "./images/about/erin.png",

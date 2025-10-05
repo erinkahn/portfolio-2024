@@ -1,113 +1,123 @@
 .hero-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background-color: $primaryLight;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: $primaryLight;
 
-    &:before {
-        @media screen and (min-width: $smUp) {
-            content: '';
-            position: absolute;
-            background-color: $white;
-            width: 0.2em;
-            height: 30vh;
-            bottom: 0;
-            left: 0;
-            z-index: 1;
-            transform: translate(4vw, 0);
-        }
+  &:before {
+    @media screen and (min-width: $smUp) {
+      content: "";
+      position: absolute;
+      background-color: $white;
+      width: 0.2em;
+      height: 30vh;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      transform: translate(4vw, 0);
+    }
+  }
+
+  &:after {
+    content: "";
+    @include mask-svg-set;
+    @include mask-svg-img("../../assets/images/hero-pattern.svg");
+    background-color: $quaternaryLight;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 48%;
+    height: 0;
+    padding-bottom: 86%;
+    z-index: 1;
+
+    @media screen and (min-width: $medUp) {
+      width: 30%;
+      padding-bottom: 50%;
     }
 
-    &:after {
-        content: '';
-        @include mask-svg-set;
-        @include mask-svg-img('../../assets/images/hero-pattern.svg');
-        background-color: $quaternaryLight;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 48%;
-        height: 0;
-        padding-bottom: 86%;
-        z-index: 1;
-
-        @media screen and (min-width: $medUp) {
-            width: 30%;
-            padding-bottom: 50%;
-        }
-
-        .theme-dark & {
-            background-color: $fiveDark;
-        }
-    }
-    
     .theme-dark & {
-        background-color: $primaryDark;
+      background-color: $fiveDark;
+    }
+  }
+
+  .theme-dark & {
+    background-color: $primaryDark;
+  }
+
+  .text-box-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    transition: width $quick;
+  }
+
+  .text-wrapper {
+    max-width: 500px;
+    padding-left: 15vw;
+    color: $white;
+    transition: transform $slow;
+
+    @media screen and (max-width: $xlarge) {
+      padding-left: 10vw;
     }
 
-    .text-box-container {
-        display: flex;
-        align-items: center;
-        height: 100vh;
-        transition: width $quick;
+    @media screen and (max-width: $smDown) {
+      max-width: 62%;
+      padding-left: 15vw;
+    }
+  }
+
+  .hero-title {
+    padding-bottom: 0.25em;
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 4em;
+    transition: font-size $quick;
+
+    @media screen and (max-width: $medDown) {
+      font-size: 3em;
     }
 
-    .text-wrapper {
-        padding-left: 15vw;
-        color: $white;
-        transition: transform $slow;
+    @media screen and (max-width: $xsDown) {
+      font-size: 2em;
     }
 
-    .hero-title {
-        padding-bottom: 0.25em;
-        font-family: $montserrat;
-        font-weight: 400;
-        font-size: 4em;
-        transition: font-size $quick;
+    &::after {
+      content: ".";
+      color: $secondaryLight;
+      font-size: 1.875em;
+      line-height: 0;
 
-        @media screen and (max-width: $medDown) {
-            font-size: 3em;
-        }
+      .theme-dark & {
+        color: $secondaryDark;
+      }
+    }
+  }
 
-        @media screen and (max-width: $xsDown) {
-            font-size: 2em;
-        }
+  .hero-subtitle {
+    font-family: $sourceCode;
+    font-weight: $light;
+    font-size: 1.25em;
+    transition: font-size $quick;
 
-        &::after {
-            content: '.';
-            color: $secondaryLight;
-            font-size: 1.875em;
-            line-height: 0;
+    @media screen and (max-width: $xsDown) {
+      font-size: 1em;
+    }
+  }
 
-            .theme-dark & {
-                color: $secondaryDark;
-            }
-        }
+  .btn-scroll {
+    &::after {
+      content: "scroll";
+      display: block;
+      transform: translate(0em, -3em) rotate(-90deg);
+      transition: transform $slow;
     }
 
-    .hero-subtitle {
-        font-family: $sourceCode;
-        font-weight: $light;
-        font-size: 1.25em;
-        transition: font-size $quick;
-
-        @media screen and (max-width: $xsDown) {
-            font-size: 1em;
-        }
+    &:hover {
+      &::after {
+        transform: translate(0em, -2.5em) rotate(270deg);
+      }
     }
-
-    .btn-scroll {
-        &::after {
-            content: 'scroll';
-            display: block;
-            transform: translate(0em, -3em) rotate(-90deg);
-            transition: transform $slow;
-        }
-
-        &:hover {
-            &::after {
-                transform: translate(0em, -2.5em) rotate(270deg);
-            }
-        }
-    }
+  }
 }

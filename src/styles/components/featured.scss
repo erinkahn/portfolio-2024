@@ -212,7 +212,7 @@
     box-shadow: 0 17px 41px -1px rgb(0 0 0 / 5%);
 
     @media screen and (min-width: 400px) {
-      min-height: 350px;
+      min-height: 420px;
     }
 
     @media screen and (min-width: $medUp) {
@@ -246,7 +246,7 @@
         padding: 0 11% 3% 16%;
       }
 
-      .h5 {
+      h5 {
         padding-bottom: 1em;
         font-size: 1em;
         font-weight: $semibold;
@@ -262,20 +262,23 @@
       }
 
       p {
-        &:nth-of-type(2) {
+        &:nth-of-type(1) {
           padding-bottom: 1em;
         }
-        &:nth-of-type(3) {
+        &:nth-of-type(2) {
           padding-bottom: 1.5em;
+        }
+        &:nth-of-type(3) {
+          padding-bottom: 0.5em;
         }
       }
 
       span {
-        color: $primaryDark;
+        color: $fiveLight;
         font-weight: $semibold;
 
         .theme-dark & {
-          color: $primaryDark;
+          color: $accessibleDark;
         }
       }
 
