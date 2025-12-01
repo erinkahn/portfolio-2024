@@ -74,7 +74,7 @@ export const heroData = {
   home: {
     title: "hi! I'm erin",
     subtitle:
-      "a creative, empathetic, and detail-oriented engineer & designer.",
+      "A brand-new site is on the way. In the meantime, take a look around at the old!",
     scrollBtn: true,
   },
   work: {
