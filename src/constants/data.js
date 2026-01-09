@@ -74,7 +74,7 @@ export const heroData = {
   home: {
     title: "hi! I'm erin",
     subtitle:
-      "A brand-new site is on the way. In the meantime, take a look around at the old!",
+      "A Branding / Web Designer / Web Developer based in Denver. A brand-new site is on the way. In the meantime, take a look around at the old!",
     scrollBtn: true,
   },
   work: {
@@ -1367,9 +1367,9 @@ export const timelineData = {
 export const aboutData = {
   sectionTitle: "about",
   content:
-    "I am a Senior Front-End Developer, Software Engineer, or Web Developer (to put it simply) with a background in design. User experience is at the heart of my work. Every project I approach with empathy, ensuring that design decisions and technical solutions truly serve the needs of real people. My experience spans projects of all sizes, from custom websites to large-scale web applications, for clients including Toyota, USPS, Comcast, Waffle House, and The Scott Brothers.",
+    "I am a Creative Web Developer and Branding/Web Designer based in CO. User experience is at the heart of my work. Every project I approach with empathy, ensuring that design decisions and technical solutions truly serve the needs of real people. My experience spans projects of all sizes, from custom logos, brand identities, websites to large-scale web applications, for clients including Toyota, USPS, Comcast, Waffle House, and The Scott Brothers.",
   content2:
-    "Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology. I live in Denver, CO with my dog, Athena. My favorite things to do are hiking, camping, longboarding, playing piano, and dancing.",
+    "Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology. My favorite things to do are hiking with my dog (Athena), camping, longboarding, playing piano, and dancing.",
   img: {
     src: "./images/about/erin.webp",
     fallback: "./images/about/erin.png",
