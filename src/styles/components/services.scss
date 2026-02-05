@@ -38,28 +38,36 @@
     line-height: 1.8;
     font-family: $montserrat;
     width: 100%;
-    max-width: 800px;
+    font-size: 0.875em;
+    max-width: 320px;
     margin: auto;
 
     @media screen and (min-width: $medUp) {
       font-size: 1em;
       min-height: 300px;
+      max-width: 800px;
+    }
+
+    span.desktopOnly {
+      display: none;
+
+      @media screen and (min-width: $medUp) {
+        display: block;
+      }
     }
   }
 
   .service-img-container {
     display: flex;
     justify-content: center;
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     margin: 1em auto;
-    padding: 1.875em;
+    padding: 1.5em;
     border-radius: 90px;
     background-color: $tertiaryLight;
 
     @media screen and (min-width: $medUp) {
-      width: 3em;
-      height: 3em;
       padding: 1.875em;
     }
 
@@ -68,24 +76,25 @@
     }
   }
 
-  .svg-stroke,
-  .svg-fill {
+  .svg-stroke {
     stroke: $white;
-  }
-
-  .svg-fill {
-    stroke-width: 2;
   }
 
   .path0,
   .path1,
-  .path2 {
-    animation: draw 5s linear infinite alternate;
+  .path2,
+  .path3 {
+    animation: draw 3s linear infinite alternate;
   }
 
   .path0 {
     stroke-dasharray: 800;
     stroke-dashoffset: 800;
+  }
+
+  .path3 {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
   }
 
   .path1 {
@@ -98,15 +107,35 @@
     stroke-dashoffset: 60;
   }
 
+  .path4 {
+    animation: fill-reveal 3s forwards;
+  }
+
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  .draw-fill {
+    stroke-dasharray: 4000; /* length of the path — can overshoot */
+    stroke-dashoffset: 4000;
+    animation: draw 4s linear infinite alternate;
+  }
+
+  /* Draw path */
   @keyframes draw {
     to {
       stroke-dashoffset: 0;
     }
   }
 
-  @keyframes draw2 {
+  /* Fill in after drawing completes */
+  @keyframes fillIn {
+    from {
+      fill: none;
+    }
     to {
-      stroke-dashoffset: 0;
+      fill: #fff;
     }
   }
 }

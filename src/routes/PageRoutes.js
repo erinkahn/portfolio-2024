@@ -24,7 +24,7 @@ export default function PageRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
-        <Route path="/resume" element={<Resume />} />
+        {/* <Route path="/resume" element={<Resume />} /> */}
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/404" />} />
       </Routes>

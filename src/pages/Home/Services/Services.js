@@ -21,7 +21,10 @@ export default function Services() {
               {service.icon}
             </div>
             <h3>{service.serviceTitle}</h3>
-            <p>{service.description}</p>
+            <p>
+              {service.description}{" "}
+              <span className="desktopOnly">{service.description2}</span>
+            </p>
           </div>
         ))}
       </div>

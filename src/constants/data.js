@@ -3,16 +3,19 @@ export const navData = {
     {
       pageTitle: "Home",
       linkTo: "/",
+      external: false,
       id: 0,
     },
     {
       pageTitle: "Work",
       linkTo: "/work",
+      external: false,
       id: 1,
     },
     {
       pageTitle: "Resume",
-      linkTo: "/resume",
+      linkTo: "https://www.linkedin.com/in/erinnkahn/",
+      external: true,
       id: 2,
     },
   ],
@@ -22,11 +25,6 @@ export const navData = {
       siteName: "github",
       id: 2,
     },
-    // {
-    //   url: "https://open.spotify.com/user/121609086?si=e4fbfc938a8b4d12",
-    //   siteName: "spotify",
-    //   id: 1,
-    // },
     {
       url: "https://www.linkedin.com/in/erinnkahn/",
       siteName: "linkedin",
@@ -82,11 +80,11 @@ export const heroData = {
     subtitle: "coding + design + art",
     scrollBtn: true,
   },
-  resume: {
-    title: "resume",
-    subtitle: "experience + skills",
-    scrollBtn: true,
-  },
+  // resume: {
+  //   title: "resume",
+  //   subtitle: "experience + skills",
+  //   scrollBtn: true,
+  // },
   missing: {
     title: "404",
     subtitle: "Oops...try again",
@@ -107,7 +105,8 @@ export const servicesData = {
   services: [
     {
       serviceTitle: "Strong attention to detail",
-      description: `I notice small UI and UX quirks most people miss and fix them before users feel them. (Like the awkward space between “TO” and “DETAIL.”)`,
+      description: `I notice small UI and UX quirks most people miss and fix them before users feel them.`,
+      description2: `(Like the awkward space between “TO” and “DETAIL.”)`,
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 87">
           <g
@@ -115,9 +114,7 @@ export const servicesData = {
             fill="none"
             stroke="none"
             strokeLinecap="round"
-            strokeMiterlimit="10"
-            strokeWidth="2"
-            data-name="Group 8"
+            strokeWidth="4"
           >
             <g transform="translate(7 7)">
               <rect
@@ -154,13 +151,13 @@ export const servicesData = {
       description:
         "From design tokens to reusable components, I build UI patterns and architectures that grow with products, teams, and long term maintenance needs.",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32">
           <g className="svg-stroke" fill="none">
             <path
-              className="path2"
-              strokeWidth="0.5"
+              className="path3"
+              strokeWidth="0.8"
               strokeLinecap="round"
-              d="M3.3 17.6a3.3 3.3 0 0 0 3.1 2.2h.1A2.8 2.8 0 0 0 9.2 22c.5 0 1-.1 1.3-.3a1 1 0 0 0 .5-.9V3a1 1 0 0 0-.8-1 2.3 2.3 0 0 0-1.5.2c-.7.4-1.1 1.2-1.1 2a2.8 2.8 0 0 0-2.8 4.5A3.3 3.3 0 0 0 2 12c0 1.2.6 2.2 1.5 2.8-.4.8-.5 1.8-.2 2.8zm15.9-8.9a2.8 2.8 0 0 0-2.8-4.4c0-.9-.4-1.7-1.1-2a2.3 2.3 0 0 0-1.5-.3 1 1 0 0 0-.8 1v17.8c0 .4.2.7.5.9.4.2.8.3 1.3.3a2.8 2.8 0 0 0 2.7-2.2c1.5 0 2.8-.9 3.2-2.2.3-1 .2-2-.2-2.8A3.4 3.4 0 0 0 22 12a3.3 3.3 0 0 0-2.8-3.3z"
+              d="M12.5 31a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zM4.648 6.995.772 19.35c-.008.026-.004.052-.008.079-.003.024-.014.046-.014.071q.001.018.003.035l.003.026C.788 22.054 2.747 24 5.25 24s4.462-1.946 4.494-4.439l.003-.026q.002-.018.003-.034c0-.025-.011-.047-.014-.071-.004-.026 0-.053-.008-.079L5.808 6.856 15.5 5.492V29h-2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-2V5.544l11.187 1.329-3.915 12.477c-.008.026-.004.052-.008.079-.004.024-.014.046-.014.071q.002.018.003.035l.003.026C23.788 22.054 25.747 24 28.25 24s4.462-1.946 4.494-4.439l.003-.026q.002-.018.003-.034c0-.025-.011-.047-.014-.071-.004-.026 0-.053-.008-.079L28.853 7H31.5a.5.5 0 0 0 0-1l-2.69.003L16.5 4.537V1a.5.5 0 0 0-1 0v3.482L4.75 6H.5a.5.5 0 0 0 0 1zM28.25 8.42 31.569 19h-6.637zm0 14.58c-1.793 0-3.23-1.282-3.466-3h6.932c-.236 1.718-1.673 3-3.466 3m-23 0c-1.793 0-3.23-1.282-3.466-3h6.932c-.236 1.718-1.673 3-3.466 3m-3.319-4L5.25 8.42 8.569 19z"
             />
           </g>
         </svg>
@@ -172,21 +169,17 @@ export const servicesData = {
       description:
         "I help design ideas survive the journey from concept to production by reducing ambiguity, protecting design intent, and keeping teams aligned.",
       icon: (
-        <svg viewBox="0 0 512 512">
-          <g className="svg-stroke" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <g
+            className="svg-stroke"
+            fill="none"
+            stroke="none"
+            strokeLinecap="round"
+            strokeWidth="7"
+          >
             <path
-              className="path0"
-              strokeWidth="8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M190.7 185.4v177.5h36.6V142.7c-8.9 11-21.5 26.1-36.6 42.7M242.9 117.3H269v245.6h-26.1zM160.3 217.1c-5.6 5.5-11.1 10.8-16.6 15.9v129.8H175V202.1q-7.2 7.5-14.7 15M96.7 271.8v91H128V247c-10.8 9.3-21.2 17.5-31.3 24.8M49.6 299.3v63.5h31.3v-80.4c-10.8 6.9-21.3 12.5-31.3 16.9M284.7 142.8v220.1H316V180a902 902 0 0 1-31.3-37.2M425.8 280.1v82.7h31.3v-64.7c-10.1-4.8-20.5-10.8-31.3-18M351.7 217.8c-6.9-6.9-13.6-13.8-19.9-20.6v165.7h31.3v-134q-5.7-5.4-11.4-11.1M378.8 243.3v119.5h31.3V269c-10.1-7.6-20.6-16.2-31.3-25.7"
-            />
-            <path
-              className="path0"
-              strokeWidth="8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M49.6 299.3c10.1-4.4 20.5-10 31.3-16.9v80.4h15.7v-91c10.1-7.3 20.6-15.5 31.3-24.8v115.8h15.7V233c5.5-5.1 11-10.3 16.6-15.9q7.65-7.5 14.7-15v160.7h15.7V185.4c15.1-16.6 27.7-31.7 36.6-42.7v220.2h15.7V117.3H269v245.6h15.7V142.8c7.8 9.8 18.6 22.8 31.3 37.2v182.9h15.7V197.2c6.3 6.8 13 13.7 19.9 20.6q5.7 5.7 11.4 11.1v134h15.7V243.4c10.7 9.6 21.2 18.1 31.3 25.7v93.8h15.7v-82.7c10.8 7.2 21.3 13.2 31.3 18v64.7h15.7v-58.1c13.9 5 27 7.6 39.2 7.6v-15.7c-88.7 0-212.2-159.4-227.3-179.4v-15.7h-57.5v15.7c-7.1 9.3-38 49.2-78 88.7-59 58.5-110.6 89.4-149.1 89.4v15.7c10.7 0 22-1.9 34-5.8v57.6h15.7v-63.5h-.1Z"/>
+              class="draw-fill"
+              d="M511.9 157.8c0-4.7-3.8-8.5-8.5-8.5h-34.1v-34.1h34.1c4.7 0 8.5-3.8 8.5-8.5s-3.8-8.5-8.5-8.5H8.5c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.6h34.1v34.1H8.5c-4.7 0-8.5 3.8-8.5 8.5V192c0 4.7 3.8 8.5 8.6 8.5h8.5v204.8c0 4.7 3.8 8.5 8.5 8.5h94.1v-8.5c0-75.4 61.1-136.5 136.5-136.5s136.5 61 136.5 136.5v8.5h93.8c4.7 0 8.5-3.8 8.5-8.5V200.5h8.5c4.7 0 8.5-3.8 8.5-8.5v-34.1Zm-93.7-42.6h34.1v34.1h-34.1zm-51.2 0h34.1v34.1H367zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.1 0h34.1v34.1h-34.1zm-51.3 0h34.1v34.1H59.8zm418.1 281.6h-68.5c-4.5-81-71.3-145.1-153.4-145.1s-149 64.2-153.4 145.1H34.1V200.5h443.8zm17-213.3H17.1v-17.1h477.8z"
             />
           </g>
         </svg>
@@ -195,6 +188,18 @@ export const servicesData = {
     },
   ],
 };
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <path
+    class="draw-fill"
+    d="M511.9 157.8c0-4.7-3.8-8.5-8.5-8.5h-34.1v-34.1h34.1c4.7 0 8.5-3.8 8.5-8.5s-3.8-8.5-8.5-8.5H8.5c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.6h34.1v34.1H8.5c-4.7 0-8.5 3.8-8.5 8.5V192c0 4.7 3.8 8.5 8.6 8.5h8.5v204.8c0 4.7 3.8 8.5 8.5 8.5h94.1v-8.5c0-75.4 61.1-136.5 136.5-136.5s136.5 61 136.5 136.5v8.5h93.8c4.7 0 8.5-3.8 8.5-8.5V200.5h8.5c4.7 0 8.5-3.8 8.5-8.5v-34.1Zm-93.7-42.6h34.1v34.1h-34.1zm-51.2 0h34.1v34.1H367zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.1 0h34.1v34.1h-34.1zm-51.3 0h34.1v34.1H59.8zm418.1 281.6h-68.5c-4.5-81-71.3-145.1-153.4-145.1s-149 64.2-153.4 145.1H34.1V200.5h443.8zm17-213.3H17.1v-17.1h477.8"
+    stroke="#000"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>;
 
 export const featuredData = {
   sectionTitle: "work",
