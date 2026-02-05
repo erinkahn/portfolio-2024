@@ -22,12 +22,8 @@ body {
 
 p {
   font-family: $montserrat;
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: 1.65;
-
-  @media screen and (min-width: $medUp) {
-    font-size: 1em;
-  }
 }
 
 .section-title {
@@ -129,7 +125,9 @@ p {
   z-index: 1;
   transform: translate(22vw, -5vw);
   transform-origin: center;
-  transition: transform $quick, border-color $quick;
+  transition:
+    transform $quick,
+    border-color $quick;
 
   &::before {
     @include pseudo;
@@ -141,7 +139,10 @@ p {
     width: 1em;
     height: 1em;
     transform: translate(-50%, -50%);
-    transition: background-color $quick, width $quick, height $quick;
+    transition:
+      background-color $quick,
+      width $quick,
+      height $quick;
   }
 
   &:hover {

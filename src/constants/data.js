@@ -74,7 +74,7 @@ export const heroData = {
   home: {
     title: "hi! I'm erin",
     subtitle:
-      "A Branding / Web Designer / Web Developer based in Denver. A brand-new site is on the way. In the meantime, take a look around at the old!",
+      "A Senior UI/UX Engineer & Human-Centered Experience Designer based in Denver. A brand-new site is on the way. In the meantime, take a look around at the old!",
     scrollBtn: true,
   },
   work: {
@@ -106,9 +106,8 @@ export const servicesData = {
   sectionTitle: "",
   services: [
     {
-      serviceTitle: "Attention to detail",
-      description:
-        "As a dev/designer, I can spot UI/UX issues early on before they become a problem.",
+      serviceTitle: "Strong attention to detail",
+      description: `I notice small UI and UX quirks most people miss and fix them before users feel them. (Like the awkward space between “TO” and “DETAIL.”)`,
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 87">
           <g
@@ -151,9 +150,9 @@ export const servicesData = {
       alt: "fingerprint",
     },
     {
-      serviceTitle: "Future Thinking",
+      serviceTitle: "Scalable Design Systems",
       description:
-        "I build things with the future in mind. Clean, modular code creates happy teams.",
+        "From design tokens to reusable components, I build UI patterns and architectures that grow with products, teams, and long term maintenance needs.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <g className="svg-stroke" fill="none">
@@ -169,25 +168,25 @@ export const servicesData = {
       alt: "artboard",
     },
     {
-      serviceTitle: "Consistent Communication",
+      serviceTitle: "Bridging Design + Engineering",
       description:
-        "I communicate and ask questions consistently to reduce confusion & save time.",
+        "I help design ideas survive the journey from concept to production by reducing ambiguity, protecting design intent, and keeping teams aligned.",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <g className="svg-stroke">
+        <svg viewBox="0 0 512 512">
+          <g className="svg-stroke" fill="none">
             <path
-              className="path2"
-              fill="none"
+              className="path0"
+              strokeWidth="8"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="0.5"
-              d="M6.6 16.6 2.8 19l.7-4.2A7.7 7.7 0 0 1 1 9C1 4.6 4.5 1 10 1s9 3.6 9 8c0 4.5-3.5 8.1-9 8.1a11 11 0 0 1-3.4-.5h0Z"
+              d="M190.7 185.4v177.5h36.6V142.7c-8.9 11-21.5 26.1-36.6 42.7M242.9 117.3H269v245.6h-26.1zM160.3 217.1c-5.6 5.5-11.1 10.8-16.6 15.9v129.8H175V202.1q-7.2 7.5-14.7 15M96.7 271.8v91H128V247c-10.8 9.3-21.2 17.5-31.3 24.8M49.6 299.3v63.5h31.3v-80.4c-10.8 6.9-21.3 12.5-31.3 16.9M284.7 142.8v220.1H316V180a902 902 0 0 1-31.3-37.2M425.8 280.1v82.7h31.3v-64.7c-10.1-4.8-20.5-10.8-31.3-18M351.7 217.8c-6.9-6.9-13.6-13.8-19.9-20.6v165.7h31.3v-134q-5.7-5.4-11.4-11.1M378.8 243.3v119.5h31.3V269c-10.1-7.6-20.6-16.2-31.3-25.7"
             />
             <path
-              className="path2"
-              fill="none"
-              strokeWidth="0.5"
-              d="M6 8a1 1 0 0 1 .1 2H6a1 1 0 0 1-.1-2H6ZM10 8a1 1 0 0 1 .1 2H10a1 1 0 0 1-.1-2h.1ZM14 8a1 1 0 0 1 .1 2H14a1 1 0 0 1-.1-2h.1Z"
+              className="path0"
+              strokeWidth="8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M49.6 299.3c10.1-4.4 20.5-10 31.3-16.9v80.4h15.7v-91c10.1-7.3 20.6-15.5 31.3-24.8v115.8h15.7V233c5.5-5.1 11-10.3 16.6-15.9q7.65-7.5 14.7-15v160.7h15.7V185.4c15.1-16.6 27.7-31.7 36.6-42.7v220.2h15.7V117.3H269v245.6h15.7V142.8c7.8 9.8 18.6 22.8 31.3 37.2v182.9h15.7V197.2c6.3 6.8 13 13.7 19.9 20.6q5.7 5.7 11.4 11.1v134h15.7V243.4c10.7 9.6 21.2 18.1 31.3 25.7v93.8h15.7v-82.7c10.8 7.2 21.3 13.2 31.3 18v64.7h15.7v-58.1c13.9 5 27 7.6 39.2 7.6v-15.7c-88.7 0-212.2-159.4-227.3-179.4v-15.7h-57.5v15.7c-7.1 9.3-38 49.2-78 88.7-59 58.5-110.6 89.4-149.1 89.4v15.7c10.7 0 22-1.9 34-5.8v57.6h15.7v-63.5h-.1Z"/>
             />
           </g>
         </svg>
@@ -1367,9 +1366,13 @@ export const timelineData = {
 export const aboutData = {
   sectionTitle: "about",
   content:
-    "I am a Creative Web Developer and Branding/Web Designer based in CO. User experience is at the heart of my work. Every project I approach with empathy, ensuring that design decisions and technical solutions truly serve the needs of real people. My experience spans projects of all sizes, from custom logos, brand identities, websites to large-scale web applications, for clients including Toyota, USPS, Comcast, Waffle House, and The Scott Brothers.",
+    "I started as an artist first. Dance, music, and painting trained me to see nuance, rhythm, balance, and intention. Graphic design taught me visual hierarchy, typography, and how people emotionally respond to what they see. When I moved into web development, I didn’t lose that lens. I added a second one. I became fascinated by turning ideas into experiences people could actually use.",
   content2:
-    "Besides staring at screens for a living, I enjoy spending the other part of my life far away from technology. My favorite things to do are hiking with my dog (Athena), camping, longboarding, playing piano, and dancing.",
+    "I have spent my career bridging the gap between design and engineering. I am strongest where these two worlds collide: translating concepts into responsive, accessible interfaces, catching inconsistencies before they ship, and asking the questions that prevent problems down the line. Working in agency environments has given me perspective on how design decisions impact users, performance, and long-term maintainability. Over time, I became the person who notices what feels off, what will break later, and what will confuse users, bringing clarity to messy systems and making work feel calmer, cleaner, and more intentional.",
+  content3:
+    "Looking ahead, I want to spend my time designing and building, shaping interfaces, brands, and experiences from the start. I am energized by projects that blend design thinking, front end development, and human-centered problem solving. ",
+  content4:
+    "If you are building something meaningful and want someone who can bring ideas to life with clarity and care, I would love to connect.",
   img: {
     src: "./images/about/erin.webp",
     fallback: "./images/about/erin.png",

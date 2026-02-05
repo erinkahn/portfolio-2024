@@ -1,7 +1,7 @@
 .about-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
+  // grid-template-rows: 1fr 2fr;
   align-items: center;
   max-width: 1200px;
   padding: 0 4em 0 4em;
@@ -19,18 +19,18 @@
   }
 
   @media screen and (min-width: $large2) {
-    grid-template-rows: 1fr 2fr;
+    // grid-template-rows: 1fr 2fr;
     height: 100vh;
   }
 
   @media screen and (min-width: $xlarge) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr;
     grid-gap: 4em;
     padding: 0 3em;
   }
 
-  p:last-of-type {
+  p {
     margin-top: 1.5em;
   }
 
@@ -118,7 +118,9 @@
       top: auto;
       transform: translate(5em, 3em) scale(0);
       transition-delay: 3s;
-      transition: opacity $slow, transform $slow;
+      transition:
+        opacity $slow,
+        transform $slow;
 
       .theme-dark & {
         background-color: $quaternaryDark;

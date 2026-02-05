@@ -13,15 +13,14 @@
   }
 
   @media screen and (min-width: $large) {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
   h3 {
     display: flex;
     justify-content: center;
-    margin: 0.5em auto;
-    max-width: 140px;
+    margin: 2em auto 0.5em auto;
     font-family: "Courier New", Courier, monospace;
     font-size: 1em;
     font-weight: $semibold;
@@ -30,35 +29,38 @@
 
     @media screen and (min-width: $medUp) {
       font-size: 1.25em;
+      min-height: 45px;
+      max-width: 250px;
     }
   }
 
   p {
     line-height: 1.8;
     font-family: $montserrat;
-    font-size: 0.875em;
-    max-width: 288px;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
 
     @media screen and (min-width: $medUp) {
       font-size: 1em;
+      min-height: 300px;
     }
   }
 
   .service-img-container {
     display: flex;
     justify-content: center;
-    width: 2em;
-    height: 2em;
+    width: 4em;
+    height: 4em;
     margin: 1em auto;
-    padding: 1.25em;
+    padding: 1.875em;
     border-radius: 90px;
     background-color: $tertiaryLight;
 
     @media screen and (min-width: $medUp) {
       width: 3em;
       height: 3em;
-      padding: 1.5em;
+      padding: 1.875em;
     }
 
     .theme-dark & {
@@ -82,8 +84,8 @@
   }
 
   .path0 {
-    stroke-dasharray: 20;
-    stroke-dashoffset: 30;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
   }
 
   .path1 {
@@ -97,18 +99,12 @@
   }
 
   @keyframes draw {
-    from {
-      stroke-dashoffset: 120;
-    }
     to {
       stroke-dashoffset: 0;
     }
   }
 
   @keyframes draw2 {
-    from {
-      stroke-dashoffset: 295;
-    }
     to {
       stroke-dashoffset: 0;
     }
