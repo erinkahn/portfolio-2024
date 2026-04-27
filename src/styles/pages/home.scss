@@ -8,7 +8,7 @@
 		width: 100vw;
 
 		@media screen and (min-width: $smUp) {
-			height: 100vh;
+			min-height: 100vh;
 		}
 	}
 

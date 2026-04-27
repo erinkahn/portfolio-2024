@@ -73,8 +73,9 @@
   .hero-title {
     padding-bottom: 0.25em;
     font-family: $montserrat;
-    font-weight: 400;
+    font-weight: $semibold;
     font-size: 4em;
+    letter-spacing: -0.02em;
     transition: font-size $quick;
 
     @media screen and (max-width: $medDown) {
