@@ -189,18 +189,6 @@ export const servicesData = {
   ],
 };
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <path
-    class="draw-fill"
-    d="M511.9 157.8c0-4.7-3.8-8.5-8.5-8.5h-34.1v-34.1h34.1c4.7 0 8.5-3.8 8.5-8.5s-3.8-8.5-8.5-8.5H8.5c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.6h34.1v34.1H8.5c-4.7 0-8.5 3.8-8.5 8.5V192c0 4.7 3.8 8.5 8.6 8.5h8.5v204.8c0 4.7 3.8 8.5 8.5 8.5h94.1v-8.5c0-75.4 61.1-136.5 136.5-136.5s136.5 61 136.5 136.5v8.5h93.8c4.7 0 8.5-3.8 8.5-8.5V200.5h8.5c4.7 0 8.5-3.8 8.5-8.5v-34.1Zm-93.7-42.6h34.1v34.1h-34.1zm-51.2 0h34.1v34.1H367zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.1 0h34.1v34.1h-34.1zm-51.3 0h34.1v34.1H59.8zm418.1 281.6h-68.5c-4.5-81-71.3-145.1-153.4-145.1s-149 64.2-153.4 145.1H34.1V200.5h443.8zm17-213.3H17.1v-17.1h477.8"
-    stroke="#000"
-    stroke-width="2"
-    fill="none"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>;
-
 export const featuredData = {
   sectionTitle: "work",
   featured: [
@@ -618,7 +606,7 @@ export const workData = {
           alt: "illustrator",
         },
       ],
-      description: `America's favorite breakfast spot was in need of a major site rehaul. While working with two other develoepers at Vehicle Media on this project, I built and styled several components, pages, and sections of the website. Specific examples being the blogposts, homepage components and sliders, animations, parts of the nav menu, etc.`,
+      description: `America's favorite breakfast spot was in need of a major site rehaul. While working with two other developers at Vehicle Media on this project, I built and styled several components, pages, and sections of the website. Specific examples being the blogposts, homepage components and sliders, animations, parts of the nav menu, etc.`,
       id: 5,
       showAll: false,
       type: "website",
@@ -1255,7 +1243,7 @@ export const testimonialData = {
   sectionTitle: "kind words",
   testimonials: [
     {
-      text: "Erin, your passion for doing the job correctly is possibly unmatched here. You consistently ask good questions, and are definitely commited to performing quality work.",
+      text: "Erin, your passion for doing the job correctly is possibly unmatched here. You consistently ask good questions, and are definitely committed to performing quality work.",
       person: "Principal Engineer at Alloy Digital",
       id: "0",
     },
@@ -1270,7 +1258,7 @@ export const testimonialData = {
       id: "2",
     },
     {
-      text: "It's always a pleasure working with you. It's amazing to see your constant growth since our first project. I haven't seen too many developers come in and hit the ground running like you have. Your efficiency and communicaiton is going to take you a long way.",
+      text: "It's always a pleasure working with you. It's amazing to see your constant growth since our first project. I haven't seen too many developers come in and hit the ground running like you have. Your efficiency and communication is going to take you a long way.",
       person: "Peer Developer at Avanade",
       id: "3",
     },
