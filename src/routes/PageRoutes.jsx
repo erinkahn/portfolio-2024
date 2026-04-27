@@ -1,9 +1,8 @@
-import React, { Suspense, lazy, useLayoutEffect } from "react";
+import { Suspense, lazy, useLayoutEffect } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 const Home = lazy(() => import("../pages/Home/index"));
 const Work = lazy(() => import("../pages/Work/index"));
-const Resume = lazy(() => import("../pages/Resume/index"));
 const NotFound = lazy(() => import("../pages/404/index"));
 
 function ScrollToTop() {

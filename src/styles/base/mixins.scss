@@ -16,7 +16,7 @@
 	position: relative;
 	height: 0;
 	width: 100%;
-	padding-top: $y / $x * 100%;
+	padding-top: math.div($y, $x) * 100%;
 }
 
 @mixin aspectRatioImage() {
@@ -60,8 +60,8 @@
 }
 
 @mixin mask-svg-img($image: "") {
-	mask-image: url("#{$svgPath}#{$image}");
-	-webkit-mask-image: url("#{$svgPath}#{$image}");
+	mask-image: url("#{$image}");
+	-webkit-mask-image: url("#{$image}");
 }
 
 // @mixin retina($bg-image, $size: contain, $file-type: 'png') {

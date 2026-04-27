@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import SectionWrapper from "../../components/SectionWrapper";
 import { testimonialData } from "../../constants/data";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";

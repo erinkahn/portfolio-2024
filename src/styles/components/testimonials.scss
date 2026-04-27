@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 .testimonials-container {
   position: relative;
   display: grid;
@@ -34,7 +36,7 @@
   &::before {
     @include pseudo;
     @include mask-svg-set;
-    @include mask-svg-img("../../assets/images/quote.svg");
+    @include mask-svg-img("/images/icons/quote.svg");
     background-color: $primaryLight;
     width: 30%;
     height: 100%;

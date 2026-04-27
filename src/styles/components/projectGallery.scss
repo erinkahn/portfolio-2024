@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 .gallery-container {
 	margin: 0 auto;
 	width: 85%;

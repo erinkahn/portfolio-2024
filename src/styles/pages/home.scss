@@ -1,3 +1,4 @@
+@use "../base/variables" as *;
 .page-wrapper.home {
 	width: 100vw;
 	overflow-x: hidden; // need this to remove white at bottom

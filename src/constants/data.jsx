@@ -71,8 +71,7 @@ export const sections = {
 export const heroData = {
   home: {
     title: "hi! I'm erin",
-    subtitle:
-      "A Senior UI/UX Engineer & Human-Centered Experience Designer based in Denver. A brand-new site is on the way. In the meantime, take a look around at the old!",
+    subtitle: "Design Engineer | Creative Technologist",
     scrollBtn: true,
   },
   work: {
@@ -170,18 +169,11 @@ export const servicesData = {
         "I help design ideas survive the journey from concept to production by reducing ambiguity, protecting design intent, and keeping teams aligned.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <g
-            className="svg-stroke"
-            fill="none"
-            stroke="none"
-            strokeLinecap="round"
-            strokeWidth="7"
-          >
-            <path
-              class="draw-fill"
-              d="M511.9 157.8c0-4.7-3.8-8.5-8.5-8.5h-34.1v-34.1h34.1c4.7 0 8.5-3.8 8.5-8.5s-3.8-8.5-8.5-8.5H8.5c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.6h34.1v34.1H8.5c-4.7 0-8.5 3.8-8.5 8.5V192c0 4.7 3.8 8.5 8.6 8.5h8.5v204.8c0 4.7 3.8 8.5 8.5 8.5h94.1v-8.5c0-75.4 61.1-136.5 136.5-136.5s136.5 61 136.5 136.5v8.5h93.8c4.7 0 8.5-3.8 8.5-8.5V200.5h8.5c4.7 0 8.5-3.8 8.5-8.5v-34.1Zm-93.7-42.6h34.1v34.1h-34.1zm-51.2 0h34.1v34.1H367zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.1 0h34.1v34.1h-34.1zm-51.3 0h34.1v34.1H59.8zm418.1 281.6h-68.5c-4.5-81-71.3-145.1-153.4-145.1s-149 64.2-153.4 145.1H34.1V200.5h443.8zm17-213.3H17.1v-17.1h477.8z"
-            />
-          </g>
+          <path
+            className="path4"
+            fillRule="evenodd"
+            d="M511.9 157.8c0-4.7-3.8-8.5-8.5-8.5h-34.1v-34.1h34.1c4.7 0 8.5-3.8 8.5-8.5s-3.8-8.5-8.5-8.5H8.5c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.6h34.1v34.1H8.5c-4.7 0-8.5 3.8-8.5 8.5V192c0 4.7 3.8 8.5 8.6 8.5h8.5v204.8c0 4.7 3.8 8.5 8.5 8.5h94.1v-8.5c0-75.4 61.1-136.5 136.5-136.5s136.5 61 136.5 136.5v8.5h93.8c4.7 0 8.5-3.8 8.5-8.5V200.5h8.5c4.7 0 8.5-3.8 8.5-8.5v-34.1Zm-93.7-42.6h34.1v34.1h-34.1zm-51.2 0h34.1v34.1H367zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.2 0h34.1v34.1h-34.1zm-51.1 0h34.1v34.1h-34.1zm-51.3 0h34.1v34.1H59.8zm418.1 281.6h-68.5c-4.5-81-71.3-145.1-153.4-145.1s-149 64.2-153.4 145.1H34.1V200.5h443.8zm17-213.3H17.1v-17.1h477.8z"
+          />
         </svg>
       ),
       alt: "webpage",

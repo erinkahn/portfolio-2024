@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 .featured-container {
   position: relative;
   display: grid;
@@ -21,7 +23,7 @@
   &::before {
     @include pseudo;
     @include mask-svg-set;
-    @include mask-svg-img("../../assets/images/left-shape.svg");
+    @include mask-svg-img("/images/icons/left-shape.svg");
     background-color: $primaryLight;
     height: 100%;
     width: 30%;
@@ -322,7 +324,7 @@
     &::after {
       @include pseudo;
       @include mask-svg-set;
-      @include mask-svg-img("../../assets/images/ft-btn.svg");
+      @include mask-svg-img("/images/icons/ft-btn.svg");
       top: auto;
       left: auto;
       width: 130px;

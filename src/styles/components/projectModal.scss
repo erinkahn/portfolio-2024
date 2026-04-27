@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 .project-modal {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -35,7 +37,7 @@
 
 	.close-btn {
 		@include mask-svg-set;
-		@include mask-svg-img("../../assets/images/x.svg");
+		@include mask-svg-img("/images/icons/x.svg");
 		position: absolute;
 		left: 2em;
 		top: 7vh;
@@ -422,7 +424,7 @@
 					&::after {
 						@include pseudo;
 						@include mask-svg-set;
-						@include mask-svg-img("../../assets/images/arrow.svg");
+						@include mask-svg-img("/images/icons/arrow.svg");
 						left: auto;
 						background-color: $secondaryLight;
 						width: 1em;

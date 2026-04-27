@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 .typewriter-container {
 	display: flex;
 	flex-direction: column;

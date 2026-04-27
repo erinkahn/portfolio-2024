@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 
 export default function SectionScrollTabs({ sections }) {
 	const [isActive, setIsActive] = useState(0);
@@ -20,8 +20,7 @@ export default function SectionScrollTabs({ sections }) {
 		let minDistance = Infinity;
 
 		sections.forEach((section, index) => {
-			const sectionElement = document.getElementById(section.id); // Corrected line
-			console.log(sectionElement, section.id); // Added section.id for debugging
+			const sectionElement = document.getElementById(section.id);
 			if (sectionElement) {
 				const rect = sectionElement.getBoundingClientRect();
 				const distance = Math.abs(rect.top); //Distance from top of viewport

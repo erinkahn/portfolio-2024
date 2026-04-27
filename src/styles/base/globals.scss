@@ -1,3 +1,5 @@
+@use "./variables" as *;
+@use "./mixins" as *;
 body {
   overflow-x: hidden;
 
@@ -97,9 +99,6 @@ p {
   &.codepen::before {
     content: $codePen;
   }
-  &.linkedin::before {
-    content: $linkedin;
-  }
   &.github::before {
     content: $github;
   }
@@ -132,7 +131,7 @@ p {
   &::before {
     @include pseudo;
     @include mask-svg-set;
-    @include mask-svg-img("../../assets/images/chevron.svg");
+    @include mask-svg-img("/images/icons/chevron.svg");
     left: 50%;
     top: 50%;
     background-color: $white;

@@ -1,3 +1,4 @@
+@use "../base/variables" as *;
 .services-container {
   display: grid;
   grid-gap: 1em;
@@ -80,62 +81,7 @@
     stroke: $white;
   }
 
-  .path0,
-  .path1,
-  .path2,
-  .path3 {
-    animation: draw 3s linear infinite alternate;
-  }
-
-  .path0 {
-    stroke-dasharray: 800;
-    stroke-dashoffset: 800;
-  }
-
-  .path3 {
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-  }
-
-  .path1 {
-    stroke-dasharray: 40;
-    stroke-dashoffset: 20;
-  }
-
-  .path2 {
-    stroke-dasharray: 60;
-    stroke-dashoffset: 60;
-  }
-
   .path4 {
-    animation: fill-reveal 3s forwards;
-  }
-
-  @keyframes draw {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-  .draw-fill {
-    stroke-dasharray: 4000; /* length of the path — can overshoot */
-    stroke-dashoffset: 4000;
-    animation: draw 4s linear infinite alternate;
-  }
-
-  /* Draw path */
-  @keyframes draw {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  /* Fill in after drawing completes */
-  @keyframes fillIn {
-    from {
-      fill: none;
-    }
-    to {
-      fill: #fff;
-    }
+    fill: $white;
   }
 }

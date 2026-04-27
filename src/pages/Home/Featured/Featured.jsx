@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import SectionWrapper from "../../../components/SectionWrapper";
 import { featuredData } from "../../../constants/data";
 import FeaturedImage from "./FeaturedImage";

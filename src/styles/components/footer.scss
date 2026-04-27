@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 footer {
   display: grid;
   grid-template-rows: 25% 75%;
@@ -42,7 +44,7 @@ footer {
     &::before {
       @include pseudo;
       @include mask-svg-set;
-      @include mask-svg-img("../../assets/images/footer-shape.svg");
+      @include mask-svg-img("/images/icons/footer-shape.svg");
       background-color: $primaryLight;
       width: 100%;
       height: 0;

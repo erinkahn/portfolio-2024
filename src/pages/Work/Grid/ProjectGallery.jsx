@@ -1,4 +1,4 @@
-import React, { useReducer, useState, useEffect, useContext } from "react";
+import { useReducer, useState, useEffect, useContext } from "react";
 import { workData } from "../../../constants/data";
 import SectionWrapper from "../../../components/SectionWrapper";
 import Tabs from "./Tabs";

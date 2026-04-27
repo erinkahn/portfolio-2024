@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 .page-wrapper {
     position: relative;
     height: 100vh;
@@ -25,12 +27,12 @@
 
     &.theme-light {
         main::before {
-            background-image: url('../../assets/images/hero-waves-light.svg');
+            background-image: url('/images/icons/hero-waves-light.svg');
         }
     }
     &.theme-dark {
         main::before {
-            background-image: url('../../assets/images/hero-waves-dark.svg');
+            background-image: url('/images/icons/hero-waves-dark.svg');
         }
     }
 

@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 .fullPageMenu {
 	position: fixed;
 	left: auto;

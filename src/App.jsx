@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./App.scss";
 import ThemeProvider from "./contexts/Theme/ThemeContext";
 import PageRoutes from "./routes/PageRoutes";

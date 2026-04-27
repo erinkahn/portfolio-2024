@@ -5,7 +5,6 @@
 $lightblue: #69b9ed;
 $sun: #f1f16e;
 $white: #ffffff;
-$softWhite: #dad6d6;
 $black: #000000;
 $dark: #1e1e1e;
 
@@ -33,8 +32,6 @@ $accessibleDark: #148237;
 $montserrat: "Montserrat", sans-serif;
 $sourceCode: "Source Code Pro", monospace;
 $commissioner: "Commissioner", sans-serif;
-$fontAwesome: "FontAwesome";
-$didot: "Didot", sans-serif;
 
 $ultralight: 100;
 $extralight: 200;
@@ -74,15 +71,10 @@ $xxlarge: 1440px; // max or min -width: 1440px
 // svg icons
 // ***********************************************//
 
-$sandbox: url("../../assets/images/codeSandbox.svg");
-$linkedin: url("../../assets/images/linkedin.svg");
-$codePen: url("../../assets/images/codepen.svg");
-$github: url("../../assets/images/github.svg");
-$instagram: url("../../assets/images/instagram.svg");
-$spotify: url("../../assets/images/spotify.svg");
+$sandbox: url("/images/icons/codeSandbox.svg");
+$linkedin: url("/images/icons/linkedin.svg");
+$codePen: url("/images/icons/codepen.svg");
+$github: url("/images/icons/github.svg");
+$instagram: url("/images/icons/instagram.svg");
+$spotify: url("/images/icons/spotify.svg");
 
-//****************************************************************************/
-//	Images
-//****************************************************************************/
-$svgPath: "../../assets/images/";
-$publicPath: "../../../public/images/";

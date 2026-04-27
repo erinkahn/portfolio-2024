@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 .about-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -54,7 +56,7 @@
       &::after {
         @include pseudo;
         @include mask-svg-set;
-        @include mask-svg-img("../../assets/images/about-shape.svg");
+        @include mask-svg-img("/images/icons/about-shape.svg");
         background-color: $primaryLight;
         padding-bottom: 100%;
         width: 85%;
@@ -110,7 +112,7 @@
       opacity: 0;
       @include pseudo;
       @include mask-svg-set;
-      @include mask-svg-img("../../assets/images/about-crosses.svg");
+      @include mask-svg-img("/images/icons/about-crosses.svg");
       background-color: $sixLight;
       padding-bottom: 40%;
       width: 100%;

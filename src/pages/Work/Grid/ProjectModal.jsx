@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FocusTrap } from "focus-trap-react";
 
 export default function ProjectModal(props) {

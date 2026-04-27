@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 .hero-container {
   position: relative;
   width: 100%;
@@ -21,7 +23,7 @@
   &:after {
     content: "";
     @include mask-svg-set;
-    @include mask-svg-img("../../assets/images/hero-pattern.svg");
+    @include mask-svg-img("/images/icons/hero-pattern.svg");
     background-color: $quaternaryLight;
     position: absolute;
     bottom: 0;
