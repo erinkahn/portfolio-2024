@@ -7,17 +7,25 @@
   align-items: center;
   height: 100%;
   max-width: 1200px;
-  padding: 18vh 4em 0 4em;
+  padding: 0 4em;
   margin: 0 auto;
 
   @media screen and (min-width: $smUp) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  @media screen and (min-width: $large) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-right: 6rem;
   }
 
   &.animate {
     &::before {
-      transform: translate(-30%, -40vw) scale(-1, 1) rotate(0);
+      opacity: 0;
 
       @media screen and (min-width: 375px) {
         transform: translate(-40%, -28vw) scale(-1, 1) rotate(0);
@@ -29,6 +37,7 @@
 
       @media screen and (min-width: $smUp) {
         transform: translate(65%, -11vh) scale(1, 1) rotate(0);
+        opacity: 1;
       }
     }
   }
@@ -50,7 +59,7 @@
       right: auto;
       left: 0;
       top: auto;
-      width: 25%;
+      width: 20%;
       max-width: none;
       transform: translate(65%, -12vh) scale(1, 1) rotate(-30deg);
     }
@@ -75,19 +84,40 @@
     }
   }
 
+  h5 {
+    .theme-dark & {
+      color: $white;
+    }
+  }
+  .deeper-inner {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgba($white, 0.95);
+    border: 1px solid rgba($primaryLight, 0.16);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+
+    .theme-dark & {
+      background: rgba($primaryDark, 0.9);
+      border-color: rgba($white, 0.12);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+  }
+
   .testimonial {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     visibility: hidden;
     opacity: 0;
     height: 0;
     width: 0;
     transform: translateX(-9px);
-    transition: opacity $quick, transform $quick;
-
-    @media screen and (min-width: $smUp) {
-      max-width: 380px;
+    transition:
+      opacity $quick,
+      transform $quick;
+    .theme-dark & {
+      color: $white;
     }
 
     .person {
@@ -95,7 +125,9 @@
       margin-top: 2em;
       text-align: right;
       transform: translateX(12px);
-      transition: opacity $quick, transform $quick;
+      transition:
+        opacity $quick,
+        transform $quick;
       transition-delay: 0.3s;
     }
 
@@ -104,7 +136,7 @@
       opacity: 1;
       height: auto;
       width: 100%;
-      min-height: 250px;
+      min-height: 320px;
       transform: translateX(0);
 
       .person {

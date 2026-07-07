@@ -4,20 +4,20 @@ export default function ProgressBar() {
 	const [scrolled, setScrolled] = useState(0);
 
 	const handleProgressBar = (e) => {
-		const totalScroll = document.documentElement.scrollTop;
-		const windowHeight =
-			document.documentElement.scrollHeight -
-			document.documentElement.clientHeight;
+		const scrollContainer = document.querySelector(".page-wrapper") || document.documentElement;
+		const totalScroll = scrollContainer.scrollTop;
+		const windowHeight = scrollContainer.scrollHeight - scrollContainer.clientHeight;
 		const scroll = `${totalScroll / windowHeight}`;
 		setScrolled(scroll);
 		document.documentElement.style.setProperty("--scroll", scroll);
 	};
 
 	useEffect(() => {
-		window.addEventListener("scroll", handleProgressBar);
+		const scrollContainer = document.querySelector(".page-wrapper") || window;
+		scrollContainer.addEventListener("scroll", handleProgressBar);
 
 		return () => {
-			window.removeEventListener("scroll", handleProgressBar);
+			scrollContainer.removeEventListener("scroll", handleProgressBar);
 		};
 	}, [scrolled]);
 

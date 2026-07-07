@@ -113,7 +113,9 @@
         font-size: 3em;
         opacity: 0;
         color: $primaryLight;
-        transition: transform $quick, opacity $quick;
+        transition:
+          transform $quick,
+          opacity $quick;
         transform: translate(65%, -30%) scale(0);
 
         .theme-dark & {
@@ -136,6 +138,7 @@
       .pager-btn {
         width: 1em;
         height: 1em;
+        padding: 0;
       }
 
       @media screen and (min-width: $smUp) {
@@ -264,6 +267,12 @@
       }
 
       p {
+        font-size: 14px;
+
+        @media screen and (min-width: $medUp) {
+          font-size: 1em;
+        }
+
         &:nth-of-type(1) {
           padding-bottom: 1em;
         }

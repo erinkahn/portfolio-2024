@@ -15,25 +15,27 @@ export default function Testimonials() {
         id="testimonials"
       >
         <div className="inner-wrap" ref={titleRef}>
-          <h5 className="section-title kind-words">
-            {testimonialData.sectionTitle}
-          </h5>
-          {testimonialData.testimonials.map((testimonial, t) => (
-            <div
-              aria-hidden={t === 0 ? false : true}
-              aria-label={`testimonial ${t + 1} of 3`}
-              aria-labelledby={testimonial.id}
-              id={`testimonial${testimonial.id}`}
-              key={`testim-${testimonial.id}`}
-              className={`testimonial ${t === isActive ? "show" : ""}`}
-            >
-              <p>{testimonial.text}</p>
+          <div className="deeper-inner">
+            <h5 className="section-title kind-words">
+              {testimonialData.sectionTitle}
+            </h5>
+            {testimonialData.testimonials.map((testimonial, t) => (
+              <div
+                aria-hidden={t === 0 ? false : true}
+                aria-label={`testimonial ${t + 1} of 3`}
+                aria-labelledby={testimonial.id}
+                id={`testimonial${testimonial.id}`}
+                key={`testim-${testimonial.id}`}
+                className={`testimonial ${t === isActive ? "show" : ""}`}
+              >
+                <p>{testimonial.text}</p>
 
-              <p className="person">
-                <em>{testimonial.person}</em>
-              </p>
-            </div>
-          ))}
+                <p className="person">
+                  <em>{testimonial.person}</em>
+                </p>
+              </div>
+            ))}
+          </div>
 
           <div className="btns-container" role="tablist">
             {testimonialData.testimonials.map((testiBtn, s) => (

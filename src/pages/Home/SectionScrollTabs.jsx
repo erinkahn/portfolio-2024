@@ -3,6 +3,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 export default function SectionScrollTabs({ sections }) {
 	const [isActive, setIsActive] = useState(0);
 	const ref = useRef(null);
+	const containerRef = useRef(null);
 
 	const scrollToSection = (e) => {
 		e.preventDefault();
@@ -16,27 +17,39 @@ export default function SectionScrollTabs({ sections }) {
 	};
 
 	const handleScroll = useCallback(() => {
+		const triggerPoint = window.innerHeight * 0.3;
 		let newActiveIndex = 0;
-		let minDistance = Infinity;
 
 		sections.forEach((section, index) => {
 			const sectionElement = document.getElementById(section.id);
 			if (sectionElement) {
 				const rect = sectionElement.getBoundingClientRect();
-				const distance = Math.abs(rect.top); //Distance from top of viewport
-
-				if (distance < minDistance) {
-					minDistance = distance;
+				if (rect.top <= triggerPoint) {
 					newActiveIndex = index;
 				}
 			}
 		});
+
+		const container = containerRef.current;
+		if (container) {
+			const scrollTop = container === window ? window.scrollY : container.scrollTop;
+			const scrollHeight =
+				container === window ? document.documentElement.scrollHeight : container.scrollHeight;
+			const clientHeight = container === window ? window.innerHeight : container.clientHeight;
+			if (scrollTop + clientHeight >= scrollHeight - 1) {
+				newActiveIndex = sections.length - 1;
+			}
+		}
+
 		setIsActive(newActiveIndex);
 	}, [sections]);
 
 	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-		return () => window.removeEventListener("scroll", handleScroll);
+		const scrollContainer = ref.current?.closest(".page-wrapper") || window;
+		containerRef.current = scrollContainer;
+		scrollContainer.addEventListener("scroll", handleScroll);
+		handleScroll();
+		return () => scrollContainer.removeEventListener("scroll", handleScroll);
 	}, [handleScroll, sections]);
 
 	return (

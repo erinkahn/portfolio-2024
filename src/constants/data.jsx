@@ -71,7 +71,7 @@ export const sections = {
 export const heroData = {
   home: {
     title: "hi! I'm erin",
-    subtitle: "Design Engineer | Creative Technologist",
+    subtitle: "Creative Designer & Engineer",
     scrollBtn: true,
   },
   work: {

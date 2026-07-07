@@ -27,13 +27,20 @@
 			background: rgba($quaternaryDark, 0.3);
 		}
 
-		&.active,
-		&:hover,
-		&:focus {
+		&.active {
 			background: $tertiaryLight;
 
 			.theme-dark & {
 				background: $quaternaryDark;
+			}
+		}
+
+		&:hover,
+		&:focus-visible {
+			background: rgba($tertiaryLight, 0.75);
+
+			.theme-dark & {
+				background: rgba($quaternaryDark, 0.6);
 			}
 		}
 	}
