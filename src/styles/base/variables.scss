@@ -2,28 +2,10 @@
 // colors
 // ***********************************************//
 
-$lightblue: #69b9ed;
-$sun: #f1f16e;
-$white: #ffffff;
-$black: #000000;
-$dark: #1e1e1e;
-
-// light theme
-$primaryLight: #781ad6;
-$secondaryLight: #af6aff;
-$tertiaryLight: #c4a8dd;
-$quaternaryLight: #f5edff;
-$fiveLight: #490b86;
-$sixLight: #e4c5fe;
-
-// dark theme
-$primaryDark: #363957;
-$secondaryDark: #a1d6b7;
-$tertiaryDark: #f2fdf5;
-$quaternaryDark: #7cc994;
-$fiveDark: #62c982;
-$fiveDarker: #2d6042;
-$accessibleDark: #148237;
+$primary: #2c2330;
+$secondary: #fdfaf5;
+$tertiary: #ababab;
+$accent: #85519e;
 
 // ***********************************************//
 // fonts and fonts weights
@@ -66,6 +48,12 @@ $large: 1000px; // max or min -width: 1100px
 $large2: 1024px;
 $xlarge: 1200px; // max or min -width: 1300px
 $xxlarge: 1440px; // max or min -width: 1440px
+
+// ***********************************************//
+// layout
+// ***********************************************//
+
+$sidebarWidth: 3.75em;
 
 // ***********************************************//
 // svg icons

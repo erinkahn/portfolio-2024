@@ -1,0 +1,30 @@
+@use "../base/variables" as *;
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 6vw;
+
+  h1 {
+    margin: 0;
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: clamp(3em, 12vw, 6em);
+    line-height: 1;
+  }
+
+  p {
+    margin: 0.5em 0 1.5em;
+    color: $tertiary;
+  }
+
+  a {
+    color: $accent;
+    font-family: $montserrat;
+    font-weight: $bold;
+    text-decoration: underline;
+  }
+}

@@ -1,25 +1,10 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
 body {
   overflow-x: hidden;
-
-  &.theme-dark,
-  &.theme-light {
-    // position: relative; this fucks up the focus trap background color
-
-    &::after {
-      @include pseudo;
-      z-index: 4;
-    }
-  }
-
-  &.theme-dark::after {
-    background-color: rgba($primaryDark, 0.8);
-  }
-
-  &.theme-light::after {
-    background-color: rgba($primaryLight, 0.8);
-  }
+  background-color: $secondary;
+  color: $primary;
 }
 
 p {
@@ -31,25 +16,7 @@ p {
 .section-title {
   font-size: 1.5em;
   font-family: $montserrat;
-  color: $black;
-
-  &:not(.i-am) {
-    position: relative;
-    margin-bottom: 1.5em;
-
-    &::after {
-      @include pseudo;
-      width: 1em;
-      height: 3px;
-      border-radius: 90px;
-      background-color: $primaryLight;
-      transform: translate(0, 1.8em);
-
-      .theme-dark & {
-        background-color: $fiveDark;
-      }
-    }
-  }
+  color: $primary;
 
   @media screen and (min-width: $xxsUp) {
     font-size: 1.875em;
@@ -64,101 +31,6 @@ p {
   }
 }
 
-.icon {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1.5em;
-    height: 1.5em;
-    transition: all $quick;
-    transform: translate(-50%, -50%);
-  }
-
-  &:hover,
-  &:focus {
-    &::before,
-    &::after {
-      transform: translate(-50%, -50%) scale(0.8);
-      opacity: 0.8;
-    }
-  }
-
-  &.sandbox::before {
-    content: $sandbox;
-  }
-  &.linkedin::before {
-    content: $linkedin;
-  }
-  &.codepen::before {
-    content: $codePen;
-  }
-  &.github::before {
-    content: $github;
-  }
-  &.instagram::after {
-    content: $instagram;
-  }
-  &.spotify::before {
-    content: $spotify;
-  }
-}
-
-.btn-scroll {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2em;
-  width: 2em;
-  color: $white;
-  border: 1px solid $white;
-  border-radius: 90px;
-  font-family: $sourceCode;
-  font-size: 1em;
-  z-index: 1;
-  transform: translate(22vw, -5vw);
-  transform-origin: center;
-  transition:
-    transform $quick,
-    border-color $quick;
-
-  &::before {
-    @include pseudo;
-    @include mask-svg-set;
-    @include mask-svg-img("/images/icons/chevron.svg");
-    left: 50%;
-    top: 50%;
-    background-color: $white;
-    width: 1em;
-    height: 1em;
-    transform: translate(-50%, -50%);
-    transition:
-      background-color $quick,
-      width $quick,
-      height $quick;
-  }
-
-  &:hover {
-    border-color: $sixLight;
-
-    .theme-dark & {
-      border-color: $fiveDark;
-    }
-
-    &::before {
-      height: 0.8em;
-      width: 0.8em;
-      background-color: $sixLight;
-
-      .theme-dark & {
-        background-color: $fiveDark;
-      }
-    }
-  }
-}
-
 .pager-btns-container {
   position: relative;
   display: flex;
@@ -166,7 +38,7 @@ p {
 }
 
 .pager-btn {
-  background-color: rgba($fiveLight, 0.5);
+  background-color: rgba($tertiary, 0.5);
   border: none;
   border-radius: 50%;
   width: 0.35em;
@@ -175,11 +47,7 @@ p {
   aspect-ratio: 1;
   box-sizing: border-box;
 
-  &:nth-of-type(2) {
-    margin: 0 15px;
-  }
-
-  &:nth-of-type(4) {
+  &:nth-of-type(n + 2) {
     margin-left: 15px;
   }
 
@@ -189,23 +57,9 @@ p {
     padding: 0.5em;
   }
 
-  .theme-dark & {
-    background-color: rgba($primaryDark, 0.5);
-  }
-
   &.active,
   &:hover,
   &:focus {
-    background-color: $fiveLight;
-
-    .theme-dark & {
-      background-color: $primaryDark;
-    }
+    background-color: $accent;
   }
-}
-
-#save-code-popup-parent {
-  display: none;
-  height: 0;
-  width: 0;
 }

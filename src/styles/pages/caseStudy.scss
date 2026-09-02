@@ -1,0 +1,242 @@
+@use "../base/variables" as *;
+
+.case-study {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5em 5vw 4em;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 2em;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: $sourceCode;
+  font-size: 0.9em;
+  color: $primary;
+  transition: color $lightning;
+
+  &:hover,
+  &:focus-visible {
+    color: $accent;
+  }
+}
+
+.case-study-slider {
+  margin-bottom: 2.5em;
+
+  .pager-btns-container {
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  .pager-btn {
+    width: 0.5em;
+    height: 0.5em;
+    padding: 0;
+    border-radius: 999px;
+    background-color: rgba($primary, 0.2);
+    transition:
+      width $lightning,
+      background-color $lightning;
+
+    &:nth-of-type(n + 2) {
+      margin-left: 0.6em;
+    }
+
+    &.active,
+    &:hover,
+    &:focus {
+      width: 1.75em;
+      background-color: $accent;
+    }
+  }
+}
+
+.case-study-image {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: $tertiary;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.case-study-slides {
+  position: relative;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 400ms ease;
+    pointer-events: none;
+
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75em;
+  height: 2.75em;
+  padding: 0;
+  border: none;
+  background: none;
+  color: $secondary;
+  cursor: pointer;
+  filter: drop-shadow(0 1px 3px rgba($primary, 0.7));
+  transition:
+    color $lightning,
+    transform $lightning,
+    opacity $lightning;
+
+  svg {
+    width: 1.6em;
+    height: 1.6em;
+  }
+
+  &.prev {
+    left: 0.5em;
+  }
+
+  &.next {
+    right: 0.5em;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $accent;
+    transform: translateY(-50%) scale(1.12);
+  }
+
+  &:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+}
+
+.case-study-title {
+  margin: 0;
+  font-family: $montserrat;
+  font-weight: $bold;
+  font-size: clamp(1.75em, 5vw, 3em);
+  text-transform: uppercase;
+}
+
+.case-study-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  list-style: none;
+  margin: 1em 0 2.5em;
+  padding: 0;
+
+  li {
+    padding: 0.35em 0.9em;
+    border-radius: 999px;
+    background-color: $accent;
+    color: $secondary;
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: 0.75em;
+    letter-spacing: 0.08em;
+  }
+}
+
+.case-study-desc {
+  margin: 0 0 2.5em;
+  line-height: 1.7;
+}
+
+.case-study-credits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em 3em;
+  margin: 0;
+
+  dt {
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: 0.75em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $tertiary;
+  }
+
+  dd {
+    margin: 0;
+    font-family: $montserrat;
+  }
+}
+
+.case-study-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25em;
+  list-style: none;
+  margin: 2.5em 0 0;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 1.75em;
+    height: 1.75em;
+  }
+}
+
+.live-site-btn {
+  display: block;
+  width: fit-content;
+  margin: 2em 0 0;
+  padding: 0.75em 1.75em;
+  border-radius: 999px;
+  background-color: $primary;
+  color: $secondary;
+  text-decoration: none;
+  font-family: $montserrat;
+  font-weight: $bold;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+  transition: opacity $lightning;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.85;
+  }
+
+  @media screen and (min-width: $medUp) {
+    position: absolute;
+    bottom: 2em;
+    right: 5vw;
+    margin: 0;
+  }
+}

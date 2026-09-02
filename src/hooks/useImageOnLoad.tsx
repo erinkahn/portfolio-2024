@@ -1,0 +1,58 @@
+import { useState, type CSSProperties } from "react";
+
+interface ImageOnLoadResult {
+	handleImageOnLoad: () => void;
+	imageStyles: {
+		wrapper: CSSProperties;
+		image: CSSProperties;
+	};
+	lowResStyle: CSSProperties;
+	highResStyle: CSSProperties;
+}
+
+const useImageOnLoad = (): ImageOnLoadResult => {
+	const [isLoaded, setIsLoaded] = useState(false);
+
+	const handleImageOnLoad = () => setIsLoaded(true);
+
+	const transitionStyles: { lowRes: CSSProperties; highRes: CSSProperties } = {
+		lowRes: {
+			opacity: isLoaded ? 0 : 1,
+			filter: "blur(2px)",
+			transition: "opacity 500ms ease-out 300ms",
+		},
+		highRes: {
+			opacity: isLoaded ? 1 : 0.2,
+			transition: "opacity 500ms ease-in 300ms",
+		},
+	};
+
+	const imageStyles: { wrapper: CSSProperties; image: CSSProperties } = {
+		wrapper: {
+			position: "relative",
+			width: "100%",
+			height: "0",
+		},
+		image: {
+			position: "absolute",
+			width: "100%",
+			height: "100%",
+			objectPosition: "center 100%",
+			objectFit: "cover",
+		},
+	};
+
+	const lowResStyle: CSSProperties = {
+		...imageStyles.image,
+		...transitionStyles.lowRes,
+	};
+
+	const highResStyle: CSSProperties = {
+		...imageStyles.image,
+		...transitionStyles.highRes,
+	};
+
+	return { handleImageOnLoad, imageStyles, lowResStyle, highResStyle };
+};
+
+export default useImageOnLoad;

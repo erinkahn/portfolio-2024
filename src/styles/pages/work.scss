@@ -1,6 +1,197 @@
 @use "../base/variables" as *;
-.page-wrapper.work {
-    .section-wrapper {
-        padding-top: 20vh;
+
+.work-toolbar {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.work-filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $tertiary;
+    transition: color $lightning;
+
+    &:hover,
+    &:focus-visible {
+      color: $primary;
     }
+
+    &.active {
+      color: $accent;
+    }
+  }
+}
+
+.work-grid {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  height: 100vh;
+  margin: 0;
+  padding: 0 5vw;
+  list-style: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.is-wheeling {
+    scroll-snap-type: none;
+  }
+}
+
+.work-grid-counter {
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  z-index: 30;
+  padding: 0.5em 1.1em;
+  border-radius: 999px;
+  background-color: $primary;
+  color: $secondary;
+  font-family: $montserrat;
+  font-weight: $bold;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+
+  @media screen and (min-width: $medUp) {
+    display: none;
+  }
+}
+
+.work-grid-card {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $primary;
+    transition: transform 100ms linear;
+  }
+}
+
+.card-image {
+  display: block;
+  // Fills the space actually left after the sidebar and the grid's own
+  // 5vw+5vw horizontal padding, so the card's edges land flush with
+  // those paddings instead of leaving lopsided leftover space that
+  // piles up on the right (since flex items are left-aligned).
+  width: min(calc(100vw - #{$sidebarWidth} - 10vw), 460px);
+  aspect-ratio: 3 / 4;
+  border-radius: 16px;
+  background-color: $tertiary;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-tags {
+  display: block;
+  margin-top: 1.25em;
+  font-family: $montserrat;
+  font-weight: $bold;
+  font-size: 0.85em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $tertiary;
+}
+
+.card-title {
+  display: block;
+  margin-top: 0.3em;
+  font-family: $montserrat;
+  font-weight: $bold;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.work-list {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 7em 5vw 4em;
+  box-sizing: border-box;
+  list-style: none;
+
+  // On desktop, rows divide the viewport height evenly so a filtered
+  // list of any length fills the screen without scrolling. On mobile
+  // that same math makes rows too cramped when a filter has many
+  // items, so mobile keeps natural, fixed-padding rows that scroll.
+  @media screen and (min-width: $medUp) {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+.work-list-row {
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 2.5em 0;
+    text-decoration: none;
+    color: $primary;
+    border-bottom: 1px solid rgba($primary, 0.15);
+    transition: border-color $lightning;
+
+    &:hover,
+    &:focus-visible {
+      border-bottom: 3px solid $accent;
+    }
+  }
+
+  @media screen and (min-width: $medUp) {
+    flex: 1 1 0;
+    min-height: 0;
+    display: flex;
+
+    a {
+      flex: 1;
+      min-height: 0;
+      padding: 0;
+    }
+  }
+}
+
+.row-title {
+  font-family: $montserrat;
+  font-weight: $bold;
+  font-size: clamp(1.5em, 4.5vw, 2.5em);
+  text-transform: uppercase;
+}
+
+.row-tags {
+  font-family: $montserrat;
+  font-weight: $bold;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  color: $tertiary;
+  white-space: nowrap;
 }

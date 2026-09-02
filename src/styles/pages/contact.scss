@@ -1,0 +1,113 @@
+@use "../base/variables" as *;
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4vw 6vw;
+  box-sizing: border-box;
+}
+
+.contact-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+  width: 100%;
+
+  @media screen and (min-width: $medUp) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4em;
+  }
+}
+
+.contact-headline-col {
+  flex: 0 0 auto;
+
+  @media screen and (min-width: $medUp) {
+    flex-basis: 14em;
+    text-align: right;
+  }
+}
+
+.contact-content-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.contact-headline {
+  margin: 0;
+  font-family: $montserrat;
+  font-weight: $bold;
+  font-size: clamp(2.25em, 7vw, 4em);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.contact-blurb {
+  max-width: 26em;
+  margin: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 32em;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  .field-label {
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: 0.85em;
+  }
+
+  input,
+  textarea {
+    padding: 0.5em 0;
+    border: none;
+    border-bottom: 1px solid $tertiary;
+    background: transparent;
+    font-family: $montserrat;
+    font-size: 1em;
+    color: $primary;
+    resize: none;
+
+    &:focus {
+      outline: none;
+      border-bottom-color: $accent;
+    }
+  }
+}
+
+.send-btn {
+  align-self: flex-start;
+  padding: 0.85em 2em;
+  border: none;
+  border-radius: 999px;
+  background-color: $primary;
+  color: $secondary;
+  font-family: $montserrat;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  cursor: pointer;
+  transition: opacity $lightning;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.85;
+  }
+}

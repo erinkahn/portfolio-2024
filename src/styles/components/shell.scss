@@ -1,0 +1,122 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+#skip a {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  background-color: $secondary;
+  color: $primary;
+  padding: 0.5em 1em;
+
+  &:focus {
+    left: 1em;
+    top: 1em;
+  }
+}
+
+main#maincontent {
+  position: relative;
+  margin-left: $sidebarWidth;
+  min-height: 100vh;
+}
+
+.view-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: $primary;
+  cursor: pointer;
+  transition: color $lightning;
+  flex: 0 0 auto;
+
+  svg {
+    width: 1.1em;
+    height: 1.1em;
+  }
+
+  &[aria-disabled="true"] {
+    cursor: default;
+  }
+
+  &:not([aria-disabled="true"]):hover,
+  &:not([aria-disabled="true"]):focus-visible {
+    color: $accent;
+  }
+}
+
+.side-column {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 20;
+  transform: translateY(-50%);
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  @media screen and (min-width: $smUp) {
+    display: flex;
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  list-style: none;
+  margin: 0;
+  padding: 0.6em;
+  background-color: $secondary;
+  border-radius: 999px 0 0 999px;
+}
+
+.social-icon {
+  display: block;
+  width: 1.1em;
+  height: 1.1em;
+  background-color: rgba($primary, 0.6);
+  transition: background-color $lightning;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $accent;
+  }
+
+  &.instagram {
+    @include mask-svg-set;
+    @include mask-svg-img("/images/icons/instagram.svg");
+  }
+
+  &.github {
+    @include mask-svg-set;
+    @include mask-svg-img("/images/icons/github.svg");
+  }
+
+  &.linkedin {
+    @include mask-svg-set;
+    @include mask-svg-img("/images/icons/linkedin.svg");
+  }
+}
+
+.rotated-copyright {
+  writing-mode: vertical-rl;
+  transform: rotate(0deg);
+  font-family: $sourceCode;
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+  color: rgba($primary, 0.6);
+  background-color: $secondary;
+  padding: 4em 0.6em;
+  border-radius: 999px 0 0 999px;
+  box-shadow: 0 0 10px rgba($primary, 0.1);
+  margin: 0;
+}

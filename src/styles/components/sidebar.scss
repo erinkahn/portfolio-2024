@@ -1,0 +1,60 @@
+@use "../base/variables" as *;
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $sidebarWidth;
+  height: 98vh;
+  border-right: 1px solid rgba($primary, 0.15);
+  background-color: $secondary;
+  z-index: 30;
+}
+
+.sidebar-nav {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 3em 0;
+  list-style: none;
+  text-transform: uppercase;
+
+  li {
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child {
+      align-items: flex-start;
+    }
+
+    &:last-child {
+      align-items: flex-end;
+    }
+  }
+
+  a {
+    display: inline-block;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: 0.9em;
+    letter-spacing: 0.15em;
+    color: $primary;
+    text-decoration: none;
+    transition: color $lightning;
+
+    &:hover,
+    &:focus-visible {
+      color: $accent;
+    }
+
+    &.active {
+      color: $accent;
+    }
+  }
+}

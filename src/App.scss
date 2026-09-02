@@ -1,3 +1,4 @@
+
 // ***********************************************//
 // BASE STYLES
 // ***********************************************//
@@ -13,26 +14,16 @@
 // COMPONENTS STYLES
 // ***********************************************//
 
-@use "./styles/components/header";
-@use "./styles/components/footer";
-@use "./styles/components/pageWrapper";
-@use "./styles/components/navigation";
-@use "./styles/components/theme";
-@use "./styles/components/progressBar";
-@use "./styles/components/hero";
-@use "./styles/components/about";
-@use "./styles/components/services";
-@use "./styles/components/projectGallery";
-@use "./styles/components/projectModal";
-@use "./styles/components/featured";
-@use "./styles/components/testimonials";
-@use "./styles/components/sectionScrollTab";
-@use "./styles/components/timeline";
+@use "./styles/components/sidebar";
+@use "./styles/components/intro";
+@use "./styles/components/shell";
 
 // ***********************************************//
 // PAGE STYLES
 // ***********************************************//
 
-@use "./styles/pages/home";
 @use "./styles/pages/work";
-@use "./styles/pages/resume";
+@use "./styles/pages/caseStudy";
+@use "./styles/pages/about";
+@use "./styles/pages/contact";
+@use "./styles/pages/notFound";
